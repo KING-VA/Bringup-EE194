@@ -1,6 +1,7 @@
 # Python UART TSI Library
 
 ## References:
+- Testchipip: https://github.com/ucb-bar/testchipip
 - TileLink Spec: https://starfivetech.com/uploads/tilelink_spec_1.8.1.pdf
 - https://github.com/pyserial/pyserial
 - TSI Reference Code in FESVR: https://github.com/riscv-software-src/riscv-isa-sim/blob/eeef09ebb894c3bb7e42b7b47aae98792b8eef79/fesvr/tsi.cc#L52-L79
