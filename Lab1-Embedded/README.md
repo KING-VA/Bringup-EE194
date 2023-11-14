@@ -1,0 +1,1 @@
+For this lab, refer to the BAREMETAL-IDE folder. The lab was completed in that folder and compiled with the built in toolchain.
