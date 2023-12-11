@@ -1,0 +1,638 @@
+[
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.InterruptBusWrapper"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.ClockGroupAggregator"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.ClockGroup"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.BundleBridgeNexus"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader_1",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader_2",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader_3",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.TLWidthWidget"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.TLInterconnectCoupler"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.TLWidthWidget_1"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.TLInterconnectCoupler_1"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.TLWidthWidget_2"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.TLInterconnectCoupler_2"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.TLWidthWidget_3"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.TLFilter"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.TLInterconnectCoupler_3"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.ClockGroupAggregator_1"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.ClockGroup_1"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.FixedClockBroadcast_1"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.BundleBridgeNexus_1"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.ClockGroupAggregator_2"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.ClockGroup_2"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.FixedClockBroadcast_2"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.BundleBridgeNexus_2"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader_4",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader_5",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader_6",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader_7",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader_8",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader_9",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.TLInterconnectCoupler_4"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader_10",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader_11",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader_12",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader_13",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader_14",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader_15",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader_16",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader_17",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.transforms.DontTouchAnnotation",
+    "target": "~TestHarness|UARTRx>io"
+  },
+  {
+    "class": "firrtl.transforms.DontTouchAnnotation",
+    "target": "~TestHarness|UARTTx>io"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.ClockGroupAggregator_3"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.ClockGroup_3"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.BundleBridgeNexus_3"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.TLBuffer_6"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.TLWidthWidget_4"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.TLInterconnectCoupler_6"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.ClockGroupAggregator_4"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.ClockGroup_4"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.BundleBridgeNexus_4"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.TLXbar_6"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader_18",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader_19",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader_20",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader_21",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.TLBuffer_7"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.TLSourceShrinker"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.TLWidthWidget_5"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.TLXbar_7"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader_22",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader_23",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.TLWidthWidget_6"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.ClockGroupAggregator_5"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.ClockGroup_5"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.FixedClockBroadcast_5"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.BundleBridgeNexus_5"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader_24",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader_25",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.TLJbar"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader_26",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader_27",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.TLWidthWidget_7"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.TLInterconnectCoupler_9"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.ClockGroupAggregator_6"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.ClockGroup_6"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.FixedClockBroadcast_6"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.BundleBridgeNexus_6"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.TLXbar_8"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader_28",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader_29",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader_30",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader_31",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.TLWidthWidget_8"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.BundleBridgeNexus_8"
+  },
+  {
+    "class": "firrtl.passes.InlineAnnotation",
+    "target": "TestHarness.ClockGroup_7"
+  },
+  {
+    "class": "freechips.rocketchip.util.AddressMapAnnotation",
+    "target": "TestHarness.DigitalTop",
+    "mapping": [
+      {
+        "range": {
+          "base": 0,
+          "size": 2147483648
+        },
+        "permissions": {
+          "r": true,
+          "w": true,
+          "x": true,
+          "c": false,
+          "a": false
+        },
+        "names": [
+          "lbwif-readwrite@0"
+        ]
+      },
+      {
+        "range": {
+          "base": 2147483648,
+          "size": 4294967296
+        },
+        "permissions": {
+          "r": true,
+          "w": true,
+          "x": true,
+          "c": true,
+          "a": false
+        },
+        "names": [
+          "memory@80000000"
+        ]
+      }
+    ],
+    "label": "mapping"
+  },
+  {
+    "class": "freechips.rocketchip.util.AddressMapAnnotation",
+    "target": "TestHarness.DigitalTop",
+    "mapping": [
+      {
+        "range": {
+          "base": 0,
+          "size": 2147483648
+        },
+        "permissions": {
+          "r": true,
+          "w": true,
+          "x": true,
+          "c": false,
+          "a": false
+        },
+        "names": [
+          "lbwif-readwrite@0"
+        ]
+      },
+      {
+        "range": {
+          "base": 2147483648,
+          "size": 4294967296
+        },
+        "permissions": {
+          "r": true,
+          "w": true,
+          "x": true,
+          "c": true,
+          "a": false
+        },
+        "names": [
+          "memory@80000000"
+        ]
+      }
+    ],
+    "label": "mapping"
+  },
+  {
+    "class": "firrtl.transforms.DontTouchAnnotation",
+    "target": "~TestHarness|ChipTop>port"
+  },
+  {
+    "class": "firrtl.transforms.DontTouchAnnotation",
+    "target": "~TestHarness|ChipTop>tl_slave"
+  },
+  {
+    "class": "firrtl.transforms.DontTouchAnnotation",
+    "target": "~TestHarness|ChipTop>clock_uncore"
+  },
+  {
+    "class": "firrtl.transforms.DontTouchAnnotation",
+    "target": "~TestHarness|ChipTop>reset_io"
+  },
+  {
+    "class": "firrtl.transforms.DontTouchAnnotation",
+    "target": "~TestHarness|ChipTop>axi4_mem_0"
+  },
+  {
+    "class": "firrtl.transforms.DontTouchAnnotation",
+    "target": "~TestHarness|ChipTop>uart_tsi"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader_32",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader_33",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.transforms.DontTouchAnnotation",
+    "target": "~TestHarness|UARTRx_1>io"
+  },
+  {
+    "class": "firrtl.transforms.DontTouchAnnotation",
+    "target": "~TestHarness|UARTTx_1>io"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.SimTSI",
+    "name": "SimTSI.v",
+    "text": "import \"DPI-C\" function int tsi_tick\n(\n    input  bit     tsi_out_valid,\n    output bit     tsi_out_ready,\n    input  int     tsi_out_bits,\n\n    output bit     tsi_in_valid,\n    input  bit     tsi_in_ready,\n    output int     tsi_in_bits\n);\n\nmodule SimTSI (\n    input         clock,\n    input         reset,\n    input         tsi_out_valid,\n    output        tsi_out_ready,\n    input  [31:0] tsi_out_bits,\n\n    output        tsi_in_valid,\n    input         tsi_in_ready,\n    output [31:0] tsi_in_bits,\n\n    output [31:0] exit\n);\n\n    bit __in_valid;\n    bit __out_ready;\n    int __in_bits;\n    int __exit;\n\n    reg __in_valid_reg;\n    reg __out_ready_reg;\n    reg [31:0] __in_bits_reg;\n    reg [31:0] __exit_reg;\n\n    assign tsi_in_valid  = __in_valid_reg;\n    assign tsi_in_bits   = __in_bits_reg;\n    assign tsi_out_ready = __out_ready_reg;\n    assign exit = __exit_reg;\n\n    // Evaluate the signals on the positive edge\n    always @(posedge clock) begin\n        if (reset) begin\n            __in_valid = 0;\n            __out_ready = 0;\n            __exit = 0;\n\n            __in_valid_reg <= 0;\n            __in_bits_reg <= 0;\n            __out_ready_reg <= 0;\n            __exit_reg <= 0;\n        end else begin\n            __exit = tsi_tick(\n                tsi_out_valid,\n                __out_ready,\n                tsi_out_bits,\n                __in_valid,\n                tsi_in_ready,\n                __in_bits\n            );\n\n            __out_ready_reg <= __out_ready;\n            __in_valid_reg  <= __in_valid;\n            __in_bits_reg   <= __in_bits;\n            __exit_reg <= __exit;\n        end\n    end\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.SimTSI",
+    "name": "SimTSI.cc",
+    "text": "#include <vpi_user.h>\n#include <svdpi.h>\n#include <vector>\n#include <string>\n#include \"testchip_tsi.h\"\n\ntestchip_tsi_t *tsi = NULL;\n\n// Remove VCS simv option from argv if it match pattern -X???=\nvoid remove_vcs_simv_opt(int & argc, char **& argv){\n    int idx = 0;\n    while(idx < argc){\n        std::string str = std::string(argv[idx]);\n        if(str.length() > 1 && str[0] == '-' && str[1] != '-' && str.find('=') != std::string::npos){\n            // Found -????=???? as VCS simv option\n            for(int i = idx; i < argc - 1; i++){\n                // Remove the current option\n                argv[i] = argv[i + 1];\n            }\n            argc--;\n        }else{\n            idx++;\n        }\n    }\n}\n\nextern \"C\" int tsi_tick(\n        unsigned char out_valid,\n        unsigned char *out_ready,\n        int out_bits,\n\n        unsigned char *in_valid,\n        unsigned char in_ready,\n        int *in_bits)\n{\n    bool out_fire = *out_ready && out_valid;\n    bool in_fire = *in_valid && in_ready;\n    bool in_free = !(*in_valid);\n\n    if (!tsi) {\n        s_vpi_vlog_info info;\n        if (!vpi_get_vlog_info(&info))\n          abort();\n\n\t  // Prevent simv option enter htif\n\t  remove_vcs_simv_opt(info.argc, info.argv);\n\n        // TODO: We should somehow inspect whether or not our backing memory supports loadmem, instead of unconditionally setting it to true\n        tsi = new testchip_tsi_t(info.argc, info.argv, true);\n    }\n\n    tsi->tick(out_valid, out_bits, in_ready);\n    tsi->switch_to_host();\n\n    *in_valid = tsi->in_valid();\n    *in_bits = tsi->in_bits();\n    *out_ready = tsi->out_ready();\n\n    return tsi->done() ? (tsi->exit_code() << 1 | 1) : 0;\n}\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.SimTSI",
+    "name": "testchip_htif.cc",
+    "text": "#include \"testchip_htif.h\"\n\nvoid testchip_htif_t::parse_htif_args(std::vector<std::string> &args) {\n  for (auto& arg : args) {\n    if (arg.find(\"+init_write=0x\") == 0) {\n      auto d = arg.find(\":0x\");\n      if (d == std::string::npos) {\n        throw std::invalid_argument(\"Improperly formatted +init_write argument\");\n      }\n      uint64_t addr = strtoull(arg.substr(14, d - 14).c_str(), 0, 16);\n      uint32_t val = strtoull(arg.substr(d + 3).c_str(), 0, 16);\n      init_access_t access = { .address=addr, .stdata=val, .store=true };\n      init_accesses.push_back(access);\n    }\n    if (arg.find(\"+init_read=0x\") == 0) {\n      uint64_t addr = strtoull(arg.substr(13).c_str(), 0, 16);\n      init_access_t access = { .address=addr, .stdata=0, .store=false };\n      init_accesses.push_back(access);\n    }\n    if (arg.find(\"+no_hart0_msip\") == 0)\n      write_hart0_msip = false;\n  }\n}\n\nvoid testchip_htif_t::perform_init_accesses() {\n  for (auto p : init_accesses) {\n    if (p.store) {\n      fprintf(stderr, \"Writing %lx with %x\\n\", p.address, p.stdata);\n      write_chunk(p.address, sizeof(uint32_t), &p.stdata);\n      fprintf(stderr, \"Done writing %lx with %x\\n\", p.address, p.stdata);\n    } else {\n      fprintf(stderr, \"Reading %lx ...\", p.address);\n      uint32_t rdata = 0;\n      read_chunk(p.address, sizeof(uint32_t), &rdata);\n      fprintf(stderr, \" got %x\\n\", rdata);\n    }\n  }\n}\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.SimTSI",
+    "name": "testchip_htif.h",
+    "text": "#ifndef __TESTCHIP_HTIF_H\n#define __TESTCHIP_HTIF_H\n\n#include <stdexcept>\n#include <stdint.h>\n#include <vector>\n#include <string>\n#include <fesvr/htif.h>\n\nstruct init_access_t {\n  uint64_t address;\n  uint32_t stdata;\n  bool store;\n};\n\nclass testchip_htif_t\n{\n public:\n  virtual void write_chunk(addr_t taddr, size_t nbytes, const void* src) = 0;\n  virtual void read_chunk(addr_t taddr, size_t nbytes, void* dst) = 0;\n  virtual ~testchip_htif_t() {};\n\n protected:\n  void perform_init_accesses();\n  void parse_htif_args(std::vector<std::string> &args);\n  bool write_hart0_msip = true;\n  std::vector<init_access_t> init_accesses;\n};\n#endif\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.SimTSI",
+    "name": "testchip_tsi.cc",
+    "text": "#include \"testchip_tsi.h\"\n#include <stdexcept>\n\ntestchip_tsi_t::testchip_tsi_t(int argc, char** argv, bool can_have_loadmem) : tsi_t(argc, argv)\n{\n  has_loadmem = false;\n  init_accesses = std::vector<init_access_t>();\n  write_hart0_msip = true;\n  is_loadmem = false;\n  cflush_addr = 0;\n  std::vector<std::string> args(argv + 1, argv + argc);\n  for (auto& arg : args) {\n    if (arg.find(\"+loadmem=\") == 0)\n      has_loadmem = can_have_loadmem;\n    if (arg.find(\"+cflush_addr=0x\") == 0)\n      cflush_addr = strtoull(arg.substr(15).c_str(), 0, 16);\n  }\n\n  testchip_htif_t::parse_htif_args(args);\n}\n\nvoid testchip_tsi_t::flush_cache_lines(addr_t taddr, size_t nbytes) {\n  if (!cflush_addr) return;\n  static size_t cblock_bytes = 64;\n  size_t base = taddr & ~(cblock_bytes-1);\n  while (base < taddr + nbytes) {\n    uint32_t data[2] { base, base >> 32 };\n    tsi_t::write_chunk(cflush_addr, 8, data);\n    base += cblock_bytes;\n  }\n}\n\nvoid testchip_tsi_t::write_chunk(addr_t taddr, size_t nbytes, const void* src)\n{\n  if (is_loadmem) {\n    load_mem_write(taddr, nbytes, src);\n  } else {\n    flush_cache_lines(taddr, nbytes);\n    tsi_t::write_chunk(taddr, nbytes, src);\n  }\n}\n\nvoid testchip_tsi_t::read_chunk(addr_t taddr, size_t nbytes, void* dst)\n{\n  if (is_loadmem) {\n    load_mem_read(taddr, nbytes, dst);\n  } else {\n    flush_cache_lines(taddr, nbytes);\n    tsi_t::read_chunk(taddr, nbytes, dst);\n  }\n}\n\nvoid testchip_tsi_t::reset()\n{\n  testchip_htif_t::perform_init_accesses();\n  if (write_hart0_msip)\n    tsi_t::reset();\n}\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.SimTSI",
+    "name": "testchip_tsi.h",
+    "text": "#ifndef __TESTCHIP_TSI_H\n#define __TESTCHIP_TSI_H\n\n#include <stdexcept>\n\n#include <fesvr/tsi.h>\n#include <fesvr/htif.h>\n#include \"testchip_htif.h\"\n\nclass testchip_tsi_t : public tsi_t, public testchip_htif_t\n{\n public:\n  testchip_tsi_t(int argc, char** argv, bool has_loadmem);\n  virtual ~testchip_tsi_t() {};\n\n  void write_chunk(addr_t taddr, size_t nbytes, const void* src) override;\n  void read_chunk(addr_t taddr, size_t nbytes, void* dst) override;\n  void load_program() {\n    switch_to_target();\n    is_loadmem = has_loadmem;\n    tsi_t::load_program();\n    is_loadmem = false;\n  }\n  void idle() { switch_to_target(); }\n\n protected:\n  virtual void load_mem_write(addr_t taddr, size_t nbytes, const void* src) { };\n  virtual void load_mem_read(addr_t taddr, size_t nbytes, void* dst) { };\n  void flush_cache_lines(addr_t taddr, size_t nbytes);\n  void reset() override;\n  bool has_loadmem;\n\n private:\n\n  bool is_loadmem;\n  addr_t cflush_addr;\n};\n#endif\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.plusarg_reader_34",
+    "name": "plusarg_reader.v",
+    "text": "// See LICENSE.SiFive for license details.\n\n//VCS coverage exclude_file\n\n// No default parameter values are intended, nor does IEEE 1800-2012 require them (clause A.2.4 param_assignment),\n// but Incisive demands them. These default values should never be used.\nmodule plusarg_reader #(\n   parameter FORMAT=\"borked=%d\",\n   parameter WIDTH=1,\n   parameter [WIDTH-1:0] DEFAULT=0\n) (\n   output [WIDTH-1:0] out\n);\n\n`ifdef SYNTHESIS\nassign out = DEFAULT;\n`else\nreg [WIDTH-1:0] myplus;\nassign out = myplus;\n\ninitial begin\n   if (!$value$plusargs(FORMAT, myplus)) myplus = DEFAULT;\nend\n`endif\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.SimDRAM",
+    "name": "SimDRAM.v",
+    "text": "import \"DPI-C\" function chandle memory_init\n(\n  input longint mem_size,\n  input longint word_size,\n  input longint line_size,\n  input longint id_bits,\n  input longint clock_hz,\n  input longint mem_base\n);\n\nimport \"DPI-C\" function void memory_tick\n(\n  input chandle  channel,\n\n  input bit      reset,\n\n  input bit      ar_valid,\n  output bit     ar_ready,\n  input longint  ar_addr,\n  input int      ar_id,\n  input int      ar_size,\n  input int      ar_len,\n\n  input bit      aw_valid,\n  output bit     aw_ready,\n  input longint  aw_addr,\n  input int      aw_id,\n  input int      aw_size,\n  input int      aw_len,\n\n  input bit      w_valid,\n  output bit     w_ready,\n  input int      w_strb,\n  input longint  w_data,\n  input bit      w_last,\n\n  output bit     r_valid,\n  input bit      r_ready,\n  output int     r_id,\n  output int     r_resp,\n  output longint r_data,\n  output bit     r_last,\n\n  output bit     b_valid,\n  input bit      b_ready,\n  output int     b_id,\n  output int     b_resp\n);\n\nmodule SimDRAM #(\n    parameter ADDR_BITS=32, DATA_BITS = 64, ID_BITS = 5,\n              MEM_SIZE = 1000 * 1000 * 1000,\n              LINE_SIZE = 64,\n              WORD_SIZE = DATA_BITS/8,\n              CLOCK_HZ = 100000,\n              STRB_BITS = DATA_BITS/8,\n              MEM_BASE = 0)(\n  input                  clock,\n  input                  reset,\n  output                 axi_aw_ready,\n  input                  axi_aw_valid,\n  input  [ADDR_BITS-1:0] axi_aw_bits_addr,\n  input  [7:0]           axi_aw_bits_len,\n  input  [2:0]           axi_aw_bits_size,\n  input  [1:0]           axi_aw_bits_burst,\n  input                  axi_aw_bits_lock,\n  input  [3:0]           axi_aw_bits_cache,\n  input  [2:0]           axi_aw_bits_prot,\n  input  [3:0]           axi_aw_bits_qos,\n  input  [ID_BITS-1:0]   axi_aw_bits_id,\n  output                 axi_w_ready,\n  input                  axi_w_valid,\n  input  [DATA_BITS-1:0] axi_w_bits_data,\n  input                  axi_w_bits_last,\n  input  [STRB_BITS-1:0] axi_w_bits_strb,\n  input                  axi_b_ready,\n  output                 axi_b_valid,\n  output [1:0]           axi_b_bits_resp,\n  output [ID_BITS-1:0]   axi_b_bits_id,\n  output                 axi_ar_ready,\n  input                  axi_ar_valid,\n  input  [ADDR_BITS-1:0] axi_ar_bits_addr,\n  input  [7:0]           axi_ar_bits_len,\n  input  [2:0]           axi_ar_bits_size,\n  input  [1:0]           axi_ar_bits_burst,\n  input                  axi_ar_bits_lock,\n  input  [3:0]           axi_ar_bits_cache,\n  input  [2:0]           axi_ar_bits_prot,\n  input  [3:0]           axi_ar_bits_qos,\n  input  [ID_BITS-1:0]   axi_ar_bits_id,\n  input                  axi_r_ready,\n  output                 axi_r_valid,\n  output [1:0]           axi_r_bits_resp,\n  output [DATA_BITS-1:0] axi_r_bits_data,\n  output                 axi_r_bits_last,\n  output [ID_BITS-1:0]   axi_r_bits_id\n);\n\n  reg initialized = 1'b0;\n  chandle channel;\n\n  wire __ar_valid;\n  wire [63:0] __ar_addr;\n  wire [31:0] __ar_id;\n  wire [31:0] __ar_size;\n  wire [31:0] __ar_len;\n\n  wire __aw_valid;\n  wire [63:0] __aw_addr;\n  wire [31:0] __aw_id;\n  wire [31:0] __aw_size;\n  wire [31:0] __aw_len;\n\n  wire __w_valid;\n  wire [31:0] __w_strb;\n  wire [63:0] __w_data;\n  wire        __w_last;\n\n  wire __r_ready;\n  wire __b_ready;\n\n  bit __ar_ready;\n  bit __aw_ready;\n  bit __w_ready;\n  bit __r_valid;\n  int __r_id;\n  int __r_resp;\n  longint __r_data;\n  bit __r_last;\n  bit __b_valid;\n  int __b_id;\n  int __b_resp;\n\n  reg __ar_ready_reg;\n  reg __aw_ready_reg;\n  reg __w_ready_reg;\n  reg __r_valid_reg;\n  reg [ID_BITS-1:0] __r_id_reg;\n  reg [1:0] __r_resp_reg;\n  reg [DATA_BITS-1:0] __r_data_reg;\n  reg __r_last_reg;\n  reg __b_valid_reg;\n  reg [ID_BITS-1:0] __b_id_reg;\n  reg [1:0] __b_resp_reg;\n\n  always @(posedge clock) begin\n    if (reset) begin\n      __ar_ready = 1'b0;\n      __aw_ready = 1'b0;\n      __w_ready  = 1'b0;\n      __r_valid  = 1'b0;\n      __b_valid  = 1'b0;\n\n      __ar_ready_reg <= 1'b0;\n      __aw_ready_reg <= 1'b0;\n      __w_ready_reg  <= 1'b0;\n      __r_valid_reg  <= 1'b0;\n      __b_valid_reg  <= 1'b0;\n    end else begin\n      if (!initialized) begin\n        channel = memory_init(MEM_SIZE, WORD_SIZE, LINE_SIZE, ID_BITS, CLOCK_HZ, MEM_BASE);\n        initialized = 1'b1;\n      end\n\n      memory_tick(\n        channel,\n\n        reset,\n\n        __ar_valid,\n        __ar_ready,\n        __ar_addr,\n        __ar_id,\n        __ar_size,\n        __ar_len,\n\n        __aw_valid,\n        __aw_ready,\n        __aw_addr,\n        __aw_id,\n        __aw_size,\n        __aw_len,\n\n        __w_valid,\n        __w_ready,\n        __w_strb,\n        __w_data,\n        __w_last,\n\n        __r_valid,\n        __r_ready,\n        __r_id,\n        __r_resp,\n        __r_data,\n        __r_last,\n\n        __b_valid,\n        __b_ready,\n        __b_id,\n        __b_resp);\n\n        __ar_ready_reg <= __ar_ready;\n        __aw_ready_reg <= __aw_ready;\n        __w_ready_reg  <= __w_ready;\n\n        __r_valid_reg <= __r_valid;\n        __r_id_reg    <= __r_id[ID_BITS-1:0];\n        __r_resp_reg  <= __r_resp[1:0];\n        __r_data_reg  <= __r_data;\n        __r_last_reg  <= __r_last;\n\n        __b_valid_reg <= __b_valid;\n        __b_id_reg    <= __b_id[ID_BITS-1:0];\n        __b_resp_reg  <= __b_resp[1:0];\n    end\n  end\n\n  /* verilator lint_off WIDTH */\n\n  assign __ar_valid = axi_ar_valid;\n  assign __ar_addr  = axi_ar_bits_addr;\n  assign __ar_id    = axi_ar_bits_id;\n  assign __ar_size  = axi_ar_bits_size;\n  assign __ar_len   = axi_ar_bits_len;\n\n  assign __aw_valid = axi_aw_valid;\n  assign __aw_addr  = axi_aw_bits_addr;\n  assign __aw_id    = axi_aw_bits_id;\n  assign __aw_size  = axi_aw_bits_size;\n  assign __aw_len   = axi_aw_bits_len;\n\n  assign __w_valid = axi_w_valid;\n  assign __w_strb  = axi_w_bits_strb;\n  assign __w_data  = axi_w_bits_data;\n  assign __w_last  = axi_w_bits_last;\n\n  assign __r_ready = axi_r_ready;\n  assign __b_ready = axi_b_ready;\n\n  assign axi_ar_ready = __ar_ready_reg;\n  assign axi_aw_ready = __aw_ready_reg;\n  assign axi_w_ready = __w_ready_reg;\n  assign axi_r_valid = __r_valid_reg;\n  assign axi_r_bits_id = __r_id_reg;\n  assign axi_r_bits_resp = __r_resp_reg;\n  assign axi_r_bits_data = __r_data_reg;\n  assign axi_r_bits_last = __r_last_reg;\n  assign axi_b_valid = __b_valid_reg;\n  assign axi_b_bits_id = __b_id_reg;\n  assign axi_b_bits_resp = __b_resp_reg;\n\nendmodule\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.SimDRAM",
+    "name": "SimDRAM.cc",
+    "text": "#include <vpi_user.h>\n#include <svdpi.h>\n#include <stdint.h>\n#include <cassert>\n#include <sys/mman.h>\n#include <fesvr/memif.h>\n#include <fesvr/elfloader.h>\n\n#include \"mm_dramsim2.h\"\n\nbool use_dramsim = false;\nstd::string ini_dir = \"dramsim2_ini\";\nstd::string loadmem_file = \"\";\nstd::map<long long int, backing_data_t> backing_mem_data;\n\n// TODO FIX: This doesn't properly handle striped memory across multiple channels\n// The full memory range is duplicated across each channel\nextern \"C\" void *memory_init(\n        long long int mem_size,\n        long long int word_size,\n        long long int line_size,\n        long long int id_bits,\n        long long int clock_hz,\n        long long int mem_base\n\t\t\t     )\n{\n    mm_t *mm;\n    s_vpi_vlog_info info;\n\n    std::string memory_ini = \"DDR3_micron_64M_8B_x4_sg15.ini\";\n    std::string system_ini = \"system.ini\";\n    std::string ini_dir = \"dramsim2_ini\";\n\n    if (!vpi_get_vlog_info(&info))\n      abort();\n\n    for (int i = 1; i < info.argc; i++) {\n      std::string arg(info.argv[i]);\n\n      if (arg == \"+dramsim\")\n        use_dramsim = true;\n      if (arg.find(\"+dramsim_ini_dir=\") == 0)\n        ini_dir = arg.substr(strlen(\"+dramsim_ini_dir=\"));\n      if (arg.find(\"+loadmem=\") == 0)\n        loadmem_file = arg.substr(strlen(\"+loadmem=\"));\n    }\n\n    if (backing_mem_data.find(mem_base) != backing_mem_data.end()) {\n      assert(backing_mem_data[mem_base].size == mem_size);\n    } else {\n      uint8_t* data = (uint8_t*) mmap(NULL, mem_size, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_ANONYMOUS, -1, 0);\n\n      class loadmem_memif_t : public memif_t {\n      public:\n        loadmem_memif_t(uint8_t* _data, size_t _start) : memif_t(nullptr), data(_data), start(_start) {}\n        void write(addr_t taddr, size_t len, const void* src) override\n        {\n          addr_t addr = taddr - start;\n          memcpy(data + addr, src, len);\n        }\n        void read(addr_t taddr, size_t len, void* bytes) override {\n          assert(false);\n        }\n        endianness_t get_target_endianness() const override {\n          return endianness_little;\n        }\n      private:\n        uint8_t* data;\n        size_t start;\n      } loadmem_memif(data, mem_base);\n      if (loadmem_file != \"\") {\n        reg_t entry;\n        load_elf(loadmem_file.c_str(), &loadmem_memif, &entry);\n      }\n\n      backing_mem_data[mem_base] = {data, mem_size};\n    }\n\n    if (use_dramsim)\n      mm = (mm_t *) (new mm_dramsim2_t(mem_base, mem_size, word_size, line_size,\n                                       backing_mem_data[mem_base],\n                                       memory_ini, system_ini, ini_dir,\n                                       1 << id_bits, clock_hz));\n    else\n      mm = (mm_t *) (new mm_magic_t(mem_base, mem_size, word_size, line_size,\n                                    backing_mem_data[mem_base]));\n\n\n    return mm;\n}\n\nextern \"C\" void memory_tick(\n        void *channel,\n\n        unsigned char reset,\n\n        unsigned char ar_valid,\n        unsigned char *ar_ready,\n        long long int ar_addr,\n        int ar_id,\n        int ar_size,\n        int ar_len,\n\n        unsigned char aw_valid,\n        unsigned char *aw_ready,\n        long long int aw_addr,\n        int aw_id,\n        int aw_size,\n        int aw_len,\n\n        unsigned char w_valid,\n        unsigned char *w_ready,\n        int w_strb,\n        long long w_data,\n        unsigned char w_last,\n\n        unsigned char *r_valid,\n        unsigned char r_ready,\n        int *r_id,\n        int *r_resp,\n        long long *r_data,\n        unsigned char *r_last,\n\n        unsigned char *b_valid,\n        unsigned char b_ready,\n        int *b_id,\n        int *b_resp)\n{\n    mm_t *mm = (mm_t *) channel;\n\n    mm->tick(\n        reset,\n\n        ar_valid,\n        ar_addr,\n        ar_id,\n        ar_size,\n        ar_len,\n\n        aw_valid,\n        aw_addr,\n        aw_id,\n        aw_size,\n        aw_len,\n\n        w_valid,\n        w_strb,\n        &w_data,\n        w_last,\n\n        r_ready,\n        b_ready);\n\n    *ar_ready = mm->ar_ready();\n    *aw_ready = mm->aw_ready();\n    *w_ready = mm->w_ready();\n    *r_valid = mm->r_valid();\n    *r_id = mm->r_id();\n    *r_resp = mm->r_resp();\n    *r_data = *((long *) mm->r_data());\n    *r_last = mm->r_last();\n    *b_valid = mm->b_valid();\n    *b_id = mm->b_id();\n    *b_resp = mm->b_resp();\n}\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.SimDRAM",
+    "name": "mm.cc",
+    "text": "// See LICENSE for license details.\n\n#include \"mm.h\"\n#include <iostream>\n#include <fstream>\n#include <cstdlib>\n#include <cstring>\n#include <cassert>\n#include <sys/mman.h>\n#include <fesvr/memif.h>\n#include <fesvr/elfloader.h>\n\nvoid mm_t::write(uint64_t faddr, uint8_t *data, uint64_t strb, uint64_t size)\n{\n  uint64_t addr = faddr - this->mem_base;\n  assert(addr < this->mem_size);\n  auto max_strb_bytes = sizeof(uint64_t) * 8;\n  assert(size <= max_strb_bytes); // Ensure the strb is wide enough to support the desired transaction\n  if (size != max_strb_bytes) {\n    strb &= ((1 << size) - 1) << (addr % word_size);\n  }\n\n  uint8_t *base = this->data + (addr / word_size) * word_size;\n  for (int i = 0; i < word_size; i++) {\n    if (strb & 1)\n      base[i] = data[i];\n    strb >>= 1;\n  }\n}\n\nstd::vector<char> mm_t::read(uint64_t faddr)\n{\n  uint64_t addr = faddr - this->mem_base;\n  assert(addr < this->mem_size);\n  uint8_t *base = this->data + addr;\n  return std::vector<char>(base, base + word_size);\n}\n\nmm_t::~mm_t()\n{\n  munmap(data, this->mem_size);\n}\n\nvoid mm_magic_t::tick(\n  bool reset,\n\n  bool ar_valid,\n  uint64_t ar_addr,\n  uint64_t ar_id,\n  uint64_t ar_size,\n  uint64_t ar_len,\n\n  bool aw_valid,\n  uint64_t aw_addr,\n  uint64_t aw_id,\n  uint64_t aw_size,\n  uint64_t aw_len,\n\n  bool w_valid,\n  uint64_t w_strb,\n  void *w_data,\n  bool w_last,\n\n  bool r_ready,\n  bool b_ready)\n{\n  bool ar_fire = !reset && ar_valid && ar_ready();\n  bool aw_fire = !reset && aw_valid && aw_ready();\n  bool w_fire  = !reset && w_valid && w_ready();\n  bool r_fire  = !reset && r_valid() && r_ready;\n  bool b_fire  = !reset && b_valid() && b_ready;\n\n  if (ar_fire) {\n    uint64_t start_addr = (ar_addr / word_size) * word_size;\n    for (int i = 0; i <= ar_len; i++) {\n      auto dat = read(start_addr + i * word_size);\n      rresp.push(mm_rresp_t(ar_id, dat, i == ar_len));\n    }\n  }\n\n  if (aw_fire) {\n    store_addr = aw_addr;\n    store_id = aw_id;\n    store_count = aw_len + 1;\n    store_size = 1 << aw_size;\n    store_inflight = true;\n  }\n\n  if (w_fire) {\n    write(store_addr, (uint8_t *) w_data, w_strb, store_size);\n    store_addr += store_size;\n    store_count--;\n\n    if (store_count == 0) {\n      store_inflight = false;\n      bresp.push(store_id);\n      assert(w_last);\n    }\n  }\n\n  if (b_fire)\n    bresp.pop();\n\n  if (r_fire)\n    rresp.pop();\n\n  cycle++;\n\n  if (reset) {\n    while (!bresp.empty()) bresp.pop();\n    while (!rresp.empty()) rresp.pop();\n    cycle = 0;\n  }\n}\n\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.SimDRAM",
+    "name": "mm.h",
+    "text": "// See LICENSE for license details.\n\n#ifndef MM_EMULATOR_H\n#define MM_EMULATOR_H\n\n#include <stdint.h>\n#include <cstring>\n#include <queue>\n#include <cassert>\n#include <fesvr/memif.h>\n\nstruct backing_data_t\n{\n  uint8_t* data;\n  size_t size;\n};\n\nclass mm_t\n{\n public:\n  mm_t(size_t mem_bs, size_t mem_sz, size_t word_sz, size_t line_sz, backing_data_t& dat) :\n    data(dat.data), mem_base(mem_bs), mem_size(mem_sz), word_size(word_sz), line_size(line_sz) {\n    assert(dat.size == mem_sz);\n  }\n\n  virtual bool ar_ready() = 0;\n  virtual bool aw_ready() = 0;\n  virtual bool w_ready() = 0;\n  virtual bool b_valid() = 0;\n  virtual uint64_t b_resp() = 0;\n  virtual uint64_t b_id() = 0;\n  virtual bool r_valid() = 0;\n  virtual uint64_t r_resp() = 0;\n  virtual uint64_t r_id() = 0;\n  virtual void *r_data() = 0;\n  virtual bool r_last() = 0;\n\n  virtual void tick\n  (\n    bool reset,\n\n    bool ar_valid,\n    uint64_t ar_addr,\n    uint64_t ar_id,\n    uint64_t ar_size,\n    uint64_t ar_len,\n\n    bool aw_valid,\n    uint64_t aw_addr,\n    uint64_t aw_id,\n    uint64_t aw_size,\n    uint64_t aw_len,\n\n    bool w_valid,\n    uint64_t w_strb,\n    void *w_data,\n    bool w_last,\n\n    bool r_ready,\n    bool b_ready\n  ) = 0;\n\n  virtual void* get_data() { return data; }\n  virtual size_t get_size() { return mem_size; }\n  virtual size_t get_base() { return mem_base; }\n  virtual size_t get_word_size() { return word_size; }\n  virtual size_t get_line_size() { return line_size; }\n\n  void write(uint64_t addr, uint8_t *data, uint64_t strb, uint64_t size);\n  std::vector<char> read(uint64_t addr);\n\n  virtual ~mm_t();\n  uint8_t* data;\n\n protected:\n  size_t mem_base;\n  size_t mem_size;\n  int word_size;\n  int line_size;\n};\n\nstruct mm_rresp_t\n{\n  uint64_t id;\n  std::vector<char> data;\n  bool last;\n\n  mm_rresp_t(uint64_t id, std::vector<char> data, bool last)\n  {\n    this->id = id;\n    this->data = data;\n    this->last = last;\n  }\n\n  mm_rresp_t()\n  {\n    this->id = 0;\n    this->last = false;\n  }\n};\n\nclass mm_magic_t : public mm_t\n{\n public:\n  mm_magic_t(size_t mem_base, size_t mem_sz, size_t word_sz, size_t line_sz, backing_data_t& dat) :\n    mm_t(mem_base, mem_sz, word_sz, line_sz, dat), store_inflight(false) {}\n\n  virtual bool ar_ready() { return true; }\n  virtual bool aw_ready() { return !store_inflight; }\n  virtual bool w_ready() { return store_inflight; }\n  virtual bool b_valid() { return !bresp.empty(); }\n  virtual uint64_t b_resp() { return 0; }\n  virtual uint64_t b_id() { return b_valid() ? bresp.front() : 0; }\n  virtual bool r_valid() { return !rresp.empty(); }\n  virtual uint64_t r_resp() { return 0; }\n  virtual uint64_t r_id() { return r_valid() ? rresp.front().id: 0; }\n  virtual void *r_data() { return r_valid() ? &rresp.front().data[0] : (void*) data; }\n  virtual bool r_last() { return r_valid() ? rresp.front().last : false; }\n\n  virtual void tick\n  (\n    bool reset,\n\n    bool ar_valid,\n    uint64_t ar_addr,\n    uint64_t ar_id,\n    uint64_t ar_size,\n    uint64_t ar_len,\n\n    bool aw_valid,\n    uint64_t aw_addr,\n    uint64_t aw_id,\n    uint64_t aw_size,\n    uint64_t aw_len,\n\n    bool w_valid,\n    uint64_t w_strb,\n    void *w_data,\n    bool w_last,\n\n    bool r_ready,\n    bool b_ready\n  );\n\n protected:\n  bool store_inflight;\n  uint64_t store_addr;\n  uint64_t store_id;\n  uint64_t store_size;\n  uint64_t store_count;\n  std::queue<uint64_t> bresp;\n\n  std::queue<mm_rresp_t> rresp;\n\n  uint64_t cycle;\n};\n\n#endif\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.SimDRAM",
+    "name": "mm_dramsim2.cc",
+    "text": "// See LICENSE for license details.\n\n#include \"mm_dramsim2.h\"\n#include \"mm.h\"\n#include <iostream>\n#include <fstream>\n#include <list>\n#include <queue>\n#include <cstring>\n#include <cstdlib>\n#include <cassert>\n\n//#define DEBUG_DRAMSIM2\n\nusing namespace DRAMSim;\n\nvoid mm_dramsim2_t::read_complete(unsigned id, uint64_t address, uint64_t clock_cycle)\n{\n  assert(!rreq[address].empty());\n  auto req = rreq[address].front();\n  uint64_t start_addr = (req.addr / word_size) * word_size;\n  for (size_t i = 0; i < req.len; i++) {\n    auto dat = read(start_addr + i * word_size);\n    rresp.push(mm_rresp_t(req.id, dat, (i == req.len - 1)));\n  }\n  read_id_busy[req.id] = false;\n  rreq[address].pop();\n}\n\nvoid mm_dramsim2_t::write_complete(unsigned id, uint64_t address, uint64_t clock_cycle)\n{\n  assert(!wreq[address].empty());\n  auto b_id = wreq[address].front();\n  bresp.push(b_id);\n  write_id_busy[b_id] = false;\n  wreq[address].pop();\n}\n\nvoid power_callback(double a, double b, double c, double d)\n{\n    //fprintf(stderr, \"power callback: %0.3f, %0.3f, %0.3f, %0.3f\\n\",a,b,c,d);\n}\n\n\nmm_dramsim2_t::mm_dramsim2_t(size_t mem_base, size_t mem_sz, size_t word_sz, size_t line_sz, backing_data_t& dat, std::string memory_ini, std::string system_ini, std::string ini_dir, int axi4_ids, size_t clock_hz) :\n  mm_t(mem_base, mem_sz, word_sz, line_sz, dat),\n  read_id_busy(axi4_ids, false),\n  write_id_busy(axi4_ids, false) {\n\n  assert(line_sz == 64); // assumed by dramsim2\n  assert(mem_sz % (1024*1024) == 0);\n  mem = getMemorySystemInstance(memory_ini, system_ini, ini_dir, \"results\", mem_size/(1024*1024));\n  mem->setCPUClockSpeed(clock_hz);\n  TransactionCompleteCB *read_cb = new Callback<mm_dramsim2_t, void, unsigned, uint64_t, uint64_t>(this, &mm_dramsim2_t::read_complete);\n  TransactionCompleteCB *write_cb = new Callback<mm_dramsim2_t, void, unsigned, uint64_t, uint64_t>(this, &mm_dramsim2_t::write_complete);\n  mem->RegisterCallbacks(read_cb, write_cb, power_callback);\n};\n\nbool mm_dramsim2_t::ar_ready() {\n  return mem->willAcceptTransaction();\n}\n\nbool mm_dramsim2_t::aw_ready() {\n  return mem->willAcceptTransaction() && !store_inflight;\n}\n\nvoid mm_dramsim2_t::tick(\n  bool reset,\n\n  bool ar_valid,\n  uint64_t ar_addr,\n  uint64_t ar_id,\n  uint64_t ar_size,\n  uint64_t ar_len,\n\n  bool aw_valid,\n  uint64_t aw_addr,\n  uint64_t aw_id,\n  uint64_t aw_size,\n  uint64_t aw_len,\n\n  bool w_valid,\n  uint64_t w_strb,\n  void *w_data,\n  bool w_last,\n\n  bool r_ready,\n  bool b_ready)\n{\n  bool ar_fire = !reset && ar_valid && ar_ready();\n  bool aw_fire = !reset && aw_valid && aw_ready();\n  bool w_fire = !reset && w_valid && w_ready();\n  bool r_fire = !reset && r_valid() && r_ready;\n  bool b_fire = !reset && b_valid() && b_ready;\n\n  if (mem->willAcceptTransaction()) {\n    for (auto it = rreq_queue.begin(); it != rreq_queue.end(); it++) {\n      if (!read_id_busy[it->id]) {\n        read_id_busy[it->id] = true;\n        auto transaction = *it;\n        rreq[transaction.addr].push(transaction);\n        mem->addTransaction(false, transaction.addr);\n        rreq_queue.erase(it);\n        break;\n      }\n    }\n  }\n\n  if (ar_fire) {\n    rreq_queue.push_back(mm_req_t(ar_id, 1 << ar_size, ar_len + 1, ar_addr));\n  }\n\n  if (aw_fire) {\n    store_addr = aw_addr;\n    store_id = aw_id;\n    store_count = aw_len + 1;\n    store_size = 1 << aw_size;\n    store_inflight = true;\n  }\n\n  if (w_fire) {\n    write(store_addr, (uint8_t*)w_data, w_strb, store_size);\n    store_addr += store_size;\n    store_count--;\n\n    if (store_count == 0) {\n      store_inflight = false;\n      mem->addTransaction(true, store_addr);\n      wreq[store_addr].push(store_id);\n      assert(w_last);\n    }\n  }\n\n  if (b_fire)\n    bresp.pop();\n\n  if (r_fire)\n    rresp.pop();\n\n  mem->update();\n  cycle++;\n\n  if (reset) {\n    while (!bresp.empty()) bresp.pop();\n    while (!rresp.empty()) rresp.pop();\n    cycle = 0;\n  }\n}\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.SimDRAM",
+    "name": "mm_dramsim2.h",
+    "text": "// See LICENSE for license details.\n\n#ifndef _MM_EMULATOR_DRAMSIM2_H\n#define _MM_EMULATOR_DRAMSIM2_H\n\n#include \"mm.h\"\n#include <DRAMSim.h>\n#include <map>\n#include <queue>\n#include <list>\n#include <stdint.h>\n\nstruct mm_req_t {\n  uint64_t id;\n  uint64_t size;\n  uint64_t len;\n  uint64_t addr;\n\n  mm_req_t(uint64_t id, uint64_t size, uint64_t len, uint64_t addr)\n  {\n    this->id = id;\n    this->size = size;\n    this->len = len;\n    this->addr = addr;\n  }\n\n  mm_req_t()\n  {\n    this->id = 0;\n    this->size = 0;\n    this->len = 0;\n    this->addr = 0;\n  }\n};\n\nclass mm_dramsim2_t : public mm_t\n{\n public:\n  mm_dramsim2_t(size_t mem_base, size_t mem_sz, size_t word_sz, size_t line_sz, backing_data_t& dat, std::string memory_ini, std::string system_ini, std::string ini_dir, int axi4_ids, size_t clock_hz);\n\n  virtual bool ar_ready();\n  virtual bool aw_ready();\n  virtual bool w_ready() { return store_inflight; }\n  virtual bool b_valid() { return !bresp.empty(); }\n  virtual uint64_t b_resp() { return 0; }\n  virtual uint64_t b_id() { return b_valid() ? bresp.front() : 0; }\n  virtual bool r_valid() { return !rresp.empty(); }\n  virtual uint64_t r_resp() { return 0; }\n  virtual uint64_t r_id() { return r_valid() ? rresp.front().id: 0; }\n  virtual void *r_data() { return r_valid() ? (void*) &rresp.front().data[0] : data; }\n  virtual bool r_last() { return r_valid() ? rresp.front().last : false; }\n\n  virtual void tick\n  (\n    bool reset,\n\n    bool ar_valid,\n    uint64_t ar_addr,\n    uint64_t ar_id,\n    uint64_t ar_size,\n    uint64_t ar_len,\n\n    bool aw_valid,\n    uint64_t aw_addr,\n    uint64_t aw_id,\n    uint64_t aw_size,\n    uint64_t aw_len,\n\n    bool w_valid,\n    uint64_t w_strb,\n    void *w_data,\n    bool w_last,\n\n    bool r_ready,\n    bool b_ready\n  );\n\n\n protected:\n  DRAMSim::MultiChannelMemorySystem *mem;\n  uint64_t cycle;\n\n  bool store_inflight = false;\n  uint64_t store_addr;\n  uint64_t store_id;\n  uint64_t store_size;\n  uint64_t store_count;\n  std::queue<uint64_t> bresp;\n\n  // Keep a FIFO of IDs that made reads to an address since Dramsim2 doesn't\n  // track it. Reads or writes to the same address from different IDs can\n  // collide\n  std::map<uint64_t, std::queue<uint64_t>> wreq;\n  std::map<uint64_t, std::queue<mm_req_t>> rreq;\n  std::queue<mm_rresp_t> rresp;\n  //std::map<uint64_t, std::queue<mm_rresp_t> > rreq;\n\n\n  // Track inflight requests by putting indexes to their positions in the\n  // stimulus vector in queues for each AXI channel\n  std::vector<bool> read_id_busy;\n  std::vector<bool> write_id_busy;\n  std::list<mm_req_t> rreq_queue;\n\n  uint64_t clock_hz = 0;\n\n  void read_complete(unsigned id, uint64_t address, uint64_t clock_cycle);\n  void write_complete(unsigned id, uint64_t address, uint64_t clock_cycle);\n};\n\n#endif\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.ClockSourceAtFreqMHz",
+    "name": "ClockSourceAtFreqMHz.v",
+    "text": "\nmodule ClockSourceAtFreqMHz #(parameter PERIOD=\"\") (\n    input power,\n    input gate,\n    output clk);\n  timeunit 1ns/1ps;\n  reg clk_i = 1'b0;\n  always #(PERIOD/2.0) clk_i = ~clk_i & (power & ~gate);\n  assign clk = clk_i;\nendmodule\n"
+  },
+  {
+    "class": "firrtl.transforms.BlackBoxInlineAnno",
+    "target": "TestHarness.ClockSourceAtFreqMHz_1",
+    "name": "ClockSourceAtFreqMHz.v",
+    "text": "\nmodule ClockSourceAtFreqMHz #(parameter PERIOD=\"\") (\n    input power,\n    input gate,\n    output clk);\n  timeunit 1ns/1ps;\n  reg clk_i = 1'b0;\n  always #(PERIOD/2.0) clk_i = ~clk_i & (power & ~gate);\n  assign clk = clk_i;\nendmodule\n"
+  },
+  {
+    "class": "firrtl.stage.RunFirrtlTransformAnnotation",
+    "transform": "firrtl.transforms.BlackBoxSourceHelper"
+  },
+  {
+    "class": "sifive.enterprise.firrtl.MarkDUTAnnotation",
+    "target": "~TestHarness|ChipTop"
+  },
+  {
+    "class": "sifive.enterprise.firrtl.TestHarnessHierarchyAnnotation",
+    "filename": "/scratch/ethanwu10/intech22/bringup-chipyard/sims/vcs/generated-src/chipyard.harness.TestHarness.RoboBringupHostConfig/model_module_hierarchy.json"
+  },
+  {
+    "class": "sifive.enterprise.firrtl.ModuleHierarchyAnnotation",
+    "filename": "/scratch/ethanwu10/intech22/bringup-chipyard/sims/vcs/generated-src/chipyard.harness.TestHarness.RoboBringupHostConfig/top_module_hierarchy.json"
+  }
+]

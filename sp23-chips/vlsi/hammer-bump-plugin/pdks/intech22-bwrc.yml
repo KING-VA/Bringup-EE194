@@ -1,0 +1,14 @@
+# --------------------------------
+# INTECH-22 BWRC YAML
+# last Modified: 1/23/23, Ken Ho
+# --------------------------------
+
+# General Settings
+vlsi.core.technology: "hammer.intech22"
+vlsi.core.max_threads: 32
+vlsi.core.build_system: make
+vlsi.core.drc_tool: "hammer.lvs.icv"
+vlsi.core.lvs_tool: "hammer.lvs.icv"
+
+# Change this if you don't enjoy experimenting.
+vlsi.core.sim_tool: "hammer.sim.xcelium"

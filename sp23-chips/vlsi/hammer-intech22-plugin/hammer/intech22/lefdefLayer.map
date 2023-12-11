@@ -1,0 +1,31 @@
+#This file contains the mapping between technology layers and lefdef layers.
+
+#layer type   tech layer name    lefdef layer name
+
+#via via0gcn    lefdef  v0
+via via3e7   lefdef  v3e7
+via via0tcn    lefdef  v0
+metal	m1	lefdef	m1
+via	via1	lefdef	v1
+metal	m2	lefdef	m2
+via	via2	lefdef	v2
+metal	m3	lefdef	m3
+via	via3	lefdef	v3
+metal	m4	lefdef	m4
+via	via4	lefdef	v4
+metal	m5	lefdef	m5
+via	via5	lefdef	v5
+metal	m6	lefdef	m6
+via	via6	lefdef	v6
+metal	m7	lefdef	m7
+via	via7	lefdef	v7
+metal	m8	lefdef	m8
+via	via8	lefdef	v8
+metal	gmz	lefdef	gmz
+via viamz   lefdef  vmz
+metal   gm0 lefdef  gm0
+via gv0     lefdef  gv0
+metal   gmb lefdef  gmb
+via gv1     lefdef  gv1
+metal   c4  lefdef  c4
+metal   c4  lefdef  c4emib

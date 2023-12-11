@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<node xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:altera="http://www.altera.com/XMLSchema/Qsys/SystemTree">
+  <instanceKey xsi:type="xs:string">platform_uart_to_serializedtl_0</instanceKey>
+  <instanceData xsi:type="data">
+    <parameters></parameters>
+    <interconnectAssignments></interconnectAssignments>
+    <className>platform_uart_to_serializedtl_0</className>
+    <version>1.0</version>
+    <name>platform_uart_to_serializedtl_0</name>
+    <uniqueName>platform_uart_to_serializedtl_0</uniqueName>
+    <nonce>0</nonce>
+    <incidentConnections></incidentConnections>
+  </instanceData>
+  <children>
+    <node>
+      <instanceKey xsi:type="xs:string">uart_to_serializedtl_0</instanceKey>
+      <instanceData xsi:type="data">
+        <parameters></parameters>
+        <interconnectAssignments></interconnectAssignments>
+        <className>uart_to_serializedtl</className>
+        <version>1.0</version>
+        <name>uart_to_serializedtl_0</name>
+        <uniqueName>UARTToSerializedTL</uniqueName>
+        <fixedName>UARTToSerializedTL</fixedName>
+        <nonce>0</nonce>
+        <incidentConnections></incidentConnections>
+        <path>platform_uart_to_serializedtl_0.uart_to_serializedtl_0</path>
+      </instanceData>
+      <children></children>
+    </node>
+  </children>
+</node>

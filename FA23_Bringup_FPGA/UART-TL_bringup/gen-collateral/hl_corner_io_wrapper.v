@@ -1,0 +1,42 @@
+module hl_corner_io_wrapper( 
+	input [9:0] dq,                                                                                                                                                            
+	input [9:0] drv0,                                                                                                                                                          
+	input [9:0] drv1,                                                                                                                                                          
+	input [9:0] drv2,                                                                                                                                                          
+	input [9:0] enabq,                                                                                                                                                         
+	input [9:0] enq,                                                                                                                                                           
+	input [9:0] pd,                                                                                                                                                            
+	input [9:0] ppen,                                                                                                                                                          
+	input [9:0] prg_slew,                                                                                                                                                      
+	input [9:0] puq,                                                                                                                                                           
+	input [9:0] pwrup_pull_en,                                                                                                                                                 
+	input [9:0] pwrupzhl,     
+	inout pad_0,                                                                                                                                                           
+	inout pad_1,                                                                                                                                                            
+	inout pad_2,                                                                                                                                                            
+	inout pad_3,                                                                                                                                                            
+	inout pad_4,                                                                                                                                                            
+	inout pad_5,                                                                                                                                                            
+	inout pad_6,                                                                                                                                                            
+	inout pad_7,                                                                                                                                                            
+	inout pad_8,                                                                                                                                                            
+	inout pad_9,
+	output [9:0] outi);
+
+	hl_corner_io hl_corner_io_inst(                                                                                                                                                         
+	 .dq(~dq), 
+	 .drv0(drv0), 
+	 .drv1(drv1), 
+	 .drv2(drv2), 
+	 .enabq(enabq), 
+	 .enq(enq), 
+	 .outi(outi), 
+	 .pad({pad_9, pad_8, pad_7, pad_6, pad_5, pad_4, pad_3, pad_2, pad_1, pad_0}), 
+	 .pd(pd), 
+	 .ppen(ppen), 
+	 .prg_slew(prg_slew), 
+	 .puq(puq), 
+	 .pwrup_pull_en(pwrup_pull_en), 
+	 .pwrupzhl(pwrupzhl));                                                                            
+
+endmodule

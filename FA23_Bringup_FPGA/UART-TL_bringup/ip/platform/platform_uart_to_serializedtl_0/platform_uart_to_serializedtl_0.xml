@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2023.05.23.11:59:37"
+ outputDirectory="/bwrcq/C/nikhiljha/fpga/Demonstration/FPGA/RTL_DDR4_Test/ip/platform/platform_uart_to_serializedtl_0/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Agilex"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="AGFB014R24B2E2V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="2"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_RESET_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_RESET_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_RESET_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_ALTERA_AXI4_MASTER_ADDRESS_MAP"
+     type="AddressMap"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_ALTERA_AXI4_MASTER_ADDRESS_WIDTH"
+     type="AddressWidthType"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="clock_reset" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clock" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="reset" kind="reset" start="0">
+   <property name="associatedClock" value="clock_reset" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="reset" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="altera_axi4_master" kind="axi4" start="1">
+   <property name="associatedClock" value="clock_reset" />
+   <property name="associatedReset" value="reset" />
+   <property name="trustzoneAware" value="true" />
+   <property name="maximumOutstandingReads" value="1" />
+   <property name="maximumOutstandingWrites" value="1" />
+   <property name="maximumOutstandingTransactions" value="1" />
+   <property name="readIssuingCapability" value="1" />
+   <property name="writeIssuingCapability" value="1" />
+   <property name="combinedIssuingCapability" value="1" />
+   <property name="issuesINCRBursts" value="true" />
+   <property name="issuesWRAPBursts" value="true" />
+   <property name="issuesFIXEDBursts" value="true" />
+   <port name="axi_ios_0_aw_ready" direction="input" role="awready" width="1" />
+   <port name="axi_ios_0_w_ready" direction="input" role="wready" width="1" />
+   <port name="axi_ios_0_b_valid" direction="input" role="bvalid" width="1" />
+   <port name="axi_ios_0_b_bits_id" direction="input" role="bid" width="4" />
+   <port name="axi_ios_0_b_bits_resp" direction="input" role="bresp" width="2" />
+   <port name="axi_ios_0_ar_ready" direction="input" role="arready" width="1" />
+   <port name="axi_ios_0_r_valid" direction="input" role="rvalid" width="1" />
+   <port name="axi_ios_0_r_bits_id" direction="input" role="rid" width="4" />
+   <port
+       name="axi_ios_0_r_bits_data"
+       direction="input"
+       role="rdata"
+       width="64" />
+   <port name="axi_ios_0_r_bits_resp" direction="input" role="rresp" width="2" />
+   <port name="axi_ios_0_r_bits_last" direction="input" role="rlast" width="1" />
+   <port name="axi_ios_0_aw_valid" direction="output" role="awvalid" width="1" />
+   <port name="axi_ios_0_aw_bits_id" direction="output" role="awid" width="4" />
+   <port
+       name="axi_ios_0_aw_bits_addr"
+       direction="output"
+       role="awaddr"
+       width="37" />
+   <port
+       name="axi_ios_0_aw_bits_len"
+       direction="output"
+       role="awlen"
+       width="8" />
+   <port
+       name="axi_ios_0_aw_bits_size"
+       direction="output"
+       role="awsize"
+       width="3" />
+   <port
+       name="axi_ios_0_aw_bits_burst"
+       direction="output"
+       role="awburst"
+       width="2" />
+   <port
+       name="axi_ios_0_aw_bits_lock"
+       direction="output"
+       role="awlock"
+       width="1" />
+   <port
+       name="axi_ios_0_aw_bits_cache"
+       direction="output"
+       role="awcache"
+       width="4" />
+   <port
+       name="axi_ios_0_aw_bits_prot"
+       direction="output"
+       role="awprot"
+       width="3" />
+   <port
+       name="axi_ios_0_aw_bits_qos"
+       direction="output"
+       role="awqos"
+       width="4" />
+   <port name="axi_ios_0_w_valid" direction="output" role="wvalid" width="1" />
+   <port
+       name="axi_ios_0_w_bits_data"
+       direction="output"
+       role="wdata"
+       width="64" />
+   <port
+       name="axi_ios_0_w_bits_strb"
+       direction="output"
+       role="wstrb"
+       width="8" />
+   <port
+       name="axi_ios_0_w_bits_last"
+       direction="output"
+       role="wlast"
+       width="1" />
+   <port name="axi_ios_0_b_ready" direction="output" role="bready" width="1" />
+   <port name="axi_ios_0_ar_valid" direction="output" role="arvalid" width="1" />
+   <port name="axi_ios_0_ar_bits_id" direction="output" role="arid" width="4" />
+   <port
+       name="axi_ios_0_ar_bits_addr"
+       direction="output"
+       role="araddr"
+       width="37" />
+   <port
+       name="axi_ios_0_ar_bits_len"
+       direction="output"
+       role="arlen"
+       width="8" />
+   <port
+       name="axi_ios_0_ar_bits_size"
+       direction="output"
+       role="arsize"
+       width="3" />
+   <port
+       name="axi_ios_0_ar_bits_burst"
+       direction="output"
+       role="arburst"
+       width="2" />
+   <port
+       name="axi_ios_0_ar_bits_lock"
+       direction="output"
+       role="arlock"
+       width="1" />
+   <port
+       name="axi_ios_0_ar_bits_cache"
+       direction="output"
+       role="arcache"
+       width="4" />
+   <port
+       name="axi_ios_0_ar_bits_prot"
+       direction="output"
+       role="arprot"
+       width="3" />
+   <port
+       name="axi_ios_0_ar_bits_qos"
+       direction="output"
+       role="arqos"
+       width="4" />
+   <port name="axi_ios_0_r_ready" direction="output" role="rready" width="1" />
+  </interface>
+  <interface name="uart" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="io_uart_txd"
+       direction="output"
+       role="writeresponsevalid_n"
+       width="1" />
+   <port
+       name="io_uart_rxd"
+       direction="input"
+       role="beginbursttransfer"
+       width="1" />
+  </interface>
+  <interface name="serial" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="io_serial_in_ready"
+       direction="output"
+       role="serial_in_ready"
+       width="1" />
+   <port
+       name="io_serial_out_valid"
+       direction="output"
+       role="serial_out_valid"
+       width="1" />
+   <port
+       name="io_serial_out_bits"
+       direction="output"
+       role="serial_out"
+       width="1" />
+   <port name="io_dropped" direction="output" role="led" width="1" />
+   <port
+       name="io_serial_in_valid"
+       direction="input"
+       role="serial_in_valid"
+       width="1" />
+   <port name="io_serial_in_bits" direction="input" role="serial_in" width="1" />
+   <port
+       name="io_serial_out_ready"
+       direction="input"
+       role="serial_out_ready"
+       width="1" />
+  </interface>
+ </perimeter>
+ <entity
+   kind="platform_uart_to_serializedtl_0"
+   version="1.0"
+   name="platform_uart_to_serializedtl_0">
+  <parameter name="AUTO_CLOCK_RESET_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLOCK_RESET_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="AGFB014R24B2E2V" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex" />
+  <parameter name="AUTO_CLOCK_RESET_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_ALTERA_AXI4_MASTER_ADDRESS_MAP" value="" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_ALTERA_AXI4_MASTER_ADDRESS_WIDTH" value="-1" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <generatedFiles>
+   <file
+       path="/bwrcq/C/nikhiljha/fpga/Demonstration/FPGA/RTL_DDR4_Test/ip/platform/platform_uart_to_serializedtl_0/synth/platform_uart_to_serializedtl_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/bwrcq/C/nikhiljha/fpga/Demonstration/FPGA/RTL_DDR4_Test/ip/platform/platform_uart_to_serializedtl_0/synth/platform_uart_to_serializedtl_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/bwrcq/C/nikhiljha/fpga/Demonstration/FPGA/RTL_DDR4_Test/ip/platform/platform_uart_to_serializedtl_0.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/bwrcq/C/nikhiljha/fpga/Demonstration/FPGA/RTL_DDR4_Test/uart_to_serializedtl_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="platform_uart_to_serializedtl_0">"Generating: platform_uart_to_serializedtl_0"</message>
+   <message level="Info" culprit="platform_uart_to_serializedtl_0">"Generating: UARTToSerializedTL"</message>
+  </messages>
+ </entity>
+ <entity kind="uart_to_serializedtl" version="1.0" name="UARTToSerializedTL">
+  <generatedFiles>
+   <file
+       path="/bwrcq/C/nikhiljha/fpga/Demonstration/FPGA/RTL_DDR4_Test/ip/platform/platform_uart_to_serializedtl_0/uart_to_serializedtl_10/synth/UARTToSerializedTL.sv"
+       attributes="TOP_LEVEL_FILE" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/bwrcq/C/nikhiljha/fpga/Demonstration/FPGA/RTL_DDR4_Test/ip/platform/platform_uart_to_serializedtl_0/uart_to_serializedtl_10/synth/UARTToSerializedTL.sv"
+       attributes="TOP_LEVEL_FILE" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/bwrcq/C/nikhiljha/fpga/Demonstration/FPGA/RTL_DDR4_Test/uart_to_serializedtl_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="platform_uart_to_serializedtl_0"
+     as="uart_to_serializedtl_0" />
+  <messages>
+   <message level="Info" culprit="platform_uart_to_serializedtl_0">"Generating: UARTToSerializedTL"</message>
+  </messages>
+ </entity>
+</deploy>

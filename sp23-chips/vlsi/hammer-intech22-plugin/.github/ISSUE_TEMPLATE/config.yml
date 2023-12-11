@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Hammer Discussions
+    url: https://github.com/ucb-bar/hammer/discussions
+    about: Please use this for general Hammer support and feature talk.
+  - name: Plugin Discussions
+    url: https://github.com/intel-collab/rtls.university-shuttle-program.hammer-intel16-plugin/discussions
+    about: Please use this for support and feature talk for this specific plugin.
+  - name: Chipyard Mailing List
+    url: https://groups.google.com/forum/#!forum/chipyard
+    about: If you are using Chipyard, this may be the more applicable place to ask/answer questions.

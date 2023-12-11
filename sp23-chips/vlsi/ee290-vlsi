@@ -1,0 +1,281 @@
+#!/usr/bin/env python3
+#
+# NOTE: this ExampleDriver works for asap7 and nangate45. the custom hooks are
+# only used for asap7 though.
+
+import os
+import json
+
+import hammer.vlsi as hammer_vlsi
+from hammer.vlsi import CLIDriver, HammerTool, HammerToolHookAction, HammerDriver, HierarchicalMode
+
+from typing import Dict, Callable, Optional, List
+from decimal import Decimal
+
+
+
+def prs_blockage(x: HammerTool) -> bool:
+    x.append('''
+       create_route_blockage -all {cut route drc_region trim_metal} -rects {{0 0 75.6 76.86}}
+       create_place_blockage -rects {{0 0 75.6 76.86}}
+    ''')
+    return True
+
+
+def hierarchical_write_ilm(x: hammer_vlsi.HammerTool) -> bool:
+    """Run time_design and write out the ILM."""
+    x.append("time_design -post_route")
+    x.append("time_design -post_route -hold")
+    x.append("check_process_antenna")
+    x.append("write_lef_abstract -5.8 -top_layer m8 -stripe_pins -pg_pin_layers {{m8}} {top}ILM.lef".format(top=x.top_module))
+    x.append("write_ilm -model_type all -to_dir {ilm_dir_name} -type_flex_ilm ilm".format(ilm_dir_name=x.ilm_dir_name))
+    x.ran_write_ilm = True
+    return True
+
+
+def add_fiducials_blockages(x: hammer_vlsi.HammerTool) -> bool:
+    x.append('''
+    create_route_blockage -layers {m1 m2 m3 m4} -rects [get_computed_shapes [get_db [get_db insts DIC_REG_*] .bbox] SIZE 0.54]
+    create_route_blockage -layers {m1 m2 m3 m4} -rects [get_computed_shapes [get_db [get_db insts DIC_CD_*] .bbox] SIZE 0.54]
+    ''')
+    return True
+
+
+def innovus_settings(x: hammer_vlsi.HammerTool) -> bool:
+    x.append('''
+        # --- Connects standard cells ---
+        connect_global_net VDD -type pg_pin -pin_base_name vcc -verbose
+        connect_global_net VSS -type pg_pin -pin_base_name vssx -verbose
+
+        # --- Connects power clamps ---
+        connect_global_net VDD -type pg_pin -pin_base_name vcc_nom -verbose
+
+        # --- More verbose hold fixing ---
+        set_db opt_fix_hold_verbose true
+    ''', clean=True)
+    return True
+
+
+def multi_cpu(x: hammer_vlsi.HammerTool) -> bool:
+    if x.hierarchical_mode.is_nonleaf_hierarchical():
+        x.append('set_multi_cpu_usage -local_cpu {threads} -remote_host 1 -cpu_per_remote_host {threads} -keep_license true'.format(threads=x.get_setting("vlsi.core.max_threads")))
+        x.append('set_distributed_hosts -custom -custom_script_list { {{bsub -q bora -n 8 -R "span[hosts=1]"} 1} }')
+    return True
+
+
+def create_sram_blockage_m1234(x: hammer_vlsi.HammerTool) -> bool:
+    x.append('''
+    create_route_blockage -layers {m1 m2 m3 m4} -pg_nets -rects [get_computed_shapes [get_db [get_db insts *ext/mem_*_*] .bbox] SIZE 0.54]
+    ''')
+
+    return True
+
+def create_routing_blockage(x: hammer_vlsi.HammerTool) -> bool:
+    x.append('''
+    create_route_blockage -layers {m1 m2 m3 m4} -rects [get_computed_shapes [get_db [get_db insts *ext/mem_*_*] .bbox] SIZE 0.54]
+    ''')
+
+    return True
+
+
+def add_area_io_def(x: hammer_vlsi.HammerTool) -> bool:
+    env = os.environ["BUMP_CONF_NAME"]
+    chip = ""
+    if env == "Bearly":
+        chip = "bearly"
+    elif env == "Robo":
+        chip = "robo"
+    x.append("read_def {}/hammer-bump-plugin/def/{}.def".format(os.getcwd(), chip))
+    return True
+
+
+def flatten_dummy_io(x: hammer_vlsi.HammerTool) -> bool:
+    x.append('''
+    puts "flatten Dummy IO"
+    get_db hinsts -if {(.module == "module:ChipTop/DummyOutIOCell") || (.module == "module:ChipTop/DummyInIOCell" ) } -foreach {ungroup $object}
+    ''')
+    return True
+
+
+def add_power_via(x: hammer_vlsi.HammerTool) -> bool:
+    x.append('''
+reset_db -category add_stripes
+set_db add_stripes_stacked_via_top_layer gmb
+set_db add_stripes_stacked_via_bottom_layer gmz
+set_db add_stripes_trim_antenna_back_to_shape {stripe}
+set_db add_stripes_spacing_from_block 2.000
+add_stripes -create_pins 1 -block_ring_bottom_layer_limit gm0 -block_ring_top_layer_limit gmz -direction horizontal -layer gm0 -nets {VSS VDD} -pad_core_ring_bottom_layer_limit gmz -set_to_set_distance 7.56 -spacing 0.54 -switch_layer_over_obs 0 -width 2.70 -area [get_db designs .core_bbox] -start [expr [lindex [lindex [get_db designs .core_bbox] 0] 1] + 12.15]
+    ''')
+    return True
+
+
+def blockage_between_cores_bearly(x: hammer_vlsi.HammerTool) -> bool:
+    x.append('''
+create_place_blockage -rects {{ 250.776 1544.94 1829.952 2002.06 }}
+    ''')
+    return True
+
+def blockage_between_cores_robo(x: hammer_vlsi.HammerTool) -> bool:
+    x.append('''
+create_place_blockage -rects {{ 250.02 1542.42 1912.032 2002.69 }}
+    ''')
+    return True
+
+
+def blockage_m6_breakout_area_io(x: hammer_vlsi.HammerTool) -> bool:
+    x.append('''
+create_route_blockage -layers {m1 m2 m3 m4 m6 m7 m8} -rects {{ 0 0 1925 382.4}}
+    ''')
+    return True
+
+def pll_power(x: hammer_vlsi.HammerTool) -> bool:
+
+    x.append('''
+select_obj ChipTop/ringpll/pll 
+add_rings -type block_rings -around selected -layer {top m8 bottom m8 right m7 left m7} -nets {VDDV VSS VDD} -spacing 0.5 -width 0.90000 -use_wire_group 1
+deselect_obj -all
+reset_db -category add_stripes
+set_db add_stripes_stacked_via_top_layer m8
+set_db add_stripes_stacked_via_bottom_layer m7
+set_db add_stripes_trim_antenna_back_to_shape {stripe}
+set_db add_stripes_spacing_from_block 2.000
+add_stripes -create_pins 0 -block_ring_bottom_layer_limit m8 -block_ring_top_layer_limit m7 -direction horizontal -layer m8 -nets {VSS VDD VDDV} -pad_core_ring_bottom_layer_limit m7 -set_to_set_distance 13.50 -spacing 0.90 -switch_layer_over_obs 0 -width 0.9 -area {241.648 1075.51 453.008 1488.24}
+
+reset_db -category add_stripes
+set_db add_stripes_stacked_via_top_layer gmb
+set_db add_stripes_stacked_via_bottom_layer m8
+set_db add_stripes_trim_antenna_back_to_shape {stripe}
+set_db add_stripes_spacing_from_block 2.000
+add_stripes -create_pins 1 -block_ring_bottom_layer_limit gmz -block_ring_top_layer_limit m8 -direction vertical -layer gmz -nets {VSS VDD VDDV} -pad_core_ring_bottom_layer_limit m8 -set_to_set_distance 15.12 -spacing 0.54 -switch_layer_over_obs 0 -width 2.70 -area {241.648 1075.51 453.008 1488.24}
+
+update_power_vias -add_vias 1 -nets {VSS VDD VDDV} -bottom_layer gmz -top_layer gmb  -area {241.648 1075.51 453.008 1488.24} -split_vias 1
+create_route_blockage -pg_nets -rect [get_db inst:ChipTop/ringpll/pll .bbox] -name pll_blockage -spacing 3 -layer {m1 m2 m3 m4 m5 m6 m7}
+create_route_blockage -pg_nets -rect [get_db inst:ChipTop/ringpll/pll .bbox] -name pll_blockage -spacing 2 -layer {m8}
+    ''')
+    return True
+
+def clamps_blockage(x: hammer_vlsi.HammerTool) -> bool:
+    x.append('''
+create_route_blockage -pg_nets -layers {m1 m2 m3 m4} -rects [get_computed_shapes [get_db [get_db insts *clamp*] .bbox] SIZE 2.44]
+create_place_blockage -rects [get_computed_shapes [get_db [get_db insts *clamp*] .bbox] SIZE 2.44]
+create_route_blockage -layers {m1 m2 m3 m4} -rects [get_computed_shapes [get_db [get_db insts clamp*] .bbox] SIZE 0.54]
+    ''')
+    return True
+
+
+
+
+  
+class RoboDriver(CLIDriver):
+    def get_extra_hierarchical_synthesis_hooks(self, driver: HammerDriver) -> Dict[str, List[HammerToolHookAction]]:
+        extra_hooks = dict({
+            "ChipTop": [
+                HammerTool.make_pre_insertion_hook("syn_generic", flatten_dummy_io)
+            ]
+        })
+        return extra_hooks
+
+
+    def get_extra_hierarchical_par_hooks(self, driver: HammerDriver) -> Dict[str, List[HammerToolHookAction]]:
+        hooks = dict({
+            "ChipTop": [
+                HammerTool.make_persistent_hook(multi_cpu),
+                HammerTool.make_post_insertion_hook("intech22_innovus_settings", innovus_settings),
+                HammerTool.make_post_insertion_hook("floorplan_design", add_area_io_def),
+                HammerTool.make_post_insertion_hook("floorplan_design", blockage_between_cores_robo),
+                HammerTool.make_post_insertion_hook("floorplan_design", clamps_blockage),
+                HammerTool.make_pre_insertion_hook("floorplan_design", prs_blockage),
+                HammerTool.make_post_insertion_hook("power_straps", blockage_m6_breakout_area_io),
+                HammerTool.make_pre_insertion_hook("power_straps", pll_power),
+                HammerTool.make_post_insertion_hook("power_straps", add_power_via)
+            ],
+            "RocketTile": [
+                HammerTool.make_removal_hook("place_bumps"),
+                HammerTool.make_post_insertion_hook("intech22_innovus_settings", innovus_settings),
+                HammerTool.make_pre_insertion_hook("power_straps", create_sram_blockage_m1234),
+                HammerTool.make_replacement_hook("write_ilm", hierarchical_write_ilm)
+            ],
+            "RocketTile_1": [
+                HammerTool.make_removal_hook("place_bumps"),
+                HammerTool.make_post_insertion_hook("intech22_innovus_settings", innovus_settings),
+                HammerTool.make_pre_insertion_hook("power_straps", create_sram_blockage_m1234),
+                HammerTool.make_replacement_hook("write_ilm", hierarchical_write_ilm)
+            ],
+            "backingscratchpad": [
+                HammerTool.make_removal_hook("place_bumps"),
+                HammerTool.make_post_insertion_hook("intech22_innovus_settings", innovus_settings),
+                HammerTool.make_pre_insertion_hook("power_straps", create_sram_blockage_m1234),
+                HammerTool.make_replacement_hook("write_ilm", hierarchical_write_ilm)
+            ],
+            "Scheduler": [
+                HammerTool.make_removal_hook("place_bumps"),
+                HammerTool.make_post_insertion_hook("intech22_innovus_settings", innovus_settings),
+                HammerTool.make_pre_insertion_hook("power_straps", create_sram_blockage_m1234),
+                HammerTool.make_replacement_hook("write_ilm", hierarchical_write_ilm),
+            ],
+            "BoomTile": [
+                HammerTool.make_removal_hook("place_bumps"),
+                HammerTool.make_post_insertion_hook("intech22_innovus_settings", innovus_settings),
+                HammerTool.make_pre_insertion_hook("power_straps", create_sram_blockage_m1234),
+                HammerTool.make_replacement_hook("write_ilm", hierarchical_write_ilm)
+            ]
+        })
+        return hooks
+
+class BearlyDriver(CLIDriver):
+    def get_extra_hierarchical_synthesis_hooks(self, driver: HammerDriver) -> Dict[str, List[HammerToolHookAction]]:
+        extra_hooks = dict({
+            "ChipTop": [
+                HammerTool.make_pre_insertion_hook("syn_generic", flatten_dummy_io)
+            ]
+        })
+        return extra_hooks
+
+
+    def get_extra_hierarchical_par_hooks(self, driver: HammerDriver) -> Dict[str, List[HammerToolHookAction]]:
+        hooks = dict({
+            "ChipTop": [
+                HammerTool.make_persistent_hook(multi_cpu),
+                HammerTool.make_post_insertion_hook("intech22_innovus_settings", innovus_settings),
+                HammerTool.make_post_insertion_hook("floorplan_design", add_area_io_def),
+                HammerTool.make_post_insertion_hook("floorplan_design", blockage_between_cores_bearly),
+                HammerTool.make_post_insertion_hook("floorplan_design", clamps_blockage),
+                HammerTool.make_post_insertion_hook("power_straps", blockage_m6_breakout_area_io),
+                HammerTool.make_pre_insertion_hook("floorplan_design", prs_blockage),
+                HammerTool.make_post_insertion_hook("power_straps", add_power_via),
+                HammerTool.make_pre_insertion_hook("power_straps", pll_power)
+            ],
+            "RocketTile": [
+                HammerTool.make_removal_hook("place_bumps"),
+                HammerTool.make_post_insertion_hook("intech22_innovus_settings", innovus_settings),
+                HammerTool.make_pre_insertion_hook("power_straps", create_sram_blockage_m1234),
+                HammerTool.make_replacement_hook("write_ilm", hierarchical_write_ilm)
+            ],
+            "RocketTile_2": [
+                HammerTool.make_removal_hook("place_bumps"),
+                HammerTool.make_post_insertion_hook("intech22_innovus_settings", innovus_settings),
+                HammerTool.make_pre_insertion_hook("power_straps", create_sram_blockage_m1234),
+                HammerTool.make_replacement_hook("write_ilm", hierarchical_write_ilm)
+            ],
+            "backingscratchpad": [
+                HammerTool.make_removal_hook("place_bumps"),
+                HammerTool.make_post_insertion_hook("intech22_innovus_settings", innovus_settings),
+                HammerTool.make_pre_insertion_hook("power_straps", create_sram_blockage_m1234),
+                HammerTool.make_replacement_hook("write_ilm", hierarchical_write_ilm)
+            ],
+            "Scheduler": [
+                HammerTool.make_removal_hook("place_bumps"),
+                HammerTool.make_post_insertion_hook("intech22_innovus_settings", innovus_settings),
+                HammerTool.make_pre_insertion_hook("power_straps", create_sram_blockage_m1234),
+                HammerTool.make_replacement_hook("write_ilm", hierarchical_write_ilm),
+            ]
+        })
+        return hooks
+
+
+if __name__ == '__main__':
+    chip = os.environ["BUMP_CONF_NAME"]
+    if chip == "Bearly":
+        BearlyDriver().main()
+    elif chip == "Robo":
+        RoboDriver().main()

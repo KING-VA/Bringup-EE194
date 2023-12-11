@@ -1,0 +1,58 @@
+
+
+technology.intech22:
+  pdk_install_dir: "/tools/intech22/PDK/pdk224_r0.9.2"
+
+lvs.icv.include_dirs_meta: "lazysubst"
+lvs.icv.include_dirs: 
+  - "/scratch/rezasjd/new-robo/vlsi/Overrides/proj_config"
+  - "${technology.intech22.pdk_install_dir}/runsets/icvtdr/PXL"
+  - "${technology.intech22.pdk_install_dir}/libraries/icv/libcells"
+  - "${technology.intech22.pdk_install_dir}/runsets/icvtdr/PXL/StandAlone"
+
+lvs.inputs.ilms:
+  - RocketTile: {
+    "dir": "/scratch/rezasjd/new-robo/vlsi/build/chipyard.TestHarness.RoboConfig-ChipTop/par-RocketTile/RocketTileILMDir",
+    "data_dir": "/scratch/rezasjd/new-robo/vlsi/build/chipyard.TestHarness.RoboConfig-ChipTop/par-RocketTile/RocketTileILMDir/mmmc/ilm_data/RocketTile",
+    "module": "RocketTile",
+    "lef": "/scratch/rezasjd/new-robo/vlsi/build/chipyard.TestHarness.RoboConfig-ChipTop/par-RocketTile/RocketTileILM.lef",
+    "gds": "/scratch/rezasjd/new-robo/vlsi/build/chipyard.TestHarness.RoboConfig-ChipTop/par-RocketTile/RocketTile.gds",
+    "netlist": "/scratch/rezasjd/new-robo/vlsi/build/chipyard.TestHarness.RoboConfig-ChipTop/par-RocketTile/RocketTile.lvs.v",
+    "sim_netlist": "/scratch/rezasjd/new-robo/vlsi/build/chipyard.TestHarness.RoboConfig-ChipTop/par-RocketTile/RocketTile.sim.v"
+  }
+  - RocketTile_1: {
+    "dir": "/scratch/rezasjd/new-robo/vlsi/build/chipyard.TestHarness.RoboConfig-ChipTop/par-RocketTile_1/RocketTile_1ILMDir",
+    "data_dir": "/scratch/rezasjd/new-robo/vlsi/build/chipyard.TestHarness.RoboConfig-ChipTop/par-RocketTile_1/RocketTile_1ILMDir/mmmc/ilm_data/RocketTile_1",
+    "module": "RocketTile_1",
+    "lef": "/scratch/rezasjd/new-robo/vlsi/build/chipyard.TestHarness.RoboConfig-ChipTop/par-RocketTile_1/RocketTile_1ILM.lef",
+    "gds": "/scratch/rezasjd/new-robo/vlsi/build/chipyard.TestHarness.RoboConfig-ChipTop/par-RocketTile_1/RocketTile_1.gds",
+    "netlist": "/scratch/rezasjd/new-robo/vlsi/build/chipyard.TestHarness.RoboConfig-ChipTop/par-RocketTile_1/RocketTile_1.lvs.v",
+    "sim_netlist": "/scratch/rezasjd/new-robo/vlsi/build/chipyard.TestHarness.RoboConfig-ChipTop/par-RocketTile_1/RocketTile_1.sim.v"
+  } 
+  - BoomTile: {
+    "dir": "/scratch/rezasjd/new-robo/vlsi/build/chipyard.TestHarness.RoboConfig-ChipTop/par-BoomTile/BoomTileILMDir",
+    "data_dir": "/scratch/rezasjd/new-robo/vlsi/build/chipyard.TestHarness.RoboConfig-ChipTop/par-BoomTile/BoomTileILMDir/mmmc/ilm_data/BoomTile",
+    "module": "BoomTile",
+    "lef": "/scratch/rezasjd/new-robo/vlsi/build/chipyard.TestHarness.RoboConfig-ChipTop/par-BoomTile/BoomTileILM.lef",
+    "gds": "/scratch/rezasjd/new-robo/vlsi/build/chipyard.TestHarness.RoboConfig-ChipTop/par-BoomTile/BoomTile.gds",
+    "netlist": "/scratch/rezasjd/new-robo/vlsi/build/chipyard.TestHarness.RoboConfig-ChipTop/par-BoomTile/BoomTile.lvs.v",
+    "sim_netlist": "/scratch/rezasjd/new-robo/vlsi/build/chipyard.TestHarness.RoboConfig-ChipTop/par-BoomTile/BoomTile.sim.v"
+  }
+  - Scheduler: {
+    "dir": "/scratch/rezasjd/new-robo/vlsi/build/chipyard.TestHarness.RoboConfig-ChipTop/par-Scheduler/SchedulerILMDir",
+    "data_dir": "/scratch/rezasjd/new-robo/vlsi/build/chipyard.TestHarness.RoboConfig-ChipTop/par-Scheduler/SchedulerILMDir/mmmc/ilm_data/Scheduler",
+    "module": "Scheduler",
+    "lef": "/scratch/rezasjd/new-robo/vlsi/build/chipyard.TestHarness.RoboConfig-ChipTop/par-Scheduler/SchedulerILM.lef",
+    "gds": "/scratch/rezasjd/new-robo/vlsi/build/chipyard.TestHarness.RoboConfig-ChipTop/par-Scheduler/Scheduler.gds",
+    "netlist": "/scratch/rezasjd/new-robo/vlsi/build/chipyard.TestHarness.RoboConfig-ChipTop/par-Scheduler/Scheduler.lvs.v",
+    "sim_netlist": "/scratch/rezasjd/new-robo/vlsi/build/chipyard.TestHarness.RoboConfig-ChipTop/par-Scheduler/Scheduler.sim.v"
+  }
+  - backingscratchpad: {
+    "dir": "/scratch/rezasjd/new-robo/vlsi/build/chipyard.TestHarness.RoboConfig-ChipTop/par-backingscratchpad/backingscratchpadILMDir",
+    "data_dir": "/scratch/rezasjd/new-robo/vlsi/build/chipyard.TestHarness.RoboConfig-ChipTop/par-backingscratchpad/backingscratchpadILMDir/mmmc/ilm_data/backingscratchpad",
+    "module": "backingscratchpad",
+    "lef": "/scratch/rezasjd/new-robo/vlsi/build/chipyard.TestHarness.RoboConfig-ChipTop/par-backingscratchpad/backingscratchpadILM.lef",
+    "gds": "/scratch/rezasjd/new-robo/vlsi/build/chipyard.TestHarness.RoboConfig-ChipTop/par-backingscratchpad/backingscratchpad.gds",
+    "netlist": "/scratch/rezasjd/new-robo/vlsi/build/chipyard.TestHarness.RoboConfig-ChipTop/par-backingscratchpad/backingscratchpad.lvs.v",
+    "sim_netlist": "/scratch/rezasjd/new-robo/vlsi/build/chipyard.TestHarness.RoboConfig-ChipTop/par-backingscratchpad/backingscratchpad.sim.v"
+  }

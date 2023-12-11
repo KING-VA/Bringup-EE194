@@ -1,0 +1,37 @@
+test-robo:
+  script:
+    - python3 /tools/C/rezasjd/send_email_begin.py
+    - export CHIP=$(pwd)
+    - export RISCV=/bwrcq/C/nikhiljha/chip/.conda-env/riscv-tools
+    - git submodule deinit -f .
+    - git submodule sync
+    - ./scripts/init-submodules-no-riscv-tools-nolog.sh -f
+    - cd tests
+    - make
+    - cd ../sims/vcs
+    - source /tools/C/chiyufeng/documents/vcs_env.sh
+    - source /tools/flexlm/flexlm.sh
+    - make CONFIG=RoboConfig run-binary BINARY=../../tests/hello.riscv timeout_cycles=40000000
+    - grep -Fxq "hello world" output/chipyard.TestHarness.RoboConfig/hello.log
+    - python3 /tools/C/rezasjd/send_email.py RoboChip
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+test-bearly:
+  script:
+    - export CHIP=$(pwd)
+    - export RISCV=/bwrcq/C/nikhiljha/chip/.conda-env/riscv-tools
+    - git submodule deinit -f .
+    - git submodule sync
+    - ./scripts/init-submodules-no-riscv-tools-nolog.sh -f
+    - cd tests
+    - make
+    - cd ../sims/vcs
+    - source /tools/C/chiyufeng/documents/vcs_env.sh
+    - source /tools/flexlm/flexlm.sh
+    - make CONFIG=BearlyConfig run-binary BINARY=../../tests/hello.riscv timeout_cycles=20000000
+    - grep -Fxq "hello world" output/chipyard.TestHarness.BearlyConfig/hello.log
+    - python3 /tools/C/rezasjd/send_email.py BearlyML
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH

@@ -1,0 +1,10 @@
+inputs.yml
+__pycache__
+hammer*.log
+build
+src/test/output-*.json
+generated-src
+output.json
+./hammer-bump-plugin/packaging_collateral/
+Bearly-power
+bearly-design-gen.yml

@@ -1,0 +1,4 @@
+technology.intech22:
+  # Location where the sram cache is located
+  sram_cache_dir: "${technology.intech22.base_dir}/local/memory"
+  sram_cache_dir_meta: lazysubst # later overrides should be able to override install_dir

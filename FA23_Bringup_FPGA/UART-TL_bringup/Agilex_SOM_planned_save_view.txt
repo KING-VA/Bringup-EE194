@@ -1,0 +1,1009 @@
+# File saved with Nlview 7.5.7 2022-07-21 7101 VDI=41 GEI=38 GUI=QT:5.15.11
+#  -curmodule
+# non-default properties - (restore without -noprops)
+property -colorscheme classic
+property attrcolor #06476f
+property autobundle 129
+property backgroundcolor #ffffff
+property boxcolor0 #2d2d2d
+property boxhierpins 3
+property boxinstcolor #000000
+property boxpincolor #06476f
+property buscolor #2d2d2d
+property createnetattrdsp 1024
+property createvconn 65
+property decorate 1
+property elidetext 1
+property fillcolor1 #73acac
+property fillcolor2 #81bf5f
+property fillcolor3 #dce6dc
+property fillcolor4 #ffff00
+property fillcolor5 #c0c0c0
+property fillcolor6 #b3a9fe
+property fillcolor7 #f0b0d2
+property fillcolor8 #adadad
+property fillcolor9 #a9feff
+property fillcolor10 #e5ffff
+property instattrmax -1
+property netcolor #2d2d2d
+property netindicators 15
+property netindicatorsize 3
+property nohiernegpins 0
+property overlaycolor #2d2d2d
+property pbuscolor #0000ff
+property pbusnamecolor #000000
+property pinattrmax -1
+property portcolor #0000ff
+property portnamecolor #000000
+property ripattrmax -1
+property rippercolor #000000
+property rubberbandcolor #00aaff
+property selectionappearance 6
+property selectioncolor #aa1027
+property shadowstyle 1
+property sheetheight 34
+property sheetwidth 44
+property showpagenumbers 1
+property showripindex 1
+property showvconn 1
+#
+module new _1 {}
+load symbol FMC_HA_p[0]~output_29 {} BOX pin I_31 input.left pin O_32 output.right fillcolor 6
+load symbol FMC_HA_p[1]~output_34 {} BOX pin I_36 input.left pin O_37 output.right fillcolor 6
+load symbol FMC_HA_p[2]~output_39 {} BOX pin I_41 input.left pin O_42 output.right fillcolor 6
+load symbol FMC_HA_p[3]~output_44 {} BOX pin I_46 input.left pin O_47 output.right fillcolor 6
+load symbol FMC_HA_p[4]~output_49 {} BOX pin I_51 input.left pin O_52 output.right fillcolor 6
+load symbol FMC_HA_p[5]~output_54 {} BOX pin I_56 input.left pin O_57 output.right fillcolor 6
+load symbol FMC_HA_p[6]~output_59 {} BOX pin I_61 input.left pin O_62 output.right fillcolor 6
+load symbol FMC_HA_p[7]~output_64 {} BOX pin I_66 input.left pin O_67 output.right fillcolor 6
+load symbol FMC_HA_p[8]~output_69 {} BOX pin I_71 input.left pin O_72 output.right fillcolor 6
+load symbol FMC_HA_p[9]~output_74 {} BOX pin I_76 input.left pin O_77 output.right fillcolor 6
+load symbol FMC_HA_p[10]~output_79 {} BOX pin I_81 input.left pin O_82 output.right fillcolor 6
+load symbol FMC_HA_p[11]~output_84 {} BOX pin I_86 input.left pin O_87 output.right fillcolor 6
+load symbol FMC_HA_p[12]~output_89 {} BOX pin I_91 input.left pin O_92 output.right fillcolor 6
+load symbol FMC_HA_p[13]~output_94 {} BOX pin I_96 input.left pin O_97 output.right fillcolor 6
+load symbol FMC_HA_p[14]~output_99 {} BOX pin I_101 input.left pin O_102 output.right fillcolor 6
+load symbol FMC_HA_p[15]~output_104 {} BOX pin I_106 input.left pin O_107 output.right fillcolor 6
+load symbol FMC_HA_p[16]~output_109 {} BOX pin I_111 input.left pin O_112 output.right fillcolor 6
+load symbol FMC_HA_p[17]~output_114 {} BOX pin I_116 input.left pin O_117 output.right fillcolor 6
+load symbol FMC_HA_p[18]~output_119 {} BOX pin I_121 input.left pin O_122 output.right fillcolor 6
+load symbol FMC_HA_p[19]~output_124 {} BOX pin I_126 input.left pin O_127 output.right fillcolor 6
+load symbol FMC_HA_p[20]~output_129 {} BOX pin I_131 input.left pin O_132 output.right fillcolor 6
+load symbol FMC_HA_p[21]~output_134 {} BOX pin I_136 input.left pin O_137 output.right fillcolor 6
+load symbol FMC_HA_p[22]~output_139 {} BOX pin I_141 input.left pin O_142 output.right fillcolor 6
+load symbol FMC_HA_p[23]~output_144 {} BOX pin I_146 input.left pin O_147 output.right fillcolor 6
+load symbol SI5340A_I2C_SCL~output_149 {} BOX pin I_151 input.left pin O_152 output.right fillcolor 6
+load symbol SI5340A_I2C_SDA~output_154 {} BOX pin I_156 input.left pin O_157 output.right fillcolor 6
+load symbol GPIO_D[0]~output_159 {} BOX pin I_161 input.left pin O_162 output.right fillcolor 6
+load symbol GPIO_D[1]~output_164 {} BOX pin I_166 input.left pin OE_167 input.left pin O_168 output.right fillcolor 6
+load symbol GPIO_D[2]~output_170 {} BOX pin I_172 input.left pin O_173 output.right fillcolor 6
+load symbol GPIO_D[3]~output_175 {} BOX pin I_177 input.left pin O_178 output.right fillcolor 6
+load symbol GPIO_D[4]~output_180 {} BOX pin I_182 input.left pin O_183 output.right fillcolor 6
+load symbol GPIO_D[5]~output_185 {} BOX pin I_187 input.left pin O_188 output.right fillcolor 6
+load symbol GPIO_D[6]~output_190 {} BOX pin I_192 input.left pin O_193 output.right fillcolor 6
+load symbol GPIO_D[7]~output_195 {} BOX pin I_197 input.left pin O_198 output.right fillcolor 6
+load symbol LED[0]~output_223 {} BOX pin I_225 input.left pin O_226 output.right fillcolor 6
+load symbol LED[1]~output_228 {} BOX pin I_230 input.left pin O_231 output.right fillcolor 6
+load symbol SI5340A_OE_n~output_237 {} BOX pin I_239 input.left pin O_240 output.right fillcolor 6
+load symbol SI5340A_RST_n~output_242 {} BOX pin I_244 input.left pin O_245 output.right fillcolor 6
+load symbol QSFP28_REFCLK_p~input_247 {} BOX pin I_249 input.left pin IBAR_251 input.left pin O_253 output.right fillcolor 6
+load symbol AG_UART_TX~output_255 {} BOX pin I_257 input.left pin O_258 output.right fillcolor 6
+load symbol AG_UART_RTS~output_264 {} BOX pin I_266 input.left pin O_267 output.right fillcolor 6
+load symbol INFO_SPI_SCLK~output_269 {} BOX pin I_271 input.left pin O_272 output.right fillcolor 6
+load symbol INFO_SPI_MOSI~output_276 {} BOX pin I_278 input.left pin O_279 output.right fillcolor 6
+load symbol INFO_SPI_CS_n~output_281 {} BOX pin I_283 input.left pin O_284 output.right fillcolor 6
+load symbol FMC_HA_p[10]~input_306 {} BOX pin I_308 input.left pin O_309 output.right fillcolor 6
+load symbol ~PWRMGT_SCL~~obuf_360 {} BOX pin I_362 input.left pin O_363 output.right fillcolor 6
+load symbol ~ALTERA_AS_DATA1~~obuf_365 {} BOX pin I_367 input.left pin OE_368 input.left pin O_369 output.right fillcolor 6
+load symbol ~ALTERA_AS_nCSO0,ALTERA_MSEL0~~obuf_372 {} BOX pin I_374 input.left pin O_375 output.right fillcolor 6
+load symbol ~ALTERA_AS_DATA2~~obuf_377 {} BOX pin I_379 input.left pin OE_380 input.left pin O_381 output.right fillcolor 6
+load symbol ~ALTERA_AS_DATA0~~obuf_384 {} BOX pin I_386 input.left pin OE_387 input.left pin O_388 output.right fillcolor 6
+load symbol ~ALTERA_AS_CLK~~obuf_391 {} BOX pin I_393 input.left pin O_394 output.right fillcolor 6
+load symbol ~ALTERA_AS_nCSO2,ALTERA_MSEL1~~obuf_396 {} BOX pin I_398 input.left pin O_399 output.right fillcolor 6
+load symbol ~CONF_DONE~~obuf_401 {} BOX pin I_403 input.left pin O_404 output.right fillcolor 6
+load symbol ~HPS_COLD_RESET~~obuf_406 {} BOX pin I_408 input.left pin O_409 output.right fillcolor 6
+load symbol ~ALTERA_AS_nCSO1,ALTERA_MSEL2~~obuf_411 {} BOX pin I_413 input.left pin O_414 output.right fillcolor 6
+load symbol ~ALTERA_AS_DATA3~~obuf_416 {} BOX pin I_418 input.left pin OE_419 input.left pin O_420 output.right fillcolor 6
+load symbol ~ALTERA_AS_nCSO3~~obuf_423 {} BOX pin I_425 input.left pin O_426 output.right fillcolor 6
+load symbol ~PWRMGT_SDA~~obuf_428 {} BOX pin I_430 input.left pin OE_431 input.left pin O_432 output.right fillcolor 6
+load symbol FMC_HA_p[0]_28 {} BOX pin INPUT_10 input.left pin OUTPUT_18 output.right fillcolor 1
+load symbol FMC_HA_p[1]_33 {} BOX pin INPUT_14 input.left pin OUTPUT_22 output.right fillcolor 1
+load symbol FMC_HA_p[2]_38 {} BOX pin INPUT_18 input.left pin OUTPUT_26 output.right fillcolor 1
+load symbol FMC_HA_p[3]_43 {} BOX pin INPUT_22 input.left pin OUTPUT_30 output.right fillcolor 1
+load symbol FMC_HA_p[4]_48 {} BOX pin INPUT_26 input.left pin OUTPUT_34 output.right fillcolor 1
+load symbol FMC_HA_p[5]_53 {} BOX pin INPUT_30 input.left pin OUTPUT_38 output.right fillcolor 1
+load symbol FMC_HA_p[6]_58 {} BOX pin INPUT_34 input.left pin OUTPUT_42 output.right fillcolor 1
+load symbol FMC_HA_p[7]_63 {} BOX pin INPUT_38 input.left pin OUTPUT_46 output.right fillcolor 1
+load symbol FMC_HA_p[8]_68 {} BOX pin INPUT_42 input.left pin OUTPUT_50 output.right fillcolor 1
+load symbol FMC_HA_p[9]_73 {} BOX pin INPUT_46 input.left pin OUTPUT_54 output.right fillcolor 1
+load symbol FMC_HA_p[10]_78 {} BOX pin INPUT_50 input.left pin OUTPUT_58 output.right fillcolor 1
+load symbol FMC_HA_p[11]_83 {} BOX pin INPUT_54 input.left pin OUTPUT_62 output.right fillcolor 1
+load symbol FMC_HA_p[12]_88 {} BOX pin INPUT_58 input.left pin OUTPUT_66 output.right fillcolor 1
+load symbol FMC_HA_p[13]_93 {} BOX pin INPUT_62 input.left pin OUTPUT_70 output.right fillcolor 1
+load symbol FMC_HA_p[14]_98 {} BOX pin INPUT_66 input.left pin OUTPUT_74 output.right fillcolor 1
+load symbol FMC_HA_p[15]_103 {} BOX pin INPUT_70 input.left pin OUTPUT_78 output.right fillcolor 1
+load symbol FMC_HA_p[16]_108 {} BOX pin INPUT_74 input.left pin OUTPUT_82 output.right fillcolor 1
+load symbol FMC_HA_p[17]_113 {} BOX pin INPUT_78 input.left pin OUTPUT_86 output.right fillcolor 1
+load symbol FMC_HA_p[18]_118 {} BOX pin INPUT_82 input.left pin OUTPUT_90 output.right fillcolor 1
+load symbol FMC_HA_p[19]_123 {} BOX pin INPUT_86 input.left pin OUTPUT_94 output.right fillcolor 1
+load symbol FMC_HA_p[20]_128 {} BOX pin INPUT_90 input.left pin OUTPUT_98 output.right fillcolor 1
+load symbol FMC_HA_p[21]_133 {} BOX pin INPUT_94 input.left pin OUTPUT_102 output.right fillcolor 1
+load symbol FMC_HA_p[22]_138 {} BOX pin INPUT_98 input.left pin OUTPUT_106 output.right fillcolor 1
+load symbol FMC_HA_p[23]_143 {} BOX pin INPUT_102 input.left pin OUTPUT_110 output.right fillcolor 1
+load symbol SI5340A_I2C_SCL_148 {} BOX pin INPUT_106 input.left pin OUTPUT_114 output.right fillcolor 1
+load symbol SI5340A_I2C_SDA_153 {} BOX pin INPUT_110 input.left pin OUTPUT_118 output.right fillcolor 1
+load symbol GPIO_D[0]_158 {} BOX pin INPUT_114 input.left pin OUTPUT_122 output.right fillcolor 1
+load symbol GPIO_D[1]_163 {} BOX pin INPUT_118 input.left pin OUTPUT_126 output.right fillcolor 1
+load symbol GPIO_D[2]_169 {} BOX pin INPUT_124 input.left pin OUTPUT_131 output.right fillcolor 1
+load symbol GPIO_D[3]_174 {} BOX pin INPUT_128 input.left pin OUTPUT_135 output.right fillcolor 1
+load symbol GPIO_D[4]_179 {} BOX pin INPUT_132 input.left pin OUTPUT_139 output.right fillcolor 1
+load symbol GPIO_D[5]_184 {} BOX pin INPUT_136 input.left pin OUTPUT_143 output.right fillcolor 1
+load symbol GPIO_D[6]_189 {} BOX pin INPUT_140 input.left pin OUTPUT_147 output.right fillcolor 1
+load symbol GPIO_D[7]_194 {} BOX pin INPUT_144 input.left pin OUTPUT_151 output.right fillcolor 1
+load symbol ~GND_199 {} BOX fillcolor 1
+load symbol ~VCC_200 {} BOX fillcolor 1
+load symbol CLK_100_B2A~input_201 {} BOX pin I_148 input.left pin IBAR_149 input.left fillcolor 1
+load symbol CLK_100_B2A~pad_202 {} BOX pin SIMIN_150 input.left pin PADOUT_155 output.right fillcolor 1
+load symbol CLK_30M72~input_203 {} BOX pin I_151 input.left fillcolor 1
+load symbol CLK_30M72~pad_204 {} BOX pin SIMIN_152 input.left pin PADOUT_156 output.right fillcolor 1
+load symbol CLK_50_B2A~input_205 {} BOX pin I_153 input.left fillcolor 1
+load symbol CLK_50_B2A~pad_206 {} BOX pin SIMIN_154 input.left pin PADOUT_157 output.right fillcolor 1
+load symbol CLK_50_B2D~input_207 {} BOX pin I_155 input.left fillcolor 1
+load symbol CLK_50_B2D~pad_208 {} BOX pin SIMIN_156 input.left pin PADOUT_158 output.right fillcolor 1
+load symbol CLK_50_B3A~input_209 {} BOX pin I_157 input.left fillcolor 1
+load symbol CLK_50_B3A~pad_210 {} BOX pin SIMIN_158 input.left pin PADOUT_159 output.right fillcolor 1
+load symbol CLK_50_B3C~input_211 {} BOX pin I_159 input.left fillcolor 1
+load symbol CLK_50_B3C~pad_212 {} BOX pin SIMIN_160 input.left pin PADOUT_160 output.right fillcolor 1
+load symbol CPU_RESET_n~input_213 {} BOX pin I_161 input.left fillcolor 1
+load symbol CPU_RESET_n~pad_214 {} BOX pin SIMIN_162 input.left pin PADOUT_161 output.right fillcolor 1
+load symbol BUTTON[0]~input_215 {} BOX pin I_163 input.left fillcolor 1
+load symbol BUTTON(0)~pad_216 {} BOX pin SIMIN_164 input.left pin PADOUT_162 output.right fillcolor 1
+load symbol BUTTON[1]~input_217 {} BOX pin I_165 input.left fillcolor 1
+load symbol BUTTON(1)~pad_218 {} BOX pin SIMIN_166 input.left pin PADOUT_163 output.right fillcolor 1
+load symbol SW[0]~input_219 {} BOX pin I_167 input.left fillcolor 1
+load symbol SW(0)~pad_220 {} BOX pin SIMIN_168 input.left pin PADOUT_164 output.right fillcolor 1
+load symbol SW[1]~input_221 {} BOX pin I_169 input.left fillcolor 1
+load symbol SW(1)~pad_222 {} BOX pin SIMIN_170 input.left pin PADOUT_165 output.right fillcolor 1
+load symbol LED(0)~pad_227 {} BOX pin PADIN_174 input.left pin SIMOUT_169 output.right fillcolor 1
+load symbol LED(1)~pad_232 {} BOX pin PADIN_178 input.left pin SIMOUT_173 output.right fillcolor 1
+load symbol SI5340A_LOL~input_233 {} BOX pin I_179 input.left fillcolor 1
+load symbol SI5340A_LOL~pad_234 {} BOX pin SIMIN_180 input.left pin PADOUT_174 output.right fillcolor 1
+load symbol SI5340A_LOS_XAXB~input_235 {} BOX pin I_181 input.left fillcolor 1
+load symbol SI5340A_LOS_XAXB~pad_236 {} BOX pin SIMIN_182 input.left pin PADOUT_175 output.right fillcolor 1
+load symbol SI5340A_OE_n~pad_241 {} BOX pin PADIN_186 input.left pin SIMOUT_179 output.right fillcolor 1
+load symbol SI5340A_RST_n~pad_246 {} BOX pin PADIN_190 input.left pin SIMOUT_183 output.right fillcolor 1
+load symbol QSFP28_REFCLK_p~pad_254 {} BOX pin SIMIN_199 input.left pin PADOUT_190 output.right fillcolor 1
+load symbol AG_UART_TX~pad_259 {} BOX pin PADIN_203 input.left pin SIMOUT_194 output.right fillcolor 1
+load symbol AG_UART_RX~input_260 {} BOX pin I_204 input.left fillcolor 1
+load symbol AG_UART_RX~pad_261 {} BOX pin SIMIN_205 input.left pin PADOUT_195 output.right fillcolor 1
+load symbol AG_UART_CTS~input_262 {} BOX pin I_206 input.left fillcolor 1
+load symbol AG_UART_CTS~pad_263 {} BOX pin SIMIN_207 input.left pin PADOUT_196 output.right fillcolor 1
+load symbol AG_UART_RTS~pad_268 {} BOX pin PADIN_211 input.left pin SIMOUT_200 output.right fillcolor 1
+load symbol INFO_SPI_SCLK~pad_273 {} BOX pin PADIN_215 input.left pin SIMOUT_204 output.right fillcolor 1
+load symbol INFO_SPI_MISO~input_274 {} BOX pin I_216 input.left fillcolor 1
+load symbol INFO_SPI_MISO~pad_275 {} BOX pin SIMIN_217 input.left pin PADOUT_205 output.right fillcolor 1
+load symbol INFO_SPI_MOSI~pad_280 {} BOX pin PADIN_221 input.left pin SIMOUT_209 output.right fillcolor 1
+load symbol INFO_SPI_CS_n~pad_285 {} BOX pin PADIN_225 input.left pin SIMOUT_213 output.right fillcolor 1
+load symbol FMC_HA_p[0]~input_286 {} BOX pin I_226 input.left fillcolor 1
+load symbol FMC_HA_p(0)~pad_287 {} BOX pin PADIN_227 input.left pin SIMIN_228 input.left pin PADOUT_214 output.right pin SIMOUT_215 output.right fillcolor 1
+load symbol FMC_HA_p[1]~input_288 {} BOX pin I_229 input.left fillcolor 1
+load symbol FMC_HA_p(1)~pad_289 {} BOX pin PADIN_230 input.left pin SIMIN_231 input.left pin PADOUT_216 output.right pin SIMOUT_217 output.right fillcolor 1
+load symbol FMC_HA_p[2]~input_290 {} BOX pin I_232 input.left fillcolor 1
+load symbol FMC_HA_p(2)~pad_291 {} BOX pin PADIN_233 input.left pin SIMIN_234 input.left pin PADOUT_218 output.right pin SIMOUT_219 output.right fillcolor 1
+load symbol FMC_HA_p[3]~input_292 {} BOX pin I_235 input.left fillcolor 1
+load symbol FMC_HA_p(3)~pad_293 {} BOX pin PADIN_236 input.left pin SIMIN_237 input.left pin PADOUT_220 output.right pin SIMOUT_221 output.right fillcolor 1
+load symbol FMC_HA_p[4]~input_294 {} BOX pin I_238 input.left fillcolor 1
+load symbol FMC_HA_p(4)~pad_295 {} BOX pin PADIN_239 input.left pin SIMIN_240 input.left pin PADOUT_222 output.right pin SIMOUT_223 output.right fillcolor 1
+load symbol FMC_HA_p[5]~input_296 {} BOX pin I_241 input.left fillcolor 1
+load symbol FMC_HA_p(5)~pad_297 {} BOX pin PADIN_242 input.left pin SIMIN_243 input.left pin PADOUT_224 output.right pin SIMOUT_225 output.right fillcolor 1
+load symbol FMC_HA_p[6]~input_298 {} BOX pin I_244 input.left fillcolor 1
+load symbol FMC_HA_p(6)~pad_299 {} BOX pin PADIN_245 input.left pin SIMIN_246 input.left pin PADOUT_226 output.right pin SIMOUT_227 output.right fillcolor 1
+load symbol FMC_HA_p[7]~input_300 {} BOX pin I_247 input.left fillcolor 1
+load symbol FMC_HA_p(7)~pad_301 {} BOX pin PADIN_248 input.left pin SIMIN_249 input.left pin PADOUT_228 output.right pin SIMOUT_229 output.right fillcolor 1
+load symbol FMC_HA_p[8]~input_302 {} BOX pin I_250 input.left fillcolor 1
+load symbol FMC_HA_p(8)~pad_303 {} BOX pin PADIN_251 input.left pin SIMIN_252 input.left pin PADOUT_230 output.right pin SIMOUT_231 output.right fillcolor 1
+load symbol FMC_HA_p[9]~input_304 {} BOX pin I_253 input.left fillcolor 1
+load symbol FMC_HA_p(9)~pad_305 {} BOX pin PADIN_254 input.left pin SIMIN_255 input.left pin PADOUT_232 output.right pin SIMOUT_233 output.right fillcolor 1
+load symbol FMC_HA_p(10)~pad_310 {} BOX pin PADIN_259 input.left pin SIMIN_260 input.left pin PADOUT_237 output.right pin SIMOUT_238 output.right fillcolor 1
+load symbol FMC_HA_p[11]~input_311 {} BOX pin I_261 input.left fillcolor 1
+load symbol FMC_HA_p(11)~pad_312 {} BOX pin PADIN_262 input.left pin SIMIN_263 input.left pin PADOUT_239 output.right pin SIMOUT_240 output.right fillcolor 1
+load symbol FMC_HA_p[12]~input_313 {} BOX pin I_264 input.left fillcolor 1
+load symbol FMC_HA_p(12)~pad_314 {} BOX pin PADIN_265 input.left pin SIMIN_266 input.left pin PADOUT_241 output.right pin SIMOUT_242 output.right fillcolor 1
+load symbol FMC_HA_p[13]~input_315 {} BOX pin I_267 input.left fillcolor 1
+load symbol FMC_HA_p(13)~pad_316 {} BOX pin PADIN_268 input.left pin SIMIN_269 input.left pin PADOUT_243 output.right pin SIMOUT_244 output.right fillcolor 1
+load symbol FMC_HA_p[14]~input_317 {} BOX pin I_270 input.left fillcolor 1
+load symbol FMC_HA_p(14)~pad_318 {} BOX pin PADIN_271 input.left pin SIMIN_272 input.left pin PADOUT_245 output.right pin SIMOUT_246 output.right fillcolor 1
+load symbol FMC_HA_p[15]~input_319 {} BOX pin I_273 input.left fillcolor 1
+load symbol FMC_HA_p(15)~pad_320 {} BOX pin PADIN_274 input.left pin SIMIN_275 input.left pin PADOUT_247 output.right pin SIMOUT_248 output.right fillcolor 1
+load symbol FMC_HA_p[16]~input_321 {} BOX pin I_276 input.left fillcolor 1
+load symbol FMC_HA_p(16)~pad_322 {} BOX pin PADIN_277 input.left pin SIMIN_278 input.left pin PADOUT_249 output.right pin SIMOUT_250 output.right fillcolor 1
+load symbol FMC_HA_p[17]~input_323 {} BOX pin I_279 input.left fillcolor 1
+load symbol FMC_HA_p(17)~pad_324 {} BOX pin PADIN_280 input.left pin SIMIN_281 input.left pin PADOUT_251 output.right pin SIMOUT_252 output.right fillcolor 1
+load symbol FMC_HA_p[18]~input_325 {} BOX pin I_282 input.left fillcolor 1
+load symbol FMC_HA_p(18)~pad_326 {} BOX pin PADIN_283 input.left pin SIMIN_284 input.left pin PADOUT_253 output.right pin SIMOUT_254 output.right fillcolor 1
+load symbol FMC_HA_p[19]~input_327 {} BOX pin I_285 input.left fillcolor 1
+load symbol FMC_HA_p(19)~pad_328 {} BOX pin PADIN_286 input.left pin SIMIN_287 input.left pin PADOUT_255 output.right pin SIMOUT_256 output.right fillcolor 1
+load symbol FMC_HA_p[20]~input_329 {} BOX pin I_288 input.left fillcolor 1
+load symbol FMC_HA_p(20)~pad_330 {} BOX pin PADIN_289 input.left pin SIMIN_290 input.left pin PADOUT_257 output.right pin SIMOUT_258 output.right fillcolor 1
+load symbol FMC_HA_p[21]~input_331 {} BOX pin I_291 input.left fillcolor 1
+load symbol FMC_HA_p(21)~pad_332 {} BOX pin PADIN_292 input.left pin SIMIN_293 input.left pin PADOUT_259 output.right pin SIMOUT_260 output.right fillcolor 1
+load symbol FMC_HA_p[22]~input_333 {} BOX pin I_294 input.left fillcolor 1
+load symbol FMC_HA_p(22)~pad_334 {} BOX pin PADIN_295 input.left pin SIMIN_296 input.left pin PADOUT_261 output.right pin SIMOUT_262 output.right fillcolor 1
+load symbol FMC_HA_p[23]~input_335 {} BOX pin I_297 input.left fillcolor 1
+load symbol FMC_HA_p(23)~pad_336 {} BOX pin PADIN_298 input.left pin SIMIN_299 input.left pin PADOUT_263 output.right pin SIMOUT_264 output.right fillcolor 1
+load symbol SI5340A_I2C_SCL~input_337 {} BOX pin I_300 input.left fillcolor 1
+load symbol SI5340A_I2C_SCL~pad_338 {} BOX pin PADIN_301 input.left pin SIMIN_302 input.left pin PADOUT_265 output.right pin SIMOUT_266 output.right fillcolor 1
+load symbol SI5340A_I2C_SDA~input_339 {} BOX pin I_303 input.left fillcolor 1
+load symbol SI5340A_I2C_SDA~pad_340 {} BOX pin PADIN_304 input.left pin SIMIN_305 input.left pin PADOUT_267 output.right pin SIMOUT_268 output.right fillcolor 1
+load symbol GPIO_D[0]~input_341 {} BOX pin I_306 input.left fillcolor 1
+load symbol GPIO_D(0)~pad_342 {} BOX pin PADIN_307 input.left pin SIMIN_308 input.left pin PADOUT_269 output.right pin SIMOUT_270 output.right fillcolor 1
+load symbol GPIO_D[1]~input_343 {} BOX pin I_309 input.left fillcolor 1
+load symbol GPIO_D(1)~pad_344 {} BOX pin PADIN_310 input.left pin SIMIN_311 input.left pin PADOUT_271 output.right pin SIMOUT_272 output.right fillcolor 1
+load symbol GPIO_D[2]~input_345 {} BOX pin I_312 input.left fillcolor 1
+load symbol GPIO_D(2)~pad_346 {} BOX pin PADIN_313 input.left pin SIMIN_314 input.left pin PADOUT_273 output.right pin SIMOUT_274 output.right fillcolor 1
+load symbol GPIO_D[3]~input_347 {} BOX pin I_315 input.left fillcolor 1
+load symbol GPIO_D(3)~pad_348 {} BOX pin PADIN_316 input.left pin SIMIN_317 input.left pin PADOUT_275 output.right pin SIMOUT_276 output.right fillcolor 1
+load symbol GPIO_D[4]~input_349 {} BOX pin I_318 input.left fillcolor 1
+load symbol GPIO_D(4)~pad_350 {} BOX pin PADIN_319 input.left pin SIMIN_320 input.left pin PADOUT_277 output.right pin SIMOUT_278 output.right fillcolor 1
+load symbol GPIO_D[5]~input_351 {} BOX pin I_321 input.left fillcolor 1
+load symbol GPIO_D(5)~pad_352 {} BOX pin PADIN_322 input.left pin SIMIN_323 input.left pin PADOUT_279 output.right pin SIMOUT_280 output.right fillcolor 1
+load symbol GPIO_D[6]~input_353 {} BOX pin I_324 input.left fillcolor 1
+load symbol GPIO_D(6)~pad_354 {} BOX pin PADIN_325 input.left pin SIMIN_326 input.left pin PADOUT_281 output.right pin SIMOUT_282 output.right fillcolor 1
+load symbol GPIO_D[7]~input_355 {} BOX pin I_327 input.left fillcolor 1
+load symbol GPIO_D(7)~pad_356 {} BOX pin PADIN_328 input.left pin SIMIN_329 input.left pin PADOUT_283 output.right pin SIMOUT_284 output.right fillcolor 1
+load symbol ~ALTERA_OSC_CLK_1~~ibuf_358 {} BOX pin I_330 input.left fillcolor 1
+load symbol ~ALTERA_AS_DATA1~_364 {} BOX pin PADIN_335 input.left pin PADOUT_289 output.right fillcolor 1
+load symbol ~ALTERA_AS_DATA1~~ibuf_370 {} BOX pin I_341 input.left fillcolor 1
+load symbol ~ALTERA_AS_DATA2~_376 {} BOX pin PADIN_346 input.left pin PADOUT_297 output.right fillcolor 1
+load symbol ~ALTERA_AS_DATA2~~ibuf_382 {} BOX pin I_352 input.left fillcolor 1
+load symbol ~ALTERA_AS_DATA0~_383 {} BOX pin PADIN_353 input.left pin PADOUT_302 output.right fillcolor 1
+load symbol ~ALTERA_AS_DATA0~~ibuf_389 {} BOX pin I_359 input.left fillcolor 1
+load symbol ~ALTERA_AS_DATA3~_415 {} BOX pin PADIN_380 input.left pin PADOUT_322 output.right fillcolor 1
+load symbol ~ALTERA_AS_DATA3~~ibuf_421 {} BOX pin I_386 input.left fillcolor 1
+load symbol ~PWRMGT_SDA~_427 {} BOX pin PADIN_391 input.left pin PADOUT_330 output.right fillcolor 1
+load symbol ~PWRMGT_SDA~~ibuf_433 {} BOX pin I_397 input.left fillcolor 1
+load symbol QSFP28_REFCLK_p~inputFITTER_INSERTED_436 {} BOX pin PAD_398 input.left fillcolor 1
+load port AG_UART_CTS_22 input -attr @name AG_UART_CTS -pg 1 -lvl 0 -x 0 -y 230
+load port AG_UART_RTS_23 output -attr @name AG_UART_RTS -pg 1 -lvl 9 -x 1500 -y 130
+load port AG_UART_RX_21 input -attr @name AG_UART_RX -pg 1 -lvl 0 -x 0 -y 290
+load port AG_UART_TX_20 output -attr @name AG_UART_TX -pg 1 -lvl 9 -x 1500 -y 470
+load port CLK_30M72_3 input -attr @name CLK_30M72 -pg 1 -lvl 0 -x 0 -y 530
+load port CLK_50_B2A_4 input -attr @name CLK_50_B2A -pg 1 -lvl 0 -x 0 -y 590
+load port CLK_50_B2D_5 input -attr @name CLK_50_B2D -pg 1 -lvl 0 -x 0 -y 650
+load port CLK_50_B3A_6 input -attr @name CLK_50_B3A -pg 1 -lvl 0 -x 0 -y 710
+load port CLK_50_B3C_7 input -attr @name CLK_50_B3C -pg 1 -lvl 0 -x 0 -y 770
+load port CLK_100_B2A_2 input -attr @name CLK_100_B2A -pg 1 -lvl 0 -x 0 -y 850
+load port CLK_100_B2A(n)_434 input -attr @name CLK_100_B2A(n) -pg 1 -lvl 0 -x 0 -y 810
+load port CPU_RESET_n_8 input -attr @name CPU_RESET_n -pg 1 -lvl 0 -x 0 -y 910
+load port INFO_SPI_CS_n_27 output -attr @name INFO_SPI_CS_n -pg 1 -lvl 9 -x 1500 -y 5130
+load port INFO_SPI_MISO_25 input -attr @name INFO_SPI_MISO -pg 1 -lvl 0 -x 0 -y 5250
+load port INFO_SPI_MOSI_26 output -attr @name INFO_SPI_MOSI -pg 1 -lvl 9 -x 1500 -y 5190
+load port INFO_SPI_SCLK_24 output -attr @name INFO_SPI_SCLK -pg 1 -lvl 9 -x 1500 -y 5310
+load port QSFP28_REFCLK_p_19 input -attr @name QSFP28_REFCLK_p -pg 1 -lvl 0 -x 0 -y 5530
+load port QSFP28_REFCLK_p(n)_435 input -attr @name QSFP28_REFCLK_p(n) -pg 1 -lvl 0 -x 0 -y 5490
+load port SI5340A_LOL_15 input -attr @name SI5340A_LOL -pg 1 -lvl 0 -x 0 -y 5850
+load port SI5340A_LOS_XAXB_16 input -attr @name SI5340A_LOS_XAXB -pg 1 -lvl 0 -x 0 -y 5910
+load port SI5340A_OE_n_17 output -attr @name SI5340A_OE_n -pg 1 -lvl 9 -x 1500 -y 5970
+load port SI5340A_RST_n_18 output -attr @name SI5340A_RST_n -pg 1 -lvl 9 -x 1500 -y 6030
+load port ~ALTERA_AS_CLK~_390 output -attr @name ~ALTERA_AS_CLK~ -pg 1 -lvl 9 -x 1500 -y 6150
+load port ~ALTERA_AS_nCSO0,ALTERA_MSEL0~_371 output -attr @name ~ALTERA_AS_nCSO0,ALTERA_MSEL0~ -pg 1 -lvl 9 -x 1500 -y 6550
+load port ~ALTERA_AS_nCSO1,ALTERA_MSEL2~_410 output -attr @name ~ALTERA_AS_nCSO1,ALTERA_MSEL2~ -pg 1 -lvl 9 -x 1500 -y 6610
+load port ~ALTERA_AS_nCSO2,ALTERA_MSEL1~_395 output -attr @name ~ALTERA_AS_nCSO2,ALTERA_MSEL1~ -pg 1 -lvl 9 -x 1500 -y 6670
+load port ~ALTERA_AS_nCSO3~_422 output -attr @name ~ALTERA_AS_nCSO3~ -pg 1 -lvl 9 -x 1500 -y 6730
+load port ~ALTERA_OSC_CLK_1~_357 input -attr @name ~ALTERA_OSC_CLK_1~ -pg 1 -lvl 0 -x 0 -y 6550
+load port ~CONF_DONE~_400 output -attr @name ~CONF_DONE~ -pg 1 -lvl 9 -x 1500 -y 6790
+load port ~HPS_COLD_RESET~_405 output -attr @name ~HPS_COLD_RESET~ -pg 1 -lvl 9 -x 1500 -y 6850
+load port ~PWRMGT_SCL~_359 output -attr @name ~PWRMGT_SCL~ -pg 1 -lvl 9 -x 1500 -y 6910
+load portBus BUTTON[0..1]_437 input 2 BUTTON[0]_9 BUTTON[1]_10 -attr @name BUTTON[0..1] -portAttr BUTTON[0]_9 @name BUTTON[0] -portAttr BUTTON[1]_10 @name BUTTON[1] -pg 1 -lvl 0 -x 0 -y 350
+load portBus LED[0..1]_438 output 2 LED[0]_13 LED[1]_14 -attr @name LED[0..1] -portAttr LED[0]_13 @name LED[0] -portAttr LED[1]_14 @name LED[1] -pg 1 -lvl 9 -x 1500 -y 5370
+load portBus SW[0..1]_439 input 2 SW[0]_11 SW[1]_12 -attr @name SW[0..1] -portAttr SW[0]_11 @name SW[0] -portAttr SW[1]_12 @name SW[1] -pg 1 -lvl 0 -x 0 -y 6430
+load inst FMC_HA_p[0]~output_29 FMC_HA_p[0]~output_29 {} -attr @name FMC_HA_p[0]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_31 @name I -pinAttr I_31 @vconn 1'h1 -pinAttr O_32 @name O -pg 1 -lvl 4 -x 630 -y 980
+load inst FMC_HA_p[1]~output_34 FMC_HA_p[1]~output_34 {} -attr @name FMC_HA_p[1]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_36 @name I -pinAttr I_36 @vconn 1'h1 -pinAttr O_37 @name O -pg 1 -lvl 4 -x 630 -y 1100
+load inst FMC_HA_p[2]~output_39 FMC_HA_p[2]~output_39 {} -attr @name FMC_HA_p[2]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_41 @name I -pinAttr I_41 @vconn 1'h1 -pinAttr O_42 @name O -pg 1 -lvl 4 -x 630 -y 1260
+load inst FMC_HA_p[3]~output_44 FMC_HA_p[3]~output_44 {} -attr @name FMC_HA_p[3]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_46 @name I -pinAttr I_46 @vconn 1'h1 -pinAttr O_47 @name O -pg 1 -lvl 4 -x 630 -y 1400
+load inst FMC_HA_p[4]~output_49 FMC_HA_p[4]~output_49 {} -attr @name FMC_HA_p[4]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_51 @name I -pinAttr I_51 @vconn 1'h1 -pinAttr O_52 @name O -pg 1 -lvl 4 -x 630 -y 1540
+load inst FMC_HA_p[5]~output_54 FMC_HA_p[5]~output_54 {} -attr @name FMC_HA_p[5]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_56 @name I -pinAttr I_56 @vconn 1'h1 -pinAttr O_57 @name O -pg 1 -lvl 4 -x 630 -y 1680
+load inst FMC_HA_p[6]~output_59 FMC_HA_p[6]~output_59 {} -attr @name FMC_HA_p[6]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_61 @name I -pinAttr I_61 @vconn 1'h1 -pinAttr O_62 @name O -pg 1 -lvl 4 -x 630 -y 1800
+load inst FMC_HA_p[7]~output_64 FMC_HA_p[7]~output_64 {} -attr @name FMC_HA_p[7]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_66 @name I -pinAttr I_66 @vconn 1'h1 -pinAttr O_67 @name O -pg 1 -lvl 4 -x 630 -y 1960
+load inst FMC_HA_p[8]~output_69 FMC_HA_p[8]~output_69 {} -attr @name FMC_HA_p[8]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_71 @name I -pinAttr I_71 @vconn 1'h1 -pinAttr O_72 @name O -pg 1 -lvl 4 -x 630 -y 2100
+load inst FMC_HA_p[9]~output_74 FMC_HA_p[9]~output_74 {} -attr @name FMC_HA_p[9]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_76 @name I -pinAttr I_76 @vconn 1'h1 -pinAttr O_77 @name O -pg 1 -lvl 4 -x 630 -y 2240
+load inst FMC_HA_p[10]~output_79 FMC_HA_p[10]~output_79 {} -attr @name FMC_HA_p[10]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_81 @name I -pinAttr I_81 @vconn 1'h1 -pinAttr O_82 @name O -pg 1 -lvl 1 -x 80 -y 120
+load inst FMC_HA_p[11]~output_84 FMC_HA_p[11]~output_84 {} -attr @name FMC_HA_p[11]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_86 @name I -pinAttr I_86 @vconn 1'h1 -pinAttr O_87 @name O -pg 1 -lvl 4 -x 630 -y 2380
+load inst FMC_HA_p[12]~output_89 FMC_HA_p[12]~output_89 {} -attr @name FMC_HA_p[12]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_91 @name I -pinAttr I_91 @vconn 1'h1 -pinAttr O_92 @name O -pg 1 -lvl 4 -x 630 -y 2500
+load inst FMC_HA_p[13]~output_94 FMC_HA_p[13]~output_94 {} -attr @name FMC_HA_p[13]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_96 @name I -pinAttr I_96 @vconn 1'h1 -pinAttr O_97 @name O -pg 1 -lvl 4 -x 630 -y 2640
+load inst FMC_HA_p[14]~output_99 FMC_HA_p[14]~output_99 {} -attr @name FMC_HA_p[14]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_101 @name I -pinAttr I_101 @vconn 1'h1 -pinAttr O_102 @name O -pg 1 -lvl 4 -x 630 -y 2800
+load inst FMC_HA_p[15]~output_104 FMC_HA_p[15]~output_104 {} -attr @name FMC_HA_p[15]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_106 @name I -pinAttr I_106 @vconn 1'h1 -pinAttr O_107 @name O -pg 1 -lvl 4 -x 630 -y 2920
+load inst FMC_HA_p[16]~output_109 FMC_HA_p[16]~output_109 {} -attr @name FMC_HA_p[16]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_111 @name I -pinAttr I_111 @vconn 1'h1 -pinAttr O_112 @name O -pg 1 -lvl 4 -x 630 -y 3060
+load inst FMC_HA_p[17]~output_114 FMC_HA_p[17]~output_114 {} -attr @name FMC_HA_p[17]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_116 @name I -pinAttr I_116 @vconn 1'h1 -pinAttr O_117 @name O -pg 1 -lvl 4 -x 630 -y 3220
+load inst FMC_HA_p[18]~output_119 FMC_HA_p[18]~output_119 {} -attr @name FMC_HA_p[18]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_121 @name I -pinAttr I_121 @vconn 1'h1 -pinAttr O_122 @name O -pg 1 -lvl 4 -x 630 -y 3360
+load inst FMC_HA_p[19]~output_124 FMC_HA_p[19]~output_124 {} -attr @name FMC_HA_p[19]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_126 @name I -pinAttr I_126 @vconn 1'h1 -pinAttr O_127 @name O -pg 1 -lvl 4 -x 630 -y 3500
+load inst FMC_HA_p[20]~output_129 FMC_HA_p[20]~output_129 {} -attr @name FMC_HA_p[20]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_131 @name I -pinAttr I_131 @vconn 1'h1 -pinAttr O_132 @name O -pg 1 -lvl 4 -x 630 -y 3640
+load inst FMC_HA_p[21]~output_134 FMC_HA_p[21]~output_134 {} -attr @name FMC_HA_p[21]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_136 @name I -pinAttr I_136 @vconn 1'h1 -pinAttr O_137 @name O -pg 1 -lvl 4 -x 630 -y 3780
+load inst FMC_HA_p[22]~output_139 FMC_HA_p[22]~output_139 {} -attr @name FMC_HA_p[22]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_141 @name I -pinAttr I_141 @vconn 1'h1 -pinAttr O_142 @name O -pg 1 -lvl 4 -x 630 -y 3920
+load inst FMC_HA_p[23]~output_144 FMC_HA_p[23]~output_144 {} -attr @name FMC_HA_p[23]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_146 @name I -pinAttr I_146 @vconn 1'h1 -pinAttr O_147 @name O -pg 1 -lvl 4 -x 630 -y 4060
+load inst SI5340A_I2C_SCL~output_149 SI5340A_I2C_SCL~output_149 {} -attr @name SI5340A_I2C_SCL~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_151 @name I -pinAttr I_151 @vconn 1'h1 -pinAttr O_152 @name O -pg 1 -lvl 4 -x 630 -y 5580
+load inst SI5340A_I2C_SDA~output_154 SI5340A_I2C_SDA~output_154 {} -attr @name SI5340A_I2C_SDA~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_156 @name I -pinAttr I_156 @vconn 1'h1 -pinAttr O_157 @name O -pg 1 -lvl 4 -x 630 -y 5720
+load inst GPIO_D[0]~output_159 GPIO_D[0]~output_159 {} -attr @name GPIO_D[0]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_161 @name I -pinAttr I_161 @vconn 1'h0 -pinAttr O_162 @name O -pg 1 -lvl 4 -x 630 -y 4200
+load inst GPIO_D[1]~output_164 GPIO_D[1]~output_164 {} -attr @name GPIO_D[1]~output -attr @cell IO_OBUF -pinAttr I_166 @name I -pinAttr OE_167 @name OE -pinAttr OE_167 @vconn 1'h0 -pinAttr O_168 @name O -pg 1 -lvl 4 -x 630 -y 120
+load inst GPIO_D[2]~output_170 GPIO_D[2]~output_170 {} -attr @name GPIO_D[2]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_172 @name I -pinAttr I_172 @vconn 1'h1 -pinAttr O_173 @name O -pg 1 -lvl 4 -x 630 -y 4340
+load inst GPIO_D[3]~output_175 GPIO_D[3]~output_175 {} -attr @name GPIO_D[3]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_177 @name I -pinAttr I_177 @vconn 1'h1 -pinAttr O_178 @name O -pg 1 -lvl 4 -x 630 -y 4480
+load inst GPIO_D[4]~output_180 GPIO_D[4]~output_180 {} -attr @name GPIO_D[4]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_182 @name I -pinAttr I_182 @vconn 1'h1 -pinAttr O_183 @name O -pg 1 -lvl 4 -x 630 -y 4620
+load inst GPIO_D[5]~output_185 GPIO_D[5]~output_185 {} -attr @name GPIO_D[5]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_187 @name I -pinAttr I_187 @vconn 1'h1 -pinAttr O_188 @name O -pg 1 -lvl 4 -x 630 -y 4740
+load inst GPIO_D[6]~output_190 GPIO_D[6]~output_190 {} -attr @name GPIO_D[6]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_192 @name I -pinAttr I_192 @vconn 1'h1 -pinAttr O_193 @name O -pg 1 -lvl 4 -x 630 -y 4880
+load inst GPIO_D[7]~output_195 GPIO_D[7]~output_195 {} -attr @name GPIO_D[7]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_197 @name I -pinAttr I_197 @vconn 1'h1 -pinAttr O_198 @name O -pg 1 -lvl 4 -x 630 -y 5040
+load inst LED[0]~output_223 LED[0]~output_223 {} -attr @name LED[0]~output -attr @cell IO_OBUF -pinAttr I_225 @name I -pinAttr I_225 @vconn 1'h0 -pinAttr O_226 @name O -pg 1 -lvl 5 -x 850 -y 5360
+load inst LED[1]~output_228 LED[1]~output_228 {} -attr @name LED[1]~output -attr @cell IO_OBUF -pinAttr I_230 @name I -pinAttr I_230 @vconn 1'h0 -pinAttr O_231 @name O -pg 1 -lvl 5 -x 850 -y 5420
+load inst SI5340A_OE_n~output_237 SI5340A_OE_n~output_237 {} -attr @name SI5340A_OE_n~output -attr @cell IO_OBUF -pinAttr I_239 @name I -pinAttr I_239 @vconn 1'h0 -pinAttr O_240 @name O -pg 1 -lvl 5 -x 850 -y 5960
+load inst SI5340A_RST_n~output_242 SI5340A_RST_n~output_242 {} -attr @name SI5340A_RST_n~output -attr @cell IO_OBUF -pinAttr I_244 @name I -pinAttr I_244 @vconn 1'h1 -pinAttr O_245 @name O -pg 1 -lvl 5 -x 850 -y 6020
+load inst QSFP28_REFCLK_p~input_247 QSFP28_REFCLK_p~input_247 {} -attr @name QSFP28_REFCLK_p~input -attr @cell IO_IBUF -pinAttr I_249 @name I -pinAttr IBAR_251 @name IBAR -pinAttr O_253 @name O -pg 1 -lvl 5 -x 850 -y 5480
+load inst AG_UART_TX~output_255 AG_UART_TX~output_255 {} -attr @name AG_UART_TX~output -attr @cell IO_OBUF -pinAttr I_257 @name I -pinAttr I_257 @vconn 1'h0 -pinAttr O_258 @name O -pg 1 -lvl 5 -x 850 -y 460
+load inst AG_UART_RTS~output_264 AG_UART_RTS~output_264 {} -attr @name AG_UART_RTS~output -attr @cell IO_OBUF -pinAttr I_266 @name I -pinAttr I_266 @vconn 1'h0 -pinAttr O_267 @name O -pg 1 -lvl 5 -x 850 -y 120
+load inst INFO_SPI_SCLK~output_269 INFO_SPI_SCLK~output_269 {} -attr @name INFO_SPI_SCLK~output -attr @cell IO_OBUF -pinAttr I_271 @name I -pinAttr I_271 @vconn 1'h0 -pinAttr O_272 @name O -pg 1 -lvl 5 -x 850 -y 5300
+load inst INFO_SPI_MOSI~output_276 INFO_SPI_MOSI~output_276 {} -attr @name INFO_SPI_MOSI~output -attr @cell IO_OBUF -pinAttr I_278 @name I -pinAttr I_278 @vconn 1'h0 -pinAttr O_279 @name O -pg 1 -lvl 5 -x 850 -y 5180
+load inst INFO_SPI_CS_n~output_281 INFO_SPI_CS_n~output_281 {} -attr @name INFO_SPI_CS_n~output -attr @cell IO_OBUF -pinAttr I_283 @name I -pinAttr I_283 @vconn 1'h0 -pinAttr O_284 @name O -pg 1 -lvl 5 -x 850 -y 5120
+load inst FMC_HA_p[10]~input_306 FMC_HA_p[10]~input_306 {} -attr @name FMC_HA_p[10]~input -attr @cell IO_IBUF -pinAttr I_308 @name I -pinAttr O_309 @name O -pg 1 -lvl 3 -x 430 -y 120
+load inst ~PWRMGT_SCL~~obuf_360 ~PWRMGT_SCL~~obuf_360 {} -attr @name ~PWRMGT_SCL~~obuf -attr @cell IO_OBUF -pinAttr I_362 @name I -pinAttr I_362 @vconn 1'h0 -pinAttr O_363 @name O -pg 1 -lvl 6 -x 1130 -y 6900
+load inst ~ALTERA_AS_DATA1~~obuf_365 ~ALTERA_AS_DATA1~~obuf_365 {} -attr @name ~ALTERA_AS_DATA1~~obuf -attr @cell IO_OBUF -pinAttr I_367 @name I -pinAttr I_367 @vconn 1'h0 -pinAttr OE_368 @name OE -pinAttr OE_368 @vconn 1'h1 -pinAttr O_369 @name O -pg 1 -lvl 4 -x 630 -y 6200
+load inst ~ALTERA_AS_nCSO0,ALTERA_MSEL0~~obuf_372 ~ALTERA_AS_nCSO0,ALTERA_MSEL0~~obuf_372 {} -attr @name ~ALTERA_AS_nCSO0,ALTERA_MSEL0~~obuf -attr @cell IO_OBUF -pinAttr I_374 @name I -pinAttr I_374 @vconn 1'h0 -pinAttr O_375 @name O -pg 1 -lvl 6 -x 1130 -y 6540
+load inst ~ALTERA_AS_DATA2~~obuf_377 ~ALTERA_AS_DATA2~~obuf_377 {} -attr @name ~ALTERA_AS_DATA2~~obuf -attr @cell IO_OBUF -pinAttr I_379 @name I -pinAttr I_379 @vconn 1'h0 -pinAttr OE_380 @name OE -pinAttr OE_380 @vconn 1'h1 -pinAttr O_381 @name O -pg 1 -lvl 4 -x 630 -y 6280
+load inst ~ALTERA_AS_DATA0~~obuf_384 ~ALTERA_AS_DATA0~~obuf_384 {} -attr @name ~ALTERA_AS_DATA0~~obuf -attr @cell IO_OBUF -pinAttr I_386 @name I -pinAttr I_386 @vconn 1'h0 -pinAttr OE_387 @name OE -pinAttr OE_387 @vconn 1'h1 -pinAttr O_388 @name O -pg 1 -lvl 4 -x 630 -y 6080
+load inst ~ALTERA_AS_CLK~~obuf_391 ~ALTERA_AS_CLK~~obuf_391 {} -attr @name ~ALTERA_AS_CLK~~obuf -attr @cell IO_OBUF -pinAttr I_393 @name I -pinAttr I_393 @vconn 1'h0 -pinAttr O_394 @name O -pg 1 -lvl 6 -x 1130 -y 6140
+load inst ~ALTERA_AS_nCSO2,ALTERA_MSEL1~~obuf_396 ~ALTERA_AS_nCSO2,ALTERA_MSEL1~~obuf_396 {} -attr @name ~ALTERA_AS_nCSO2,ALTERA_MSEL1~~obuf -attr @cell IO_OBUF -pinAttr I_398 @name I -pinAttr I_398 @vconn 1'h0 -pinAttr O_399 @name O -pg 1 -lvl 6 -x 1130 -y 6660
+load inst ~CONF_DONE~~obuf_401 ~CONF_DONE~~obuf_401 {} -attr @name ~CONF_DONE~~obuf -attr @cell IO_OBUF -pinAttr I_403 @name I -pinAttr I_403 @vconn 1'h0 -pinAttr O_404 @name O -pg 1 -lvl 6 -x 1130 -y 6780
+load inst ~HPS_COLD_RESET~~obuf_406 ~HPS_COLD_RESET~~obuf_406 {} -attr @name ~HPS_COLD_RESET~~obuf -attr @cell IO_OBUF -pinAttr I_408 @name I -pinAttr I_408 @vconn 1'h0 -pinAttr O_409 @name O -pg 1 -lvl 6 -x 1130 -y 6840
+load inst ~ALTERA_AS_nCSO1,ALTERA_MSEL2~~obuf_411 ~ALTERA_AS_nCSO1,ALTERA_MSEL2~~obuf_411 {} -attr @name ~ALTERA_AS_nCSO1,ALTERA_MSEL2~~obuf -attr @cell IO_OBUF -pinAttr I_413 @name I -pinAttr I_413 @vconn 1'h0 -pinAttr O_414 @name O -pg 1 -lvl 6 -x 1130 -y 6600
+load inst ~ALTERA_AS_DATA3~~obuf_416 ~ALTERA_AS_DATA3~~obuf_416 {} -attr @name ~ALTERA_AS_DATA3~~obuf -attr @cell IO_OBUF -pinAttr I_418 @name I -pinAttr I_418 @vconn 1'h0 -pinAttr OE_419 @name OE -pinAttr OE_419 @vconn 1'h1 -pinAttr O_420 @name O -pg 1 -lvl 4 -x 630 -y 6360
+load inst ~ALTERA_AS_nCSO3~~obuf_423 ~ALTERA_AS_nCSO3~~obuf_423 {} -attr @name ~ALTERA_AS_nCSO3~~obuf -attr @cell IO_OBUF -pinAttr I_425 @name I -pinAttr I_425 @vconn 1'h0 -pinAttr O_426 @name O -pg 1 -lvl 6 -x 1130 -y 6720
+load inst ~PWRMGT_SDA~~obuf_428 ~PWRMGT_SDA~~obuf_428 {} -attr @name ~PWRMGT_SDA~~obuf -attr @cell IO_OBUF -pinAttr I_430 @name I -pinAttr I_430 @vconn 1'h0 -pinAttr OE_431 @name OE -pinAttr OE_431 @vconn 1'h1 -pinAttr O_432 @name O -pg 1 -lvl 4 -x 630 -y 6960
+load inst FMC_HA_p[0]_28 FMC_HA_p[0]_28 {} -attr @name FMC_HA_p[0] -attr @cell BIDIR -pinAttr INPUT_10 @name INPUT -pinAttr OUTPUT_18 @name OUTPUT -pg 1 -lvl 4 -x 630 -y 1040
+load inst FMC_HA_p[1]_33 FMC_HA_p[1]_33 {} -attr @name FMC_HA_p[1] -attr @cell BIDIR -pinAttr INPUT_14 @name INPUT -pinAttr OUTPUT_22 @name OUTPUT -pg 1 -lvl 4 -x 630 -y 1160
+load inst FMC_HA_p[2]_38 FMC_HA_p[2]_38 {} -attr @name FMC_HA_p[2] -attr @cell BIDIR -pinAttr INPUT_18 @name INPUT -pinAttr OUTPUT_26 @name OUTPUT -pg 1 -lvl 4 -x 630 -y 1320
+load inst FMC_HA_p[3]_43 FMC_HA_p[3]_43 {} -attr @name FMC_HA_p[3] -attr @cell BIDIR -pinAttr INPUT_22 @name INPUT -pinAttr OUTPUT_30 @name OUTPUT -pg 1 -lvl 4 -x 630 -y 1460
+load inst FMC_HA_p[4]_48 FMC_HA_p[4]_48 {} -attr @name FMC_HA_p[4] -attr @cell BIDIR -pinAttr INPUT_26 @name INPUT -pinAttr OUTPUT_34 @name OUTPUT -pg 1 -lvl 4 -x 630 -y 1600
+load inst FMC_HA_p[5]_53 FMC_HA_p[5]_53 {} -attr @name FMC_HA_p[5] -attr @cell BIDIR -pinAttr INPUT_30 @name INPUT -pinAttr OUTPUT_38 @name OUTPUT -pg 1 -lvl 4 -x 630 -y 1740
+load inst FMC_HA_p[6]_58 FMC_HA_p[6]_58 {} -attr @name FMC_HA_p[6] -attr @cell BIDIR -pinAttr INPUT_34 @name INPUT -pinAttr OUTPUT_42 @name OUTPUT -pg 1 -lvl 4 -x 630 -y 1860
+load inst FMC_HA_p[7]_63 FMC_HA_p[7]_63 {} -attr @name FMC_HA_p[7] -attr @cell BIDIR -pinAttr INPUT_38 @name INPUT -pinAttr OUTPUT_46 @name OUTPUT -pg 1 -lvl 4 -x 630 -y 2020
+load inst FMC_HA_p[8]_68 FMC_HA_p[8]_68 {} -attr @name FMC_HA_p[8] -attr @cell BIDIR -pinAttr INPUT_42 @name INPUT -pinAttr OUTPUT_50 @name OUTPUT -pg 1 -lvl 4 -x 630 -y 2160
+load inst FMC_HA_p[9]_73 FMC_HA_p[9]_73 {} -attr @name FMC_HA_p[9] -attr @cell BIDIR -pinAttr INPUT_46 @name INPUT -pinAttr OUTPUT_54 @name OUTPUT -pg 1 -lvl 4 -x 630 -y 2300
+load inst FMC_HA_p[10]_78 FMC_HA_p[10]_78 {} -attr @name FMC_HA_p[10] -attr @cell BIDIR -pinAttr INPUT_50 @name INPUT -pinAttr OUTPUT_58 @name OUTPUT -pg 1 -lvl 1 -x 80 -y 180
+load inst FMC_HA_p[11]_83 FMC_HA_p[11]_83 {} -attr @name FMC_HA_p[11] -attr @cell BIDIR -pinAttr INPUT_54 @name INPUT -pinAttr OUTPUT_62 @name OUTPUT -pg 1 -lvl 4 -x 630 -y 2440
+load inst FMC_HA_p[12]_88 FMC_HA_p[12]_88 {} -attr @name FMC_HA_p[12] -attr @cell BIDIR -pinAttr INPUT_58 @name INPUT -pinAttr OUTPUT_66 @name OUTPUT -pg 1 -lvl 4 -x 630 -y 2560
+load inst FMC_HA_p[13]_93 FMC_HA_p[13]_93 {} -attr @name FMC_HA_p[13] -attr @cell BIDIR -pinAttr INPUT_62 @name INPUT -pinAttr OUTPUT_70 @name OUTPUT -pg 1 -lvl 4 -x 630 -y 2700
+load inst FMC_HA_p[14]_98 FMC_HA_p[14]_98 {} -attr @name FMC_HA_p[14] -attr @cell BIDIR -pinAttr INPUT_66 @name INPUT -pinAttr OUTPUT_74 @name OUTPUT -pg 1 -lvl 4 -x 630 -y 2860
+load inst FMC_HA_p[15]_103 FMC_HA_p[15]_103 {} -attr @name FMC_HA_p[15] -attr @cell BIDIR -pinAttr INPUT_70 @name INPUT -pinAttr OUTPUT_78 @name OUTPUT -pg 1 -lvl 4 -x 630 -y 2980
+load inst FMC_HA_p[16]_108 FMC_HA_p[16]_108 {} -attr @name FMC_HA_p[16] -attr @cell BIDIR -pinAttr INPUT_74 @name INPUT -pinAttr OUTPUT_82 @name OUTPUT -pg 1 -lvl 4 -x 630 -y 3120
+load inst FMC_HA_p[17]_113 FMC_HA_p[17]_113 {} -attr @name FMC_HA_p[17] -attr @cell BIDIR -pinAttr INPUT_78 @name INPUT -pinAttr OUTPUT_86 @name OUTPUT -pg 1 -lvl 4 -x 630 -y 3280
+load inst FMC_HA_p[18]_118 FMC_HA_p[18]_118 {} -attr @name FMC_HA_p[18] -attr @cell BIDIR -pinAttr INPUT_82 @name INPUT -pinAttr OUTPUT_90 @name OUTPUT -pg 1 -lvl 4 -x 630 -y 3420
+load inst FMC_HA_p[19]_123 FMC_HA_p[19]_123 {} -attr @name FMC_HA_p[19] -attr @cell BIDIR -pinAttr INPUT_86 @name INPUT -pinAttr OUTPUT_94 @name OUTPUT -pg 1 -lvl 4 -x 630 -y 3560
+load inst FMC_HA_p[20]_128 FMC_HA_p[20]_128 {} -attr @name FMC_HA_p[20] -attr @cell BIDIR -pinAttr INPUT_90 @name INPUT -pinAttr OUTPUT_98 @name OUTPUT -pg 1 -lvl 4 -x 630 -y 3700
+load inst FMC_HA_p[21]_133 FMC_HA_p[21]_133 {} -attr @name FMC_HA_p[21] -attr @cell BIDIR -pinAttr INPUT_94 @name INPUT -pinAttr OUTPUT_102 @name OUTPUT -pg 1 -lvl 4 -x 630 -y 3840
+load inst FMC_HA_p[22]_138 FMC_HA_p[22]_138 {} -attr @name FMC_HA_p[22] -attr @cell BIDIR -pinAttr INPUT_98 @name INPUT -pinAttr OUTPUT_106 @name OUTPUT -pg 1 -lvl 4 -x 630 -y 3980
+load inst FMC_HA_p[23]_143 FMC_HA_p[23]_143 {} -attr @name FMC_HA_p[23] -attr @cell BIDIR -pinAttr INPUT_102 @name INPUT -pinAttr OUTPUT_110 @name OUTPUT -pg 1 -lvl 4 -x 630 -y 4120
+load inst SI5340A_I2C_SCL_148 SI5340A_I2C_SCL_148 {} -attr @name SI5340A_I2C_SCL -attr @cell BIDIR -pinAttr INPUT_106 @name INPUT -pinAttr OUTPUT_114 @name OUTPUT -pg 1 -lvl 6 -x 1130 -y 5640
+load inst SI5340A_I2C_SDA_153 SI5340A_I2C_SDA_153 {} -attr @name SI5340A_I2C_SDA -attr @cell BIDIR -pinAttr INPUT_110 @name INPUT -pinAttr OUTPUT_118 @name OUTPUT -pg 1 -lvl 6 -x 1130 -y 5780
+load inst GPIO_D[0]_158 GPIO_D[0]_158 {} -attr @name GPIO_D[0] -attr @cell BIDIR -pinAttr INPUT_114 @name INPUT -pinAttr OUTPUT_122 @name OUTPUT -pg 1 -lvl 4 -x 630 -y 4260
+load inst GPIO_D[1]_163 GPIO_D[1]_163 {} -attr @name GPIO_D[1] -attr @cell BIDIR -pinAttr INPUT_118 @name INPUT -pinAttr OUTPUT_126 @name OUTPUT -pg 1 -lvl 4 -x 630 -y 40
+load inst GPIO_D[2]_169 GPIO_D[2]_169 {} -attr @name GPIO_D[2] -attr @cell BIDIR -pinAttr INPUT_124 @name INPUT -pinAttr OUTPUT_131 @name OUTPUT -pg 1 -lvl 4 -x 630 -y 4400
+load inst GPIO_D[3]_174 GPIO_D[3]_174 {} -attr @name GPIO_D[3] -attr @cell BIDIR -pinAttr INPUT_128 @name INPUT -pinAttr OUTPUT_135 @name OUTPUT -pg 1 -lvl 4 -x 630 -y 4540
+load inst GPIO_D[4]_179 GPIO_D[4]_179 {} -attr @name GPIO_D[4] -attr @cell BIDIR -pinAttr INPUT_132 @name INPUT -pinAttr OUTPUT_139 @name OUTPUT -pg 1 -lvl 4 -x 630 -y 4680
+load inst GPIO_D[5]_184 GPIO_D[5]_184 {} -attr @name GPIO_D[5] -attr @cell BIDIR -pinAttr INPUT_136 @name INPUT -pinAttr OUTPUT_143 @name OUTPUT -pg 1 -lvl 4 -x 630 -y 4800
+load inst GPIO_D[6]_189 GPIO_D[6]_189 {} -attr @name GPIO_D[6] -attr @cell BIDIR -pinAttr INPUT_140 @name INPUT -pinAttr OUTPUT_147 @name OUTPUT -pg 1 -lvl 4 -x 630 -y 4940
+load inst GPIO_D[7]_194 GPIO_D[7]_194 {} -attr @name GPIO_D[7] -attr @cell BIDIR -pinAttr INPUT_144 @name INPUT -pinAttr OUTPUT_151 @name OUTPUT -pg 1 -lvl 4 -x 630 -y 5100
+load inst ~GND_199 ~GND_199 {} -attr @name ~GND -attr @cell {} -pg 1 -lvl 8 -x 1420 -y 6950
+load inst ~VCC_200 ~VCC_200 {} -attr @name ~VCC -attr @cell {} -pg 1 -lvl 7 -x 1340 -y 6950
+load inst CLK_100_B2A~input_201 CLK_100_B2A~input_201 {} -attr @name CLK_100_B2A~input -attr @cell IO_IBUF -pinAttr I_148 @name I -pinAttr IBAR_149 @name IBAR -pg 1 -lvl 6 -x 1130 -y 820
+load inst CLK_100_B2A~pad_202 CLK_100_B2A~pad_202 {} -attr @name CLK_100_B2A~pad -attr @cell INPUT -pinAttr SIMIN_150 @name SIMIN -pinAttr PADOUT_155 @name PADOUT -pg 1 -lvl 5 -x 850 -y 840
+load inst CLK_30M72~input_203 CLK_30M72~input_203 {} -attr @name CLK_30M72~input -attr @cell IO_IBUF -pinAttr I_151 @name I -pg 1 -lvl 6 -x 1130 -y 520
+load inst CLK_30M72~pad_204 CLK_30M72~pad_204 {} -attr @name CLK_30M72~pad -attr @cell INPUT -pinAttr SIMIN_152 @name SIMIN -pinAttr PADOUT_156 @name PADOUT -pg 1 -lvl 5 -x 850 -y 520
+load inst CLK_50_B2A~input_205 CLK_50_B2A~input_205 {} -attr @name CLK_50_B2A~input -attr @cell IO_IBUF -pinAttr I_153 @name I -pg 1 -lvl 6 -x 1130 -y 580
+load inst CLK_50_B2A~pad_206 CLK_50_B2A~pad_206 {} -attr @name CLK_50_B2A~pad -attr @cell INPUT -pinAttr SIMIN_154 @name SIMIN -pinAttr PADOUT_157 @name PADOUT -pg 1 -lvl 5 -x 850 -y 580
+load inst CLK_50_B2D~input_207 CLK_50_B2D~input_207 {} -attr @name CLK_50_B2D~input -attr @cell IO_IBUF -pinAttr I_155 @name I -pg 1 -lvl 6 -x 1130 -y 640
+load inst CLK_50_B2D~pad_208 CLK_50_B2D~pad_208 {} -attr @name CLK_50_B2D~pad -attr @cell INPUT -pinAttr SIMIN_156 @name SIMIN -pinAttr PADOUT_158 @name PADOUT -pg 1 -lvl 5 -x 850 -y 640
+load inst CLK_50_B3A~input_209 CLK_50_B3A~input_209 {} -attr @name CLK_50_B3A~input -attr @cell IO_IBUF -pinAttr I_157 @name I -pg 1 -lvl 6 -x 1130 -y 700
+load inst CLK_50_B3A~pad_210 CLK_50_B3A~pad_210 {} -attr @name CLK_50_B3A~pad -attr @cell INPUT -pinAttr SIMIN_158 @name SIMIN -pinAttr PADOUT_159 @name PADOUT -pg 1 -lvl 5 -x 850 -y 700
+load inst CLK_50_B3C~input_211 CLK_50_B3C~input_211 {} -attr @name CLK_50_B3C~input -attr @cell IO_IBUF -pinAttr I_159 @name I -pg 1 -lvl 6 -x 1130 -y 760
+load inst CLK_50_B3C~pad_212 CLK_50_B3C~pad_212 {} -attr @name CLK_50_B3C~pad -attr @cell INPUT -pinAttr SIMIN_160 @name SIMIN -pinAttr PADOUT_160 @name PADOUT -pg 1 -lvl 5 -x 850 -y 760
+load inst CPU_RESET_n~input_213 CPU_RESET_n~input_213 {} -attr @name CPU_RESET_n~input -attr @cell IO_IBUF -pinAttr I_161 @name I -pg 1 -lvl 6 -x 1130 -y 900
+load inst CPU_RESET_n~pad_214 CPU_RESET_n~pad_214 {} -attr @name CPU_RESET_n~pad -attr @cell INPUT -pinAttr SIMIN_162 @name SIMIN -pinAttr PADOUT_161 @name PADOUT -pg 1 -lvl 5 -x 850 -y 900
+load inst BUTTON[0]~input_215 BUTTON[0]~input_215 {} -attr @name BUTTON[0]~input -attr @cell IO_IBUF -pinAttr I_163 @name I -pg 1 -lvl 6 -x 1130 -y 340
+load inst BUTTON(0)~pad_216 BUTTON(0)~pad_216 {} -attr @name BUTTON(0)~pad -attr @cell INPUT -pinAttr SIMIN_164 @name SIMIN -pinAttr PADOUT_162 @name PADOUT -pg 1 -lvl 5 -x 850 -y 340
+load inst BUTTON[1]~input_217 BUTTON[1]~input_217 {} -attr @name BUTTON[1]~input -attr @cell IO_IBUF -pinAttr I_165 @name I -pg 1 -lvl 6 -x 1130 -y 400
+load inst BUTTON(1)~pad_218 BUTTON(1)~pad_218 {} -attr @name BUTTON(1)~pad -attr @cell INPUT -pinAttr SIMIN_166 @name SIMIN -pinAttr PADOUT_163 @name PADOUT -pg 1 -lvl 5 -x 850 -y 400
+load inst SW[0]~input_219 SW[0]~input_219 {} -attr @name SW[0]~input -attr @cell IO_IBUF -pinAttr I_167 @name I -pg 1 -lvl 6 -x 1130 -y 6420
+load inst SW(0)~pad_220 SW(0)~pad_220 {} -attr @name SW(0)~pad -attr @cell INPUT -pinAttr SIMIN_168 @name SIMIN -pinAttr PADOUT_164 @name PADOUT -pg 1 -lvl 5 -x 850 -y 6420
+load inst SW[1]~input_221 SW[1]~input_221 {} -attr @name SW[1]~input -attr @cell IO_IBUF -pinAttr I_169 @name I -pg 1 -lvl 6 -x 1130 -y 6480
+load inst SW(1)~pad_222 SW(1)~pad_222 {} -attr @name SW(1)~pad -attr @cell INPUT -pinAttr SIMIN_170 @name SIMIN -pinAttr PADOUT_165 @name PADOUT -pg 1 -lvl 5 -x 850 -y 6480
+load inst LED(0)~pad_227 LED(0)~pad_227 {} -attr @name LED(0)~pad -attr @cell OUTPUT -pinAttr PADIN_174 @name PADIN -pinAttr SIMOUT_169 @name SIMOUT -pg 1 -lvl 6 -x 1130 -y 5360
+load inst LED(1)~pad_232 LED(1)~pad_232 {} -attr @name LED(1)~pad -attr @cell OUTPUT -pinAttr PADIN_178 @name PADIN -pinAttr SIMOUT_173 @name SIMOUT -pg 1 -lvl 6 -x 1130 -y 5420
+load inst SI5340A_LOL~input_233 SI5340A_LOL~input_233 {} -attr @name SI5340A_LOL~input -attr @cell IO_IBUF -pinAttr I_179 @name I -pg 1 -lvl 6 -x 1130 -y 5840
+load inst SI5340A_LOL~pad_234 SI5340A_LOL~pad_234 {} -attr @name SI5340A_LOL~pad -attr @cell INPUT -pinAttr SIMIN_180 @name SIMIN -pinAttr PADOUT_174 @name PADOUT -pg 1 -lvl 5 -x 850 -y 5840
+load inst SI5340A_LOS_XAXB~input_235 SI5340A_LOS_XAXB~input_235 {} -attr @name SI5340A_LOS_XAXB~input -attr @cell IO_IBUF -pinAttr I_181 @name I -pg 1 -lvl 6 -x 1130 -y 5900
+load inst SI5340A_LOS_XAXB~pad_236 SI5340A_LOS_XAXB~pad_236 {} -attr @name SI5340A_LOS_XAXB~pad -attr @cell INPUT -pinAttr SIMIN_182 @name SIMIN -pinAttr PADOUT_175 @name PADOUT -pg 1 -lvl 5 -x 850 -y 5900
+load inst SI5340A_OE_n~pad_241 SI5340A_OE_n~pad_241 {} -attr @name SI5340A_OE_n~pad -attr @cell OUTPUT -pinAttr PADIN_186 @name PADIN -pinAttr SIMOUT_179 @name SIMOUT -pg 1 -lvl 6 -x 1130 -y 5960
+load inst SI5340A_RST_n~pad_246 SI5340A_RST_n~pad_246 {} -attr @name SI5340A_RST_n~pad -attr @cell OUTPUT -pinAttr PADIN_190 @name PADIN -pinAttr SIMOUT_183 @name SIMOUT -pg 1 -lvl 6 -x 1130 -y 6020
+load inst QSFP28_REFCLK_p~pad_254 QSFP28_REFCLK_p~pad_254 {} -attr @name QSFP28_REFCLK_p~pad -attr @cell INPUT -pinAttr SIMIN_199 @name SIMIN -pinAttr PADOUT_190 @name PADOUT -pg 1 -lvl 4 -x 630 -y 5520
+load inst AG_UART_TX~pad_259 AG_UART_TX~pad_259 {} -attr @name AG_UART_TX~pad -attr @cell OUTPUT -pinAttr PADIN_203 @name PADIN -pinAttr SIMOUT_194 @name SIMOUT -pg 1 -lvl 6 -x 1130 -y 460
+load inst AG_UART_RX~input_260 AG_UART_RX~input_260 {} -attr @name AG_UART_RX~input -attr @cell IO_IBUF -pinAttr I_204 @name I -pg 1 -lvl 6 -x 1130 -y 280
+load inst AG_UART_RX~pad_261 AG_UART_RX~pad_261 {} -attr @name AG_UART_RX~pad -attr @cell INPUT -pinAttr SIMIN_205 @name SIMIN -pinAttr PADOUT_195 @name PADOUT -pg 1 -lvl 5 -x 850 -y 280
+load inst AG_UART_CTS~input_262 AG_UART_CTS~input_262 {} -attr @name AG_UART_CTS~input -attr @cell IO_IBUF -pinAttr I_206 @name I -pg 1 -lvl 6 -x 1130 -y 220
+load inst AG_UART_CTS~pad_263 AG_UART_CTS~pad_263 {} -attr @name AG_UART_CTS~pad -attr @cell INPUT -pinAttr SIMIN_207 @name SIMIN -pinAttr PADOUT_196 @name PADOUT -pg 1 -lvl 5 -x 850 -y 220
+load inst AG_UART_RTS~pad_268 AG_UART_RTS~pad_268 {} -attr @name AG_UART_RTS~pad -attr @cell OUTPUT -pinAttr PADIN_211 @name PADIN -pinAttr SIMOUT_200 @name SIMOUT -pg 1 -lvl 6 -x 1130 -y 120
+load inst INFO_SPI_SCLK~pad_273 INFO_SPI_SCLK~pad_273 {} -attr @name INFO_SPI_SCLK~pad -attr @cell OUTPUT -pinAttr PADIN_215 @name PADIN -pinAttr SIMOUT_204 @name SIMOUT -pg 1 -lvl 6 -x 1130 -y 5300
+load inst INFO_SPI_MISO~input_274 INFO_SPI_MISO~input_274 {} -attr @name INFO_SPI_MISO~input -attr @cell IO_IBUF -pinAttr I_216 @name I -pg 1 -lvl 6 -x 1130 -y 5240
+load inst INFO_SPI_MISO~pad_275 INFO_SPI_MISO~pad_275 {} -attr @name INFO_SPI_MISO~pad -attr @cell INPUT -pinAttr SIMIN_217 @name SIMIN -pinAttr PADOUT_205 @name PADOUT -pg 1 -lvl 5 -x 850 -y 5240
+load inst INFO_SPI_MOSI~pad_280 INFO_SPI_MOSI~pad_280 {} -attr @name INFO_SPI_MOSI~pad -attr @cell OUTPUT -pinAttr PADIN_221 @name PADIN -pinAttr SIMOUT_209 @name SIMOUT -pg 1 -lvl 6 -x 1130 -y 5180
+load inst INFO_SPI_CS_n~pad_285 INFO_SPI_CS_n~pad_285 {} -attr @name INFO_SPI_CS_n~pad -attr @cell OUTPUT -pinAttr PADIN_225 @name PADIN -pinAttr SIMOUT_213 @name SIMOUT -pg 1 -lvl 6 -x 1130 -y 5120
+load inst FMC_HA_p[0]~input_286 FMC_HA_p[0]~input_286 {} -attr @name FMC_HA_p[0]~input -attr @cell IO_IBUF -pinAttr I_226 @name I -pg 1 -lvl 6 -x 1130 -y 980
+load inst FMC_HA_p(0)~pad_287 FMC_HA_p(0)~pad_287 {} -attr @name FMC_HA_p(0)~pad -attr @cell BIDIR -pinAttr PADIN_227 @name PADIN -pinAttr SIMIN_228 @name SIMIN -pinAttr PADOUT_214 @name PADOUT -pinAttr SIMOUT_215 @name SIMOUT -pg 1 -lvl 5 -x 850 -y 980
+load inst FMC_HA_p[1]~input_288 FMC_HA_p[1]~input_288 {} -attr @name FMC_HA_p[1]~input -attr @cell IO_IBUF -pinAttr I_229 @name I -pg 1 -lvl 6 -x 1130 -y 1140
+load inst FMC_HA_p(1)~pad_289 FMC_HA_p(1)~pad_289 {} -attr @name FMC_HA_p(1)~pad -attr @cell BIDIR -pinAttr PADIN_230 @name PADIN -pinAttr SIMIN_231 @name SIMIN -pinAttr PADOUT_216 @name PADOUT -pinAttr SIMOUT_217 @name SIMOUT -pg 1 -lvl 5 -x 850 -y 1140
+load inst FMC_HA_p[2]~input_290 FMC_HA_p[2]~input_290 {} -attr @name FMC_HA_p[2]~input -attr @cell IO_IBUF -pinAttr I_232 @name I -pg 1 -lvl 6 -x 1130 -y 1260
+load inst FMC_HA_p(2)~pad_291 FMC_HA_p(2)~pad_291 {} -attr @name FMC_HA_p(2)~pad -attr @cell BIDIR -pinAttr PADIN_233 @name PADIN -pinAttr SIMIN_234 @name SIMIN -pinAttr PADOUT_218 @name PADOUT -pinAttr SIMOUT_219 @name SIMOUT -pg 1 -lvl 5 -x 850 -y 1260
+load inst FMC_HA_p[3]~input_292 FMC_HA_p[3]~input_292 {} -attr @name FMC_HA_p[3]~input -attr @cell IO_IBUF -pinAttr I_235 @name I -pg 1 -lvl 6 -x 1130 -y 1400
+load inst FMC_HA_p(3)~pad_293 FMC_HA_p(3)~pad_293 {} -attr @name FMC_HA_p(3)~pad -attr @cell BIDIR -pinAttr PADIN_236 @name PADIN -pinAttr SIMIN_237 @name SIMIN -pinAttr PADOUT_220 @name PADOUT -pinAttr SIMOUT_221 @name SIMOUT -pg 1 -lvl 5 -x 850 -y 1400
+load inst FMC_HA_p[4]~input_294 FMC_HA_p[4]~input_294 {} -attr @name FMC_HA_p[4]~input -attr @cell IO_IBUF -pinAttr I_238 @name I -pg 1 -lvl 6 -x 1130 -y 1540
+load inst FMC_HA_p(4)~pad_295 FMC_HA_p(4)~pad_295 {} -attr @name FMC_HA_p(4)~pad -attr @cell BIDIR -pinAttr PADIN_239 @name PADIN -pinAttr SIMIN_240 @name SIMIN -pinAttr PADOUT_222 @name PADOUT -pinAttr SIMOUT_223 @name SIMOUT -pg 1 -lvl 5 -x 850 -y 1540
+load inst FMC_HA_p[5]~input_296 FMC_HA_p[5]~input_296 {} -attr @name FMC_HA_p[5]~input -attr @cell IO_IBUF -pinAttr I_241 @name I -pg 1 -lvl 6 -x 1130 -y 1680
+load inst FMC_HA_p(5)~pad_297 FMC_HA_p(5)~pad_297 {} -attr @name FMC_HA_p(5)~pad -attr @cell BIDIR -pinAttr PADIN_242 @name PADIN -pinAttr SIMIN_243 @name SIMIN -pinAttr PADOUT_224 @name PADOUT -pinAttr SIMOUT_225 @name SIMOUT -pg 1 -lvl 5 -x 850 -y 1680
+load inst FMC_HA_p[6]~input_298 FMC_HA_p[6]~input_298 {} -attr @name FMC_HA_p[6]~input -attr @cell IO_IBUF -pinAttr I_244 @name I -pg 1 -lvl 6 -x 1130 -y 1840
+load inst FMC_HA_p(6)~pad_299 FMC_HA_p(6)~pad_299 {} -attr @name FMC_HA_p(6)~pad -attr @cell BIDIR -pinAttr PADIN_245 @name PADIN -pinAttr SIMIN_246 @name SIMIN -pinAttr PADOUT_226 @name PADOUT -pinAttr SIMOUT_227 @name SIMOUT -pg 1 -lvl 5 -x 850 -y 1840
+load inst FMC_HA_p[7]~input_300 FMC_HA_p[7]~input_300 {} -attr @name FMC_HA_p[7]~input -attr @cell IO_IBUF -pinAttr I_247 @name I -pg 1 -lvl 6 -x 1130 -y 1960
+load inst FMC_HA_p(7)~pad_301 FMC_HA_p(7)~pad_301 {} -attr @name FMC_HA_p(7)~pad -attr @cell BIDIR -pinAttr PADIN_248 @name PADIN -pinAttr SIMIN_249 @name SIMIN -pinAttr PADOUT_228 @name PADOUT -pinAttr SIMOUT_229 @name SIMOUT -pg 1 -lvl 5 -x 850 -y 1960
+load inst FMC_HA_p[8]~input_302 FMC_HA_p[8]~input_302 {} -attr @name FMC_HA_p[8]~input -attr @cell IO_IBUF -pinAttr I_250 @name I -pg 1 -lvl 6 -x 1130 -y 2100
+load inst FMC_HA_p(8)~pad_303 FMC_HA_p(8)~pad_303 {} -attr @name FMC_HA_p(8)~pad -attr @cell BIDIR -pinAttr PADIN_251 @name PADIN -pinAttr SIMIN_252 @name SIMIN -pinAttr PADOUT_230 @name PADOUT -pinAttr SIMOUT_231 @name SIMOUT -pg 1 -lvl 5 -x 850 -y 2100
+load inst FMC_HA_p[9]~input_304 FMC_HA_p[9]~input_304 {} -attr @name FMC_HA_p[9]~input -attr @cell IO_IBUF -pinAttr I_253 @name I -pg 1 -lvl 6 -x 1130 -y 2240
+load inst FMC_HA_p(9)~pad_305 FMC_HA_p(9)~pad_305 {} -attr @name FMC_HA_p(9)~pad -attr @cell BIDIR -pinAttr PADIN_254 @name PADIN -pinAttr SIMIN_255 @name SIMIN -pinAttr PADOUT_232 @name PADOUT -pinAttr SIMOUT_233 @name SIMOUT -pg 1 -lvl 5 -x 850 -y 2240
+load inst FMC_HA_p(10)~pad_310 FMC_HA_p(10)~pad_310 {} -attr @name FMC_HA_p(10)~pad -attr @cell BIDIR -pinAttr PADIN_259 @name PADIN -pinAttr SIMIN_260 @name SIMIN -pinAttr PADOUT_237 @name PADOUT -pinAttr SIMOUT_238 @name SIMOUT -pg 1 -lvl 2 -x 240 -y 120
+load inst FMC_HA_p[11]~input_311 FMC_HA_p[11]~input_311 {} -attr @name FMC_HA_p[11]~input -attr @cell IO_IBUF -pinAttr I_261 @name I -pg 1 -lvl 6 -x 1130 -y 2380
+load inst FMC_HA_p(11)~pad_312 FMC_HA_p(11)~pad_312 {} -attr @name FMC_HA_p(11)~pad -attr @cell BIDIR -pinAttr PADIN_262 @name PADIN -pinAttr SIMIN_263 @name SIMIN -pinAttr PADOUT_239 @name PADOUT -pinAttr SIMOUT_240 @name SIMOUT -pg 1 -lvl 5 -x 850 -y 2380
+load inst FMC_HA_p[12]~input_313 FMC_HA_p[12]~input_313 {} -attr @name FMC_HA_p[12]~input -attr @cell IO_IBUF -pinAttr I_264 @name I -pg 1 -lvl 6 -x 1130 -y 2540
+load inst FMC_HA_p(12)~pad_314 FMC_HA_p(12)~pad_314 {} -attr @name FMC_HA_p(12)~pad -attr @cell BIDIR -pinAttr PADIN_265 @name PADIN -pinAttr SIMIN_266 @name SIMIN -pinAttr PADOUT_241 @name PADOUT -pinAttr SIMOUT_242 @name SIMOUT -pg 1 -lvl 5 -x 850 -y 2540
+load inst FMC_HA_p[13]~input_315 FMC_HA_p[13]~input_315 {} -attr @name FMC_HA_p[13]~input -attr @cell IO_IBUF -pinAttr I_267 @name I -pg 1 -lvl 6 -x 1130 -y 2680
+load inst FMC_HA_p(13)~pad_316 FMC_HA_p(13)~pad_316 {} -attr @name FMC_HA_p(13)~pad -attr @cell BIDIR -pinAttr PADIN_268 @name PADIN -pinAttr SIMIN_269 @name SIMIN -pinAttr PADOUT_243 @name PADOUT -pinAttr SIMOUT_244 @name SIMOUT -pg 1 -lvl 5 -x 850 -y 2680
+load inst FMC_HA_p[14]~input_317 FMC_HA_p[14]~input_317 {} -attr @name FMC_HA_p[14]~input -attr @cell IO_IBUF -pinAttr I_270 @name I -pg 1 -lvl 6 -x 1130 -y 2800
+load inst FMC_HA_p(14)~pad_318 FMC_HA_p(14)~pad_318 {} -attr @name FMC_HA_p(14)~pad -attr @cell BIDIR -pinAttr PADIN_271 @name PADIN -pinAttr SIMIN_272 @name SIMIN -pinAttr PADOUT_245 @name PADOUT -pinAttr SIMOUT_246 @name SIMOUT -pg 1 -lvl 5 -x 850 -y 2800
+load inst FMC_HA_p[15]~input_319 FMC_HA_p[15]~input_319 {} -attr @name FMC_HA_p[15]~input -attr @cell IO_IBUF -pinAttr I_273 @name I -pg 1 -lvl 6 -x 1130 -y 2960
+load inst FMC_HA_p(15)~pad_320 FMC_HA_p(15)~pad_320 {} -attr @name FMC_HA_p(15)~pad -attr @cell BIDIR -pinAttr PADIN_274 @name PADIN -pinAttr SIMIN_275 @name SIMIN -pinAttr PADOUT_247 @name PADOUT -pinAttr SIMOUT_248 @name SIMOUT -pg 1 -lvl 5 -x 850 -y 2960
+load inst FMC_HA_p[16]~input_321 FMC_HA_p[16]~input_321 {} -attr @name FMC_HA_p[16]~input -attr @cell IO_IBUF -pinAttr I_276 @name I -pg 1 -lvl 6 -x 1130 -y 3100
+load inst FMC_HA_p(16)~pad_322 FMC_HA_p(16)~pad_322 {} -attr @name FMC_HA_p(16)~pad -attr @cell BIDIR -pinAttr PADIN_277 @name PADIN -pinAttr SIMIN_278 @name SIMIN -pinAttr PADOUT_249 @name PADOUT -pinAttr SIMOUT_250 @name SIMOUT -pg 1 -lvl 5 -x 850 -y 3100
+load inst FMC_HA_p[17]~input_323 FMC_HA_p[17]~input_323 {} -attr @name FMC_HA_p[17]~input -attr @cell IO_IBUF -pinAttr I_279 @name I -pg 1 -lvl 6 -x 1130 -y 3220
+load inst FMC_HA_p(17)~pad_324 FMC_HA_p(17)~pad_324 {} -attr @name FMC_HA_p(17)~pad -attr @cell BIDIR -pinAttr PADIN_280 @name PADIN -pinAttr SIMIN_281 @name SIMIN -pinAttr PADOUT_251 @name PADOUT -pinAttr SIMOUT_252 @name SIMOUT -pg 1 -lvl 5 -x 850 -y 3220
+load inst FMC_HA_p[18]~input_325 FMC_HA_p[18]~input_325 {} -attr @name FMC_HA_p[18]~input -attr @cell IO_IBUF -pinAttr I_282 @name I -pg 1 -lvl 6 -x 1130 -y 3360
+load inst FMC_HA_p(18)~pad_326 FMC_HA_p(18)~pad_326 {} -attr @name FMC_HA_p(18)~pad -attr @cell BIDIR -pinAttr PADIN_283 @name PADIN -pinAttr SIMIN_284 @name SIMIN -pinAttr PADOUT_253 @name PADOUT -pinAttr SIMOUT_254 @name SIMOUT -pg 1 -lvl 5 -x 850 -y 3360
+load inst FMC_HA_p[19]~input_327 FMC_HA_p[19]~input_327 {} -attr @name FMC_HA_p[19]~input -attr @cell IO_IBUF -pinAttr I_285 @name I -pg 1 -lvl 6 -x 1130 -y 3500
+load inst FMC_HA_p(19)~pad_328 FMC_HA_p(19)~pad_328 {} -attr @name FMC_HA_p(19)~pad -attr @cell BIDIR -pinAttr PADIN_286 @name PADIN -pinAttr SIMIN_287 @name SIMIN -pinAttr PADOUT_255 @name PADOUT -pinAttr SIMOUT_256 @name SIMOUT -pg 1 -lvl 5 -x 850 -y 3500
+load inst FMC_HA_p[20]~input_329 FMC_HA_p[20]~input_329 {} -attr @name FMC_HA_p[20]~input -attr @cell IO_IBUF -pinAttr I_288 @name I -pg 1 -lvl 6 -x 1130 -y 3640
+load inst FMC_HA_p(20)~pad_330 FMC_HA_p(20)~pad_330 {} -attr @name FMC_HA_p(20)~pad -attr @cell BIDIR -pinAttr PADIN_289 @name PADIN -pinAttr SIMIN_290 @name SIMIN -pinAttr PADOUT_257 @name PADOUT -pinAttr SIMOUT_258 @name SIMOUT -pg 1 -lvl 5 -x 850 -y 3640
+load inst FMC_HA_p[21]~input_331 FMC_HA_p[21]~input_331 {} -attr @name FMC_HA_p[21]~input -attr @cell IO_IBUF -pinAttr I_291 @name I -pg 1 -lvl 6 -x 1130 -y 3780
+load inst FMC_HA_p(21)~pad_332 FMC_HA_p(21)~pad_332 {} -attr @name FMC_HA_p(21)~pad -attr @cell BIDIR -pinAttr PADIN_292 @name PADIN -pinAttr SIMIN_293 @name SIMIN -pinAttr PADOUT_259 @name PADOUT -pinAttr SIMOUT_260 @name SIMOUT -pg 1 -lvl 5 -x 850 -y 3780
+load inst FMC_HA_p[22]~input_333 FMC_HA_p[22]~input_333 {} -attr @name FMC_HA_p[22]~input -attr @cell IO_IBUF -pinAttr I_294 @name I -pg 1 -lvl 6 -x 1130 -y 3920
+load inst FMC_HA_p(22)~pad_334 FMC_HA_p(22)~pad_334 {} -attr @name FMC_HA_p(22)~pad -attr @cell BIDIR -pinAttr PADIN_295 @name PADIN -pinAttr SIMIN_296 @name SIMIN -pinAttr PADOUT_261 @name PADOUT -pinAttr SIMOUT_262 @name SIMOUT -pg 1 -lvl 5 -x 850 -y 3920
+load inst FMC_HA_p[23]~input_335 FMC_HA_p[23]~input_335 {} -attr @name FMC_HA_p[23]~input -attr @cell IO_IBUF -pinAttr I_297 @name I -pg 1 -lvl 6 -x 1130 -y 4060
+load inst FMC_HA_p(23)~pad_336 FMC_HA_p(23)~pad_336 {} -attr @name FMC_HA_p(23)~pad -attr @cell BIDIR -pinAttr PADIN_298 @name PADIN -pinAttr SIMIN_299 @name SIMIN -pinAttr PADOUT_263 @name PADOUT -pinAttr SIMOUT_264 @name SIMOUT -pg 1 -lvl 5 -x 850 -y 4060
+load inst SI5340A_I2C_SCL~input_337 SI5340A_I2C_SCL~input_337 {} -attr @name SI5340A_I2C_SCL~input -attr @cell IO_IBUF -pinAttr I_300 @name I -pg 1 -lvl 6 -x 1130 -y 5580
+load inst SI5340A_I2C_SCL~pad_338 SI5340A_I2C_SCL~pad_338 {} -attr @name SI5340A_I2C_SCL~pad -attr @cell BIDIR -pinAttr PADIN_301 @name PADIN -pinAttr SIMIN_302 @name SIMIN -pinAttr PADOUT_265 @name PADOUT -pinAttr SIMOUT_266 @name SIMOUT -pg 1 -lvl 5 -x 850 -y 5580
+load inst SI5340A_I2C_SDA~input_339 SI5340A_I2C_SDA~input_339 {} -attr @name SI5340A_I2C_SDA~input -attr @cell IO_IBUF -pinAttr I_303 @name I -pg 1 -lvl 6 -x 1130 -y 5720
+load inst SI5340A_I2C_SDA~pad_340 SI5340A_I2C_SDA~pad_340 {} -attr @name SI5340A_I2C_SDA~pad -attr @cell BIDIR -pinAttr PADIN_304 @name PADIN -pinAttr SIMIN_305 @name SIMIN -pinAttr PADOUT_267 @name PADOUT -pinAttr SIMOUT_268 @name SIMOUT -pg 1 -lvl 5 -x 850 -y 5720
+load inst GPIO_D[0]~input_341 GPIO_D[0]~input_341 {} -attr @name GPIO_D[0]~input -attr @cell IO_IBUF -pinAttr I_306 @name I -pg 1 -lvl 6 -x 1130 -y 4200
+load inst GPIO_D(0)~pad_342 GPIO_D(0)~pad_342 {} -attr @name GPIO_D(0)~pad -attr @cell BIDIR -pinAttr PADIN_307 @name PADIN -pinAttr SIMIN_308 @name SIMIN -pinAttr PADOUT_269 @name PADOUT -pinAttr SIMOUT_270 @name SIMOUT -pg 1 -lvl 5 -x 850 -y 4200
+load inst GPIO_D[1]~input_343 GPIO_D[1]~input_343 {} -attr @name GPIO_D[1]~input -attr @cell IO_IBUF -pinAttr I_309 @name I -pg 1 -lvl 6 -x 1130 -y 20
+load inst GPIO_D(1)~pad_344 GPIO_D(1)~pad_344 {} -attr @name GPIO_D(1)~pad -attr @cell BIDIR -pinAttr PADIN_310 @name PADIN -pinAttr SIMIN_311 @name SIMIN -pinAttr PADOUT_271 @name PADOUT -pinAttr SIMOUT_272 @name SIMOUT -pg 1 -lvl 5 -x 850 -y 20
+load inst GPIO_D[2]~input_345 GPIO_D[2]~input_345 {} -attr @name GPIO_D[2]~input -attr @cell IO_IBUF -pinAttr I_312 @name I -pg 1 -lvl 6 -x 1130 -y 4340
+load inst GPIO_D(2)~pad_346 GPIO_D(2)~pad_346 {} -attr @name GPIO_D(2)~pad -attr @cell BIDIR -pinAttr PADIN_313 @name PADIN -pinAttr SIMIN_314 @name SIMIN -pinAttr PADOUT_273 @name PADOUT -pinAttr SIMOUT_274 @name SIMOUT -pg 1 -lvl 5 -x 850 -y 4340
+load inst GPIO_D[3]~input_347 GPIO_D[3]~input_347 {} -attr @name GPIO_D[3]~input -attr @cell IO_IBUF -pinAttr I_315 @name I -pg 1 -lvl 6 -x 1130 -y 4480
+load inst GPIO_D(3)~pad_348 GPIO_D(3)~pad_348 {} -attr @name GPIO_D(3)~pad -attr @cell BIDIR -pinAttr PADIN_316 @name PADIN -pinAttr SIMIN_317 @name SIMIN -pinAttr PADOUT_275 @name PADOUT -pinAttr SIMOUT_276 @name SIMOUT -pg 1 -lvl 5 -x 850 -y 4480
+load inst GPIO_D[4]~input_349 GPIO_D[4]~input_349 {} -attr @name GPIO_D[4]~input -attr @cell IO_IBUF -pinAttr I_318 @name I -pg 1 -lvl 6 -x 1130 -y 4620
+load inst GPIO_D(4)~pad_350 GPIO_D(4)~pad_350 {} -attr @name GPIO_D(4)~pad -attr @cell BIDIR -pinAttr PADIN_319 @name PADIN -pinAttr SIMIN_320 @name SIMIN -pinAttr PADOUT_277 @name PADOUT -pinAttr SIMOUT_278 @name SIMOUT -pg 1 -lvl 5 -x 850 -y 4620
+load inst GPIO_D[5]~input_351 GPIO_D[5]~input_351 {} -attr @name GPIO_D[5]~input -attr @cell IO_IBUF -pinAttr I_321 @name I -pg 1 -lvl 6 -x 1130 -y 4780
+load inst GPIO_D(5)~pad_352 GPIO_D(5)~pad_352 {} -attr @name GPIO_D(5)~pad -attr @cell BIDIR -pinAttr PADIN_322 @name PADIN -pinAttr SIMIN_323 @name SIMIN -pinAttr PADOUT_279 @name PADOUT -pinAttr SIMOUT_280 @name SIMOUT -pg 1 -lvl 5 -x 850 -y 4780
+load inst GPIO_D[6]~input_353 GPIO_D[6]~input_353 {} -attr @name GPIO_D[6]~input -attr @cell IO_IBUF -pinAttr I_324 @name I -pg 1 -lvl 6 -x 1130 -y 4920
+load inst GPIO_D(6)~pad_354 GPIO_D(6)~pad_354 {} -attr @name GPIO_D(6)~pad -attr @cell BIDIR -pinAttr PADIN_325 @name PADIN -pinAttr SIMIN_326 @name SIMIN -pinAttr PADOUT_281 @name PADOUT -pinAttr SIMOUT_282 @name SIMOUT -pg 1 -lvl 5 -x 850 -y 4920
+load inst GPIO_D[7]~input_355 GPIO_D[7]~input_355 {} -attr @name GPIO_D[7]~input -attr @cell IO_IBUF -pinAttr I_327 @name I -pg 1 -lvl 6 -x 1130 -y 5040
+load inst GPIO_D(7)~pad_356 GPIO_D(7)~pad_356 {} -attr @name GPIO_D(7)~pad -attr @cell BIDIR -pinAttr PADIN_328 @name PADIN -pinAttr SIMIN_329 @name SIMIN -pinAttr PADOUT_283 @name PADOUT -pinAttr SIMOUT_284 @name SIMOUT -pg 1 -lvl 5 -x 850 -y 5040
+load inst ~ALTERA_OSC_CLK_1~~ibuf_358 ~ALTERA_OSC_CLK_1~~ibuf_358 {} -attr @name ~ALTERA_OSC_CLK_1~~ibuf -attr @cell IO_IBUF -pinAttr I_330 @name I -pg 1 -lvl 5 -x 850 -y 6540
+load inst ~ALTERA_AS_DATA1~_364 ~ALTERA_AS_DATA1~_364 {} -attr @name ~ALTERA_AS_DATA1~ -attr @cell BIDIR -pinAttr PADIN_335 @name PADIN -pinAttr PADOUT_289 @name PADOUT -pg 1 -lvl 5 -x 850 -y 6200
+load inst ~ALTERA_AS_DATA1~~ibuf_370 ~ALTERA_AS_DATA1~~ibuf_370 {} -attr @name ~ALTERA_AS_DATA1~~ibuf -attr @cell IO_IBUF -pinAttr I_341 @name I -pg 1 -lvl 6 -x 1130 -y 6200
+load inst ~ALTERA_AS_DATA2~_376 ~ALTERA_AS_DATA2~_376 {} -attr @name ~ALTERA_AS_DATA2~ -attr @cell BIDIR -pinAttr PADIN_346 @name PADIN -pinAttr PADOUT_297 @name PADOUT -pg 1 -lvl 5 -x 850 -y 6280
+load inst ~ALTERA_AS_DATA2~~ibuf_382 ~ALTERA_AS_DATA2~~ibuf_382 {} -attr @name ~ALTERA_AS_DATA2~~ibuf -attr @cell IO_IBUF -pinAttr I_352 @name I -pg 1 -lvl 6 -x 1130 -y 6280
+load inst ~ALTERA_AS_DATA0~_383 ~ALTERA_AS_DATA0~_383 {} -attr @name ~ALTERA_AS_DATA0~ -attr @cell BIDIR -pinAttr PADIN_353 @name PADIN -pinAttr PADOUT_302 @name PADOUT -pg 1 -lvl 5 -x 850 -y 6080
+load inst ~ALTERA_AS_DATA0~~ibuf_389 ~ALTERA_AS_DATA0~~ibuf_389 {} -attr @name ~ALTERA_AS_DATA0~~ibuf -attr @cell IO_IBUF -pinAttr I_359 @name I -pg 1 -lvl 6 -x 1130 -y 6080
+load inst ~ALTERA_AS_DATA3~_415 ~ALTERA_AS_DATA3~_415 {} -attr @name ~ALTERA_AS_DATA3~ -attr @cell BIDIR -pinAttr PADIN_380 @name PADIN -pinAttr PADOUT_322 @name PADOUT -pg 1 -lvl 5 -x 850 -y 6360
+load inst ~ALTERA_AS_DATA3~~ibuf_421 ~ALTERA_AS_DATA3~~ibuf_421 {} -attr @name ~ALTERA_AS_DATA3~~ibuf -attr @cell IO_IBUF -pinAttr I_386 @name I -pg 1 -lvl 6 -x 1130 -y 6360
+load inst ~PWRMGT_SDA~_427 ~PWRMGT_SDA~_427 {} -attr @name ~PWRMGT_SDA~ -attr @cell BIDIR -pinAttr PADIN_391 @name PADIN -pinAttr PADOUT_330 @name PADOUT -pg 1 -lvl 5 -x 850 -y 6960
+load inst ~PWRMGT_SDA~~ibuf_433 ~PWRMGT_SDA~~ibuf_433 {} -attr @name ~PWRMGT_SDA~~ibuf -attr @cell IO_IBUF -pinAttr I_397 @name I -pg 1 -lvl 6 -x 1130 -y 6960
+load inst QSFP28_REFCLK_p~inputFITTER_INSERTED_436 QSFP28_REFCLK_p~inputFITTER_INSERTED_436 {} -attr @name QSFP28_REFCLK_p~inputFITTER_INSERTED -attr @cell {} -pinAttr PAD_398 @name PAD -pg 1 -lvl 6 -x 1130 -y 5480
+load net I_1 -power -attr @name {} -pin FMC_HA_p[0]~output_29 I_31
+load net I_4 -power -attr @name {} -pin FMC_HA_p[1]~output_34 I_36
+load net I_7 -power -attr @name {} -pin FMC_HA_p[2]~output_39 I_41
+load net I_10 -power -attr @name {} -pin FMC_HA_p[3]~output_44 I_46
+load net I_13 -power -attr @name {} -pin FMC_HA_p[4]~output_49 I_51
+load net I_16 -power -attr @name {} -pin FMC_HA_p[5]~output_54 I_56
+load net I_19 -power -attr @name {} -pin FMC_HA_p[6]~output_59 I_61
+load net I_22 -power -attr @name {} -pin FMC_HA_p[7]~output_64 I_66
+load net I_25 -power -attr @name {} -pin FMC_HA_p[8]~output_69 I_71
+load net I_28 -power -attr @name {} -pin FMC_HA_p[9]~output_74 I_76
+load net I_31 -power -attr @name {} -pin FMC_HA_p[10]~output_79 I_81
+load net I_34 -power -attr @name {} -pin FMC_HA_p[11]~output_84 I_86
+load net I_37 -power -attr @name {} -pin FMC_HA_p[12]~output_89 I_91
+load net I_40 -power -attr @name {} -pin FMC_HA_p[13]~output_94 I_96
+load net I_43 -power -attr @name {} -pin FMC_HA_p[14]~output_99 I_101
+load net I_46 -power -attr @name {} -pin FMC_HA_p[15]~output_104 I_106
+load net I_49 -power -attr @name {} -pin FMC_HA_p[16]~output_109 I_111
+load net I_52 -power -attr @name {} -pin FMC_HA_p[17]~output_114 I_116
+load net I_55 -power -attr @name {} -pin FMC_HA_p[18]~output_119 I_121
+load net I_58 -power -attr @name {} -pin FMC_HA_p[19]~output_124 I_126
+load net I_61 -power -attr @name {} -pin FMC_HA_p[20]~output_129 I_131
+load net I_64 -power -attr @name {} -pin FMC_HA_p[21]~output_134 I_136
+load net I_67 -power -attr @name {} -pin FMC_HA_p[22]~output_139 I_141
+load net I_70 -power -attr @name {} -pin FMC_HA_p[23]~output_144 I_146
+load net I_73 -power -attr @name {} -pin SI5340A_I2C_SCL~output_149 I_151
+load net I_76 -power -attr @name {} -pin SI5340A_I2C_SDA~output_154 I_156
+load net I_79 -ground -attr @name {} -pin GPIO_D[0]~output_159 I_161
+load net OE_82 -ground -attr @name {} -pin GPIO_D[1]~output_164 OE_167
+load net I_86 -power -attr @name {} -pin GPIO_D[2]~output_170 I_172
+load net I_89 -power -attr @name {} -pin GPIO_D[3]~output_175 I_177
+load net I_92 -power -attr @name {} -pin GPIO_D[4]~output_180 I_182
+load net I_95 -power -attr @name {} -pin GPIO_D[5]~output_185 I_187
+load net I_98 -power -attr @name {} -pin GPIO_D[6]~output_190 I_192
+load net I_101 -power -attr @name {} -pin GPIO_D[7]~output_195 I_197
+load net I_104 -ground -attr @name {} -pin LED[0]~output_223 I_225
+load net I_107 -ground -attr @name {} -pin LED[1]~output_228 I_230
+load net I_110 -ground -attr @name {} -pin SI5340A_OE_n~output_237 I_239
+load net I_113 -power -attr @name {} -pin SI5340A_RST_n~output_242 I_244
+load net I_121 -ground -attr @name {} -pin AG_UART_TX~output_255 I_257
+load net I_124 -ground -attr @name {} -pin AG_UART_RTS~output_264 I_266
+load net I_127 -ground -attr @name {} -pin INFO_SPI_SCLK~output_269 I_271
+load net I_130 -ground -attr @name {} -pin INFO_SPI_MOSI~output_276 I_278
+load net I_133 -ground -attr @name {} -pin INFO_SPI_CS_n~output_281 I_283
+load net I_138 -ground -attr @name {} -pin ~PWRMGT_SCL~~obuf_360 I_362
+load net I_141 -ground -attr @name {} -pin ~ALTERA_AS_DATA1~~obuf_365 I_367
+load net OE_142 -power -attr @name {} -pin ~ALTERA_AS_DATA1~~obuf_365 OE_368
+load net I_146 -ground -attr @name {} -pin ~ALTERA_AS_nCSO0,ALTERA_MSEL0~~obuf_372 I_374
+load net I_149 -ground -attr @name {} -pin ~ALTERA_AS_DATA2~~obuf_377 I_379
+load net OE_150 -power -attr @name {} -pin ~ALTERA_AS_DATA2~~obuf_377 OE_380
+load net I_154 -ground -attr @name {} -pin ~ALTERA_AS_DATA0~~obuf_384 I_386
+load net OE_155 -power -attr @name {} -pin ~ALTERA_AS_DATA0~~obuf_384 OE_387
+load net I_159 -ground -attr @name {} -pin ~ALTERA_AS_CLK~~obuf_391 I_393
+load net I_162 -ground -attr @name {} -pin ~ALTERA_AS_nCSO2,ALTERA_MSEL1~~obuf_396 I_398
+load net I_165 -ground -attr @name {} -pin ~CONF_DONE~~obuf_401 I_403
+load net I_168 -ground -attr @name {} -pin ~HPS_COLD_RESET~~obuf_406 I_408
+load net I_171 -ground -attr @name {} -pin ~ALTERA_AS_nCSO1,ALTERA_MSEL2~~obuf_411 I_413
+load net I_174 -ground -attr @name {} -pin ~ALTERA_AS_DATA3~~obuf_416 I_418
+load net OE_175 -power -attr @name {} -pin ~ALTERA_AS_DATA3~~obuf_416 OE_419
+load net I_179 -ground -attr @name {} -pin ~ALTERA_AS_nCSO3~~obuf_423 I_425
+load net I_182 -ground -attr @name {} -pin ~PWRMGT_SDA~~obuf_428 I_430
+load net OE_183 -power -attr @name {} -pin ~PWRMGT_SDA~~obuf_428 OE_431
+load net OUTPUT_187 -attr @name CLK_100_B2A -port CLK_100_B2A_2 -pin CLK_100_B2A~pad_202 SIMIN_150
+netloc OUTPUT_187 1 0 5 NJ 850 NJ 850 NJ 850 NJ 850 NJ
+load net OUTPUT_188 -attr @name CLK_30M72 -port CLK_30M72_3 -pin CLK_30M72~pad_204 SIMIN_152
+netloc OUTPUT_188 1 0 5 NJ 530 NJ 530 NJ 530 NJ 530 NJ
+load net OUTPUT_189 -attr @name CLK_50_B2A -port CLK_50_B2A_4 -pin CLK_50_B2A~pad_206 SIMIN_154
+netloc OUTPUT_189 1 0 5 NJ 590 NJ 590 NJ 590 NJ 590 NJ
+load net OUTPUT_190 -attr @name CLK_50_B2D -port CLK_50_B2D_5 -pin CLK_50_B2D~pad_208 SIMIN_156
+netloc OUTPUT_190 1 0 5 NJ 650 NJ 650 NJ 650 NJ 650 NJ
+load net OUTPUT_191 -attr @name CLK_50_B3A -port CLK_50_B3A_6 -pin CLK_50_B3A~pad_210 SIMIN_158
+netloc OUTPUT_191 1 0 5 NJ 710 NJ 710 NJ 710 NJ 710 NJ
+load net OUTPUT_192 -attr @name CLK_50_B3C -port CLK_50_B3C_7 -pin CLK_50_B3C~pad_212 SIMIN_160
+netloc OUTPUT_192 1 0 5 NJ 770 NJ 770 NJ 770 NJ 770 NJ
+load net OUTPUT_193 -attr @name CPU_RESET_n -port CPU_RESET_n_8 -pin CPU_RESET_n~pad_214 SIMIN_162
+netloc OUTPUT_193 1 0 5 NJ 910 NJ 910 NJ 910 NJ 910 NJ
+load net OUTPUT_198 -attr @name SI5340A_LOL -port SI5340A_LOL_15 -pin SI5340A_LOL~pad_234 SIMIN_180
+netloc OUTPUT_198 1 0 5 NJ 5850 NJ 5850 NJ 5850 NJ 5850 NJ
+load net OUTPUT_199 -attr @name SI5340A_LOS_XAXB -port SI5340A_LOS_XAXB_16 -pin SI5340A_LOS_XAXB~pad_236 SIMIN_182
+netloc OUTPUT_199 1 0 5 NJ 5910 NJ 5910 NJ 5910 NJ 5910 NJ
+load net OUTPUT_200 -attr @name QSFP28_REFCLK_p -port QSFP28_REFCLK_p_19 -pin QSFP28_REFCLK_p~pad_254 SIMIN_199
+netloc OUTPUT_200 1 0 4 NJ 5530 NJ 5530 NJ 5530 NJ
+load net OUTPUT_201 -attr @name AG_UART_RX -port AG_UART_RX_21 -pin AG_UART_RX~pad_261 SIMIN_205
+netloc OUTPUT_201 1 0 5 NJ 290 NJ 290 NJ 290 NJ 290 NJ
+load net OUTPUT_202 -attr @name AG_UART_CTS -port AG_UART_CTS_22 -pin AG_UART_CTS~pad_263 SIMIN_207
+netloc OUTPUT_202 1 0 5 NJ 230 NJ 230 NJ 230 NJ 230 NJ
+load net OUTPUT_203 -attr @name INFO_SPI_MISO -port INFO_SPI_MISO_25 -pin INFO_SPI_MISO~pad_275 SIMIN_217
+netloc OUTPUT_203 1 0 5 NJ 5250 NJ 5250 NJ 5250 NJ 5250 NJ
+load net OUTPUT_204 -attr @name FMC_HA_p[0]:OUTPUT -pin FMC_HA_p(0)~pad_287 SIMIN_228 -pin FMC_HA_p[0]_28 OUTPUT_18
+netloc OUTPUT_204 1 4 1 770J 1010n
+load net O_205 -attr @name FMC_HA_p[0]~output:O -pin FMC_HA_p(0)~pad_287 PADIN_227 -pin FMC_HA_p[0]~output_29 O_32
+netloc O_205 1 4 1 NJ 990
+load net OUTPUT_206 -attr @name FMC_HA_p[1]:OUTPUT -pin FMC_HA_p(1)~pad_289 SIMIN_231 -pin FMC_HA_p[1]_33 OUTPUT_22
+netloc OUTPUT_206 1 4 1 NJ 1170
+load net O_207 -attr @name FMC_HA_p[1]~output:O -pin FMC_HA_p(1)~pad_289 PADIN_230 -pin FMC_HA_p[1]~output_34 O_37
+netloc O_207 1 4 1 770J 1110n
+load net OUTPUT_208 -attr @name FMC_HA_p[2]:OUTPUT -pin FMC_HA_p(2)~pad_291 SIMIN_234 -pin FMC_HA_p[2]_38 OUTPUT_26
+netloc OUTPUT_208 1 4 1 770J 1290n
+load net O_209 -attr @name FMC_HA_p[2]~output:O -pin FMC_HA_p(2)~pad_291 PADIN_233 -pin FMC_HA_p[2]~output_39 O_42
+netloc O_209 1 4 1 NJ 1270
+load net OUTPUT_210 -attr @name FMC_HA_p[3]:OUTPUT -pin FMC_HA_p(3)~pad_293 SIMIN_237 -pin FMC_HA_p[3]_43 OUTPUT_30
+netloc OUTPUT_210 1 4 1 770J 1430n
+load net O_211 -attr @name FMC_HA_p[3]~output:O -pin FMC_HA_p(3)~pad_293 PADIN_236 -pin FMC_HA_p[3]~output_44 O_47
+netloc O_211 1 4 1 NJ 1410
+load net OUTPUT_212 -attr @name FMC_HA_p[4]:OUTPUT -pin FMC_HA_p(4)~pad_295 SIMIN_240 -pin FMC_HA_p[4]_48 OUTPUT_34
+netloc OUTPUT_212 1 4 1 770J 1570n
+load net O_213 -attr @name FMC_HA_p[4]~output:O -pin FMC_HA_p(4)~pad_295 PADIN_239 -pin FMC_HA_p[4]~output_49 O_52
+netloc O_213 1 4 1 NJ 1550
+load net OUTPUT_214 -attr @name FMC_HA_p[5]:OUTPUT -pin FMC_HA_p(5)~pad_297 SIMIN_243 -pin FMC_HA_p[5]_53 OUTPUT_38
+netloc OUTPUT_214 1 4 1 770J 1710n
+load net O_215 -attr @name FMC_HA_p[5]~output:O -pin FMC_HA_p(5)~pad_297 PADIN_242 -pin FMC_HA_p[5]~output_54 O_57
+netloc O_215 1 4 1 NJ 1690
+load net OUTPUT_216 -attr @name FMC_HA_p[6]:OUTPUT -pin FMC_HA_p(6)~pad_299 SIMIN_246 -pin FMC_HA_p[6]_58 OUTPUT_42
+netloc OUTPUT_216 1 4 1 NJ 1870
+load net O_217 -attr @name FMC_HA_p[6]~output:O -pin FMC_HA_p(6)~pad_299 PADIN_245 -pin FMC_HA_p[6]~output_59 O_62
+netloc O_217 1 4 1 770J 1810n
+load net OUTPUT_218 -attr @name FMC_HA_p[7]:OUTPUT -pin FMC_HA_p(7)~pad_301 SIMIN_249 -pin FMC_HA_p[7]_63 OUTPUT_46
+netloc OUTPUT_218 1 4 1 770J 1990n
+load net O_219 -attr @name FMC_HA_p[7]~output:O -pin FMC_HA_p(7)~pad_301 PADIN_248 -pin FMC_HA_p[7]~output_64 O_67
+netloc O_219 1 4 1 NJ 1970
+load net OUTPUT_220 -attr @name FMC_HA_p[8]:OUTPUT -pin FMC_HA_p(8)~pad_303 SIMIN_252 -pin FMC_HA_p[8]_68 OUTPUT_50
+netloc OUTPUT_220 1 4 1 770J 2130n
+load net O_221 -attr @name FMC_HA_p[8]~output:O -pin FMC_HA_p(8)~pad_303 PADIN_251 -pin FMC_HA_p[8]~output_69 O_72
+netloc O_221 1 4 1 NJ 2110
+load net OUTPUT_222 -attr @name FMC_HA_p[9]:OUTPUT -pin FMC_HA_p(9)~pad_305 SIMIN_255 -pin FMC_HA_p[9]_73 OUTPUT_54
+netloc OUTPUT_222 1 4 1 770J 2270n
+load net O_223 -attr @name FMC_HA_p[9]~output:O -pin FMC_HA_p(9)~pad_305 PADIN_254 -pin FMC_HA_p[9]~output_74 O_77
+netloc O_223 1 4 1 NJ 2250
+load net OUTPUT_224 -attr @name FMC_HA_p[10]:OUTPUT -pin FMC_HA_p(10)~pad_310 SIMIN_260 -pin FMC_HA_p[10]_78 OUTPUT_58
+netloc OUTPUT_224 1 1 1 200J 150n
+load net O_225 -attr @name FMC_HA_p[10]~output:O -pin FMC_HA_p(10)~pad_310 PADIN_259 -pin FMC_HA_p[10]~output_79 O_82
+netloc O_225 1 1 1 NJ 130
+load net OUTPUT_226 -attr @name FMC_HA_p[11]:OUTPUT -pin FMC_HA_p(11)~pad_312 SIMIN_263 -pin FMC_HA_p[11]_83 OUTPUT_62
+netloc OUTPUT_226 1 4 1 770J 2410n
+load net O_227 -attr @name FMC_HA_p[11]~output:O -pin FMC_HA_p(11)~pad_312 PADIN_262 -pin FMC_HA_p[11]~output_84 O_87
+netloc O_227 1 4 1 NJ 2390
+load net OUTPUT_228 -attr @name FMC_HA_p[12]:OUTPUT -pin FMC_HA_p(12)~pad_314 SIMIN_266 -pin FMC_HA_p[12]_88 OUTPUT_66
+netloc OUTPUT_228 1 4 1 NJ 2570
+load net O_229 -attr @name FMC_HA_p[12]~output:O -pin FMC_HA_p(12)~pad_314 PADIN_265 -pin FMC_HA_p[12]~output_89 O_92
+netloc O_229 1 4 1 770J 2510n
+load net OUTPUT_230 -attr @name FMC_HA_p[13]:OUTPUT -pin FMC_HA_p(13)~pad_316 SIMIN_269 -pin FMC_HA_p[13]_93 OUTPUT_70
+netloc OUTPUT_230 1 4 1 NJ 2710
+load net O_231 -attr @name FMC_HA_p[13]~output:O -pin FMC_HA_p(13)~pad_316 PADIN_268 -pin FMC_HA_p[13]~output_94 O_97
+netloc O_231 1 4 1 770J 2650n
+load net OUTPUT_232 -attr @name FMC_HA_p[14]:OUTPUT -pin FMC_HA_p(14)~pad_318 SIMIN_272 -pin FMC_HA_p[14]_98 OUTPUT_74
+netloc OUTPUT_232 1 4 1 770J 2830n
+load net O_233 -attr @name FMC_HA_p[14]~output:O -pin FMC_HA_p(14)~pad_318 PADIN_271 -pin FMC_HA_p[14]~output_99 O_102
+netloc O_233 1 4 1 NJ 2810
+load net OUTPUT_234 -attr @name FMC_HA_p[15]:OUTPUT -pin FMC_HA_p(15)~pad_320 SIMIN_275 -pin FMC_HA_p[15]_103 OUTPUT_78
+netloc OUTPUT_234 1 4 1 NJ 2990
+load net O_235 -attr @name FMC_HA_p[15]~output:O -pin FMC_HA_p(15)~pad_320 PADIN_274 -pin FMC_HA_p[15]~output_104 O_107
+netloc O_235 1 4 1 770J 2930n
+load net OUTPUT_236 -attr @name FMC_HA_p[16]:OUTPUT -pin FMC_HA_p(16)~pad_322 SIMIN_278 -pin FMC_HA_p[16]_108 OUTPUT_82
+netloc OUTPUT_236 1 4 1 NJ 3130
+load net O_237 -attr @name FMC_HA_p[16]~output:O -pin FMC_HA_p(16)~pad_322 PADIN_277 -pin FMC_HA_p[16]~output_109 O_112
+netloc O_237 1 4 1 770J 3070n
+load net OUTPUT_238 -attr @name FMC_HA_p[17]:OUTPUT -pin FMC_HA_p(17)~pad_324 SIMIN_281 -pin FMC_HA_p[17]_113 OUTPUT_86
+netloc OUTPUT_238 1 4 1 770J 3250n
+load net O_239 -attr @name FMC_HA_p[17]~output:O -pin FMC_HA_p(17)~pad_324 PADIN_280 -pin FMC_HA_p[17]~output_114 O_117
+netloc O_239 1 4 1 NJ 3230
+load net OUTPUT_240 -attr @name FMC_HA_p[18]:OUTPUT -pin FMC_HA_p(18)~pad_326 SIMIN_284 -pin FMC_HA_p[18]_118 OUTPUT_90
+netloc OUTPUT_240 1 4 1 770J 3390n
+load net O_241 -attr @name FMC_HA_p[18]~output:O -pin FMC_HA_p(18)~pad_326 PADIN_283 -pin FMC_HA_p[18]~output_119 O_122
+netloc O_241 1 4 1 NJ 3370
+load net OUTPUT_242 -attr @name FMC_HA_p[19]:OUTPUT -pin FMC_HA_p(19)~pad_328 SIMIN_287 -pin FMC_HA_p[19]_123 OUTPUT_94
+netloc OUTPUT_242 1 4 1 770J 3530n
+load net O_243 -attr @name FMC_HA_p[19]~output:O -pin FMC_HA_p(19)~pad_328 PADIN_286 -pin FMC_HA_p[19]~output_124 O_127
+netloc O_243 1 4 1 NJ 3510
+load net OUTPUT_244 -attr @name FMC_HA_p[20]:OUTPUT -pin FMC_HA_p(20)~pad_330 SIMIN_290 -pin FMC_HA_p[20]_128 OUTPUT_98
+netloc OUTPUT_244 1 4 1 770J 3670n
+load net O_245 -attr @name FMC_HA_p[20]~output:O -pin FMC_HA_p(20)~pad_330 PADIN_289 -pin FMC_HA_p[20]~output_129 O_132
+netloc O_245 1 4 1 NJ 3650
+load net OUTPUT_246 -attr @name FMC_HA_p[21]:OUTPUT -pin FMC_HA_p(21)~pad_332 SIMIN_293 -pin FMC_HA_p[21]_133 OUTPUT_102
+netloc OUTPUT_246 1 4 1 770J 3810n
+load net O_247 -attr @name FMC_HA_p[21]~output:O -pin FMC_HA_p(21)~pad_332 PADIN_292 -pin FMC_HA_p[21]~output_134 O_137
+netloc O_247 1 4 1 NJ 3790
+load net OUTPUT_248 -attr @name FMC_HA_p[22]:OUTPUT -pin FMC_HA_p(22)~pad_334 SIMIN_296 -pin FMC_HA_p[22]_138 OUTPUT_106
+netloc OUTPUT_248 1 4 1 770J 3950n
+load net O_249 -attr @name FMC_HA_p[22]~output:O -pin FMC_HA_p(22)~pad_334 PADIN_295 -pin FMC_HA_p[22]~output_139 O_142
+netloc O_249 1 4 1 NJ 3930
+load net OUTPUT_250 -attr @name FMC_HA_p[23]:OUTPUT -pin FMC_HA_p(23)~pad_336 SIMIN_299 -pin FMC_HA_p[23]_143 OUTPUT_110
+netloc OUTPUT_250 1 4 1 770J 4090n
+load net O_251 -attr @name FMC_HA_p[23]~output:O -pin FMC_HA_p(23)~pad_336 PADIN_298 -pin FMC_HA_p[23]~output_144 O_147
+netloc O_251 1 4 1 NJ 4070
+load net OUTPUT_252 -attr @name SI5340A_I2C_SCL:OUTPUT -pin SI5340A_I2C_SCL_148 OUTPUT_114 -pin SI5340A_I2C_SCL~pad_338 SIMIN_302
+netloc OUTPUT_252 1 4 3 770 5550 NJ 5550 1320
+load net O_253 -attr @name SI5340A_I2C_SCL~output:O -pin SI5340A_I2C_SCL~output_149 O_152 -pin SI5340A_I2C_SCL~pad_338 PADIN_301
+netloc O_253 1 4 1 NJ 5590
+load net OUTPUT_254 -attr @name SI5340A_I2C_SDA:OUTPUT -pin SI5340A_I2C_SDA_153 OUTPUT_118 -pin SI5340A_I2C_SDA~pad_340 SIMIN_305
+netloc OUTPUT_254 1 4 3 770 5690 NJ 5690 1320
+load net O_255 -attr @name SI5340A_I2C_SDA~output:O -pin SI5340A_I2C_SDA~output_154 O_157 -pin SI5340A_I2C_SDA~pad_340 PADIN_304
+netloc O_255 1 4 1 NJ 5730
+load net OUTPUT_256 -attr @name GPIO_D[0]:OUTPUT -pin GPIO_D(0)~pad_342 SIMIN_308 -pin GPIO_D[0]_158 OUTPUT_122
+netloc OUTPUT_256 1 4 1 770J 4230n
+load net O_257 -attr @name GPIO_D[0]~output:O -pin GPIO_D(0)~pad_342 PADIN_307 -pin GPIO_D[0]~output_159 O_162
+netloc O_257 1 4 1 NJ 4210
+load net OUTPUT_258 -attr @name GPIO_D[1]:OUTPUT -pin GPIO_D(1)~pad_344 SIMIN_311 -pin GPIO_D[1]_163 OUTPUT_126
+netloc OUTPUT_258 1 4 1 NJ 50
+load net O_259 -attr @name GPIO_D[1]~output:O -pin GPIO_D(1)~pad_344 PADIN_310 -pin GPIO_D[1]~output_164 O_168
+netloc O_259 1 4 1 770 30n
+load net OUTPUT_260 -attr @name GPIO_D[2]:OUTPUT -pin GPIO_D(2)~pad_346 SIMIN_314 -pin GPIO_D[2]_169 OUTPUT_131
+netloc OUTPUT_260 1 4 1 770J 4370n
+load net O_261 -attr @name GPIO_D[2]~output:O -pin GPIO_D(2)~pad_346 PADIN_313 -pin GPIO_D[2]~output_170 O_173
+netloc O_261 1 4 1 NJ 4350
+load net OUTPUT_262 -attr @name GPIO_D[3]:OUTPUT -pin GPIO_D(3)~pad_348 SIMIN_317 -pin GPIO_D[3]_174 OUTPUT_135
+netloc OUTPUT_262 1 4 1 770J 4510n
+load net O_263 -attr @name GPIO_D[3]~output:O -pin GPIO_D(3)~pad_348 PADIN_316 -pin GPIO_D[3]~output_175 O_178
+netloc O_263 1 4 1 NJ 4490
+load net OUTPUT_264 -attr @name GPIO_D[4]:OUTPUT -pin GPIO_D(4)~pad_350 SIMIN_320 -pin GPIO_D[4]_179 OUTPUT_139
+netloc OUTPUT_264 1 4 1 770J 4650n
+load net O_265 -attr @name GPIO_D[4]~output:O -pin GPIO_D(4)~pad_350 PADIN_319 -pin GPIO_D[4]~output_180 O_183
+netloc O_265 1 4 1 NJ 4630
+load net OUTPUT_266 -attr @name GPIO_D[5]:OUTPUT -pin GPIO_D(5)~pad_352 SIMIN_323 -pin GPIO_D[5]_184 OUTPUT_143
+netloc OUTPUT_266 1 4 1 NJ 4810
+load net O_267 -attr @name GPIO_D[5]~output:O -pin GPIO_D(5)~pad_352 PADIN_322 -pin GPIO_D[5]~output_185 O_188
+netloc O_267 1 4 1 770J 4750n
+load net OUTPUT_268 -attr @name GPIO_D[6]:OUTPUT -pin GPIO_D(6)~pad_354 SIMIN_326 -pin GPIO_D[6]_189 OUTPUT_147
+netloc OUTPUT_268 1 4 1 NJ 4950
+load net O_269 -attr @name GPIO_D[6]~output:O -pin GPIO_D(6)~pad_354 PADIN_325 -pin GPIO_D[6]~output_190 O_193
+netloc O_269 1 4 1 770J 4890n
+load net OUTPUT_270 -attr @name GPIO_D[7]:OUTPUT -pin GPIO_D(7)~pad_356 SIMIN_329 -pin GPIO_D[7]_194 OUTPUT_151
+netloc OUTPUT_270 1 4 1 770J 5070n
+load net O_271 -attr @name GPIO_D[7]~output:O -pin GPIO_D(7)~pad_356 PADIN_328 -pin GPIO_D[7]~output_195 O_198
+netloc O_271 1 4 1 NJ 5050
+load net PADOUT_272 -attr @name CLK_100_B2A~pad:PADOUT -pin CLK_100_B2A~input_201 I_148 -pin CLK_100_B2A~pad_202 PADOUT_155
+netloc PADOUT_272 1 5 1 NJ 850
+load net PADOUT_273 -attr @name CLK_30M72~pad:PADOUT -pin CLK_30M72~input_203 I_151 -pin CLK_30M72~pad_204 PADOUT_156
+netloc PADOUT_273 1 5 1 NJ 530
+load net PADOUT_274 -attr @name CLK_50_B2A~pad:PADOUT -pin CLK_50_B2A~input_205 I_153 -pin CLK_50_B2A~pad_206 PADOUT_157
+netloc PADOUT_274 1 5 1 NJ 590
+load net PADOUT_275 -attr @name CLK_50_B2D~pad:PADOUT -pin CLK_50_B2D~input_207 I_155 -pin CLK_50_B2D~pad_208 PADOUT_158
+netloc PADOUT_275 1 5 1 NJ 650
+load net PADOUT_276 -attr @name CLK_50_B3A~pad:PADOUT -pin CLK_50_B3A~input_209 I_157 -pin CLK_50_B3A~pad_210 PADOUT_159
+netloc PADOUT_276 1 5 1 NJ 710
+load net PADOUT_277 -attr @name CLK_50_B3C~pad:PADOUT -pin CLK_50_B3C~input_211 I_159 -pin CLK_50_B3C~pad_212 PADOUT_160
+netloc PADOUT_277 1 5 1 NJ 770
+load net PADOUT_278 -attr @name CPU_RESET_n~pad:PADOUT -pin CPU_RESET_n~input_213 I_161 -pin CPU_RESET_n~pad_214 PADOUT_161
+netloc PADOUT_278 1 5 1 NJ 910
+load net PADOUT_279 -attr @name BUTTON(0)~pad:PADOUT -pin BUTTON(0)~pad_216 PADOUT_162 -pin BUTTON[0]~input_215 I_163
+netloc PADOUT_279 1 5 1 NJ 350
+load net PADOUT_280 -attr @name BUTTON(1)~pad:PADOUT -pin BUTTON(1)~pad_218 PADOUT_163 -pin BUTTON[1]~input_217 I_165
+netloc PADOUT_280 1 5 1 NJ 410
+load net PADOUT_281 -attr @name SW(0)~pad:PADOUT -pin SW(0)~pad_220 PADOUT_164 -pin SW[0]~input_219 I_167
+netloc PADOUT_281 1 5 1 NJ 6430
+load net PADOUT_282 -attr @name SW(1)~pad:PADOUT -pin SW(1)~pad_222 PADOUT_165 -pin SW[1]~input_221 I_169
+netloc PADOUT_282 1 5 1 NJ 6490
+load net O_283 -attr @name LED[0]~output:O -pin LED(0)~pad_227 PADIN_174 -pin LED[0]~output_223 O_226
+netloc O_283 1 5 1 NJ 5370
+load net SIMOUT_284 -attr @name LED(0)~pad:SIMOUT -pin LED(0)~pad_227 SIMOUT_169 -port LED[0]_13
+load net O_285 -attr @name LED[1]~output:O -pin LED(1)~pad_232 PADIN_178 -pin LED[1]~output_228 O_231
+netloc O_285 1 5 1 NJ 5430
+load net SIMOUT_286 -attr @name LED(1)~pad:SIMOUT -pin LED(1)~pad_232 SIMOUT_173 -port LED[1]_14
+load net PADOUT_287 -attr @name SI5340A_LOL~pad:PADOUT -pin SI5340A_LOL~input_233 I_179 -pin SI5340A_LOL~pad_234 PADOUT_174
+netloc PADOUT_287 1 5 1 NJ 5850
+load net PADOUT_288 -attr @name SI5340A_LOS_XAXB~pad:PADOUT -pin SI5340A_LOS_XAXB~input_235 I_181 -pin SI5340A_LOS_XAXB~pad_236 PADOUT_175
+netloc PADOUT_288 1 5 1 NJ 5910
+load net O_289 -attr @name SI5340A_OE_n~output:O -pin SI5340A_OE_n~output_237 O_240 -pin SI5340A_OE_n~pad_241 PADIN_186
+netloc O_289 1 5 1 NJ 5970
+load net SIMOUT_290 -attr @name SI5340A_OE_n~pad:SIMOUT -port SI5340A_OE_n_17 -pin SI5340A_OE_n~pad_241 SIMOUT_179
+netloc SIMOUT_290 1 6 3 NJ 5970 NJ 5970 NJ
+load net O_291 -attr @name SI5340A_RST_n~output:O -pin SI5340A_RST_n~output_242 O_245 -pin SI5340A_RST_n~pad_246 PADIN_190
+netloc O_291 1 5 1 NJ 6030
+load net SIMOUT_292 -attr @name SI5340A_RST_n~pad:SIMOUT -port SI5340A_RST_n_18 -pin SI5340A_RST_n~pad_246 SIMOUT_183
+netloc SIMOUT_292 1 6 3 NJ 6030 NJ 6030 NJ
+load net O_293 -attr @name QSFP28_REFCLK_p~input:O -pin QSFP28_REFCLK_p~inputFITTER_INSERTED_436 PAD_398 -pin QSFP28_REFCLK_p~input_247 O_253
+netloc O_293 1 5 1 NJ 5490
+load net PADOUT_294 -attr @name QSFP28_REFCLK_p~pad:PADOUT -pin QSFP28_REFCLK_p~input_247 I_249 -pin QSFP28_REFCLK_p~pad_254 PADOUT_190
+netloc PADOUT_294 1 4 1 770J 5510n
+load net O_295 -attr @name AG_UART_TX~output:O -pin AG_UART_TX~output_255 O_258 -pin AG_UART_TX~pad_259 PADIN_203
+netloc O_295 1 5 1 NJ 470
+load net SIMOUT_296 -attr @name AG_UART_TX~pad:SIMOUT -port AG_UART_TX_20 -pin AG_UART_TX~pad_259 SIMOUT_194
+netloc SIMOUT_296 1 6 3 NJ 470 NJ 470 NJ
+load net PADOUT_297 -attr @name AG_UART_RX~pad:PADOUT -pin AG_UART_RX~input_260 I_204 -pin AG_UART_RX~pad_261 PADOUT_195
+netloc PADOUT_297 1 5 1 NJ 290
+load net PADOUT_298 -attr @name AG_UART_CTS~pad:PADOUT -pin AG_UART_CTS~input_262 I_206 -pin AG_UART_CTS~pad_263 PADOUT_196
+netloc PADOUT_298 1 5 1 NJ 230
+load net O_299 -attr @name AG_UART_RTS~output:O -pin AG_UART_RTS~output_264 O_267 -pin AG_UART_RTS~pad_268 PADIN_211
+netloc O_299 1 5 1 NJ 130
+load net SIMOUT_300 -attr @name AG_UART_RTS~pad:SIMOUT -port AG_UART_RTS_23 -pin AG_UART_RTS~pad_268 SIMOUT_200
+netloc SIMOUT_300 1 6 3 NJ 130 NJ 130 NJ
+load net O_301 -attr @name INFO_SPI_SCLK~output:O -pin INFO_SPI_SCLK~output_269 O_272 -pin INFO_SPI_SCLK~pad_273 PADIN_215
+netloc O_301 1 5 1 NJ 5310
+load net SIMOUT_302 -attr @name INFO_SPI_SCLK~pad:SIMOUT -port INFO_SPI_SCLK_24 -pin INFO_SPI_SCLK~pad_273 SIMOUT_204
+netloc SIMOUT_302 1 6 3 NJ 5310 NJ 5310 NJ
+load net PADOUT_303 -attr @name INFO_SPI_MISO~pad:PADOUT -pin INFO_SPI_MISO~input_274 I_216 -pin INFO_SPI_MISO~pad_275 PADOUT_205
+netloc PADOUT_303 1 5 1 NJ 5250
+load net O_304 -attr @name INFO_SPI_MOSI~output:O -pin INFO_SPI_MOSI~output_276 O_279 -pin INFO_SPI_MOSI~pad_280 PADIN_221
+netloc O_304 1 5 1 NJ 5190
+load net SIMOUT_305 -attr @name INFO_SPI_MOSI~pad:SIMOUT -port INFO_SPI_MOSI_26 -pin INFO_SPI_MOSI~pad_280 SIMOUT_209
+netloc SIMOUT_305 1 6 3 NJ 5190 NJ 5190 NJ
+load net O_306 -attr @name INFO_SPI_CS_n~output:O -pin INFO_SPI_CS_n~output_281 O_284 -pin INFO_SPI_CS_n~pad_285 PADIN_225
+netloc O_306 1 5 1 NJ 5130
+load net SIMOUT_307 -attr @name INFO_SPI_CS_n~pad:SIMOUT -port INFO_SPI_CS_n_27 -pin INFO_SPI_CS_n~pad_285 SIMOUT_213
+netloc SIMOUT_307 1 6 3 NJ 5130 NJ 5130 NJ
+load net PADOUT_308 -attr @name FMC_HA_p(0)~pad:PADOUT -pin FMC_HA_p(0)~pad_287 PADOUT_214 -pin FMC_HA_p[0]~input_286 I_226
+netloc PADOUT_308 1 5 1 NJ 990
+load net SIMOUT_309 -attr @name FMC_HA_p(0)~pad:SIMOUT -pin FMC_HA_p(0)~pad_287 SIMOUT_215 -pin FMC_HA_p[0]_28 INPUT_10
+netloc SIMOUT_309 1 3 3 550 950 NJ 950 1000
+load net PADOUT_310 -attr @name FMC_HA_p(1)~pad:PADOUT -pin FMC_HA_p(1)~pad_289 PADOUT_216 -pin FMC_HA_p[1]~input_288 I_229
+netloc PADOUT_310 1 5 1 NJ 1150
+load net SIMOUT_311 -attr @name FMC_HA_p(1)~pad:SIMOUT -pin FMC_HA_p(1)~pad_289 SIMOUT_217 -pin FMC_HA_p[1]_33 INPUT_14
+netloc SIMOUT_311 1 3 3 550 1210 NJ 1210 1000
+load net PADOUT_312 -attr @name FMC_HA_p(2)~pad:PADOUT -pin FMC_HA_p(2)~pad_291 PADOUT_218 -pin FMC_HA_p[2]~input_290 I_232
+netloc PADOUT_312 1 5 1 NJ 1270
+load net SIMOUT_313 -attr @name FMC_HA_p(2)~pad:SIMOUT -pin FMC_HA_p(2)~pad_291 SIMOUT_219 -pin FMC_HA_p[2]_38 INPUT_18
+netloc SIMOUT_313 1 3 3 550 1230 NJ 1230 1000
+load net PADOUT_314 -attr @name FMC_HA_p(3)~pad:PADOUT -pin FMC_HA_p(3)~pad_293 PADOUT_220 -pin FMC_HA_p[3]~input_292 I_235
+netloc PADOUT_314 1 5 1 NJ 1410
+load net SIMOUT_315 -attr @name FMC_HA_p(3)~pad:SIMOUT -pin FMC_HA_p(3)~pad_293 SIMOUT_221 -pin FMC_HA_p[3]_43 INPUT_22
+netloc SIMOUT_315 1 3 3 550 1370 NJ 1370 1000
+load net PADOUT_316 -attr @name FMC_HA_p(4)~pad:PADOUT -pin FMC_HA_p(4)~pad_295 PADOUT_222 -pin FMC_HA_p[4]~input_294 I_238
+netloc PADOUT_316 1 5 1 NJ 1550
+load net SIMOUT_317 -attr @name FMC_HA_p(4)~pad:SIMOUT -pin FMC_HA_p(4)~pad_295 SIMOUT_223 -pin FMC_HA_p[4]_48 INPUT_26
+netloc SIMOUT_317 1 3 3 550 1510 NJ 1510 1000
+load net PADOUT_318 -attr @name FMC_HA_p(5)~pad:PADOUT -pin FMC_HA_p(5)~pad_297 PADOUT_224 -pin FMC_HA_p[5]~input_296 I_241
+netloc PADOUT_318 1 5 1 NJ 1690
+load net SIMOUT_319 -attr @name FMC_HA_p(5)~pad:SIMOUT -pin FMC_HA_p(5)~pad_297 SIMOUT_225 -pin FMC_HA_p[5]_53 INPUT_30
+netloc SIMOUT_319 1 3 3 550 1650 NJ 1650 1000
+load net PADOUT_320 -attr @name FMC_HA_p(6)~pad:PADOUT -pin FMC_HA_p(6)~pad_299 PADOUT_226 -pin FMC_HA_p[6]~input_298 I_244
+netloc PADOUT_320 1 5 1 NJ 1850
+load net SIMOUT_321 -attr @name FMC_HA_p(6)~pad:SIMOUT -pin FMC_HA_p(6)~pad_299 SIMOUT_227 -pin FMC_HA_p[6]_58 INPUT_34
+netloc SIMOUT_321 1 3 3 550 1910 NJ 1910 1000
+load net PADOUT_322 -attr @name FMC_HA_p(7)~pad:PADOUT -pin FMC_HA_p(7)~pad_301 PADOUT_228 -pin FMC_HA_p[7]~input_300 I_247
+netloc PADOUT_322 1 5 1 NJ 1970
+load net SIMOUT_323 -attr @name FMC_HA_p(7)~pad:SIMOUT -pin FMC_HA_p(7)~pad_301 SIMOUT_229 -pin FMC_HA_p[7]_63 INPUT_38
+netloc SIMOUT_323 1 3 3 550 1930 NJ 1930 1000
+load net PADOUT_324 -attr @name FMC_HA_p(8)~pad:PADOUT -pin FMC_HA_p(8)~pad_303 PADOUT_230 -pin FMC_HA_p[8]~input_302 I_250
+netloc PADOUT_324 1 5 1 NJ 2110
+load net SIMOUT_325 -attr @name FMC_HA_p(8)~pad:SIMOUT -pin FMC_HA_p(8)~pad_303 SIMOUT_231 -pin FMC_HA_p[8]_68 INPUT_42
+netloc SIMOUT_325 1 3 3 550 2070 NJ 2070 1000
+load net PADOUT_326 -attr @name FMC_HA_p(9)~pad:PADOUT -pin FMC_HA_p(9)~pad_305 PADOUT_232 -pin FMC_HA_p[9]~input_304 I_253
+netloc PADOUT_326 1 5 1 NJ 2250
+load net SIMOUT_327 -attr @name FMC_HA_p(9)~pad:SIMOUT -pin FMC_HA_p(9)~pad_305 SIMOUT_233 -pin FMC_HA_p[9]_73 INPUT_46
+netloc SIMOUT_327 1 3 3 550 2210 NJ 2210 1000
+load net O_328 -attr @name FMC_HA_p[10]~input:O -pin FMC_HA_p[10]~input_306 O_309 -pin GPIO_D[1]~output_164 I_166
+netloc O_328 1 3 1 NJ 130
+load net PADOUT_329 -attr @name FMC_HA_p(10)~pad:PADOUT -pin FMC_HA_p(10)~pad_310 PADOUT_237 -pin FMC_HA_p[10]~input_306 I_308
+netloc PADOUT_329 1 2 1 NJ 130
+load net SIMOUT_330 -attr @name FMC_HA_p(10)~pad:SIMOUT -pin FMC_HA_p(10)~pad_310 SIMOUT_238 -pin FMC_HA_p[10]_78 INPUT_50
+netloc SIMOUT_330 1 0 3 20 90 NJ 90 370
+load net PADOUT_331 -attr @name FMC_HA_p(11)~pad:PADOUT -pin FMC_HA_p(11)~pad_312 PADOUT_239 -pin FMC_HA_p[11]~input_311 I_261
+netloc PADOUT_331 1 5 1 NJ 2390
+load net SIMOUT_332 -attr @name FMC_HA_p(11)~pad:SIMOUT -pin FMC_HA_p(11)~pad_312 SIMOUT_240 -pin FMC_HA_p[11]_83 INPUT_54
+netloc SIMOUT_332 1 3 3 550 2350 NJ 2350 1000
+load net PADOUT_333 -attr @name FMC_HA_p(12)~pad:PADOUT -pin FMC_HA_p(12)~pad_314 PADOUT_241 -pin FMC_HA_p[12]~input_313 I_264
+netloc PADOUT_333 1 5 1 NJ 2550
+load net SIMOUT_334 -attr @name FMC_HA_p(12)~pad:SIMOUT -pin FMC_HA_p(12)~pad_314 SIMOUT_242 -pin FMC_HA_p[12]_88 INPUT_58
+netloc SIMOUT_334 1 3 3 550 2610 NJ 2610 1000
+load net PADOUT_335 -attr @name FMC_HA_p(13)~pad:PADOUT -pin FMC_HA_p(13)~pad_316 PADOUT_243 -pin FMC_HA_p[13]~input_315 I_267
+netloc PADOUT_335 1 5 1 NJ 2690
+load net SIMOUT_336 -attr @name FMC_HA_p(13)~pad:SIMOUT -pin FMC_HA_p(13)~pad_316 SIMOUT_244 -pin FMC_HA_p[13]_93 INPUT_62
+netloc SIMOUT_336 1 3 3 550 2750 NJ 2750 1000
+load net PADOUT_337 -attr @name FMC_HA_p(14)~pad:PADOUT -pin FMC_HA_p(14)~pad_318 PADOUT_245 -pin FMC_HA_p[14]~input_317 I_270
+netloc PADOUT_337 1 5 1 NJ 2810
+load net SIMOUT_338 -attr @name FMC_HA_p(14)~pad:SIMOUT -pin FMC_HA_p(14)~pad_318 SIMOUT_246 -pin FMC_HA_p[14]_98 INPUT_66
+netloc SIMOUT_338 1 3 3 550 2770 NJ 2770 1000
+load net PADOUT_339 -attr @name FMC_HA_p(15)~pad:PADOUT -pin FMC_HA_p(15)~pad_320 PADOUT_247 -pin FMC_HA_p[15]~input_319 I_273
+netloc PADOUT_339 1 5 1 NJ 2970
+load net SIMOUT_340 -attr @name FMC_HA_p(15)~pad:SIMOUT -pin FMC_HA_p(15)~pad_320 SIMOUT_248 -pin FMC_HA_p[15]_103 INPUT_70
+netloc SIMOUT_340 1 3 3 550 3030 NJ 3030 1000
+load net PADOUT_341 -attr @name FMC_HA_p(16)~pad:PADOUT -pin FMC_HA_p(16)~pad_322 PADOUT_249 -pin FMC_HA_p[16]~input_321 I_276
+netloc PADOUT_341 1 5 1 NJ 3110
+load net SIMOUT_342 -attr @name FMC_HA_p(16)~pad:SIMOUT -pin FMC_HA_p(16)~pad_322 SIMOUT_250 -pin FMC_HA_p[16]_108 INPUT_74
+netloc SIMOUT_342 1 3 3 550 3170 NJ 3170 1000
+load net PADOUT_343 -attr @name FMC_HA_p(17)~pad:PADOUT -pin FMC_HA_p(17)~pad_324 PADOUT_251 -pin FMC_HA_p[17]~input_323 I_279
+netloc PADOUT_343 1 5 1 NJ 3230
+load net SIMOUT_344 -attr @name FMC_HA_p(17)~pad:SIMOUT -pin FMC_HA_p(17)~pad_324 SIMOUT_252 -pin FMC_HA_p[17]_113 INPUT_78
+netloc SIMOUT_344 1 3 3 550 3190 NJ 3190 1000
+load net PADOUT_345 -attr @name FMC_HA_p(18)~pad:PADOUT -pin FMC_HA_p(18)~pad_326 PADOUT_253 -pin FMC_HA_p[18]~input_325 I_282
+netloc PADOUT_345 1 5 1 NJ 3370
+load net SIMOUT_346 -attr @name FMC_HA_p(18)~pad:SIMOUT -pin FMC_HA_p(18)~pad_326 SIMOUT_254 -pin FMC_HA_p[18]_118 INPUT_82
+netloc SIMOUT_346 1 3 3 550 3330 NJ 3330 1000
+load net PADOUT_347 -attr @name FMC_HA_p(19)~pad:PADOUT -pin FMC_HA_p(19)~pad_328 PADOUT_255 -pin FMC_HA_p[19]~input_327 I_285
+netloc PADOUT_347 1 5 1 NJ 3510
+load net SIMOUT_348 -attr @name FMC_HA_p(19)~pad:SIMOUT -pin FMC_HA_p(19)~pad_328 SIMOUT_256 -pin FMC_HA_p[19]_123 INPUT_86
+netloc SIMOUT_348 1 3 3 550 3470 NJ 3470 1000
+load net PADOUT_349 -attr @name FMC_HA_p(20)~pad:PADOUT -pin FMC_HA_p(20)~pad_330 PADOUT_257 -pin FMC_HA_p[20]~input_329 I_288
+netloc PADOUT_349 1 5 1 NJ 3650
+load net SIMOUT_350 -attr @name FMC_HA_p(20)~pad:SIMOUT -pin FMC_HA_p(20)~pad_330 SIMOUT_258 -pin FMC_HA_p[20]_128 INPUT_90
+netloc SIMOUT_350 1 3 3 550 3610 NJ 3610 1000
+load net PADOUT_351 -attr @name FMC_HA_p(21)~pad:PADOUT -pin FMC_HA_p(21)~pad_332 PADOUT_259 -pin FMC_HA_p[21]~input_331 I_291
+netloc PADOUT_351 1 5 1 NJ 3790
+load net SIMOUT_352 -attr @name FMC_HA_p(21)~pad:SIMOUT -pin FMC_HA_p(21)~pad_332 SIMOUT_260 -pin FMC_HA_p[21]_133 INPUT_94
+netloc SIMOUT_352 1 3 3 550 3750 NJ 3750 1000
+load net PADOUT_353 -attr @name FMC_HA_p(22)~pad:PADOUT -pin FMC_HA_p(22)~pad_334 PADOUT_261 -pin FMC_HA_p[22]~input_333 I_294
+netloc PADOUT_353 1 5 1 NJ 3930
+load net SIMOUT_354 -attr @name FMC_HA_p(22)~pad:SIMOUT -pin FMC_HA_p(22)~pad_334 SIMOUT_262 -pin FMC_HA_p[22]_138 INPUT_98
+netloc SIMOUT_354 1 3 3 550 3890 NJ 3890 1000
+load net PADOUT_355 -attr @name FMC_HA_p(23)~pad:PADOUT -pin FMC_HA_p(23)~pad_336 PADOUT_263 -pin FMC_HA_p[23]~input_335 I_297
+netloc PADOUT_355 1 5 1 NJ 4070
+load net SIMOUT_356 -attr @name FMC_HA_p(23)~pad:SIMOUT -pin FMC_HA_p(23)~pad_336 SIMOUT_264 -pin FMC_HA_p[23]_143 INPUT_102
+netloc SIMOUT_356 1 3 3 550 4030 NJ 4030 1000
+load net PADOUT_357 -attr @name SI5340A_I2C_SCL~pad:PADOUT -pin SI5340A_I2C_SCL~input_337 I_300 -pin SI5340A_I2C_SCL~pad_338 PADOUT_265
+netloc PADOUT_357 1 5 1 NJ 5590
+load net SIMOUT_358 -attr @name SI5340A_I2C_SCL~pad:SIMOUT -pin SI5340A_I2C_SCL_148 INPUT_106 -pin SI5340A_I2C_SCL~pad_338 SIMOUT_266
+netloc SIMOUT_358 1 5 1 1000J 5610n
+load net PADOUT_359 -attr @name SI5340A_I2C_SDA~pad:PADOUT -pin SI5340A_I2C_SDA~input_339 I_303 -pin SI5340A_I2C_SDA~pad_340 PADOUT_267
+netloc PADOUT_359 1 5 1 NJ 5730
+load net SIMOUT_360 -attr @name SI5340A_I2C_SDA~pad:SIMOUT -pin SI5340A_I2C_SDA_153 INPUT_110 -pin SI5340A_I2C_SDA~pad_340 SIMOUT_268
+netloc SIMOUT_360 1 5 1 1000J 5750n
+load net PADOUT_361 -attr @name GPIO_D(0)~pad:PADOUT -pin GPIO_D(0)~pad_342 PADOUT_269 -pin GPIO_D[0]~input_341 I_306
+netloc PADOUT_361 1 5 1 NJ 4210
+load net SIMOUT_362 -attr @name GPIO_D(0)~pad:SIMOUT -pin GPIO_D(0)~pad_342 SIMOUT_270 -pin GPIO_D[0]_158 INPUT_114
+netloc SIMOUT_362 1 3 3 550 4170 NJ 4170 1000
+load net PADOUT_363 -attr @name GPIO_D(1)~pad:PADOUT -pin GPIO_D(1)~pad_344 PADOUT_271 -pin GPIO_D[1]~input_343 I_309
+netloc PADOUT_363 1 5 1 NJ 30
+load net SIMOUT_364 -attr @name GPIO_D(1)~pad:SIMOUT -pin GPIO_D(1)~pad_344 SIMOUT_272 -pin GPIO_D[1]_163 INPUT_118
+netloc SIMOUT_364 1 3 3 550 90 NJ 90 1000
+load net PADOUT_365 -attr @name GPIO_D(2)~pad:PADOUT -pin GPIO_D(2)~pad_346 PADOUT_273 -pin GPIO_D[2]~input_345 I_312
+netloc PADOUT_365 1 5 1 NJ 4350
+load net SIMOUT_366 -attr @name GPIO_D(2)~pad:SIMOUT -pin GPIO_D(2)~pad_346 SIMOUT_274 -pin GPIO_D[2]_169 INPUT_124
+netloc SIMOUT_366 1 3 3 550 4310 NJ 4310 1000
+load net PADOUT_367 -attr @name GPIO_D(3)~pad:PADOUT -pin GPIO_D(3)~pad_348 PADOUT_275 -pin GPIO_D[3]~input_347 I_315
+netloc PADOUT_367 1 5 1 NJ 4490
+load net SIMOUT_368 -attr @name GPIO_D(3)~pad:SIMOUT -pin GPIO_D(3)~pad_348 SIMOUT_276 -pin GPIO_D[3]_174 INPUT_128
+netloc SIMOUT_368 1 3 3 550 4450 NJ 4450 1000
+load net PADOUT_369 -attr @name GPIO_D(4)~pad:PADOUT -pin GPIO_D(4)~pad_350 PADOUT_277 -pin GPIO_D[4]~input_349 I_318
+netloc PADOUT_369 1 5 1 NJ 4630
+load net SIMOUT_370 -attr @name GPIO_D(4)~pad:SIMOUT -pin GPIO_D(4)~pad_350 SIMOUT_278 -pin GPIO_D[4]_179 INPUT_132
+netloc SIMOUT_370 1 3 3 550 4590 NJ 4590 1000
+load net PADOUT_371 -attr @name GPIO_D(5)~pad:PADOUT -pin GPIO_D(5)~pad_352 PADOUT_279 -pin GPIO_D[5]~input_351 I_321
+netloc PADOUT_371 1 5 1 NJ 4790
+load net SIMOUT_372 -attr @name GPIO_D(5)~pad:SIMOUT -pin GPIO_D(5)~pad_352 SIMOUT_280 -pin GPIO_D[5]_184 INPUT_136
+netloc SIMOUT_372 1 3 3 550 4850 NJ 4850 1000
+load net PADOUT_373 -attr @name GPIO_D(6)~pad:PADOUT -pin GPIO_D(6)~pad_354 PADOUT_281 -pin GPIO_D[6]~input_353 I_324
+netloc PADOUT_373 1 5 1 NJ 4930
+load net SIMOUT_374 -attr @name GPIO_D(6)~pad:SIMOUT -pin GPIO_D(6)~pad_354 SIMOUT_282 -pin GPIO_D[6]_189 INPUT_140
+netloc SIMOUT_374 1 3 3 550 4990 NJ 4990 1000
+load net PADOUT_375 -attr @name GPIO_D(7)~pad:PADOUT -pin GPIO_D(7)~pad_356 PADOUT_283 -pin GPIO_D[7]~input_355 I_327
+netloc PADOUT_375 1 5 1 NJ 5050
+load net SIMOUT_376 -attr @name GPIO_D(7)~pad:SIMOUT -pin GPIO_D(7)~pad_356 SIMOUT_284 -pin GPIO_D[7]_194 INPUT_144
+netloc SIMOUT_376 1 3 3 550 5010 NJ 5010 1000
+load net PADOUT_377 -attr @name ~ALTERA_OSC_CLK_1~ -port ~ALTERA_OSC_CLK_1~_357 -pin ~ALTERA_OSC_CLK_1~~ibuf_358 I_330
+netloc PADOUT_377 1 0 5 NJ 6550 NJ 6550 NJ 6550 NJ 6550 NJ
+load net O_378 -attr @name ~PWRMGT_SCL~~obuf:O -port ~PWRMGT_SCL~_359 -pin ~PWRMGT_SCL~~obuf_360 O_363
+netloc O_378 1 6 3 NJ 6910 NJ 6910 NJ
+load net PADOUT_379 -attr @name ~ALTERA_AS_DATA1~:PADOUT -pin ~ALTERA_AS_DATA1~_364 PADOUT_289 -pin ~ALTERA_AS_DATA1~~ibuf_370 I_341
+netloc PADOUT_379 1 5 1 NJ 6210
+load net O_380 -attr @name ~ALTERA_AS_DATA1~~obuf:O -pin ~ALTERA_AS_DATA1~_364 PADIN_335 -pin ~ALTERA_AS_DATA1~~obuf_365 O_369
+netloc O_380 1 4 1 NJ 6210
+load net O_381 -attr @name ~ALTERA_AS_nCSO0,ALTERA_MSEL0~~obuf:O -port ~ALTERA_AS_nCSO0,ALTERA_MSEL0~_371 -pin ~ALTERA_AS_nCSO0,ALTERA_MSEL0~~obuf_372 O_375
+netloc O_381 1 6 3 NJ 6550 NJ 6550 NJ
+load net PADOUT_382 -attr @name ~ALTERA_AS_DATA2~:PADOUT -pin ~ALTERA_AS_DATA2~_376 PADOUT_297 -pin ~ALTERA_AS_DATA2~~ibuf_382 I_352
+netloc PADOUT_382 1 5 1 NJ 6290
+load net O_383 -attr @name ~ALTERA_AS_DATA2~~obuf:O -pin ~ALTERA_AS_DATA2~_376 PADIN_346 -pin ~ALTERA_AS_DATA2~~obuf_377 O_381
+netloc O_383 1 4 1 NJ 6290
+load net PADOUT_384 -attr @name ~ALTERA_AS_DATA0~:PADOUT -pin ~ALTERA_AS_DATA0~_383 PADOUT_302 -pin ~ALTERA_AS_DATA0~~ibuf_389 I_359
+netloc PADOUT_384 1 5 1 NJ 6090
+load net O_385 -attr @name ~ALTERA_AS_DATA0~~obuf:O -pin ~ALTERA_AS_DATA0~_383 PADIN_353 -pin ~ALTERA_AS_DATA0~~obuf_384 O_388
+netloc O_385 1 4 1 NJ 6090
+load net O_386 -attr @name ~ALTERA_AS_CLK~~obuf:O -port ~ALTERA_AS_CLK~_390 -pin ~ALTERA_AS_CLK~~obuf_391 O_394
+netloc O_386 1 6 3 NJ 6150 NJ 6150 NJ
+load net O_387 -attr @name ~ALTERA_AS_nCSO2,ALTERA_MSEL1~~obuf:O -port ~ALTERA_AS_nCSO2,ALTERA_MSEL1~_395 -pin ~ALTERA_AS_nCSO2,ALTERA_MSEL1~~obuf_396 O_399
+netloc O_387 1 6 3 NJ 6670 NJ 6670 NJ
+load net O_388 -attr @name ~CONF_DONE~~obuf:O -port ~CONF_DONE~_400 -pin ~CONF_DONE~~obuf_401 O_404
+netloc O_388 1 6 3 NJ 6790 NJ 6790 NJ
+load net O_389 -attr @name ~HPS_COLD_RESET~~obuf:O -port ~HPS_COLD_RESET~_405 -pin ~HPS_COLD_RESET~~obuf_406 O_409
+netloc O_389 1 6 3 NJ 6850 NJ 6850 NJ
+load net O_390 -attr @name ~ALTERA_AS_nCSO1,ALTERA_MSEL2~~obuf:O -port ~ALTERA_AS_nCSO1,ALTERA_MSEL2~_410 -pin ~ALTERA_AS_nCSO1,ALTERA_MSEL2~~obuf_411 O_414
+netloc O_390 1 6 3 NJ 6610 NJ 6610 NJ
+load net PADOUT_391 -attr @name ~ALTERA_AS_DATA3~:PADOUT -pin ~ALTERA_AS_DATA3~_415 PADOUT_322 -pin ~ALTERA_AS_DATA3~~ibuf_421 I_386
+netloc PADOUT_391 1 5 1 NJ 6370
+load net O_392 -attr @name ~ALTERA_AS_DATA3~~obuf:O -pin ~ALTERA_AS_DATA3~_415 PADIN_380 -pin ~ALTERA_AS_DATA3~~obuf_416 O_420
+netloc O_392 1 4 1 NJ 6370
+load net O_393 -attr @name ~ALTERA_AS_nCSO3~~obuf:O -port ~ALTERA_AS_nCSO3~_422 -pin ~ALTERA_AS_nCSO3~~obuf_423 O_426
+netloc O_393 1 6 3 NJ 6730 NJ 6730 NJ
+load net PADOUT_394 -attr @name ~PWRMGT_SDA~:PADOUT -pin ~PWRMGT_SDA~_427 PADOUT_330 -pin ~PWRMGT_SDA~~ibuf_433 I_397
+netloc PADOUT_394 1 5 1 NJ 6970
+load net O_395 -attr @name ~PWRMGT_SDA~~obuf:O -pin ~PWRMGT_SDA~_427 PADIN_391 -pin ~PWRMGT_SDA~~obuf_428 O_432
+netloc O_395 1 4 1 NJ 6970
+load net PADOUT_396 -attr @name CLK_100_B2A(n) -port CLK_100_B2A(n)_434 -pin CLK_100_B2A~input_201 IBAR_149
+netloc PADOUT_396 1 0 6 NJ 810 NJ 810 NJ 810 NJ 810 NJ 810 1000J
+load net PADOUT_397 -attr @name QSFP28_REFCLK_p(n) -port QSFP28_REFCLK_p(n)_435 -pin QSFP28_REFCLK_p~input_247 IBAR_251
+netloc PADOUT_397 1 0 5 NJ 5490 NJ 5490 NJ 5490 NJ 5490 NJ
+load net OUTPUT_194 -attr @name BUTTON[0] -attr @rip 0 -pin BUTTON(0)~pad_216 SIMIN_164 -port BUTTON[0]_9
+load net OUTPUT_195 -attr @name BUTTON[1] -attr @rip 1 -pin BUTTON(1)~pad_218 SIMIN_166 -port BUTTON[1]_10
+load net OUTPUT_196 -attr @name SW[0] -attr @rip 0 -pin SW(0)~pad_220 SIMIN_168 -port SW[0]_11
+load net OUTPUT_197 -attr @name SW[1] -attr @rip 1 -pin SW(1)~pad_222 SIMIN_170 -port SW[1]_12
+load netBundle OUTPUT_398 2 OUTPUT_194 OUTPUT_195 -attr @name BUTTON[0..1]
+netbloc OUTPUT_398 1 0 5 NJ 350 NJ 350 NJ 350 NJ 350 770
+load netBundle OUTPUT_399 2 OUTPUT_196 OUTPUT_197 -attr @name SW[0..1]
+netbloc OUTPUT_399 1 0 5 NJ 6430 NJ 6430 NJ 6430 NJ 6430 770
+load netBundle @SIMOUT_ 2 SIMOUT_284 SIMOUT_286 -autobundled
+netbloc @SIMOUT_ 1 6 3 1320 5370 NJ 5370 NJ
+levelinfo -pg 1 0 80 240 430 630 850 1130 1340 1420 1500
+pagesize -pg 1 -db -bbox -sgen -180 0 1780 7030
+show
+zoom 0.449557
+scrollpos -291 -1349
+#
+# initialize ictrl to current module _1 {}
+ictrl init {} |
+ictrl property autohide 1
+ictrl property addSubpinInfo 1
+ictrl property addSubportInfo 1
+ictrl property addFillcolor12 0

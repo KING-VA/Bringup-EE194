@@ -1,0 +1,40 @@
+module hl_south_io_wrapper( 
+	input [7:0] dq,                                                                                                                                                            
+	input [7:0] drv0,                                                                                                                                                          
+	input [7:0] drv1,                                                                                                                                                          
+	input [7:0] drv2,                                                                                                                                                          
+	input [7:0] enabq,                                                                                                                                                         
+	input [7:0] enq,                                                                                                                                                           
+	input [7:0] pd,                                                                                                                                                            
+	input [7:0] ppen,                                                                                                                                                          
+	input [7:0] prg_slew,                                                                                                                                                      
+	input [7:0] puq,                                                                                                                                                           
+	input [7:0] pwrup_pull_en,                                                                                                                                                 
+	input [7:0] pwrupzhl,     
+	inout pad_0,                                                                                                                                                           
+	inout pad_1,                                                                                                                                                            
+	inout pad_2,                                                                                                                                                            
+	inout pad_3,                                                                                                                                                            
+	inout pad_4,                                                                                                                                                            
+	inout pad_5,                                                                                                                                                            
+	inout pad_6,                                                                                                                                                            
+	inout pad_7,                                                                                                                                                            
+	output [7:0] outi);
+
+	hl_8slice_south_io hl_south_io_inst(                                                                                                                                                         
+	 .dq(~dq), 
+	 .drv0(drv0), 
+	 .drv1(drv1), 
+	 .drv2(drv2), 
+	 .enabq(enabq), 
+	 .enq(enq), 
+	 .outi(outi), 
+	 .pad({pad_7, pad_6, pad_5, pad_4, pad_3, pad_2, pad_1, pad_0}), 
+	 .pd(pd), 
+	 .ppen(ppen), 
+	 .prg_slew(prg_slew), 
+	 .puq(puq), 
+	 .pwrup_pull_en(pwrup_pull_en), 
+	 .pwrupzhl(pwrupzhl));                                                                            
+
+endmodule

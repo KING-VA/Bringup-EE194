@@ -1,0 +1,8052 @@
+[
+
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w1024x32be32m4",
+  "vt" : "HVT",
+  "depth" : "1024",
+  "width" : 32,
+  "mux" : 4,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w1024x32m4",
+  "vt" : "HVT",
+  "depth" : "1024",
+  "width" : 32,
+  "mux" : 4,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w1024x64be64m2",
+  "vt" : "HVT",
+  "depth" : "1024",
+  "width" : 64,
+  "mux" : 2,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w1024x64m2",
+  "vt" : "HVT",
+  "depth" : "1024",
+  "width" : 64,
+  "mux" : 2,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w1024x8be8m2",
+  "vt" : "HVT",
+  "depth" : "1024",
+  "width" : 8,
+  "mux" : 2,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w1024x8be8m4",
+  "vt" : "HVT",
+  "depth" : "1024",
+  "width" : 8,
+  "mux" : 4,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w1024x8m2",
+  "vt" : "HVT",
+  "depth" : "1024",
+  "width" : 8,
+  "mux" : 2,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w1024x8m4",
+  "vt" : "HVT",
+  "depth" : "1024",
+  "width" : 8,
+  "mux" : 4,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w128x120be120m1",
+  "vt" : "HVT",
+  "depth" : "128",
+  "width" : 120,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w128x124be124m1",
+  "vt" : "HVT",
+  "depth" : "128",
+  "width" : 124,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w128x128be128m1",
+  "vt" : "HVT",
+  "depth" : "128",
+  "width" : 128,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w128x128m1",
+  "vt" : "HVT",
+  "depth" : "128",
+  "width" : 128,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w128x32be32m4",
+  "vt" : "HVT",
+  "depth" : "128",
+  "width" : 32,
+  "mux" : 4,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w128x32m4",
+  "vt" : "HVT",
+  "depth" : "128",
+  "width" : 32,
+  "mux" : 4,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w128x40m1",
+  "vt" : "HVT",
+  "depth" : "128",
+  "width" : 40,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w128x44be44m1",
+  "vt" : "HVT",
+  "depth" : "128",
+  "width" : 44,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w128x4be4m1",
+  "vt" : "HVT",
+  "depth" : "128",
+  "width" : 4,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w128x52be52m1",
+  "vt" : "HVT",
+  "depth" : "128",
+  "width" : 52,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w128x56be56m1",
+  "vt" : "HVT",
+  "depth" : "128",
+  "width" : 56,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w128x64be64m2",
+  "vt" : "HVT",
+  "depth" : "128",
+  "width" : 64,
+  "mux" : 2,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w128x64m2",
+  "vt" : "HVT",
+  "depth" : "128",
+  "width" : 64,
+  "mux" : 2,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w128x8be8m1",
+  "vt" : "HVT",
+  "depth" : "128",
+  "width" : 8,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w128x8be8m2",
+  "vt" : "HVT",
+  "depth" : "128",
+  "width" : 8,
+  "mux" : 2,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w128x8be8m4",
+  "vt" : "HVT",
+  "depth" : "128",
+  "width" : 8,
+  "mux" : 4,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w128x8m1",
+  "vt" : "HVT",
+  "depth" : "128",
+  "width" : 8,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w128x8m2",
+  "vt" : "HVT",
+  "depth" : "128",
+  "width" : 8,
+  "mux" : 2,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w128x8m4",
+  "vt" : "HVT",
+  "depth" : "128",
+  "width" : 8,
+  "mux" : 4,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w16x120m1",
+  "vt" : "HVT",
+  "depth" : "16",
+  "width" : 120,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w16x128be128m1",
+  "vt" : "HVT",
+  "depth" : "16",
+  "width" : 128,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w16x128m1",
+  "vt" : "HVT",
+  "depth" : "16",
+  "width" : 128,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w16x32be32m4",
+  "vt" : "HVT",
+  "depth" : "16",
+  "width" : 32,
+  "mux" : 4,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w16x32m4",
+  "vt" : "HVT",
+  "depth" : "16",
+  "width" : 32,
+  "mux" : 4,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w16x64be64m2",
+  "vt" : "HVT",
+  "depth" : "16",
+  "width" : 64,
+  "mux" : 2,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w16x64m2",
+  "vt" : "HVT",
+  "depth" : "16",
+  "width" : 64,
+  "mux" : 2,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w16x72m1",
+  "vt" : "HVT",
+  "depth" : "16",
+  "width" : 72,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w16x8be8m1",
+  "vt" : "HVT",
+  "depth" : "16",
+  "width" : 8,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w16x8be8m2",
+  "vt" : "HVT",
+  "depth" : "16",
+  "width" : 8,
+  "mux" : 2,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w16x8be8m4",
+  "vt" : "HVT",
+  "depth" : "16",
+  "width" : 8,
+  "mux" : 4,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w16x8m1",
+  "vt" : "HVT",
+  "depth" : "16",
+  "width" : 8,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w16x8m2",
+  "vt" : "HVT",
+  "depth" : "16",
+  "width" : 8,
+  "mux" : 2,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w16x8m4",
+  "vt" : "HVT",
+  "depth" : "16",
+  "width" : 8,
+  "mux" : 4,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w2048x32be32m4",
+  "vt" : "HVT",
+  "depth" : "2048",
+  "width" : 32,
+  "mux" : 4,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w2048x32m4",
+  "vt" : "HVT",
+  "depth" : "2048",
+  "width" : 32,
+  "mux" : 4,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w2048x8be8m4",
+  "vt" : "HVT",
+  "depth" : "2048",
+  "width" : 8,
+  "mux" : 4,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w2048x8m4",
+  "vt" : "HVT",
+  "depth" : "2048",
+  "width" : 8,
+  "mux" : 4,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w256x128be128m1",
+  "vt" : "HVT",
+  "depth" : "256",
+  "width" : 128,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w256x128m1",
+  "vt" : "HVT",
+  "depth" : "256",
+  "width" : 128,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w256x32be32m4",
+  "vt" : "HVT",
+  "depth" : "256",
+  "width" : 32,
+  "mux" : 4,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w256x32m4",
+  "vt" : "HVT",
+  "depth" : "256",
+  "width" : 32,
+  "mux" : 4,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w256x48be48m1",
+  "vt" : "HVT",
+  "depth" : "256",
+  "width" : 48,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w256x4be4m1",
+  "vt" : "HVT",
+  "depth" : "256",
+  "width" : 4,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w256x64be64m1",
+  "vt" : "HVT",
+  "depth" : "256",
+  "width" : 64,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w256x64be64m2",
+  "vt" : "HVT",
+  "depth" : "256",
+  "width" : 64,
+  "mux" : 2,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w256x64m1",
+  "vt" : "HVT",
+  "depth" : "256",
+  "width" : 64,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w256x64m2",
+  "vt" : "HVT",
+  "depth" : "256",
+  "width" : 64,
+  "mux" : 2,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w256x8be8m1",
+  "vt" : "HVT",
+  "depth" : "256",
+  "width" : 8,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w256x8be8m2",
+  "vt" : "HVT",
+  "depth" : "256",
+  "width" : 8,
+  "mux" : 2,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w256x8be8m4",
+  "vt" : "HVT",
+  "depth" : "256",
+  "width" : 8,
+  "mux" : 4,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w256x8m1",
+  "vt" : "HVT",
+  "depth" : "256",
+  "width" : 8,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w256x8m2",
+  "vt" : "HVT",
+  "depth" : "256",
+  "width" : 8,
+  "mux" : 2,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w256x8m4",
+  "vt" : "HVT",
+  "depth" : "256",
+  "width" : 8,
+  "mux" : 4,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w260x64be64m1",
+  "vt" : "HVT",
+  "depth" : "260",
+  "width" : 64,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w260x64m1",
+  "vt" : "HVT",
+  "depth" : "260",
+  "width" : 64,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w32x128be128m1",
+  "vt" : "HVT",
+  "depth" : "32",
+  "width" : 128,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w32x128m1",
+  "vt" : "HVT",
+  "depth" : "32",
+  "width" : 128,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w32x32be32m4",
+  "vt" : "HVT",
+  "depth" : "32",
+  "width" : 32,
+  "mux" : 4,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w32x32m1",
+  "vt" : "HVT",
+  "depth" : "32",
+  "width" : 32,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w32x32m4",
+  "vt" : "HVT",
+  "depth" : "32",
+  "width" : 32,
+  "mux" : 4,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w32x64be64m2",
+  "vt" : "HVT",
+  "depth" : "32",
+  "width" : 64,
+  "mux" : 2,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w32x64m2",
+  "vt" : "HVT",
+  "depth" : "32",
+  "width" : 64,
+  "mux" : 2,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w32x66be66m1",
+  "vt" : "HVT",
+  "depth" : "32",
+  "width" : 66,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w32x8be8m1",
+  "vt" : "HVT",
+  "depth" : "32",
+  "width" : 8,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w32x8be8m2",
+  "vt" : "HVT",
+  "depth" : "32",
+  "width" : 8,
+  "mux" : 2,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w32x8be8m4",
+  "vt" : "HVT",
+  "depth" : "32",
+  "width" : 8,
+  "mux" : 4,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w32x8m1",
+  "vt" : "HVT",
+  "depth" : "32",
+  "width" : 8,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w32x8m2",
+  "vt" : "HVT",
+  "depth" : "32",
+  "width" : 8,
+  "mux" : 2,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w32x8m4",
+  "vt" : "HVT",
+  "depth" : "32",
+  "width" : 8,
+  "mux" : 4,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w40x120m1",
+  "vt" : "HVT",
+  "depth" : "40",
+  "width" : 120,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w40x72m1",
+  "vt" : "HVT",
+  "depth" : "40",
+  "width" : 72,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w4x128be128m1",
+  "vt" : "HVT",
+  "depth" : "4",
+  "width" : 128,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w4x128m1",
+  "vt" : "HVT",
+  "depth" : "4",
+  "width" : 128,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w4x8be8m1",
+  "vt" : "HVT",
+  "depth" : "4",
+  "width" : 8,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w4x8m1",
+  "vt" : "HVT",
+  "depth" : "4",
+  "width" : 8,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w512x128be128m1",
+  "vt" : "HVT",
+  "depth" : "512",
+  "width" : 128,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w512x128m1",
+  "vt" : "HVT",
+  "depth" : "512",
+  "width" : 128,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w512x32be32m4",
+  "vt" : "HVT",
+  "depth" : "512",
+  "width" : 32,
+  "mux" : 4,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w512x32m4",
+  "vt" : "HVT",
+  "depth" : "512",
+  "width" : 32,
+  "mux" : 4,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w512x64be64m2",
+  "vt" : "HVT",
+  "depth" : "512",
+  "width" : 64,
+  "mux" : 2,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w512x64m1",
+  "vt" : "HVT",
+  "depth" : "512",
+  "width" : 64,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w512x64m2",
+  "vt" : "HVT",
+  "depth" : "512",
+  "width" : 64,
+  "mux" : 2,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w512x8be8m1",
+  "vt" : "HVT",
+  "depth" : "512",
+  "width" : 8,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w512x8be8m2",
+  "vt" : "HVT",
+  "depth" : "512",
+  "width" : 8,
+  "mux" : 2,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w512x8be8m4",
+  "vt" : "HVT",
+  "depth" : "512",
+  "width" : 8,
+  "mux" : 4,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w512x8m1",
+  "vt" : "HVT",
+  "depth" : "512",
+  "width" : 8,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w512x8m2",
+  "vt" : "HVT",
+  "depth" : "512",
+  "width" : 8,
+  "mux" : 2,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w512x8m4",
+  "vt" : "HVT",
+  "depth" : "512",
+  "width" : 8,
+  "mux" : 4,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w520x64be64m2",
+  "vt" : "HVT",
+  "depth" : "520",
+  "width" : 64,
+  "mux" : 2,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w520x64m2",
+  "vt" : "HVT",
+  "depth" : "520",
+  "width" : 64,
+  "mux" : 2,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w64x100be100m1",
+  "vt" : "HVT",
+  "depth" : "64",
+  "width" : 100,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w64x128be128m1",
+  "vt" : "HVT",
+  "depth" : "64",
+  "width" : 128,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w64x128m1",
+  "vt" : "HVT",
+  "depth" : "64",
+  "width" : 128,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w64x32be32m4",
+  "vt" : "HVT",
+  "depth" : "64",
+  "width" : 32,
+  "mux" : 4,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w64x32m4",
+  "vt" : "HVT",
+  "depth" : "64",
+  "width" : 32,
+  "mux" : 4,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w64x64be64m2",
+  "vt" : "HVT",
+  "depth" : "64",
+  "width" : 64,
+  "mux" : 2,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w64x64m2",
+  "vt" : "HVT",
+  "depth" : "64",
+  "width" : 64,
+  "mux" : 2,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w64x88be88m1",
+  "vt" : "HVT",
+  "depth" : "64",
+  "width" : 88,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w64x8be8m1",
+  "vt" : "HVT",
+  "depth" : "64",
+  "width" : 8,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w64x8be8m2",
+  "vt" : "HVT",
+  "depth" : "64",
+  "width" : 8,
+  "mux" : 2,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w64x8be8m4",
+  "vt" : "HVT",
+  "depth" : "64",
+  "width" : 8,
+  "mux" : 4,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w64x8m1",
+  "vt" : "HVT",
+  "depth" : "64",
+  "width" : 8,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w64x8m2",
+  "vt" : "HVT",
+  "depth" : "64",
+  "width" : 8,
+  "mux" : 2,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w64x8m4",
+  "vt" : "HVT",
+  "depth" : "64",
+  "width" : 8,
+  "mux" : 4,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w8x128be128m1",
+  "vt" : "HVT",
+  "depth" : "8",
+  "width" : 128,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w8x128m1",
+  "vt" : "HVT",
+  "depth" : "8",
+  "width" : 128,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w8x64be64m2",
+  "vt" : "HVT",
+  "depth" : "8",
+  "width" : 64,
+  "mux" : 2,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w8x64m2",
+  "vt" : "HVT",
+  "depth" : "8",
+  "width" : 64,
+  "mux" : 2,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w8x8be8m1",
+  "vt" : "HVT",
+  "depth" : "8",
+  "width" : 8,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w8x8be8m2",
+  "vt" : "HVT",
+  "depth" : "8",
+  "width" : 8,
+  "mux" : 2,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high",
+    "mask port name" : "ibwep0",
+    "mask port polarity" : "active high",
+    "mask granularity" : 1
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w8x8m1",
+  "vt" : "HVT",
+  "depth" : "8",
+  "width" : 8,
+  "mux" : 1,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224rfsbhpm1r1w8x8m2",
+  "vt" : "HVT",
+  "depth" : "8",
+  "width" : 8,
+  "mux" : 2,
+  "family" : "1r1w",
+  "ports" : [ {
+    "address port name" : "iarp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickrp0",
+    "clock port polarity" : "positive edge",
+    "read enable port name" : "irenp0",
+    "read enable port polarity" : "active high",
+    "output port name" : "odoutp0",
+    "output port polarity" : "active high"
+  }, {
+    "address port name" : "iawp0",
+    "address port polarity" : "active high",
+    "clock port name" : "ickwp0",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "iwenp0",
+    "write enable port polarity" : "active high",
+    "input port name" : "idinp0",
+    "input port polarity" : "active high"
+  } ],
+  "extra ports" : [ {
+    "name" : "ifuse",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iclkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "imce",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "irmce",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "iwmce",
+    "width" : 4,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+    ,
+{
+  "type" : "sram",
+  "name" : "ip224uhdlp1p11rf_1024x46m4b2c1s1_t0r0p0d0a1m1h",
+  "vt" : "HVT",
+  "depth" : "1024",
+  "width" : 46,
+  "mux" : 4,
+  "family" : "1rw",
+  "ports" : [ {
+    "address port name" : "adr",
+    "address port polarity" : "active high",
+    "clock port name" : "clk",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "wen",
+    "write enable port polarity" : "active high",
+    "read enable port name" : "ren",
+    "read enable port polarity" : "active high",
+    "output port name" : "q",
+    "output port polarity" : "active high",
+    "input port name" : "din",
+    "input port polarity" : "active high"
+    ,
+    "mask port name" : "wbeb",
+    "mask port polarity" : "active low",
+    "mask granularity" : 1
+    
+  } ],
+  "extra ports" : [ {
+    "name" : "mcen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "mc",
+    "width" : 3,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wa",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulse",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulseen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 1
+  }, {
+    "name" : "fwen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "clkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224uhdlp1p11rf_1024x64m4b2c1s1_t0r0p0d0a1m1h",
+  "vt" : "HVT",
+  "depth" : "1024",
+  "width" : 64,
+  "mux" : 4,
+  "family" : "1rw",
+  "ports" : [ {
+    "address port name" : "adr",
+    "address port polarity" : "active high",
+    "clock port name" : "clk",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "wen",
+    "write enable port polarity" : "active high",
+    "read enable port name" : "ren",
+    "read enable port polarity" : "active high",
+    "output port name" : "q",
+    "output port polarity" : "active high",
+    "input port name" : "din",
+    "input port polarity" : "active high"
+    ,
+    "mask port name" : "wbeb",
+    "mask port polarity" : "active low",
+    "mask granularity" : 1
+    
+  } ],
+  "extra ports" : [ {
+    "name" : "mcen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "mc",
+    "width" : 3,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wa",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulse",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulseen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 1
+  }, {
+    "name" : "fwen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "clkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224uhdlp1p11rf_2048x52m4b2c1s1_t0r0p0d0a1m1h",
+  "vt" : "HVT",
+  "depth" : "2048",
+  "width" : 52,
+  "mux" : 4,
+  "family" : "1rw",
+  "ports" : [ {
+    "address port name" : "adr",
+    "address port polarity" : "active high",
+    "clock port name" : "clk",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "wen",
+    "write enable port polarity" : "active high",
+    "read enable port name" : "ren",
+    "read enable port polarity" : "active high",
+    "output port name" : "q",
+    "output port polarity" : "active high",
+    "input port name" : "din",
+    "input port polarity" : "active high"
+    ,
+    "mask port name" : "wbeb",
+    "mask port polarity" : "active low",
+    "mask granularity" : 1
+    
+  } ],
+  "extra ports" : [ {
+    "name" : "mcen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "mc",
+    "width" : 3,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wa",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulse",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulseen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 1
+  }, {
+    "name" : "fwen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "clkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224uhdlp1p11rf_4096x32m4b2c1s0_t0r0p0d0a1m1h",
+  "vt" : "HVT",
+  "depth" : "4096",
+  "width" : 32,
+  "mux" : 4,
+  "family" : "1rw",
+  "ports" : [ {
+    "address port name" : "adr",
+    "address port polarity" : "active high",
+    "clock port name" : "clk",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "wen",
+    "write enable port polarity" : "active high",
+    "read enable port name" : "ren",
+    "read enable port polarity" : "active high",
+    "output port name" : "q",
+    "output port polarity" : "active high",
+    "input port name" : "din",
+    "input port polarity" : "active high"
+    
+  } ],
+  "extra ports" : [ {
+    "name" : "mcen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "mc",
+    "width" : 3,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wa",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulse",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulseen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 1
+  }, {
+    "name" : "fwen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "clkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224uhdlp1p11rf_4096x32m4b2c1s1_t0r0p0d0a1m1h",
+  "vt" : "HVT",
+  "depth" : "4096",
+  "width" : 32,
+  "mux" : 4,
+  "family" : "1rw",
+  "ports" : [ {
+    "address port name" : "adr",
+    "address port polarity" : "active high",
+    "clock port name" : "clk",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "wen",
+    "write enable port polarity" : "active high",
+    "read enable port name" : "ren",
+    "read enable port polarity" : "active high",
+    "output port name" : "q",
+    "output port polarity" : "active high",
+    "input port name" : "din",
+    "input port polarity" : "active high"
+    ,
+    "mask port name" : "wbeb",
+    "mask port polarity" : "active low",
+    "mask granularity" : 1
+    
+  } ],
+  "extra ports" : [ {
+    "name" : "mcen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "mc",
+    "width" : 3,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wa",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulse",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulseen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 1
+  }, {
+    "name" : "fwen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "clkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224uhdlp1p11rf_4096x64m4b2c1s0_t0r0p0d0a1m1h",
+  "vt" : "HVT",
+  "depth" : "4096",
+  "width" : 64,
+  "mux" : 4,
+  "family" : "1rw",
+  "ports" : [ {
+    "address port name" : "adr",
+    "address port polarity" : "active high",
+    "clock port name" : "clk",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "wen",
+    "write enable port polarity" : "active high",
+    "read enable port name" : "ren",
+    "read enable port polarity" : "active high",
+    "output port name" : "q",
+    "output port polarity" : "active high",
+    "input port name" : "din",
+    "input port polarity" : "active high"
+    
+  } ],
+  "extra ports" : [ {
+    "name" : "mcen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "mc",
+    "width" : 3,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wa",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulse",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulseen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 1
+  }, {
+    "name" : "fwen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "clkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224uhdlp1p11rf_4096x64m4b2c1s1_t0r0p0d0a1m1h",
+  "vt" : "HVT",
+  "depth" : "4096",
+  "width" : 64,
+  "mux" : 4,
+  "family" : "1rw",
+  "ports" : [ {
+    "address port name" : "adr",
+    "address port polarity" : "active high",
+    "clock port name" : "clk",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "wen",
+    "write enable port polarity" : "active high",
+    "read enable port name" : "ren",
+    "read enable port polarity" : "active high",
+    "output port name" : "q",
+    "output port polarity" : "active high",
+    "input port name" : "din",
+    "input port polarity" : "active high"
+    ,
+    "mask port name" : "wbeb",
+    "mask port polarity" : "active low",
+    "mask granularity" : 1
+    
+  } ],
+  "extra ports" : [ {
+    "name" : "mcen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "mc",
+    "width" : 3,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wa",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulse",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulseen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 1
+  }, {
+    "name" : "fwen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "clkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224uhdlp1p11rf_512x13m4b2c1s0_t0r0p0d0a1m1h",
+  "vt" : "HVT",
+  "depth" : "512",
+  "width" : 13,
+  "mux" : 4,
+  "family" : "1rw",
+  "ports" : [ {
+    "address port name" : "adr",
+    "address port polarity" : "active high",
+    "clock port name" : "clk",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "wen",
+    "write enable port polarity" : "active high",
+    "read enable port name" : "ren",
+    "read enable port polarity" : "active high",
+    "output port name" : "q",
+    "output port polarity" : "active high",
+    "input port name" : "din",
+    "input port polarity" : "active high"
+    
+  } ],
+  "extra ports" : [ {
+    "name" : "mcen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "mc",
+    "width" : 3,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wa",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulse",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulseen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 1
+  }, {
+    "name" : "fwen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "clkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224uhdlp1p11rf_512x16m4b2c1s0_t0r0p0d0a1m1h",
+  "vt" : "HVT",
+  "depth" : "512",
+  "width" : 16,
+  "mux" : 4,
+  "family" : "1rw",
+  "ports" : [ {
+    "address port name" : "adr",
+    "address port polarity" : "active high",
+    "clock port name" : "clk",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "wen",
+    "write enable port polarity" : "active high",
+    "read enable port name" : "ren",
+    "read enable port polarity" : "active high",
+    "output port name" : "q",
+    "output port polarity" : "active high",
+    "input port name" : "din",
+    "input port polarity" : "active high"
+    
+  } ],
+  "extra ports" : [ {
+    "name" : "mcen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "mc",
+    "width" : 3,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wa",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulse",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulseen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 1
+  }, {
+    "name" : "fwen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "clkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224uhdlp1p11rf_512x16m4b2c1s1_t0r0p0d0a1m1h",
+  "vt" : "HVT",
+  "depth" : "512",
+  "width" : 16,
+  "mux" : 4,
+  "family" : "1rw",
+  "ports" : [ {
+    "address port name" : "adr",
+    "address port polarity" : "active high",
+    "clock port name" : "clk",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "wen",
+    "write enable port polarity" : "active high",
+    "read enable port name" : "ren",
+    "read enable port polarity" : "active high",
+    "output port name" : "q",
+    "output port polarity" : "active high",
+    "input port name" : "din",
+    "input port polarity" : "active high"
+    ,
+    "mask port name" : "wbeb",
+    "mask port polarity" : "active low",
+    "mask granularity" : 1
+    
+  } ],
+  "extra ports" : [ {
+    "name" : "mcen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "mc",
+    "width" : 3,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wa",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulse",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulseen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 1
+  }, {
+    "name" : "fwen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "clkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224uhdlp1p11rf_512x24m4b2c1s0_t0r0p0d0a1m1h",
+  "vt" : "HVT",
+  "depth" : "512",
+  "width" : 24,
+  "mux" : 4,
+  "family" : "1rw",
+  "ports" : [ {
+    "address port name" : "adr",
+    "address port polarity" : "active high",
+    "clock port name" : "clk",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "wen",
+    "write enable port polarity" : "active high",
+    "read enable port name" : "ren",
+    "read enable port polarity" : "active high",
+    "output port name" : "q",
+    "output port polarity" : "active high",
+    "input port name" : "din",
+    "input port polarity" : "active high"
+    
+  } ],
+  "extra ports" : [ {
+    "name" : "mcen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "mc",
+    "width" : 3,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wa",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulse",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulseen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 1
+  }, {
+    "name" : "fwen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "clkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224uhdlp1p11rf_512x32m4b2c1s0_t0r0p0d0a1m1h",
+  "vt" : "HVT",
+  "depth" : "512",
+  "width" : 32,
+  "mux" : 4,
+  "family" : "1rw",
+  "ports" : [ {
+    "address port name" : "adr",
+    "address port polarity" : "active high",
+    "clock port name" : "clk",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "wen",
+    "write enable port polarity" : "active high",
+    "read enable port name" : "ren",
+    "read enable port polarity" : "active high",
+    "output port name" : "q",
+    "output port polarity" : "active high",
+    "input port name" : "din",
+    "input port polarity" : "active high"
+    
+  } ],
+  "extra ports" : [ {
+    "name" : "mcen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "mc",
+    "width" : 3,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wa",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulse",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulseen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 1
+  }, {
+    "name" : "fwen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "clkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224uhdlp1p11rf_512x42m4b2c1s1_t0r0p0d0a1m1h",
+  "vt" : "HVT",
+  "depth" : "512",
+  "width" : 42,
+  "mux" : 4,
+  "family" : "1rw",
+  "ports" : [ {
+    "address port name" : "adr",
+    "address port polarity" : "active high",
+    "clock port name" : "clk",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "wen",
+    "write enable port polarity" : "active high",
+    "read enable port name" : "ren",
+    "read enable port polarity" : "active high",
+    "output port name" : "q",
+    "output port polarity" : "active high",
+    "input port name" : "din",
+    "input port polarity" : "active high"
+    ,
+    "mask port name" : "wbeb",
+    "mask port polarity" : "active low",
+    "mask granularity" : 1
+    
+  } ],
+  "extra ports" : [ {
+    "name" : "mcen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "mc",
+    "width" : 3,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wa",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulse",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulseen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 1
+  }, {
+    "name" : "fwen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "clkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224uhdlp1p11rf_512x44m4b2c1s1_t0r0p0d0a1m1h",
+  "vt" : "HVT",
+  "depth" : "512",
+  "width" : 44,
+  "mux" : 4,
+  "family" : "1rw",
+  "ports" : [ {
+    "address port name" : "adr",
+    "address port polarity" : "active high",
+    "clock port name" : "clk",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "wen",
+    "write enable port polarity" : "active high",
+    "read enable port name" : "ren",
+    "read enable port polarity" : "active high",
+    "output port name" : "q",
+    "output port polarity" : "active high",
+    "input port name" : "din",
+    "input port polarity" : "active high"
+    ,
+    "mask port name" : "wbeb",
+    "mask port polarity" : "active low",
+    "mask granularity" : 1
+    
+  } ],
+  "extra ports" : [ {
+    "name" : "mcen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "mc",
+    "width" : 3,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wa",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulse",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulseen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 1
+  }, {
+    "name" : "fwen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "clkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224uhdlp1p11rf_512x45m4b2c1s0_t0r0p0d0a1m1h",
+  "vt" : "HVT",
+  "depth" : "512",
+  "width" : 45,
+  "mux" : 4,
+  "family" : "1rw",
+  "ports" : [ {
+    "address port name" : "adr",
+    "address port polarity" : "active high",
+    "clock port name" : "clk",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "wen",
+    "write enable port polarity" : "active high",
+    "read enable port name" : "ren",
+    "read enable port polarity" : "active high",
+    "output port name" : "q",
+    "output port polarity" : "active high",
+    "input port name" : "din",
+    "input port polarity" : "active high"
+    
+  } ],
+  "extra ports" : [ {
+    "name" : "mcen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "mc",
+    "width" : 3,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wa",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulse",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulseen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 1
+  }, {
+    "name" : "fwen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "clkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224uhdlp1p11rf_512x46m4b2c1s1_t0r0p0d0a1m1h",
+  "vt" : "HVT",
+  "depth" : "512",
+  "width" : 46,
+  "mux" : 4,
+  "family" : "1rw",
+  "ports" : [ {
+    "address port name" : "adr",
+    "address port polarity" : "active high",
+    "clock port name" : "clk",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "wen",
+    "write enable port polarity" : "active high",
+    "read enable port name" : "ren",
+    "read enable port polarity" : "active high",
+    "output port name" : "q",
+    "output port polarity" : "active high",
+    "input port name" : "din",
+    "input port polarity" : "active high"
+    ,
+    "mask port name" : "wbeb",
+    "mask port polarity" : "active low",
+    "mask granularity" : 1
+    
+  } ],
+  "extra ports" : [ {
+    "name" : "mcen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "mc",
+    "width" : 3,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wa",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulse",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulseen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 1
+  }, {
+    "name" : "fwen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "clkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224uhdlp1p11rf_512x50m4b2c1s1_t0r0p0d0a1m1h",
+  "vt" : "HVT",
+  "depth" : "512",
+  "width" : 50,
+  "mux" : 4,
+  "family" : "1rw",
+  "ports" : [ {
+    "address port name" : "adr",
+    "address port polarity" : "active high",
+    "clock port name" : "clk",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "wen",
+    "write enable port polarity" : "active high",
+    "read enable port name" : "ren",
+    "read enable port polarity" : "active high",
+    "output port name" : "q",
+    "output port polarity" : "active high",
+    "input port name" : "din",
+    "input port polarity" : "active high"
+    ,
+    "mask port name" : "wbeb",
+    "mask port polarity" : "active low",
+    "mask granularity" : 1
+    
+  } ],
+  "extra ports" : [ {
+    "name" : "mcen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "mc",
+    "width" : 3,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wa",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulse",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulseen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 1
+  }, {
+    "name" : "fwen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "clkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224uhdlp1p11rf_512x64m4b2c1s0_t0r0p0d0a1m1h",
+  "vt" : "HVT",
+  "depth" : "512",
+  "width" : 64,
+  "mux" : 4,
+  "family" : "1rw",
+  "ports" : [ {
+    "address port name" : "adr",
+    "address port polarity" : "active high",
+    "clock port name" : "clk",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "wen",
+    "write enable port polarity" : "active high",
+    "read enable port name" : "ren",
+    "read enable port polarity" : "active high",
+    "output port name" : "q",
+    "output port polarity" : "active high",
+    "input port name" : "din",
+    "input port polarity" : "active high"
+    
+  } ],
+  "extra ports" : [ {
+    "name" : "mcen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "mc",
+    "width" : 3,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wa",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulse",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulseen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 1
+  }, {
+    "name" : "fwen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "clkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224uhdlp1p11rf_512x64m4b2c1s1_t0r0p0d0a1m1h",
+  "vt" : "HVT",
+  "depth" : "512",
+  "width" : 64,
+  "mux" : 4,
+  "family" : "1rw",
+  "ports" : [ {
+    "address port name" : "adr",
+    "address port polarity" : "active high",
+    "clock port name" : "clk",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "wen",
+    "write enable port polarity" : "active high",
+    "read enable port name" : "ren",
+    "read enable port polarity" : "active high",
+    "output port name" : "q",
+    "output port polarity" : "active high",
+    "input port name" : "din",
+    "input port polarity" : "active high"
+    ,
+    "mask port name" : "wbeb",
+    "mask port polarity" : "active low",
+    "mask granularity" : 1
+    
+  } ],
+  "extra ports" : [ {
+    "name" : "mcen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "mc",
+    "width" : 3,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wa",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulse",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulseen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 1
+  }, {
+    "name" : "fwen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "clkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ,
+{
+  "type" : "sram",
+  "name" : "ip224uhdlp1p11rf_512x8m4b2c1s0_t0r0p0d0a1m1h",
+  "vt" : "HVT",
+  "depth" : "512",
+  "width" : 8,
+  "mux" : 4,
+  "family" : "1rw",
+  "ports" : [ {
+    "address port name" : "adr",
+    "address port polarity" : "active high",
+    "clock port name" : "clk",
+    "clock port polarity" : "positive edge",
+    "write enable port name" : "wen",
+    "write enable port polarity" : "active high",
+    "read enable port name" : "ren",
+    "read enable port polarity" : "active high",
+    "output port name" : "q",
+    "output port polarity" : "active high",
+    "input port name" : "din",
+    "input port polarity" : "active high"
+    
+  } ],
+  "extra ports" : [ {
+    "name" : "mcen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "mc",
+    "width" : 3,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wa",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulse",
+    "width" : 2,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "wpulseen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 1
+  }, {
+    "name" : "fwen",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  }, {
+    "name" : "clkbyp",
+    "width" : 1,
+    "type" : "constant",
+    "value" : 0
+  } ]
+}
+  ]

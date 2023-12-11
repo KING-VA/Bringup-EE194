@@ -1,0 +1,9 @@
+tmp-clearbox/
+output_files/
+qdb/
+DNI/
+*.qws
+*.bak
+.qsys_edit/
+
+

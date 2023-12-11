@@ -1,0 +1,18 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-std=c11",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-c",
+      "-o",
+      "build/lib/nearmemdma.o",
+      "src/nearmemdma.c"
+    ],
+    "directory": "/Users/ansaschmulbach/Documents/college/classes/tapeout/chip/generators/bearly-near-mem/lib",
+    "file": "/Users/ansaschmulbach/Documents/college/classes/tapeout/chip/generators/bearly-near-mem/lib/src/nearmemdma.c",
+    "output": "/Users/ansaschmulbach/Documents/college/classes/tapeout/chip/generators/bearly-near-mem/lib/build/lib/nearmemdma.o"
+  }
+]

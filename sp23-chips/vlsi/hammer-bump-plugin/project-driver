@@ -1,0 +1,96 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+# --------------------------------
+# INTECH-22 DRIVER
+# last Modified: 12/31/22, Ken Ho
+# --------------------------------
+
+import os
+import json
+
+import hammer.vlsi as hammer_vlsi
+from hammer.vlsi import CLIDriver, HammerTool, HammerToolHookAction, HammerDriver, HierarchicalMode
+
+from typing import Dict, Callable, Optional, List
+from decimal import Decimal
+
+
+def io_placement(x: HammerTool) -> bool:
+    io_file = x.get_setting("project.io_file")
+    x.append(f'''
+        read_io_file {io_file} -no_die_size_adjust
+        create_net -name vccio -physical -power
+        connect_global_net VDD_1P8 -type pg_pin -pin_base_name vccio -verbose
+        connect_global_net VSS -type pg_pin -pin_base_name vssp -verbose
+        connect_global_net VSS -type pg_pin -pin_base_name vssb -verbose
+        connect_global_net VDD -type pg_pin -pin_base_name vcc_nom -verbose
+        connect_global_net VSS -type pg_pin -pin_base_name vssx -verbose
+            
+    ''')
+
+    # if you put something like DICs outside the core the default hook is buggy
+    for ring in range(x.get_setting("technology.intech22.io_rings")):
+        ring_num=ring+1
+        x.append(f'''
+            add_io_fillers -io_ring {ring_num} -side top    -cells spacer_2lego_n1 -filler_orient r0 -prefix iofill_
+            add_io_fillers -io_ring {ring_num} -side bottom -cells spacer_2lego_n1 -filler_orient mx -prefix iofill_
+            add_io_fillers -io_ring {ring_num} -side left   -cells spacer_2lego_e1 -filler_orient r0 -prefix iofill_
+            add_io_fillers -io_ring {ring_num} -side right  -cells spacer_2lego_e1 -filler_orient my -prefix iofill_
+        ''')
+        
+    return True
+
+
+def fc_route(x: hammer_vlsi.HammerTool) -> bool:
+      x.append('''
+      # --- Add core rings ---
+      # add_rings -type core_rings -nets {{VDD VSS}} -width 5.400 -layer {{ top gm0 bottom gm0 left gmb right gmb }} -follow core -spacing 1.08 -center 1
+
+      # --- FC Router Settings ---
+      set_db flip_chip_route_width {width}
+      set_db flip_chip_allow_routed_bump_edit false
+      set_db flip_chip_route_style manhattan
+
+      # --- Route VCCIO ---
+      set_db flip_chip_top_layer gmb
+      set_db flip_chip_bottom_layer gm0
+      route_flip_chip -double_bend_route -incremental -verbose -keep_drc -target connect_bump_to_ring_stripe -nets {{ VDD_1P8 }}
+
+      # --- Route Signals ---
+      select_bumps -type signal
+      route_flip_chip -target connect_bump_to_pad -incremental -selected_bumps -double_bend_route -keep_drc -verbose
+      deselect_bumps
+
+      # route vcc and vss to rings
+      set_db flip_chip_top_layer gmb
+      set_db flip_chip_bottom_layer gm0
+      #route_flip_chip -double_bend_route -incremental -verbose -keep_drc -target connect_bump_to_ring_stripe -nets {{ VDD VSS }}
+
+      # reset_db flip_chip_bottom_layer
+      # reset_db flip_chip_top_layer
+      '''.format(width=x.get_setting("technology.intech22.fc_route_width")), clean=True)
+      return True
+
+
+def genus_settings(x: HammerTool) -> bool:
+    #x.generate_visualization()
+    x.append('''
+      set_dont_touch [get_designs Intech22DigitalInIOCell_N] 
+      set_dont_touch [get_designs Intech22DigitalOutIOCell_E] 
+    ''')
+    return True
+  
+class ProjectDriver (CLIDriver):
+  def get_extra_synthesis_hooks(self) -> List[HammerToolHookAction]:
+    extra_hooks = []
+    return extra_hooks
+
+  def get_extra_par_hooks(self) -> List[HammerToolHookAction]:
+      return [
+        HammerTool.make_post_insertion_hook("floorplan_design", io_placement),
+        HammerTool.make_post_insertion_hook("place_bumps", fc_route),
+
+      ]
+if __name__ == '__main__':
+    ProjectDriver().main()

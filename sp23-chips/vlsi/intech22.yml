@@ -1,0 +1,8 @@
+# Technology Setup
+vlsi.core.technology: "hammer.intech22"
+vlsi.core.max_threads: 32
+vlsi.core.build_system: make
+vlsi.core.drc_tool: "hammer.drc.icv"
+vlsi.core.lvs_tool: "hammer.lvs.icv"
+synopsys.layerprops_meta: prependlocal
+synopsys.layerprops: "hammer-intech22-plugin/hammer/intech22/signoff/icvwb_layerprops.mac"

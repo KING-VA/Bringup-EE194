@@ -1,0 +1,339 @@
+# File saved with Nlview 7.5.7 2022-07-21 7101 VDI=41 GEI=38 GUI=QT:5.15.11
+#  -curmodule
+# non-default properties - (restore without -noprops)
+property -colorscheme classic
+property attrcolor #06476f
+property autobundle 129
+property backgroundcolor #ffffff
+property boxcolor0 #2d2d2d
+property boxhierpins 3
+property boxinstcolor #000000
+property boxpincolor #06476f
+property buscolor #2d2d2d
+property createnetattrdsp 1024
+property createvconn 65
+property decorate 1
+property elidetext 1
+property fillcolor1 #73acac
+property fillcolor2 #81bf5f
+property fillcolor3 #dce6dc
+property fillcolor4 #ffff00
+property fillcolor5 #c0c0c0
+property fillcolor6 #b3a9fe
+property fillcolor7 #f0b0d2
+property fillcolor8 #adadad
+property fillcolor9 #a9feff
+property fillcolor10 #e5ffff
+property instattrmax -1
+property netcolor #2d2d2d
+property netindicators 15
+property netindicatorsize 3
+property nohiernegpins 0
+property overlaycolor #2d2d2d
+property pbuscolor #0000ff
+property pbusnamecolor #000000
+property pinattrmax -1
+property portcolor #0000ff
+property portnamecolor #000000
+property ripattrmax -1
+property rippercolor #000000
+property rubberbandcolor #00aaff
+property selectionappearance 6
+property selectioncolor #aa1027
+property shadowstyle 1
+property sheetheight 34
+property sheetwidth 44
+property showpagenumbers 1
+property showripindex 1
+property showvconn 1
+#
+module new _1 {}
+load symbol jerrything_2 {} HIERBOX pin AG_UART_RX_10999 input.left pin CLK_50_B2A_10815 input.left pin CPU_RESET_n_10869 input.left pin CPU_RESET_n~_wirecell_13101 input.left pinBus FMC_HA_p[7..9]_13224 input.left 3 FMC_HA_p[7]_10455 FMC_HA_p[8]_10461 FMC_HA_p[9]_10467 pin inDes:receiving_10941 output.right pin txm:out_10778 output.right pin uart_to_serial:dropped_3920 output.right fillcolor 2 fillregion 3
+load symbol u0_4 {} HIERBOX pin AG_UART_RX_11002 input.left pin BUTTON[1]_11668 input.left pin CLK_50_B2A_10812 input.left pinBus FMC_HA_p[0..3]_13225 input.left 4 FMC_HA_p[0]_10443 FMC_HA_p[1]_10446 FMC_HA_p[2]_10449 FMC_HA_p[3]_10452 pinBus FMC_HA_p[7..10]_13226 input.left 4 FMC_HA_p[7]_10458 FMC_HA_p[8]_10464 FMC_HA_p[9]_10470 FMC_HA_p[10]_10473 pinBus IN[9..26]_13227 input.left 18 IN9_10489 IN10_10526 IN11_10558 IN12_10582 IN13_10599 IN14_10616 IN15_10631 IN16_10643 IN17_10654 IN18_10671 IN19_10682 IN20_10693 IN21_10705 IN22_10716 IN23_10727 IN24_10740 IN25_10752 IN26_10781 pin IN28_10947 input.left pin ~GND_13094 input.left pin OUT1_10437 output.right fillcolor 2 fillregion 3
+load symbol auto_fab_0_54 {} HIERBOX pin altera_reserved_tck_10786 input.left pin altera_reserved_tdi_10791 input.left pin altera_reserved_tms_10796 input.left pin IN1_10439 input.left pin ~GND_13099 input.left pin atom_inst:ext_tdo_10541 output.right pinBus OUT[1..2]_13228 output.right 2 OUT1_10490 OUT2_10527 pinBus OUT[4..18]_13229 output.right 15 OUT4_10559 OUT5_10583 OUT6_10600 OUT7_10617 OUT8_10632 OUT9_10644 OUT10_10655 OUT11_10672 OUT12_10683 OUT13_10694 OUT14_10706 OUT15_10717 OUT16_10728 OUT17_10741 OUT18_10753 fillcolor 2 fillregion 3
+load symbol FMC_HA_p[11]~output_3739 {} BOX pin I_3741 input.left pin O_3742 output.right fillcolor 6
+load symbol FMC_HA_p[12]~output_3744 {} BOX pin I_3746 input.left pin O_3747 output.right fillcolor 6
+load symbol FMC_HA_p[13]~output_3749 {} BOX pin I_3751 input.left pin O_3752 output.right fillcolor 6
+load symbol FMC_HA_p[14]~output_3754 {} BOX pin I_3756 input.left pin O_3757 output.right fillcolor 6
+load symbol FMC_HA_p[15]~output_3759 {} BOX pin I_3761 input.left pin O_3762 output.right fillcolor 6
+load symbol FMC_HA_p[16]~output_3764 {} BOX pin I_3766 input.left pin O_3767 output.right fillcolor 6
+load symbol FMC_HA_p[17]~output_3769 {} BOX pin I_3771 input.left pin O_3772 output.right fillcolor 6
+load symbol FMC_HA_p[18]~output_3774 {} BOX pin I_3776 input.left pin O_3777 output.right fillcolor 6
+load symbol FMC_HA_p[19]~output_3779 {} BOX pin I_3781 input.left pin O_3782 output.right fillcolor 6
+load symbol FMC_HA_p[20]~output_3784 {} BOX pin I_3786 input.left pin O_3787 output.right fillcolor 6
+load symbol FMC_HA_p[21]~output_3789 {} BOX pin I_3791 input.left pin O_3792 output.right fillcolor 6
+load symbol FMC_HA_p[22]~output_3794 {} BOX pin I_3796 input.left pin O_3797 output.right fillcolor 6
+load symbol FMC_HA_p[23]~output_3799 {} BOX pin I_3801 input.left pin O_3802 output.right fillcolor 6
+load symbol SI5340A_I2C_SCL~output_3804 {} BOX pin I_3806 input.left pin O_3807 output.right fillcolor 6
+load symbol SI5340A_I2C_SDA~output_3809 {} BOX pin I_3811 input.left pin O_3812 output.right fillcolor 6
+load symbol GPIO_D[0]~output_3814 {} BOX pin I_3816 input.left pin O_3817 output.right fillcolor 6
+load symbol GPIO_D[1]~output_3819 {} BOX pin I_3821 input.left pin O_3822 output.right fillcolor 6
+load symbol GPIO_D[2]~output_3824 {} BOX pin I_3826 input.left pin O_3827 output.right fillcolor 6
+load symbol GPIO_D[3]~output_3829 {} BOX pin I_3831 input.left pin O_3832 output.right fillcolor 6
+load symbol GPIO_D[4]~output_3834 {} BOX pin I_3836 input.left pin O_3837 output.right fillcolor 6
+load symbol GPIO_D[5]~output_3839 {} BOX pin I_3841 input.left pin O_3842 output.right fillcolor 6
+load symbol GPIO_D[6]~output_3844 {} BOX pin I_3846 input.left pin O_3847 output.right fillcolor 6
+load symbol GPIO_D[7]~output_3849 {} BOX pin I_3851 input.left pin O_3852 output.right fillcolor 6
+load symbol FMC_HA_p[0]~output_3854 {} BOX pin I_3856 input.left pin O_3857 output.right fillcolor 6
+load symbol FMC_HA_p[1]~output_3859 {} BOX pin I_3861 input.left pin O_3862 output.right fillcolor 6
+load symbol FMC_HA_p[2]~output_3864 {} BOX pin I_3866 input.left pin O_3867 output.right fillcolor 6
+load symbol FMC_HA_p[3]~output_3869 {} BOX pin I_3871 input.left pin O_3872 output.right fillcolor 6
+load symbol FMC_HA_p[4]~output_3874 {} BOX pin I_3876 input.left pin O_3877 output.right fillcolor 6
+load symbol FMC_HA_p[5]~output_3879 {} BOX pin I_3881 input.left pin O_3882 output.right fillcolor 6
+load symbol FMC_HA_p[6]~output_3884 {} BOX pin I_3886 input.left pin OE_3887 input.left pin O_3888 output.right fillcolor 6
+load symbol FMC_HA_p[7]~output_3890 {} BOX pin I_3892 input.left pin O_3893 output.right fillcolor 6
+load symbol FMC_HA_p[8]~output_3895 {} BOX pin I_3897 input.left pin O_3898 output.right fillcolor 6
+load symbol FMC_HA_p[9]~output_3900 {} BOX pin I_3902 input.left pin O_3903 output.right fillcolor 6
+load symbol FMC_HA_p[10]~output_3905 {} BOX pin I_3907 input.left pin O_3908 output.right fillcolor 6
+load symbol FMC_HA_p[0]_3853 {} BOX pin INPUT_34313 input.left pin OUTPUT_3909 output.right fillcolor 1
+load symbol FMC_HA_p[1]_3858 {} BOX pin INPUT_34317 input.left pin OUTPUT_3913 output.right fillcolor 1
+load symbol FMC_HA_p[2]_3863 {} BOX pin INPUT_34321 input.left pin OUTPUT_3917 output.right fillcolor 1
+load symbol FMC_HA_p[3]_3868 {} BOX pin INPUT_34325 input.left pin OUTPUT_3921 output.right fillcolor 1
+load symbol FMC_HA_p[7]_3889 {} BOX pin INPUT_34343 input.left pin OUTPUT_3935 output.right fillcolor 1
+load symbol FMC_HA_p[8]_3894 {} BOX pin INPUT_34347 input.left pin OUTPUT_3939 output.right fillcolor 1
+load symbol FMC_HA_p[9]_3899 {} BOX pin INPUT_34351 input.left pin OUTPUT_3943 output.right fillcolor 1
+load symbol FMC_HA_p[10]_3904 {} BOX pin INPUT_34355 input.left pin OUTPUT_3947 output.right fillcolor 1
+load symbol ~GND_3916 {} BOX pin COMBOUT_3958 output.right fillcolor 1
+load symbol ~VCC_3917 {} BOX pin COMBOUT_3959 output.right fillcolor 1
+load symbol CPU_RESET_n~_wirecell_3918 {} BOX pin DATAA_34359 input.left pin COMBOUT_3960 output.right fillcolor 1
+load port AG_UART_CTS_3731 input -attr @name AG_UART_CTS -pg 1 -lvl 0 -x 0 -y 20
+load port AG_UART_RTS_3732 output -attr @name AG_UART_RTS -pg 1 -lvl 5 -x 1270 -y 740
+load port AG_UART_RX_3914 input -attr @name AG_UART_RX -pg 1 -lvl 0 -x 0 -y 40
+load port AG_UART_TX_3730 output -attr @name AG_UART_TX -pg 1 -lvl 5 -x 1270 -y 140
+load port altera_reserved_tck_3909 input -attr @name altera_reserved_tck -pg 1 -lvl 0 -x 0 -y 640
+load port altera_reserved_tdi_3910 input -attr @name altera_reserved_tdi -pg 1 -lvl 0 -x 0 -y 660
+load port altera_reserved_tdo_3737 output -attr @name altera_reserved_tdo -pg 1 -lvl 5 -x 1270 -y 680
+load port altera_reserved_tms_3911 input -attr @name altera_reserved_tms -pg 1 -lvl 0 -x 0 -y 680
+load port CLK_30M72_3716 input -attr @name CLK_30M72 -pg 1 -lvl 0 -x 0 -y 100
+load port CLK_50_B2A_3912 input -attr @name CLK_50_B2A -pg 1 -lvl 0 -x 0 -y 60
+load port CLK_50_B2D_3717 input -attr @name CLK_50_B2D -pg 1 -lvl 0 -x 0 -y 120
+load port CLK_50_B3A_3718 input -attr @name CLK_50_B3A -pg 1 -lvl 0 -x 0 -y 160
+load port CLK_50_B3C_3719 input -attr @name CLK_50_B3C -pg 1 -lvl 0 -x 0 -y 180
+load port CLK_100_B2A_3715 input -attr @name CLK_100_B2A -pg 1 -lvl 0 -x 0 -y 200
+load port CPU_RESET_n_3913 input -attr @name CPU_RESET_n -pg 1 -lvl 0 -x 0 -y 80
+load port INFO_SPI_CS_n_3736 output -attr @name INFO_SPI_CS_n -pg 1 -lvl 5 -x 1270 -y 760
+load port INFO_SPI_MISO_3734 input -attr @name INFO_SPI_MISO -pg 1 -lvl 0 -x 0 -y 220
+load port INFO_SPI_MOSI_3735 output -attr @name INFO_SPI_MOSI -pg 1 -lvl 5 -x 1270 -y 780
+load port INFO_SPI_SCLK_3733 output -attr @name INFO_SPI_SCLK -pg 1 -lvl 5 -x 1270 -y 800
+load port QSFP28_REFCLK_p_3729 input -attr @name QSFP28_REFCLK_p -pg 1 -lvl 0 -x 0 -y 240
+load port SI5340A_I2C_SCL_3803 inout -attr @name SI5340A_I2C_SCL -pg 1 -lvl 5 -x 1270 -y 2060
+load port SI5340A_I2C_SDA_3808 inout -attr @name SI5340A_I2C_SDA -pg 1 -lvl 5 -x 1270 -y 2120
+load port SI5340A_LOL_3725 input -attr @name SI5340A_LOL -pg 1 -lvl 0 -x 0 -y 260
+load port SI5340A_LOS_XAXB_3726 input -attr @name SI5340A_LOS_XAXB -pg 1 -lvl 0 -x 0 -y 280
+load port SI5340A_OE_n_3727 output -attr @name SI5340A_OE_n -pg 1 -lvl 5 -x 1270 -y 840
+load port SI5340A_RST_n_3728 output -attr @name SI5340A_RST_n -pg 1 -lvl 5 -x 1270 -y 2180
+load portBus BUTTON[0..1]_13218 input 2 BUTTON[0]_3720 BUTTON[1]_3915 -attr @name BUTTON[0..1] -portAttr BUTTON[0]_3720 @name BUTTON[0] -portAttr BUTTON[1]_3915 @name BUTTON[1] -pg 1 -lvl 0 -x 0 -y 140
+load portBus FMC_HA_p[4..6]_13219 inout 3 FMC_HA_p[4]_3873 FMC_HA_p[5]_3878 FMC_HA_p[6]_3883 -attr @name FMC_HA_p[4..6] -portAttr FMC_HA_p[4]_3873 @name FMC_HA_p[4] -portAttr FMC_HA_p[5]_3878 @name FMC_HA_p[5] -portAttr FMC_HA_p[6]_3883 @name FMC_HA_p[6] -pg 1 -lvl 5 -x 1270 -y 160
+load portBus FMC_HA_p[11..23]_13220 inout 13 FMC_HA_p[11]_3738 FMC_HA_p[12]_3743 FMC_HA_p[13]_3748 FMC_HA_p[14]_3753 FMC_HA_p[15]_3758 FMC_HA_p[16]_3763 FMC_HA_p[17]_3768 FMC_HA_p[18]_3773 FMC_HA_p[19]_3778 FMC_HA_p[20]_3783 FMC_HA_p[21]_3788 FMC_HA_p[22]_3793 FMC_HA_p[23]_3798 -attr @name FMC_HA_p[11..23] -portAttr FMC_HA_p[11]_3738 @name FMC_HA_p[11] -portAttr FMC_HA_p[12]_3743 @name FMC_HA_p[12] -portAttr FMC_HA_p[13]_3748 @name FMC_HA_p[13] -portAttr FMC_HA_p[14]_3753 @name FMC_HA_p[14] -portAttr FMC_HA_p[15]_3758 @name FMC_HA_p[15] -portAttr FMC_HA_p[16]_3763 @name FMC_HA_p[16] -portAttr FMC_HA_p[17]_3768 @name FMC_HA_p[17] -portAttr FMC_HA_p[18]_3773 @name FMC_HA_p[18] -portAttr FMC_HA_p[19]_3778 @name FMC_HA_p[19] -portAttr FMC_HA_p[20]_3783 @name FMC_HA_p[20] -portAttr FMC_HA_p[21]_3788 @name FMC_HA_p[21] -portAttr FMC_HA_p[22]_3793 @name FMC_HA_p[22] -portAttr FMC_HA_p[23]_3798 @name FMC_HA_p[23] -pg 1 -lvl 5 -x 1270 -y 860
+load portBus GPIO_D[0..7]_13221 inout 8 GPIO_D[0]_3813 GPIO_D[1]_3818 GPIO_D[2]_3823 GPIO_D[3]_3828 GPIO_D[4]_3833 GPIO_D[5]_3838 GPIO_D[6]_3843 GPIO_D[7]_3848 -attr @name GPIO_D[0..7] -portAttr GPIO_D[0]_3813 @name GPIO_D[0] -portAttr GPIO_D[1]_3818 @name GPIO_D[1] -portAttr GPIO_D[2]_3823 @name GPIO_D[2] -portAttr GPIO_D[3]_3828 @name GPIO_D[3] -portAttr GPIO_D[4]_3833 @name GPIO_D[4] -portAttr GPIO_D[5]_3838 @name GPIO_D[5] -portAttr GPIO_D[6]_3843 @name GPIO_D[6] -portAttr GPIO_D[7]_3848 @name GPIO_D[7] -pg 1 -lvl 5 -x 1270 -y 1580
+load portBus LED[0..1]_13222 output 2 LED[0]_3723 LED[1]_3724 -attr @name LED[0..1] -portAttr LED[0]_3723 @name LED[0] -portAttr LED[1]_3724 @name LED[1] -pg 1 -lvl 5 -x 1270 -y 820
+load portBus SW[0..1]_13223 input 2 SW[0]_3721 SW[1]_3722 -attr @name SW[0..1] -portAttr SW[0]_3721 @name SW[0] -portAttr SW[1]_3722 @name SW[1] -pg 1 -lvl 0 -x 0 -y 300
+load inst jerrything_2 jerrything_2 {} -autohide -attr @name jerrything -attr @cell (UARTToSerializedTL) -pinAttr AG_UART_RX_10999 @name AG_UART_RX -pinAttr CLK_50_B2A_10815 @name CLK_50_B2A -pinAttr CPU_RESET_n_10869 @name CPU_RESET_n -pinAttr CPU_RESET_n~_wirecell_13101 @name CPU_RESET_n~_wirecell -pinBusAttr FMC_HA_p[7..9]_13224 @name FMC_HA_p[7..9] -pinAttr FMC_HA_p[7]_10455 @name FMC_HA_p[7] -pinAttr FMC_HA_p[8]_10461 @name FMC_HA_p[8] -pinAttr FMC_HA_p[9]_10467 @name FMC_HA_p[9] -pinAttr inDes:receiving_10941 @name inDes:receiving -pinAttr txm:out_10778 @name txm:out -pinAttr uart_to_serial:dropped_3920 @name uart_to_serial:dropped -hierPinAttr AG_UART_RX_10999 @name AG_UART_RX -hierPinAttr CLK_50_B2A_10815 @name CLK_50_B2A -hierPinAttr CPU_RESET_n_10869 @name CPU_RESET_n -hierPinAttr CPU_RESET_n~_wirecell_13101 @name CPU_RESET_n~_wirecell -hierPinBusAttr FMC_HA_p[7..9]_13224 @name FMC_HA_p[7..9] -hierPinAttr FMC_HA_p[7]_10455 @name FMC_HA_p[7] -hierPinAttr FMC_HA_p[8]_10461 @name FMC_HA_p[8] -hierPinAttr FMC_HA_p[9]_10467 @name FMC_HA_p[9] -hierPinAttr inDes:receiving_10941 @name inDes:receiving -hierPinAttr txm:out_10778 @name txm:out -hierPinAttr uart_to_serial:dropped_3920 @name uart_to_serial:dropped -pg 1 -lvl 3 -x 660 -y 50
+load inst u0_4 u0_4 {} -autohide -attr @name u0 -attr @cell (signaltap) -pinAttr AG_UART_RX_11002 @name AG_UART_RX -pinAttr BUTTON[1]_11668 @name BUTTON[1] -pinAttr CLK_50_B2A_10812 @name CLK_50_B2A -pinBusAttr FMC_HA_p[0..3]_13225 @name FMC_HA_p[0..3] -pinAttr FMC_HA_p[0]_10443 @name FMC_HA_p[0] -pinAttr FMC_HA_p[1]_10446 @name FMC_HA_p[1] -pinAttr FMC_HA_p[2]_10449 @name FMC_HA_p[2] -pinAttr FMC_HA_p[3]_10452 @name FMC_HA_p[3] -pinBusAttr FMC_HA_p[7..10]_13226 @name FMC_HA_p[7..10] -pinAttr FMC_HA_p[7]_10458 @name FMC_HA_p[7] -pinAttr FMC_HA_p[8]_10464 @name FMC_HA_p[8] -pinAttr FMC_HA_p[9]_10470 @name FMC_HA_p[9] -pinAttr FMC_HA_p[10]_10473 @name FMC_HA_p[10] -pinBusAttr IN[9..26]_13227 @name IN[9..26] -pinAttr IN9_10489 @name IN9 -pinAttr IN10_10526 @name IN10 -pinAttr IN11_10558 @name IN11 -pinAttr IN12_10582 @name IN12 -pinAttr IN13_10599 @name IN13 -pinAttr IN14_10616 @name IN14 -pinAttr IN15_10631 @name IN15 -pinAttr IN16_10643 @name IN16 -pinAttr IN17_10654 @name IN17 -pinAttr IN18_10671 @name IN18 -pinAttr IN19_10682 @name IN19 -pinAttr IN20_10693 @name IN20 -pinAttr IN21_10705 @name IN21 -pinAttr IN22_10716 @name IN22 -pinAttr IN23_10727 @name IN23 -pinAttr IN24_10740 @name IN24 -pinAttr IN25_10752 @name IN25 -pinAttr IN26_10781 @name IN26 -pinAttr IN28_10947 @name IN28 -pinAttr ~GND_13094 @name ~GND -pinAttr OUT1_10437 @name OUT1 -hierPinAttr AG_UART_RX_11002 @name AG_UART_RX -hierPinAttr BUTTON[1]_11668 @name BUTTON[1] -hierPinAttr CLK_50_B2A_10812 @name CLK_50_B2A -hierPinBusAttr FMC_HA_p[0..3]_13225 @name FMC_HA_p[0..3] -hierPinAttr FMC_HA_p[0]_10443 @name FMC_HA_p[0] -hierPinAttr FMC_HA_p[1]_10446 @name FMC_HA_p[1] -hierPinAttr FMC_HA_p[2]_10449 @name FMC_HA_p[2] -hierPinAttr FMC_HA_p[3]_10452 @name FMC_HA_p[3] -hierPinBusAttr FMC_HA_p[7..10]_13226 @name FMC_HA_p[7..10] -hierPinAttr FMC_HA_p[7]_10458 @name FMC_HA_p[7] -hierPinAttr FMC_HA_p[8]_10464 @name FMC_HA_p[8] -hierPinAttr FMC_HA_p[9]_10470 @name FMC_HA_p[9] -hierPinAttr FMC_HA_p[10]_10473 @name FMC_HA_p[10] -hierPinBusAttr IN[9..26]_13227 @name IN[9..26] -hierPinAttr IN9_10489 @name IN9 -hierPinAttr IN10_10526 @name IN10 -hierPinAttr IN11_10558 @name IN11 -hierPinAttr IN12_10582 @name IN12 -hierPinAttr IN13_10599 @name IN13 -hierPinAttr IN14_10616 @name IN14 -hierPinAttr IN15_10631 @name IN15 -hierPinAttr IN16_10643 @name IN16 -hierPinAttr IN17_10654 @name IN17 -hierPinAttr IN18_10671 @name IN18 -hierPinAttr IN19_10682 @name IN19 -hierPinAttr IN20_10693 @name IN20 -hierPinAttr IN21_10705 @name IN21 -hierPinAttr IN22_10716 @name IN22 -hierPinAttr IN23_10727 @name IN23 -hierPinAttr IN24_10740 @name IN24 -hierPinAttr IN25_10752 @name IN25 -hierPinAttr IN26_10781 @name IN26 -hierPinAttr IN28_10947 @name IN28 -hierPinAttr ~GND_13094 @name ~GND -hierPinAttr OUT1_10437 @name OUT1 -pg 1 -lvl 3 -x 660 -y 290
+load inst auto_fab_0_54 auto_fab_0_54 {} -autohide -attr @name auto_fab_0 -attr @cell (alt_sld_fab_0) -pinAttr altera_reserved_tck_10786 @name altera_reserved_tck -pinAttr altera_reserved_tdi_10791 @name altera_reserved_tdi -pinAttr altera_reserved_tms_10796 @name altera_reserved_tms -pinAttr IN1_10439 @name IN1 -pinAttr ~GND_13099 @name ~GND -pinAttr atom_inst:ext_tdo_10541 @name atom_inst:ext_tdo -pinBusAttr OUT[1..2]_13228 @name OUT[1..2] -pinAttr OUT1_10490 @name OUT1 -pinAttr OUT2_10527 @name OUT2 -pinBusAttr OUT[4..18]_13229 @name OUT[4..18] -pinAttr OUT4_10559 @name OUT4 -pinAttr OUT5_10583 @name OUT5 -pinAttr OUT6_10600 @name OUT6 -pinAttr OUT7_10617 @name OUT7 -pinAttr OUT8_10632 @name OUT8 -pinAttr OUT9_10644 @name OUT9 -pinAttr OUT10_10655 @name OUT10 -pinAttr OUT11_10672 @name OUT11 -pinAttr OUT12_10683 @name OUT12 -pinAttr OUT13_10694 @name OUT13 -pinAttr OUT14_10706 @name OUT14 -pinAttr OUT15_10717 @name OUT15 -pinAttr OUT16_10728 @name OUT16 -pinAttr OUT17_10741 @name OUT17 -pinAttr OUT18_10753 @name OUT18 -hierPinAttr altera_reserved_tck_10786 @name altera_reserved_tck -hierPinAttr altera_reserved_tdi_10791 @name altera_reserved_tdi -hierPinAttr altera_reserved_tms_10796 @name altera_reserved_tms -hierPinAttr IN1_10439 @name IN1 -hierPinAttr ~GND_13099 @name ~GND -hierPinAttr atom_inst:ext_tdo_10541 @name atom_inst:ext_tdo -hierPinBusAttr OUT[1..2]_13228 @name OUT[1..2] -hierPinAttr OUT1_10490 @name OUT1 -hierPinAttr OUT2_10527 @name OUT2 -hierPinBusAttr OUT[4..18]_13229 @name OUT[4..18] -hierPinAttr OUT4_10559 @name OUT4 -hierPinAttr OUT5_10583 @name OUT5 -hierPinAttr OUT6_10600 @name OUT6 -hierPinAttr OUT7_10617 @name OUT7 -hierPinAttr OUT8_10632 @name OUT8 -hierPinAttr OUT9_10644 @name OUT9 -hierPinAttr OUT10_10655 @name OUT10 -hierPinAttr OUT11_10672 @name OUT11 -hierPinAttr OUT12_10683 @name OUT12 -hierPinAttr OUT13_10694 @name OUT13 -hierPinAttr OUT14_10706 @name OUT14 -hierPinAttr OUT15_10717 @name OUT15 -hierPinAttr OUT16_10728 @name OUT16 -hierPinAttr OUT17_10741 @name OUT17 -hierPinAttr OUT18_10753 @name OUT18 -pg 1 -lvl 4 -x 1050 -y 610
+load inst FMC_HA_p[11]~output_3739 FMC_HA_p[11]~output_3739 {} -attr @name FMC_HA_p[11]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_3741 @name I -pinAttr I_3741 @vconn 1'h1 -pinAttr O_3742 @name O -pg 1 -lvl 4 -x 1050 -y 1150
+load inst FMC_HA_p[12]~output_3744 FMC_HA_p[12]~output_3744 {} -attr @name FMC_HA_p[12]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_3746 @name I -pinAttr I_3746 @vconn 1'h1 -pinAttr O_3747 @name O -pg 1 -lvl 4 -x 1050 -y 1210
+load inst FMC_HA_p[13]~output_3749 FMC_HA_p[13]~output_3749 {} -attr @name FMC_HA_p[13]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_3751 @name I -pinAttr I_3751 @vconn 1'h1 -pinAttr O_3752 @name O -pg 1 -lvl 4 -x 1050 -y 1270
+load inst FMC_HA_p[14]~output_3754 FMC_HA_p[14]~output_3754 {} -attr @name FMC_HA_p[14]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_3756 @name I -pinAttr I_3756 @vconn 1'h1 -pinAttr O_3757 @name O -pg 1 -lvl 4 -x 1050 -y 1330
+load inst FMC_HA_p[15]~output_3759 FMC_HA_p[15]~output_3759 {} -attr @name FMC_HA_p[15]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_3761 @name I -pinAttr I_3761 @vconn 1'h1 -pinAttr O_3762 @name O -pg 1 -lvl 4 -x 1050 -y 1390
+load inst FMC_HA_p[16]~output_3764 FMC_HA_p[16]~output_3764 {} -attr @name FMC_HA_p[16]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_3766 @name I -pinAttr I_3766 @vconn 1'h1 -pinAttr O_3767 @name O -pg 1 -lvl 4 -x 1050 -y 1450
+load inst FMC_HA_p[17]~output_3769 FMC_HA_p[17]~output_3769 {} -attr @name FMC_HA_p[17]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_3771 @name I -pinAttr I_3771 @vconn 1'h1 -pinAttr O_3772 @name O -pg 1 -lvl 4 -x 1050 -y 1510
+load inst FMC_HA_p[18]~output_3774 FMC_HA_p[18]~output_3774 {} -attr @name FMC_HA_p[18]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_3776 @name I -pinAttr I_3776 @vconn 1'h1 -pinAttr O_3777 @name O -pg 1 -lvl 4 -x 1050 -y 790
+load inst FMC_HA_p[19]~output_3779 FMC_HA_p[19]~output_3779 {} -attr @name FMC_HA_p[19]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_3781 @name I -pinAttr I_3781 @vconn 1'h1 -pinAttr O_3782 @name O -pg 1 -lvl 4 -x 1050 -y 850
+load inst FMC_HA_p[20]~output_3784 FMC_HA_p[20]~output_3784 {} -attr @name FMC_HA_p[20]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_3786 @name I -pinAttr I_3786 @vconn 1'h1 -pinAttr O_3787 @name O -pg 1 -lvl 4 -x 1050 -y 910
+load inst FMC_HA_p[21]~output_3789 FMC_HA_p[21]~output_3789 {} -attr @name FMC_HA_p[21]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_3791 @name I -pinAttr I_3791 @vconn 1'h1 -pinAttr O_3792 @name O -pg 1 -lvl 4 -x 1050 -y 970
+load inst FMC_HA_p[22]~output_3794 FMC_HA_p[22]~output_3794 {} -attr @name FMC_HA_p[22]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_3796 @name I -pinAttr I_3796 @vconn 1'h1 -pinAttr O_3797 @name O -pg 1 -lvl 4 -x 1050 -y 1030
+load inst FMC_HA_p[23]~output_3799 FMC_HA_p[23]~output_3799 {} -attr @name FMC_HA_p[23]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_3801 @name I -pinAttr I_3801 @vconn 1'h1 -pinAttr O_3802 @name O -pg 1 -lvl 4 -x 1050 -y 1090
+load inst SI5340A_I2C_SCL~output_3804 SI5340A_I2C_SCL~output_3804 {} -attr @name SI5340A_I2C_SCL~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_3806 @name I -pinAttr I_3806 @vconn 1'h1 -pinAttr O_3807 @name O -pg 1 -lvl 4 -x 1050 -y 2050
+load inst SI5340A_I2C_SDA~output_3809 SI5340A_I2C_SDA~output_3809 {} -attr @name SI5340A_I2C_SDA~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_3811 @name I -pinAttr I_3811 @vconn 1'h1 -pinAttr O_3812 @name O -pg 1 -lvl 4 -x 1050 -y 2110
+load inst GPIO_D[0]~output_3814 GPIO_D[0]~output_3814 {} -attr @name GPIO_D[0]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_3816 @name I -pinAttr I_3816 @vconn 1'h1 -pinAttr O_3817 @name O -pg 1 -lvl 4 -x 1050 -y 1570
+load inst GPIO_D[1]~output_3819 GPIO_D[1]~output_3819 {} -attr @name GPIO_D[1]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_3821 @name I -pinAttr I_3821 @vconn 1'h1 -pinAttr O_3822 @name O -pg 1 -lvl 4 -x 1050 -y 1630
+load inst GPIO_D[2]~output_3824 GPIO_D[2]~output_3824 {} -attr @name GPIO_D[2]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_3826 @name I -pinAttr I_3826 @vconn 1'h1 -pinAttr O_3827 @name O -pg 1 -lvl 4 -x 1050 -y 1690
+load inst GPIO_D[3]~output_3829 GPIO_D[3]~output_3829 {} -attr @name GPIO_D[3]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_3831 @name I -pinAttr I_3831 @vconn 1'h1 -pinAttr O_3832 @name O -pg 1 -lvl 4 -x 1050 -y 1750
+load inst GPIO_D[4]~output_3834 GPIO_D[4]~output_3834 {} -attr @name GPIO_D[4]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_3836 @name I -pinAttr I_3836 @vconn 1'h1 -pinAttr O_3837 @name O -pg 1 -lvl 4 -x 1050 -y 1810
+load inst GPIO_D[5]~output_3839 GPIO_D[5]~output_3839 {} -attr @name GPIO_D[5]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_3841 @name I -pinAttr I_3841 @vconn 1'h1 -pinAttr O_3842 @name O -pg 1 -lvl 4 -x 1050 -y 1870
+load inst GPIO_D[6]~output_3844 GPIO_D[6]~output_3844 {} -attr @name GPIO_D[6]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_3846 @name I -pinAttr I_3846 @vconn 1'h1 -pinAttr O_3847 @name O -pg 1 -lvl 4 -x 1050 -y 1930
+load inst GPIO_D[7]~output_3849 GPIO_D[7]~output_3849 {} -attr @name GPIO_D[7]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_3851 @name I -pinAttr I_3851 @vconn 1'h1 -pinAttr O_3852 @name O -pg 1 -lvl 4 -x 1050 -y 1990
+load inst FMC_HA_p[0]~output_3854 FMC_HA_p[0]~output_3854 {} -attr @name FMC_HA_p[0]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_3856 @name I -pinAttr I_3856 @vconn 1'h1 -pinAttr O_3857 @name O -pg 1 -lvl 1 -x 60 -y 230
+load inst FMC_HA_p[1]~output_3859 FMC_HA_p[1]~output_3859 {} -attr @name FMC_HA_p[1]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_3861 @name I -pinAttr I_3861 @vconn 1'h1 -pinAttr O_3862 @name O -pg 1 -lvl 1 -x 60 -y 170
+load inst FMC_HA_p[2]~output_3864 FMC_HA_p[2]~output_3864 {} -attr @name FMC_HA_p[2]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_3866 @name I -pinAttr I_3866 @vconn 1'h1 -pinAttr O_3867 @name O -pg 1 -lvl 1 -x 60 -y 290
+load inst FMC_HA_p[3]~output_3869 FMC_HA_p[3]~output_3869 {} -attr @name FMC_HA_p[3]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_3871 @name I -pinAttr I_3871 @vconn 1'h1 -pinAttr O_3872 @name O -pg 1 -lvl 1 -x 60 -y 350
+load inst FMC_HA_p[4]~output_3874 FMC_HA_p[4]~output_3874 {} -attr @name FMC_HA_p[4]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_3876 @name I -pinAttr I_3876 @vconn 1'h0 -pinAttr O_3877 @name O -pg 1 -lvl 4 -x 1050 -y 170
+load inst FMC_HA_p[5]~output_3879 FMC_HA_p[5]~output_3879 {} -attr @name FMC_HA_p[5]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_3881 @name I -pinAttr I_3881 @vconn 1'h0 -pinAttr O_3882 @name O -pg 1 -lvl 4 -x 1050 -y 230
+load inst FMC_HA_p[6]~output_3884 FMC_HA_p[6]~output_3884 {} -attr @name FMC_HA_p[6]~output -attr @cell IO_OBUF -pinAttr I_3886 @name I -pinAttr OE_3887 @name OE -pinAttr OE_3887 @vconn 1'h0 -pinAttr O_3888 @name O -pg 1 -lvl 4 -x 1050 -y 70
+load inst FMC_HA_p[7]~output_3890 FMC_HA_p[7]~output_3890 {} -attr @name FMC_HA_p[7]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_3892 @name I -pinAttr I_3892 @vconn 1'h1 -pinAttr O_3893 @name O -pg 1 -lvl 1 -x 60 -y 410
+load inst FMC_HA_p[8]~output_3895 FMC_HA_p[8]~output_3895 {} -attr @name FMC_HA_p[8]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_3897 @name I -pinAttr I_3897 @vconn 1'h1 -pinAttr O_3898 @name O -pg 1 -lvl 1 -x 60 -y 470
+load inst FMC_HA_p[9]~output_3900 FMC_HA_p[9]~output_3900 {} -attr @name FMC_HA_p[9]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_3902 @name I -pinAttr I_3902 @vconn 1'h1 -pinAttr O_3903 @name O -pg 1 -lvl 1 -x 60 -y 530
+load inst FMC_HA_p[10]~output_3905 FMC_HA_p[10]~output_3905 {} -attr @name FMC_HA_p[10]~output -attr @cell {IO_OBUF (OPEN DRAIN)} -pinAttr I_3907 @name I -pinAttr I_3907 @vconn 1'h1 -pinAttr O_3908 @name O -pg 1 -lvl 1 -x 60 -y 590
+load inst FMC_HA_p[0]_3853 FMC_HA_p[0]_3853 {} -attr @name FMC_HA_p[0] -attr @cell BIDIR -pinAttr INPUT_34313 @name INPUT -pinAttr OUTPUT_3909 @name OUTPUT -pg 1 -lvl 2 -x 220 -y 230
+load inst FMC_HA_p[1]_3858 FMC_HA_p[1]_3858 {} -attr @name FMC_HA_p[1] -attr @cell BIDIR -pinAttr INPUT_34317 @name INPUT -pinAttr OUTPUT_3913 @name OUTPUT -pg 1 -lvl 2 -x 220 -y 170
+load inst FMC_HA_p[2]_3863 FMC_HA_p[2]_3863 {} -attr @name FMC_HA_p[2] -attr @cell BIDIR -pinAttr INPUT_34321 @name INPUT -pinAttr OUTPUT_3917 @name OUTPUT -pg 1 -lvl 2 -x 220 -y 290
+load inst FMC_HA_p[3]_3868 FMC_HA_p[3]_3868 {} -attr @name FMC_HA_p[3] -attr @cell BIDIR -pinAttr INPUT_34325 @name INPUT -pinAttr OUTPUT_3921 @name OUTPUT -pg 1 -lvl 2 -x 220 -y 350
+load inst FMC_HA_p[7]_3889 FMC_HA_p[7]_3889 {} -attr @name FMC_HA_p[7] -attr @cell BIDIR -pinAttr INPUT_34343 @name INPUT -pinAttr OUTPUT_3935 @name OUTPUT -pg 1 -lvl 2 -x 220 -y 410
+load inst FMC_HA_p[8]_3894 FMC_HA_p[8]_3894 {} -attr @name FMC_HA_p[8] -attr @cell BIDIR -pinAttr INPUT_34347 @name INPUT -pinAttr OUTPUT_3939 @name OUTPUT -pg 1 -lvl 2 -x 220 -y 470
+load inst FMC_HA_p[9]_3899 FMC_HA_p[9]_3899 {} -attr @name FMC_HA_p[9] -attr @cell BIDIR -pinAttr INPUT_34351 @name INPUT -pinAttr OUTPUT_3943 @name OUTPUT -pg 1 -lvl 2 -x 220 -y 530
+load inst FMC_HA_p[10]_3904 FMC_HA_p[10]_3904 {} -attr @name FMC_HA_p[10] -attr @cell BIDIR -pinAttr INPUT_34355 @name INPUT -pinAttr OUTPUT_3947 @name OUTPUT -pg 1 -lvl 2 -x 220 -y 590
+load inst ~GND_3916 ~GND_3916 {} -attr @name ~GND -attr @cell {} -pinAttr COMBOUT_3958 @name COMBOUT -pg 1 -lvl 3 -x 660 -y 730
+load inst ~VCC_3917 ~VCC_3917 {} -attr @name ~VCC -attr @cell {} -pinAttr COMBOUT_3959 @name COMBOUT -pg 1 -lvl 4 -x 1050 -y 2170
+load inst CPU_RESET_n~_wirecell_3918 CPU_RESET_n~_wirecell_3918 {} -attr @name CPU_RESET_n~_wirecell -attr @cell {} -pinAttr DATAA_34359 @name DATAA -pinAttr COMBOUT_3960 @name COMBOUT -pg 1 -lvl 2 -x 220 -y 110
+load net I_929 -power -attr @name {} -pin FMC_HA_p[11]~output_3739 I_3741
+load net I_932 -power -attr @name {} -pin FMC_HA_p[12]~output_3744 I_3746
+load net I_935 -power -attr @name {} -pin FMC_HA_p[13]~output_3749 I_3751
+load net I_938 -power -attr @name {} -pin FMC_HA_p[14]~output_3754 I_3756
+load net I_941 -power -attr @name {} -pin FMC_HA_p[15]~output_3759 I_3761
+load net I_944 -power -attr @name {} -pin FMC_HA_p[16]~output_3764 I_3766
+load net I_947 -power -attr @name {} -pin FMC_HA_p[17]~output_3769 I_3771
+load net I_950 -power -attr @name {} -pin FMC_HA_p[18]~output_3774 I_3776
+load net I_953 -power -attr @name {} -pin FMC_HA_p[19]~output_3779 I_3781
+load net I_956 -power -attr @name {} -pin FMC_HA_p[20]~output_3784 I_3786
+load net I_959 -power -attr @name {} -pin FMC_HA_p[21]~output_3789 I_3791
+load net I_962 -power -attr @name {} -pin FMC_HA_p[22]~output_3794 I_3796
+load net I_965 -power -attr @name {} -pin FMC_HA_p[23]~output_3799 I_3801
+load net I_968 -power -attr @name {} -pin SI5340A_I2C_SCL~output_3804 I_3806
+load net I_971 -power -attr @name {} -pin SI5340A_I2C_SDA~output_3809 I_3811
+load net I_974 -power -attr @name {} -pin GPIO_D[0]~output_3814 I_3816
+load net I_977 -power -attr @name {} -pin GPIO_D[1]~output_3819 I_3821
+load net I_980 -power -attr @name {} -pin GPIO_D[2]~output_3824 I_3826
+load net I_983 -power -attr @name {} -pin GPIO_D[3]~output_3829 I_3831
+load net I_986 -power -attr @name {} -pin GPIO_D[4]~output_3834 I_3836
+load net I_989 -power -attr @name {} -pin GPIO_D[5]~output_3839 I_3841
+load net I_992 -power -attr @name {} -pin GPIO_D[6]~output_3844 I_3846
+load net I_995 -power -attr @name {} -pin GPIO_D[7]~output_3849 I_3851
+load net I_998 -power -attr @name {} -pin FMC_HA_p[0]~output_3854 I_3856
+load net I_1001 -power -attr @name {} -pin FMC_HA_p[1]~output_3859 I_3861
+load net I_1004 -power -attr @name {} -pin FMC_HA_p[2]~output_3864 I_3866
+load net I_1007 -power -attr @name {} -pin FMC_HA_p[3]~output_3869 I_3871
+load net I_1010 -ground -attr @name {} -pin FMC_HA_p[4]~output_3874 I_3876
+load net I_1013 -ground -attr @name {} -pin FMC_HA_p[5]~output_3879 I_3881
+load net OE_1016 -ground -attr @name {} -pin FMC_HA_p[6]~output_3884 OE_3887
+load net I_1020 -power -attr @name {} -pin FMC_HA_p[7]~output_3890 I_3892
+load net I_1023 -power -attr @name {} -pin FMC_HA_p[8]~output_3895 I_3897
+load net I_1026 -power -attr @name {} -pin FMC_HA_p[9]~output_3900 I_3902
+load net I_1029 -power -attr @name {} -pin FMC_HA_p[10]~output_3905 I_3907
+load net uart_to_serial:dropped_1034 -attr @name uart_to_serial:dropped -port LED[0]_3723 -pin jerrything_2 uart_to_serial:dropped_3920
+load net OUT1_9222 -attr @name OUT1 -pin auto_fab_0_54 IN1_10439 -pin u0_4 OUT1_10437
+netloc OUT1_9222 1 3 1 860 360n
+load net O_9224 -attr @name FMC_HA_p[11]~output:O -port FMC_HA_p[11]_3738 -pin FMC_HA_p[11]~output_3739 O_3742
+load net O_9225 -attr @name FMC_HA_p[12]~output:O -port FMC_HA_p[12]_3743 -pin FMC_HA_p[12]~output_3744 O_3747
+load net O_9226 -attr @name FMC_HA_p[13]~output:O -port FMC_HA_p[13]_3748 -pin FMC_HA_p[13]~output_3749 O_3752
+load net O_9227 -attr @name FMC_HA_p[14]~output:O -port FMC_HA_p[14]_3753 -pin FMC_HA_p[14]~output_3754 O_3757
+load net O_9228 -attr @name FMC_HA_p[15]~output:O -port FMC_HA_p[15]_3758 -pin FMC_HA_p[15]~output_3759 O_3762
+load net O_9229 -attr @name FMC_HA_p[16]~output:O -port FMC_HA_p[16]_3763 -pin FMC_HA_p[16]~output_3764 O_3767
+load net O_9230 -attr @name FMC_HA_p[17]~output:O -port FMC_HA_p[17]_3768 -pin FMC_HA_p[17]~output_3769 O_3772
+load net O_9231 -attr @name FMC_HA_p[18]~output:O -port FMC_HA_p[18]_3773 -pin FMC_HA_p[18]~output_3774 O_3777
+load net O_9232 -attr @name FMC_HA_p[19]~output:O -port FMC_HA_p[19]_3778 -pin FMC_HA_p[19]~output_3779 O_3782
+load net O_9233 -attr @name FMC_HA_p[20]~output:O -port FMC_HA_p[20]_3783 -pin FMC_HA_p[20]~output_3784 O_3787
+load net O_9234 -attr @name FMC_HA_p[21]~output:O -port FMC_HA_p[21]_3788 -pin FMC_HA_p[21]~output_3789 O_3792
+load net O_9235 -attr @name FMC_HA_p[22]~output:O -port FMC_HA_p[22]_3793 -pin FMC_HA_p[22]~output_3794 O_3797
+load net O_9236 -attr @name FMC_HA_p[23]~output:O -port FMC_HA_p[23]_3798 -pin FMC_HA_p[23]~output_3799 O_3802
+load net O_9237 -attr @name SI5340A_I2C_SCL~output:O -port SI5340A_I2C_SCL_3803 -pin SI5340A_I2C_SCL~output_3804 O_3807
+netloc O_9237 1 4 1 NJ 2060
+load net O_9238 -attr @name SI5340A_I2C_SDA~output:O -port SI5340A_I2C_SDA_3808 -pin SI5340A_I2C_SDA~output_3809 O_3812
+netloc O_9238 1 4 1 NJ 2120
+load net O_9239 -attr @name GPIO_D[0]~output:O -port GPIO_D[0]_3813 -pin GPIO_D[0]~output_3814 O_3817
+load net O_9240 -attr @name GPIO_D[1]~output:O -port GPIO_D[1]_3818 -pin GPIO_D[1]~output_3819 O_3822
+load net O_9241 -attr @name GPIO_D[2]~output:O -port GPIO_D[2]_3823 -pin GPIO_D[2]~output_3824 O_3827
+load net O_9242 -attr @name GPIO_D[3]~output:O -port GPIO_D[3]_3828 -pin GPIO_D[3]~output_3829 O_3832
+load net O_9243 -attr @name GPIO_D[4]~output:O -port GPIO_D[4]_3833 -pin GPIO_D[4]~output_3834 O_3837
+load net O_9244 -attr @name GPIO_D[5]~output:O -port GPIO_D[5]_3838 -pin GPIO_D[5]~output_3839 O_3842
+load net O_9245 -attr @name GPIO_D[6]~output:O -port GPIO_D[6]_3843 -pin GPIO_D[6]~output_3844 O_3847
+load net O_9246 -attr @name GPIO_D[7]~output:O -port GPIO_D[7]_3848 -pin GPIO_D[7]~output_3849 O_3852
+load net OUTPUT_9250 -attr @name FMC_HA_p[0]:OUTPUT -pin FMC_HA_p[0]_3853 OUTPUT_3909 -pin u0_4 FMC_HA_p[0]_10443
+load net O_9251 -attr @name FMC_HA_p[0]~output:O -pin FMC_HA_p[0]_3853 INPUT_34313 -pin FMC_HA_p[0]~output_3854 O_3857
+netloc O_9251 1 1 1 NJ 240
+load net OUTPUT_9255 -attr @name FMC_HA_p[1]:OUTPUT -pin FMC_HA_p[1]_3858 OUTPUT_3913 -pin u0_4 FMC_HA_p[1]_10446
+load net O_9256 -attr @name FMC_HA_p[1]~output:O -pin FMC_HA_p[1]_3858 INPUT_34317 -pin FMC_HA_p[1]~output_3859 O_3862
+netloc O_9256 1 1 1 NJ 180
+load net OUTPUT_9260 -attr @name FMC_HA_p[2]:OUTPUT -pin FMC_HA_p[2]_3863 OUTPUT_3917 -pin u0_4 FMC_HA_p[2]_10449
+load net O_9261 -attr @name FMC_HA_p[2]~output:O -pin FMC_HA_p[2]_3863 INPUT_34321 -pin FMC_HA_p[2]~output_3864 O_3867
+netloc O_9261 1 1 1 NJ 300
+load net OUTPUT_9265 -attr @name FMC_HA_p[3]:OUTPUT -pin FMC_HA_p[3]_3868 OUTPUT_3921 -pin u0_4 FMC_HA_p[3]_10452
+load net O_9266 -attr @name FMC_HA_p[3]~output:O -pin FMC_HA_p[3]_3868 INPUT_34325 -pin FMC_HA_p[3]~output_3869 O_3872
+netloc O_9266 1 1 1 NJ 360
+load net O_9267 -attr @name FMC_HA_p[4]~output:O -port FMC_HA_p[4]_3873 -pin FMC_HA_p[4]~output_3874 O_3877
+load net O_9268 -attr @name FMC_HA_p[5]~output:O -port FMC_HA_p[5]_3878 -pin FMC_HA_p[5]~output_3879 O_3882
+load net O_9269 -attr @name FMC_HA_p[6]~output:O -port FMC_HA_p[6]_3883 -pin FMC_HA_p[6]~output_3884 O_3888
+load net OUTPUT_9273 -attr @name FMC_HA_p[7]:OUTPUT -pin FMC_HA_p[7]_3889 OUTPUT_3935 -pin jerrything_2 FMC_HA_p[7]_10455 -pin u0_4 FMC_HA_p[7]_10458
+load net O_9277 -attr @name FMC_HA_p[7]~output:O -pin FMC_HA_p[7]_3889 INPUT_34343 -pin FMC_HA_p[7]~output_3890 O_3893
+netloc O_9277 1 1 1 NJ 420
+load net OUTPUT_9281 -attr @name FMC_HA_p[8]:OUTPUT -pin FMC_HA_p[8]_3894 OUTPUT_3939 -pin jerrything_2 FMC_HA_p[8]_10461 -pin u0_4 FMC_HA_p[8]_10464
+load net O_9285 -attr @name FMC_HA_p[8]~output:O -pin FMC_HA_p[8]_3894 INPUT_34347 -pin FMC_HA_p[8]~output_3895 O_3898
+netloc O_9285 1 1 1 NJ 480
+load net OUTPUT_9289 -attr @name FMC_HA_p[9]:OUTPUT -pin FMC_HA_p[9]_3899 OUTPUT_3943 -pin jerrything_2 FMC_HA_p[9]_10467 -pin u0_4 FMC_HA_p[9]_10470
+load net O_9293 -attr @name FMC_HA_p[9]~output:O -pin FMC_HA_p[9]_3899 INPUT_34351 -pin FMC_HA_p[9]~output_3900 O_3903
+netloc O_9293 1 1 1 NJ 540
+load net OUTPUT_9297 -attr @name FMC_HA_p[10]:OUTPUT -pin FMC_HA_p[10]_3904 OUTPUT_3947 -pin u0_4 FMC_HA_p[10]_10473
+netloc OUTPUT_9297 1 2 1 430J 380n
+load net O_9298 -attr @name FMC_HA_p[10]~output:O -pin FMC_HA_p[10]_3904 INPUT_34355 -pin FMC_HA_p[10]~output_3905 O_3908
+netloc O_9298 1 1 1 NJ 600
+load net OUT1_9316 -attr @name OUT1 -pin auto_fab_0_54 OUT1_10490 -pin u0_4 IN9_10489
+load net OUT2_9354 -attr @name OUT2 -pin auto_fab_0_54 OUT2_10527 -pin u0_4 IN10_10526
+load net atom_inst:ext_tdo_9369 -attr @name atom_inst:ext_tdo -port altera_reserved_tdo_3737 -pin auto_fab_0_54 atom_inst:ext_tdo_10541
+netloc atom_inst:ext_tdo_9369 1 4 1 NJ 680
+load net OUT4_9389 -attr @name OUT4 -pin auto_fab_0_54 OUT4_10559 -pin u0_4 IN11_10558
+load net OUT5_9423 -attr @name OUT5 -pin auto_fab_0_54 OUT5_10583 -pin u0_4 IN12_10582
+load net OUT6_9441 -attr @name OUT6 -pin auto_fab_0_54 OUT6_10600 -pin u0_4 IN13_10599
+load net OUT7_9459 -attr @name OUT7 -pin auto_fab_0_54 OUT7_10617 -pin u0_4 IN14_10616
+load net OUT8_9475 -attr @name OUT8 -pin auto_fab_0_54 OUT8_10632 -pin u0_4 IN15_10631
+load net OUT9_9488 -attr @name OUT9 -pin auto_fab_0_54 OUT9_10644 -pin u0_4 IN16_10643
+load net OUT10_9500 -attr @name OUT10 -pin auto_fab_0_54 OUT10_10655 -pin u0_4 IN17_10654
+load net OUT11_9518 -attr @name OUT11 -pin auto_fab_0_54 OUT11_10672 -pin u0_4 IN18_10671
+load net OUT12_9530 -attr @name OUT12 -pin auto_fab_0_54 OUT12_10683 -pin u0_4 IN19_10682
+load net OUT13_9542 -attr @name OUT13 -pin auto_fab_0_54 OUT13_10694 -pin u0_4 IN20_10693
+load net OUT14_9555 -attr @name OUT14 -pin auto_fab_0_54 OUT14_10706 -pin u0_4 IN21_10705
+load net OUT15_9567 -attr @name OUT15 -pin auto_fab_0_54 OUT15_10717 -pin u0_4 IN22_10716
+load net OUT16_9579 -attr @name OUT16 -pin auto_fab_0_54 OUT16_10728 -pin u0_4 IN23_10727
+load net OUT17_9593 -attr @name OUT17 -pin auto_fab_0_54 OUT17_10741 -pin u0_4 IN24_10740
+load net OUT18_9606 -attr @name OUT18 -pin auto_fab_0_54 OUT18_10753 -pin u0_4 IN25_10752
+load net txm:out_9794 -attr @name txm:out -port AG_UART_TX_3730 -pin jerrything_2 txm:out_10778 -pin u0_4 IN26_10781
+netloc txm:out_9794 1 2 3 510 480 900 140 NJ
+load net OUTPUT_9803 -attr @name altera_reserved_tck -port altera_reserved_tck_3909 -pin auto_fab_0_54 altera_reserved_tck_10786
+netloc OUTPUT_9803 1 0 4 NJ 640 NJ 640 NJ 640 NJ
+load net OUTPUT_9809 -attr @name altera_reserved_tdi -port altera_reserved_tdi_3910 -pin auto_fab_0_54 altera_reserved_tdi_10791
+netloc OUTPUT_9809 1 0 4 NJ 660 NJ 660 NJ 660 NJ
+load net OUTPUT_9815 -attr @name altera_reserved_tms -port altera_reserved_tms_3911 -pin auto_fab_0_54 altera_reserved_tms_10796
+netloc OUTPUT_9815 1 0 4 NJ 680 NJ 680 NJ 680 NJ
+load net OUTPUT_9841 -attr @name CLK_50_B2A -port CLK_50_B2A_3912 -pin jerrything_2 CLK_50_B2A_10815 -pin u0_4 CLK_50_B2A_10812
+netloc OUTPUT_9841 1 0 3 NJ 60 NJ 60 450
+load net OUTPUT_9904 -attr @name CPU_RESET_n -port CPU_RESET_n_3913 -pin CPU_RESET_n~_wirecell_3918 DATAA_34359 -pin jerrything_2 CPU_RESET_n_10869
+netloc OUTPUT_9904 1 0 3 NJ 80 180 80 390J
+load net inDes:receiving_10090 -attr @name inDes:receiving -pin FMC_HA_p[6]~output_3884 I_3886 -pin jerrything_2 inDes:receiving_10941 -pin u0_4 IN28_10947
+netloc inDes:receiving_10090 1 2 2 490 180 920
+load net OUTPUT_10255 -attr @name AG_UART_RX -port AG_UART_RX_3914 -pin jerrything_2 AG_UART_RX_10999 -pin u0_4 AG_UART_RX_11002
+netloc OUTPUT_10255 1 0 3 NJ 40 NJ 40 470
+load net COMBOUT_14093 -attr @name ~GND:COMBOUT -port AG_UART_RTS_3732 -port INFO_SPI_CS_n_3736 -port INFO_SPI_MOSI_3735 -port INFO_SPI_SCLK_3733 -port LED[1]_3724 -port SI5340A_OE_n_3727 -pin auto_fab_0_54 ~GND_13099 -pin u0_4 ~GND_13094 -pin ~GND_3916 COMBOUT_3958
+load net COMBOUT_14099 -attr @name ~VCC:COMBOUT -port SI5340A_RST_n_3728 -pin ~VCC_3917 COMBOUT_3959
+netloc COMBOUT_14099 1 4 1 NJ 2180
+load net COMBOUT_14102 -attr @name CPU_RESET_n~_wirecell:COMBOUT -pin CPU_RESET_n~_wirecell_3918 COMBOUT_3960 -pin jerrything_2 CPU_RESET_n~_wirecell_13101
+netloc COMBOUT_14102 1 2 1 NJ 120
+load net OUTPUT_11561 -attr @name BUTTON[1] -attr @rip 1 -port BUTTON[1]_3915 -pin u0_4 BUTTON[1]_11668
+load netBundle OUTPUT_14204 1 OUTPUT_11561 -attr @name BUTTON[0..1]
+netbloc OUTPUT_14204 1 0 3 NJ 140 NJ 140 390J
+load netBundle @O_ 3 O_9267 O_9268 O_9269 -autobundled
+netbloc @O_ 1 4 1 1230 80n
+load netBundle @O__1 13 O_9224 O_9225 O_9226 O_9227 O_9228 O_9229 O_9230 O_9231 O_9232 O_9233 O_9234 O_9235 O_9236 -autobundled
+netbloc @O__1 1 4 1 1230 800n
+load netBundle @O__2 8 O_9239 O_9240 O_9241 O_9242 O_9243 O_9244 O_9245 O_9246 -autobundled
+netbloc @O__2 1 4 1 1230 1580n
+load netBundle @uart_to_serial:dropped_ 2 uart_to_serial:dropped_1034 COMBOUT_14093 -autobundled
+netbloc @uart_to_serial:dropped_ 1 2 3 490 700 880 740 1250J
+load netBundle @OUT1_,OUT2_ 2 OUT1_9316 OUT2_9354 -autobundled
+netbloc @OUT1_,OUT2_ 1 2 3 470 560 NJ 560 1230
+load netBundle @OUT4_,OUT5_,OUT6_,OUT7_,OUT8_ 15 OUT4_9389 OUT5_9423 OUT6_9441 OUT7_9459 OUT8_9475 OUT9_9488 OUT10_9500 OUT11_9518 OUT12_9530 OUT13_9542 OUT14_9555 OUT15_9567 OUT16_9579 OUT17_9593 OUT18_9606 -autobundled
+netbloc @OUT4_,OUT5_,OUT6_,OUT7_,OUT8_ 1 2 3 450 760 NJ 760 1230
+load netBundle @OUTPUT_ 3 OUTPUT_9273 OUTPUT_9281 OUTPUT_9289 -autobundled
+netbloc @OUTPUT_ 1 2 1 410 140n
+load netBundle @OUTPUT__1 4 OUTPUT_9250 OUTPUT_9255 OUTPUT_9260 OUTPUT_9265 -autobundled
+netbloc @OUTPUT__1 1 2 1 370 180n
+levelinfo -pg 1 0 60 220 660 1050 1270
+pagesize -pg 1 -db -bbox -sgen -160 0 1430 2200
+show
+zoom 0.827969
+scrollpos 239 2
+#
+# initialize ictrl to current module _1 {}
+ictrl init {} |
+ictrl property autohide 1
+ictrl property addSubpinInfo 1
+ictrl property addSubportInfo 1
+ictrl property addFillcolor12 0

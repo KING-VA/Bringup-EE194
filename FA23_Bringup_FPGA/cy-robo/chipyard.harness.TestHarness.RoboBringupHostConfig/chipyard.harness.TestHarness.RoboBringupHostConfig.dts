@@ -1,0 +1,47 @@
+/dts-v1/;
+
+/ {
+	#address-cells = <2>;
+	#size-cells = <2>;
+	compatible = "ucb-bar,chipyard-dev";
+	model = "ucb-bar,chipyard";
+	L11: cpus {
+		#address-cells = <1>;
+		#size-cells = <0>;
+		timebase-frequency = <1000000>;
+	};
+	L13: htif {
+		compatible = "ucb,htif0";
+	};
+	L5: memory@80000000 {
+		device_type = "memory";
+		reg = <0x0 0x80000000 0x1 0x0>;
+	};
+	L10: soc {
+		#address-cells = <2>;
+		#size-cells = <2>;
+		compatible = "ucb-bar,chipyard-soc", "simple-bus";
+		ranges;
+		L7: lbwif-readwrite@0 {
+			reg = <0x0 0x0 0x0 0x80000000>;
+		};
+		L1: subsystem_fbus_clock {
+			#clock-cells = <0>;
+			clock-frequency = <50000000>;
+			clock-output-names = "subsystem_fbus_clock";
+			compatible = "fixed-clock";
+		};
+		L2: subsystem_mbus_clock {
+			#clock-cells = <0>;
+			clock-frequency = <50000000>;
+			clock-output-names = "subsystem_mbus_clock";
+			compatible = "fixed-clock";
+		};
+		L0: subsystem_pbus_clock {
+			#clock-cells = <0>;
+			clock-frequency = <50000000>;
+			clock-output-names = "subsystem_pbus_clock";
+			compatible = "fixed-clock";
+		};
+	};
+};

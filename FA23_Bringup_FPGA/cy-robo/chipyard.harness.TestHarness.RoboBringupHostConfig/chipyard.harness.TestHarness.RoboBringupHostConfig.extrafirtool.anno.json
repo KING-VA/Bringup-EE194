@@ -1,0 +1,14 @@
+[
+	{
+		"class":"sifive.enterprise.firrtl.MarkDUTAnnotation",
+		"target":"~TestHarness|ChipTop"
+	},
+	{
+		"class": "sifive.enterprise.firrtl.TestHarnessHierarchyAnnotation",
+		"filename": "/scratch/ethanwu10/intech22/bringup-chipyard/sims/vcs/generated-src/chipyard.harness.TestHarness.RoboBringupHostConfig/model_module_hierarchy.json"
+	},
+	{
+		"class": "sifive.enterprise.firrtl.ModuleHierarchyAnnotation",
+		"filename": "/scratch/ethanwu10/intech22/bringup-chipyard/sims/vcs/generated-src/chipyard.harness.TestHarness.RoboBringupHostConfig/top_module_hierarchy.json"
+	}
+]

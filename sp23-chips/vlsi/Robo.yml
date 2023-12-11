@@ -1,0 +1,444 @@
+###########################################
+# Hierarchical Chip
+###########################################
+
+
+vlsi.inputs.hierarchical:
+  mode: hierarchical
+  top_module: ChipTop
+  config_source: manual
+  manual_modules:
+    - ChipTop:
+        - RocketTile # w/ kalman
+        - RocketTile_1 # w/ lqr
+        - BoomTile
+        - Scheduler
+        - backingscratchpad
+
+  constraints:
+    - ChipTop:
+      - par.blockage_spacing_top_layer: null
+      - par.blockage_spacing: 3.0
+      - par.generate_power_straps_options.by_tracks.strap_layers: [m3, m4, m5, m6, m7, m8, gmz]
+      - par.generate_power_straps_options.by_tracks.track_width_m7: 6
+      - par.generate_power_straps_options.by_tracks.track_width_m8: 6
+      - par.generate_power_straps_options.by_tracks.pin_layers: [gmz]
+      - vlsi.inputs.clocks: [
+          {name: "clock", path: "[get_pins hpin:ChipTop/iocell_clock/i]", period: "10ns", uncertainty: "0.1ns"},
+          # jtag clk
+          {name: "jtag_TCK", path: "[get_pins hpin:ChipTop/iocell_jtag_TCK/i]", period: "200ns", uncertainty: "0.1ns"},
+          # input to pll
+          {name: "pll_in", path: "[get_pins hpin:ChipTop/iocell_pll_in/i]", period: "10ns", uncertainty: "0.1ns"},
+          # output of pll
+          {name: "io_clkpll", path: "[get_pins hpin:ChipTop/ringpll/io_clkpll]", period: "2.5ns", uncertainty: "0.1ns"},
+          {name: "io_clkpll0", path: "[get_pins hpin:ChipTop/ringpll/io_clkpll0]", period: "2.5ns", uncertainty: "0.1ns"},
+          {name: "io_clkpll1", path: "[get_pins hpin:ChipTop/ringpll/io_clkpll1]", period: "2.5ns", uncertainty: "0.1ns"},
+          #uart ? do we need it
+          {name: "uart_domain", paht: "[get_pins hpin:ChipTop/system/uartClockDomainWrapper/auto_clock_in_clock]", period: "4ns", uncertainty: "0.1ns"},
+          # tile clocks
+          {name: "selector_boom_clock", path: "[get_pins hpin:ChipTop/clockSelector/auto_clock_out_member_allClocks_tileClockGroup_boom_tile_2_clock]", period: "2.5ns", uncertainty: "0.1ns"},
+          {name: "selector_tile_1_clock", path: "[get_pins hpin:ChipTop/clockSelector/auto_clock_out_member_allClocks_tileClockGroup_tile_1_clock]", period: "2.5ns", uncertainty: "0.1ns"},
+          {name: "selector_tile_0_clock", path: "[get_pins hpin:ChipTop/clockSelector/auto_clock_out_member_allClocks_tileClockGroup_tile_0_clock]", period: "2.5ns", uncertainty: "0.1ns"},
+          {name: "divider_boom_clock", path: "[get_pins hpin:ChipTop/clockDivider/auto_clock_out_member_allClocks_tileClockGroup_boom_tile_2_clock]", period: "2.5ns", uncertainty: "0.1ns"},
+          {name: "divider_tile_1_clock", path: "[get_pins hpin:ChipTop/clockDivider/auto_clock_out_member_allClocks_tileClockGroup_tile_1_clock]", period: "2.5ns", uncertainty: "0.1ns"},
+          {name: "divider_tile_0_clock", path: "[get_pins hpin:ChipTop/clockDivider/auto_clock_out_member_allClocks_tileClockGroup_tile_0_clock]", period: "2.5ns", uncertainty: "0.1ns"},
+          # ucore and busses
+          {name: "selector_ucore_clock", path: "[get_pins hpin:ChipTop/clockSelector/auto_clock_out_member_allClocks_uncore_clock]", period: "4ns", uncertainty: "0.1ns"},
+          {name: "selector_fbus_clock", path: "[get_pins hpin:ChipTop/clockSelector/auto_clock_out_member_allClocks_fbus_clock]", period: "4ns", uncertainty: "0.1ns"},
+          {name: "divider_uncore_clock", path: "[get_pins hpin:ChipTop/clockDivider/auto_clock_out_member_allClocks_uncore_clock]", period: "4ns", uncertainty: "0.1ns"},
+          {name: "divider_fbus_clock", path: "[get_pins hpin:ChipTop/clockDivider/auto_clock_out_member_allClocks_fbus_clock]", period: "4ns", uncertainty: "0.1ns"},
+          # tile prci domains after clock gate
+          {name: "tile_0_clock", path: "[get_pins hpin:ChipTop/system/tile_prci_domain/auto_tap_clock_in_clock]", period: "2.5ns", uncertainty: "0.1ns"},
+          {name: "tile_1_clock", path: "[get_pins hpin:ChipTop/system/tile_prci_domain_1/auto_tap_clock_in_clock]", period: "2.5ns", uncertainty: "0.1ns"},
+          {name: "boom_tile", path: "[get_pins hpin:ChipTop/system/tile_prci_domain_2/auto_tap_clock_in_clock]", period: "2.5ns", uncertainty: "0.1ns"},
+          {name: "uncore_clock", path: "[get_pins hpin:ChipTop/system/prci_ctrl_domain/auto_tileResetSetter_clock_out_member_allClocks_uncore_clock]", period: "5ns", uncertainty: "0.1ns"},
+          {name: "fbus_clock", path: "[get_pins hpin:ChipTop/system/prci_ctrl_domain/auto_tileResetSetter_clock_out_member_allClocks_fbus_clock]", period: "5ns", uncertainty: "0.1ns"},
+          # debug mux
+          {name: "debug_mux_0", path: "[get_pins hpin:ChipTop/system/clockSelector/debug_mux/io_clocksIn_0]", period: "10ns", uncertainty: "0.1ns"},
+          {name: "debug_mux_1", path: "[get_pins hpin:ChipTop/system/clockSelector/debug_mux/io_clocksIn_0]", period: "10ns", uncertainty: "0.1ns"},
+          {name: "debug_mux_2", path: "[get_pins hpin:ChipTop/system/clockSelector/debug_mux/io_clocksIn_0]", period: "10ns", uncertainty: "0.1ns"},
+          {name: "debug_mux_3", path: "[get_pins hpin:ChipTop/system/clockSelector/debug_mux/io_clocksIn_0]", period: "10ns", uncertainty: "0.1ns"},
+      ]
+      - vlsi.inputs.custom_sdc_constraints: [
+        # false path
+        "set_false_path -from reset",
+        "set_false_path -from custom_boot",
+        "set_false_path -from uart_0_txd",
+        "set_false_path -from uart_0_rxd"
+      ]
+      - vlsi.inputs.power_spec_mode: "manual"
+      - vlsi.inputs.power_spec_type: "cpf"
+      - vlsi.inputs.power_spec_contents: ./Robo-power/ChipTop.cpf
+      - vlsi.inputs.power_spec_contents_meta: transclude
+      - vlsi.inputs.supplies.power: [{name: "VDD", pin: "VDD"}]
+      - vlsi.inputs.supplies.ground: [{name: "VSS", pin: "VSS"}]
+      - vlsi.inputs.pin_mode: none
+    - RocketTile:
+      - vlsi.inputs.power_spec_mode: "manual"
+      - vlsi.inputs.power_spec_type: "cpf"
+      - vlsi.inputs.power_spec_contents: ./Robo-power/rocket.cpf
+      - vlsi.inputs.power_spec_contents_meta: transclude
+      - vlsi.inputs.supplies.power: [{name: "VDD", pin: "VDD"}]
+      - vlsi.inputs.supplies.ground: [{name: "VSS", pin: "VSS"}]
+      - par.generate_power_straps_options.by_tracks.strap_layers: [m3, m4, m5, m6, m7, m8]
+      - par.generate_power_straps_options.by_tracks.pin_layers: [m8]
+      - vlsi.inputs.clocks: [{name: "clock", period: "2.5ns", uncertainty: "0.1ns"}]
+      - vlsi.inputs.pin_mode: generated
+      - vlsi.inputs.pin.generate_mode: semi_auto
+      - vlsi.inputs.pin.assignments: [{pins: "*", layers: ["m3", "m5"], side: "bottom"}]
+    - RocketTile_1:
+      - vlsi.inputs.power_spec_mode: "manual"
+      - vlsi.inputs.power_spec_type: "cpf"
+      - vlsi.inputs.power_spec_contents: ./Robo-power/rocket_1.cpf
+      - vlsi.inputs.power_spec_contents_meta: transclude
+      - vlsi.inputs.supplies.power: [{name: "VDD", pin: "VDD"}]
+      - vlsi.inputs.supplies.ground: [{name: "VSS", pin: "VSS"}]
+      - par.generate_power_straps_options.by_tracks.strap_layers: [m3, m4, m5, m6, m7, m8]
+      - par.generate_power_straps_options.by_tracks.pin_layers: [m8]
+      - vlsi.inputs.clocks: [{name: "clock", period: "2.5ns", uncertainty: "0.1ns"}]
+      - vlsi.inputs.pin_mode: generated
+      - vlsi.inputs.pin.generate_mode: semi_auto
+      - vlsi.inputs.pin.assignments: [{pins: "*", layers: ["m3", "m5"], side: "bottom"}]
+    - BoomTile:
+      - vlsi.inputs.power_spec_mode: "manual"
+      - vlsi.inputs.power_spec_type: "cpf"
+      - vlsi.inputs.power_spec_contents: ./Robo-power/boom.cpf
+      - vlsi.inputs.power_spec_contents_meta: transclude
+      - vlsi.inputs.supplies.power: [{name: "VDD", pin: "VDD"}]
+      - vlsi.inputs.supplies.ground: [{name: "VSS", pin: "VSS"}]
+      - par.generate_power_straps_options.by_tracks.strap_layers: [m3, m4, m5, m6, m7, m8]
+      - par.generate_power_straps_options.by_tracks.pin_layers: [m8]
+      - vlsi.inputs.clocks: [{name: "clock", period: "2.5ns", uncertainty: "0.1ns"}]
+      - vlsi.inputs.pin_mode: generated
+      - vlsi.inputs.pin.generate_mode: semi_auto
+      - vlsi.inputs.pin.assignments: [{pins: "*", layers: ["m3", "m5"], side: "bottom"}]
+    - backingscratchpad:
+      - vlsi.inputs.power_spec_mode: "manual"
+      - vlsi.inputs.power_spec_type: "cpf"
+      - vlsi.inputs.power_spec_contents: ./Robo-power/scratchpad.cpf
+      - vlsi.inputs.power_spec_contents_meta: transclude
+      - vlsi.inputs.supplies.power: [{name: "VDD", pin: "VDD"}]
+      - vlsi.inputs.supplies.ground: [{name: "VSS", pin: "VSS"}]
+      - par.generate_power_straps_options.by_tracks.strap_layers: [m3, m4, m5, m6, m7, m8]
+      - par.generate_power_straps_options.by_tracks.pin_layers: [m8]
+      - vlsi.inputs.clocks: [{name: "RW0_clk", period: "2.5ns", uncertainty: "0.1ns"}]
+      - vlsi.inputs.delays: [
+        {name: RW0_addr, direction: input, clock: RW0_clk, delay: 100ps},
+        {name: RW0_en, direction: input, clock: RW0_clk, delay: 100ps},
+        {name: RW0_wmode, direction: input, clock: RW0_clk, delay: 100ps},
+        {name: RW0_wdata, direction: input, clock: RW0_clk, delay: 100ps},
+        {name: RW0_wmask, direction: input, clock: RW0_clk, delay: 100ps},
+        {name: RW0_rdata, direction: output, clock: RW0_clk, delay: 100ps}
+      ]
+      - vlsi.inputs.pin_mode: generated
+      - vlsi.inputs.pin.generate_mode: semi_auto
+      - vlsi.inputs.pin.assignments: [{pins: "*", layers: ["m4", "m6"], side: "left"}]
+    - Scheduler:
+      - vlsi.inputs.power_spec_mode: "manual"
+      - vlsi.inputs.power_spec_type: "cpf"
+      - vlsi.inputs.power_spec_contents: ./Robo-power/scheduler.cpf
+      - vlsi.inputs.power_spec_contents_meta: transclude
+      - vlsi.inputs.supplies.power: [{name: "VDD", pin: "VDD"}]
+      - vlsi.inputs.supplies.ground: [{name: "VSS", pin: "VSS"}]
+      - par.generate_power_straps_options.by_tracks.strap_layers: [m3, m4, m5, m6, m7, m8]
+      - par.generate_power_straps_options.by_tracks.pin_layers: [m8]
+      - vlsi.inputs.clocks: [{name: "clock", period: "2.5ns", uncertainty: "0.1ns"}]
+      - vlsi.inputs.pin_mode: generated
+      - vlsi.inputs.pin.generate_mode: semi_auto
+      - vlsi.inputs.pin.assignments: [{pins: "*", layers: ["m3", "m5"], side: "top"}]
+
+  manual_placement_constraints:
+    - ChipTop: [
+      {path: ChipTop, type: toplevel, x: 0, y: 0, width: 1962.36, height: 2042.46, margins: {left: 181.8, right: 39.96, top: 40.32, bottom: 383.85}},
+      # Die ring (base)
+      {path: ChipTop/die_ring, type: overlap, master: uni2_2x2sub4x4_c4_er_edm_prs_top_cnr, x: 0, y: 0, create_physical: true},
+      # pll
+      {path: ChipTop/ringpll/pll, type: hardmacro, master: ringpll, orientation: my, x: 246.348, y: 1074.96, top_layer: m7},
+      # 2 Rocket tiles
+      {path: ChipTop/system/tile_prci_domain/tile_reset_domain_tile,         type: hardmacro,  x:     254.124,  y: 1548.18, top_layer: m8},
+      {path: ChipTop/system/tile_prci_domain_1/tile_reset_domain_tile,       type: hardmacro,  x:     659.934,  y: 1548.18, top_layer: m8},
+      # 1 boom tile
+      {path: ChipTop/system/tile_prci_domain_2/tile_reset_domain_boom_tile,  type: hardmacro, x:  1058.904,  y: 1546.02, top_layer: m8},
+      # L2 Modules aka Schedulers
+      {path: ChipTop/system/subsystem_l2_wrapper/l2/mods_0,                  type: hardmacro,  x:     246.294, y: 429.84, top_layer: m8},
+      {path: ChipTop/system/subsystem_l2_wrapper/l2/mods_1,                  type: hardmacro,  x:     656.424, y: 429.84, top_layer: m8},
+      {path: ChipTop/system/subsystem_l2_wrapper/l2/mods_2,                  type: hardmacro,  x:    1066.464, y: 429.84, top_layer: m8},
+      {path: ChipTop/system/subsystem_l2_wrapper/l2/mods_3,                  type: hardmacro,  x:    1476.504, y: 429.84, top_layer: m8},
+      # Scratchpad
+      {path: ChipTop/system/subsystem_mbus/spad/backingscratchpad,           type: hardmacro,  x:     1604.988, y: 1096.92, top_layer: m8},
+      # Area IOs
+      {path: ChipTop/west_io_0/hl_west_io_inst, type: hardmacro, master: "hl_4slice_west_io", x: 17.28, y: 595.98, top_layer: gmb},
+      {path: ChipTop/west_io_1/hl_west_io_inst, type: hardmacro, master: "hl_4slice_west_io", x: 17.28, y: 752.22, top_layer: gmb},
+      {path: ChipTop/west_io_2/hl_west_io_inst, type: hardmacro, master: "hl_4slice_west_io", x: 17.28, y: 908.46, top_layer: gmb},
+      {path: ChipTop/west_io_3/hl_west_io_inst, type: hardmacro, master: "hl_4slice_west_io", x: 17.28, y: 1064.7, top_layer: gmb},
+      {path: ChipTop/west_io_4/hl_west_io_inst, type: hardmacro, master: "hl_4slice_west_io", x: 17.28, y: 1220.94, top_layer: gmb},
+      {path: ChipTop/west_io_5/hl_west_io_inst, type: hardmacro, master: "hl_4slice_west_io", x: 17.28, y: 1377.18, top_layer: gmb},
+      {path: ChipTop/west_io_6/hl_west_io_inst, type: hardmacro, master: "hl_4slice_west_io", x: 17.28, y: 1533.42, top_layer: gmb},
+      {path: ChipTop/west_io_7/hl_west_io_inst, type: hardmacro, master: "hl_4slice_west_io", x: 17.28, y: 1689.66, top_layer: gmb},
+      {path: ChipTop/west_io_8/hl_west_io_inst, type: hardmacro, master: "hl_4slice_west_io", x: 17.28, y: 1845.9, top_layer: gmb},
+      {path: ChipTop/corner_io_0/hl_corner_io_inst, type: hardmacro, master: "hl_corner_io",      x: 17.28, y: 18.9, top_layer: gmb},
+      {path: ChipTop/south_io_0/hl_south_io_inst, type: hardmacro, master: "hl_8slice_south_io", x: 518.832, y: 18.9, top_layer: gmb},
+      {path: ChipTop/south_io_1/hl_south_io_inst, type: hardmacro, master: "hl_8slice_south_io", x: 674.784, y: 18.9, top_layer: gmb},
+      {path: ChipTop/south_io_2/hl_south_io_inst, type: hardmacro, master: "hl_8slice_south_io", x: 830.736, y: 18.9, top_layer: gmb},
+      {path: ChipTop/south_io_3/hl_south_io_inst, type: hardmacro, master: "hl_8slice_south_io", x: 986.688, y: 18.9, top_layer: gmb},
+      {path: ChipTop/south_io_4/hl_south_io_inst, type: hardmacro, master: "hl_8slice_south_io", x: 1142.64, y: 18.9, top_layer: gmb},
+      {path: ChipTop/south_io_5/hl_south_io_inst, type: hardmacro, master: "hl_8slice_south_io", x: 1298.592, y: 18.9, top_layer: gmb},
+      {path: ChipTop/south_io_6/hl_south_io_inst, type: hardmacro, master: "hl_8slice_south_io", x: 1454.544, y: 18.9, top_layer: gmb},
+      {path: ChipTop/south_io_7/hl_south_io_inst, type: hardmacro, master: "hl_8slice_south_io", x: 1610.496, y: 18.9, top_layer: gmb},
+      {path: ChipTop/south_io_8/hl_south_io_inst, type: hardmacro, master: "hl_8slice_south_io", x: 1766.448, y: 18.9, top_layer: gmb},
+      # Fiducials
+      {path: ChipTop/DIC_CD_8, type: hardmacro, master: "fdk22tic4m1_diccd_cont", create_physical: true, x: 969.3,   y: 1021.86, top_layer: m6},
+      {path: ChipTop/DIC_REG_8, type: hardmacro, master: "fdk22tic4m1_dicreg_cont", create_physical: true, x: 1023.3,   y: 1021.86, top_layer: m6},
+      # Clamps for propsperity
+      {path: Chiptop/clamp_0, type: hardmacro, master: fdk22b82lto_b88xesdclpn6000qnxcnx, create_physical: true, x: 1501.2,   y: 1125,  top_layer: m6},
+      {path: Chiptop/clamp_1, type: hardmacro, master: fdk22b82lto_b88xesdclpn6000qnxcnx, create_physical: true, x: 1235.952, y: 1125,  top_layer: m6},
+      {path: Chiptop/clamp_2, type: hardmacro, master: fdk22b82lto_b88xesdclpn6000qnxcnx, create_physical: true, x: 969.948,  y: 1125,  top_layer: m6},
+      {path: Chiptop/clamp_3, type: hardmacro, master: fdk22b82lto_b88xesdclpn6000qnxcnx, create_physical: true, x: 703.944,  y: 1125,  top_layer: m6},
+    ]
+
+    - RocketTile: [
+      # Placement of macros (SRAM macros) within a RocketTile
+      {path: RocketTile,  type: toplevel,    x:     0, y: 0, width: 352, height: 451.08, margins: {left: 0, right: 0, top: 0, bottom: 0}},
+      {path: RocketTile/frontend/icache/tag_array_0/tag_array_0_ext/mem_0_0,         type: hardmacro,   x:  4.23, y: 5.04, orientation: r0, top_layer: m4},
+      {path: RocketTile/frontend/icache/data_arrays_0_0/data_arrays_0_0_ext/mem_0_0, type: hardmacro,   x:  4.23, y: 63, orientation: r0, top_layer: m4},
+      {path: RocketTile/frontend/icache/data_arrays_1_0/data_arrays_0_0_ext/mem_0_0, type: hardmacro,   x:  4.23, y: 135.45, orientation: r0, top_layer: m4},
+      {path: RocketTile/dcache/tag_array/tag_array_ext/mem_0_0,                      type: hardmacro,   x:   297.756, y: 5.04, orientation: r0, top_layer: m4},
+      {path: RocketTile/dcache/tag_array/tag_array_ext/mem_0_1,                      type: hardmacro,   x:   297.756, y: 104.58, orientation: r0, top_layer: m4},
+      {path: RocketTile/dcache/data/data_arrays_0/data_arrays_0_ext/mem_0_0,         type: hardmacro,   x:   61, y:     5.04, orientation: r0, top_layer: m4},
+      {path: RocketTile/dcache/data/data_arrays_0/data_arrays_0_ext/mem_0_1,         type: hardmacro,   x:   113, y:    5.04, orientation: r0, top_layer: m4},
+      {path: RocketTile/dcache/data/data_arrays_0/data_arrays_0_ext/mem_0_2,         type: hardmacro,   x:   165, y:    5.04, orientation: r0, top_layer: m4},
+      {path: RocketTile/dcache/data/data_arrays_0/data_arrays_0_ext/mem_0_3,         type: hardmacro,   x:   217, y:    5.04, orientation: r0, top_layer: m4},
+    ]
+
+    - RocketTile_1: [
+      # Placement of macros (SRAM macros) within a RocketTile
+      {path: RocketTile,  type: toplevel,    x:     0, y: 0, width: 352, height: 451.08, margins: {left: 0, right: 0, top: 0, bottom: 0}},
+      {path: RocketTile/frontend/icache/tag_array_0/tag_array_0_ext/mem_0_0,         type: hardmacro,   x:  4.23, y: 5.04, orientation: r0, top_layer: m4},
+      {path: RocketTile/frontend/icache/data_arrays_0_0/data_arrays_0_0_ext/mem_0_0, type: hardmacro,   x:  4.23, y: 63, orientation: r0, top_layer: m4},
+      {path: RocketTile/frontend/icache/data_arrays_1_0/data_arrays_0_0_ext/mem_0_0, type: hardmacro,   x:  4.23, y: 135.45, orientation: r0, top_layer: m4},
+      {path: RocketTile/dcache/tag_array/tag_array_ext/mem_0_0,                      type: hardmacro,   x:   297.756, y: 5.04, orientation: r0, top_layer: m4},
+      {path: RocketTile/dcache/tag_array/tag_array_ext/mem_0_1,                      type: hardmacro,   x:   297.756, y: 104.58, orientation: r0, top_layer: m4},
+      {path: RocketTile/dcache/data/data_arrays_0/data_arrays_0_ext/mem_0_0,         type: hardmacro,   x:   61, y:     5.04, orientation: r0, top_layer: m4},
+      {path: RocketTile/dcache/data/data_arrays_0/data_arrays_0_ext/mem_0_1,         type: hardmacro,   x:   113, y:    5.04, orientation: r0, top_layer: m4},
+      {path: RocketTile/dcache/data/data_arrays_0/data_arrays_0_ext/mem_0_2,         type: hardmacro,   x:   165, y:    5.04, orientation: r0, top_layer: m4},
+      {path: RocketTile/dcache/data/data_arrays_0/data_arrays_0_ext/mem_0_3,         type: hardmacro,   x:   217, y:    5.04, orientation: r0, top_layer: m4},
+    ]
+
+    - backingscratchpad: [
+      # Placement of macros (SRAM macros) within Scratchpad
+      {path: backingscratchpad, type: toplevel, x: 0, y: 0 , width: 267.148, height: 263.34, margins: {left: 0, right: 0, top: 0, bottom: 0}},
+      {path: backingscratchpad/backingscratchpad_ext/mem_0_0, type: hardmacro, x: 9.936, y: 9.09,  orientation: r0, top_layer: m4},
+      {path: backingscratchpad/backingscratchpad_ext/mem_1_0, type: hardmacro, x: 9.936, y: 134.91, orientation: r0, top_layer: m4}
+    ]
+
+    - BoomTile: [
+      {path: BoomTile, type: toplevel, x: 0, y: 0, width: 850.068, height: 453.6, margins: {left: 0, right: 0, top: 0, bottom: 0}},
+      {path: BoomTile/frontend/icache/tag_array/tag_array_2_ext/mem_0_0, type: hardmacro, x: 0.000, y: 0.00, orientation: r0, top_layer: m4},
+      {path: BoomTile/frontend/icache/tag_array/tag_array_2_ext/mem_0_1, type: hardmacro, x: 55.512, y: 0.00, orientation: r0, top_layer: m4},
+      {path: BoomTile/frontend/icache/dataArrayWay_0/dataArrayWay_0_ext/mem_0_0, type: hardmacro, x: 111.024, y: 0.00, orientation: r0, top_layer: m4},
+      {path: BoomTile/frontend/icache/dataArrayWay_1/dataArrayWay_0_ext/mem_0_0, type: hardmacro, x: 166.536, y: 0.00, orientation: r0, top_layer: m4},
+      {path: BoomTile/frontend/icache/dataArrayWay_2/dataArrayWay_0_ext/mem_0_0, type: hardmacro, x: 222.048, y: 0.00, orientation: r0, top_layer: m4},
+      {path: BoomTile/frontend/icache/dataArrayWay_3/dataArrayWay_0_ext/mem_0_0, type: hardmacro, x: 277.560, y: 0.00, orientation: r0, top_layer: m4},
+      {path: BoomTile/tcache/tcache_meta/tcache_meta_ext/mem_0_0, type: hardmacro, x: 335.016, y: 0.00, orientation: r0, top_layer: m4},
+      {path: BoomTile/tcache/tcache_meta/tcache_meta_ext/mem_0_1, type: hardmacro, x: 353.268, y: 0.00, orientation: my, top_layer: m4},
+      {path: BoomTile/tcache/tcache_meta/tcache_meta_ext/mem_0_2, type: hardmacro, x: 378.864, y: 0.00, orientation: r0, top_layer: m4},
+      {path: BoomTile/tcache/tcache_data/tcache_data_ext/mem_0_0, type: hardmacro, x: 397.116, y: 0.00, orientation: my, top_layer: m4},
+      {path: BoomTile/dcache/data/array_0_0_0/array_0_0_0_ext/mem_0_0, type: hardmacro, x: 701.568, y: 0.00, orientation: r0, top_layer: m4},
+      {path: BoomTile/dcache/data/array_1_0_0/array_0_0_0_ext/mem_0_0, type: hardmacro, x: 701.568, y: 62.28, orientation: r0, top_layer: m4},
+      {path: BoomTile/dcache/data/array_2_0_0/array_0_0_0_ext/mem_0_0, type: hardmacro, x: 701.568, y: 124.56, orientation: r0, top_layer: m4},
+      {path: BoomTile/dcache/data/array_3_0_0/array_0_0_0_ext/mem_0_0, type: hardmacro, x: 701.568, y: 186.84, orientation: r0, top_layer: m4},
+      {path: BoomTile/dcache/meta_0/tag_array/tag_array_1_ext/mem_0_0, type: hardmacro, x: 816.588, y: 249.12, orientation: r0, top_layer: m4},
+      {path: BoomTile/frontend/bpd/banked_predictors_0/components_2/meta_0/meta_0_ext/mem_0_0, type: hardmacro, x: 0.000, y: 91.71, orientation: my, top_layer: m4},
+      {path: BoomTile/frontend/bpd/banked_predictors_0/components_2/btb_0/btb_0_ext/mem_0_0, type: hardmacro, x: 0.000, y: 205.38, orientation: my, top_layer: m4},
+      {path: BoomTile/frontend/bpd/banked_predictors_0/components_2/ebtb/ebtb_ext/mem_0_0, type: hardmacro, x: 0.000, y: 263.97, orientation: my, top_layer: m4},
+      {path: BoomTile/frontend/ftq/meta_0/meta_0_0_ext/mem_0_0, type: hardmacro, x: 0.000, y: 309.60, orientation: my, top_layer: m4},
+      {path: BoomTile/frontend/bpd/banked_predictors_0/components_2/meta_1/meta_0_ext/mem_0_0, type: hardmacro, x: 53.568, y: 91.71, orientation: my, top_layer: m4},
+      {path: BoomTile/frontend/bpd/banked_predictors_0/components_2/btb_1/btb_0_ext/mem_0_0, type: hardmacro, x: 53.568, y: 205.38, orientation: my, top_layer: m4},
+      {path: BoomTile/frontend/bpd/banked_predictors_0/components_3/tables_0/lo_us/hi_us_ext/mem_0_0, type: hardmacro, x: 0.000, y: 440.46, orientation: my, top_layer: m4},
+      {path: BoomTile/frontend/bpd/banked_predictors_0/components_3/tables_0/hi_us/hi_us_ext/mem_0_0, type: hardmacro, x: 83.916, y: 440.46, orientation: my, top_layer: m4},
+      {path: BoomTile/frontend/ftq/ghist_0/ghist_0_ext/mem_0_0, type: hardmacro, x: 169.776, y: 437.22, orientation: r0, top_layer: m4},
+      {path: BoomTile/frontend/ftq/ghist_0/ghist_0_ext/mem_0_1, type: hardmacro, x: 196.776, y: 437.22, orientation: my, top_layer: m4},
+      {path: BoomTile/frontend/ftq/ghist_0/ghist_0_ext/mem_0_2, type: hardmacro, x: 229.176, y: 437.22, orientation: r0, top_layer: m4},
+      {path: BoomTile/frontend/bpd/banked_predictors_0/components_1/data/data_ext/mem_0_0, type: hardmacro, x: 256.176, y: 417.78, orientation: r0, top_layer: m4},
+      {path: BoomTile/frontend/bpd/banked_predictors_0/components_3/tables_0/table_0/table_ext/mem_0_0, type: hardmacro, x: 409.104, y: 408.06, orientation: r0, top_layer: m4},
+      {path: BoomTile/frontend/bpd/banked_predictors_0/components_3/tables_0/table_0/table_ext/mem_1_0, type: hardmacro, x: 457.596, y: 408.06, orientation: my, top_layer: m4},
+      {path: BoomTile/frontend/ftq/ghist_1/ghist_0_ext/mem_0_0, type: hardmacro, x: 169.776, y: 420.84, orientation: r0, top_layer: m4},
+      {path: BoomTile/frontend/ftq/ghist_1/ghist_0_ext/mem_0_1, type: hardmacro, x: 196.776, y: 420.84, orientation: my, top_layer: m4},
+      {path: BoomTile/frontend/ftq/ghist_1/ghist_0_ext/mem_0_2, type: hardmacro, x: 229.176, y: 420.84, orientation: r0, top_layer: m4}
+    ]
+
+    - Scheduler: [
+      {path: Scheduler, type: toplevel, x: 0, y: 0 , width: 356.616, height: 461.16, margins: {left: 0, right: 0, top: 0, bottom: 0}},
+      {path: Scheduler/bankedStore/cc_banks_0/cc_banks_0_ext/mem_0_0 , type: hardmacro, x: 87.48, y: 5.04, orientation: r0, top_layer: m4}, 
+      {path: Scheduler/bankedStore/cc_banks_1/cc_banks_0_ext/mem_0_0 , type: hardmacro, x: 3.24, y: 5.04, orientation: r0, top_layer: m4}, 
+      {path: Scheduler/bankedStore/cc_banks_2/cc_banks_0_ext/mem_0_0 , type: hardmacro, x: 87.48, y: 128.52, orientation: r0, top_layer: m4}, 
+      {path: Scheduler/bankedStore/cc_banks_3/cc_banks_0_ext/mem_0_0 , type: hardmacro, x: 3.24, y: 128.52, orientation: r0, top_layer: m4}, 
+      {path: Scheduler/bankedStore/cc_banks_0/cc_banks_0_ext/mem_1_0 , type: hardmacro, x: 171.72, y: 5.04, orientation: r0, top_layer: m4}, 
+      {path: Scheduler/bankedStore/cc_banks_1/cc_banks_0_ext/mem_1_0 , type: hardmacro, x: 3.24, y: 252, orientation: r0, top_layer: m4}, 
+      {path: Scheduler/bankedStore/cc_banks_2/cc_banks_0_ext/mem_1_0 , type: hardmacro, x: 171.72, y: 128.52, orientation: r0, top_layer: m4}, 
+      {path: Scheduler/bankedStore/cc_banks_3/cc_banks_0_ext/mem_1_0 , type: hardmacro, x: 87.48, y: 252, orientation: r0, top_layer: m4}, 
+      {path: Scheduler/directory/cc_dir/cc_dir_ext/mem_0_0, type: hardmacro, x: 300.24, y: 5.04, orientation: r0, top_layer: m4},
+      {path: Scheduler/directory/cc_dir/cc_dir_ext/mem_0_1, type: hardmacro, x: 300.24, y: 357.84, orientation: r0, top_layer: m4},
+      {path: Scheduler/directory/cc_dir/cc_dir_ext/mem_0_2, type: hardmacro, x: 300.24, y: 93.24, orientation: r0, top_layer: m4},
+      {path: Scheduler/directory/cc_dir/cc_dir_ext/mem_0_3, type: hardmacro, x: 300.24, y: 269.64, orientation: r0, top_layer: m4},
+      {path: Scheduler/directory/cc_dir/cc_dir_ext/mem_0_4, type: hardmacro, x: 300.24, y: 181.44, orientation: r0, top_layer: m4}
+    ]
+
+
+###########################################
+# Area IO libraries
+###########################################
+vlsi.technology.extra_libraries_meta: "append" # of course we forgot to add this
+
+# Intel area IO missing tttt corner timings
+vlsi.inputs.mmmc_corners: [
+  {name: "psss_0.765v_125c", type: "setup", voltage: "0.765 V", temp: "125 C"},
+  {name: "pfff_0.890v_-40c", type: "hold", voltage: "0.89 V", temp: "-40 C"}
+]
+
+vlsi.technology.extra_libraries:
+  - library: {
+      "gds_file": "/tools/C/ee290-sp23/area_io/hl_4slice_west_io.gds",
+      "nldm_liberty_file": "/tools/intech22/local/UCB1222/USP/design_challenge/Final_2mar2023/USP_IO_HIP/hl_4slice_west_io/lib/hl_4slice_west_io.max.etm.lib.lib",
+      "lef_file": "/tools/intech22/local/UCB1222/USP/design_challenge/Final_2mar2023/USP_IO_HIP/hl_4slice_west_io/lef/hl_4slice_west_io.fill.lef",
+      "spice_file": "/tools/intech22/local/UCB1222/USP/design_challenge/Final_2mar2023/USP_IO_HIP/hl_4slice_west_io/spice_netlist/hl_4slice_west_io.sp",
+      "verilog_synth": "/tools/C/ee290-sp23/area_io/hl_4slice_west_io_container.v",
+      "verilog_sim": "/tools/intech22/local/UCB1222/USP/design_challenge/Final_2mar2023/USP_IO_HIP/hl_4slice_west_io/rtl/hl_4slice_west_io.v",
+      "corner": {
+        "nmos": "slow",
+        "pmos": "slow",
+        "temperature": "125 C"
+      },
+      "supplies": {
+        "VDD": "0.765 V",
+        "GND": "0 V"
+      }
+  }
+  # Analyzed at corner: pfff_1p050_1p320_min.PF_m40.prcf
+  - library: {
+      "gds_file": "/tools/C/ee290-sp23/area_io/hl_4slice_west_io.gds",
+      "nldm_liberty_file": "/tools/intech22/local/UCB1222/USP/design_challenge/Final_2mar2023/USP_IO_HIP/hl_4slice_west_io/lib/hl_4slice_west_io.min.etm.lib.lib",
+      "lef_file": "/tools/intech22/local/UCB1222/USP/design_challenge/Final_2mar2023/USP_IO_HIP/hl_4slice_west_io/lef/hl_4slice_west_io.fill.lef",
+      "spice_file": "/tools/intech22/local/UCB1222/USP/design_challenge/Final_2mar2023/USP_IO_HIP/hl_4slice_west_io/spice_netlist/hl_4slice_west_io.sp",
+      "verilog_synth": "/tools/C/ee290-sp23/area_io/hl_4slice_west_io_container.v",
+      "verilog_sim": "/tools/intech22/local/UCB1222/USP/design_challenge/Final_2mar2023/USP_IO_HIP/hl_4slice_west_io/rtl/hl_4slice_west_io.v",
+      "corner": {
+        "nmos": "fast",
+        "pmos": "fast",
+        "temperature": "-40 C"
+      },
+      "supplies": {
+        "VDD": "0.89 V",
+        "GND": "0 V"
+      }
+  }
+  # -- hl_8slice_south_io --
+  # Analyzed at corner: psss_0p765_1p080_max.PS_125.prcs
+  - library: {
+      "gds_file": "/tools/C/ee290-sp23/area_io/hl_8slice_south_io.gds",
+      "nldm_liberty_file": "/tools/intech22/local/UCB1222/USP/design_challenge/Final_2mar2023/USP_IO_HIP/hl_8slice_south_io/lib/hl_8slice_south_io.max.etm.lib.lib",
+      "lef_file": "/tools/intech22/local/UCB1222/USP/design_challenge/Final_2mar2023/USP_IO_HIP/hl_8slice_south_io/lef/hl_8slice_south_io.fill.lef",
+      "spice_file": "/tools/intech22/local/UCB1222/USP/design_challenge/Final_2mar2023/USP_IO_HIP/hl_8slice_south_io/spice_netlist/hl_8slice_south_io.sp",
+      "verilog_synth": "/tools/C/ee290-sp23/area_io/hl_4slice_south_io_container.v",
+      "verilog_sim": "/tools/intech22/local/UCB1222/USP/design_challenge/Final_2mar2023/USP_IO_HIP/hl_8slice_south_io/rtl/hl_8slice_south_io.v",
+      "corner": {
+        "nmos": "slow",
+        "pmos": "slow",
+        "temperature": "125 C"
+      },
+      "supplies": {
+        "VDD": "0.765 V",
+        "GND": "0 V"
+      }
+  }
+  # Analyzed at corner: pfff_1p050_1p320_min.PF_m40.prcf
+  - library: {
+      "gds_file": "/tools/C/ee290-sp23/area_io/hl_8slice_south_io.gds",
+      "nldm_liberty_file": "/tools/intech22/local/UCB1222/USP/design_challenge/Final_2mar2023/USP_IO_HIP/hl_8slice_south_io/lib/hl_8slice_south_io.min.etm.lib.lib",
+      "lef_file": "/tools/intech22/local/UCB1222/USP/design_challenge/Final_2mar2023/USP_IO_HIP/hl_8slice_south_io/lef/hl_8slice_south_io.fill.lef",
+      "spice_file": "/tools/intech22/local/UCB1222/USP/design_challenge/Final_2mar2023/USP_IO_HIP/hl_8slice_south_io/spice_netlist/hl_8slice_south_io.sp",
+      "verilog_synth": "/tools/C/ee290-sp23/area_io/hl_4slice_south_io_container.v",
+      "verilog_sim": "/tools/intech22/local/UCB1222/USP/design_challenge/Final_2mar2023/USP_IO_HIP/hl_8slice_south_io/rtl/hl_8slice_south_io.v",
+      "corner": {
+        "nmos": "fast",
+        "pmos": "fast",
+        "temperature": "-40 C"
+      },
+      "supplies": {
+        "VDD": "0.89 V",
+        "GND": "0 V"
+      }
+  }
+  # -- hl_corner_io  --
+  # Analyzed at corner: psss_0p765_1p080_max.PS_125.prcs
+  - library: {
+      "gds_file": "/tools/C/ee290-sp23/area_io/hl_corner_io.gds",
+      "nldm_liberty_file": "/tools/intech22/local/UCB1222/USP/design_challenge/Final_2mar2023/USP_IO_HIP/hl_corner_io/lib/hl_corner_io.max.etm.lib.lib",
+      "lef_file": "/tools/intech22/local/UCB1222/USP/design_challenge/Final_2mar2023/USP_IO_HIP/hl_corner_io/lef/hl_corner_io.fill.lef",
+      "spice_file": "/tools/intech22/local/UCB1222/USP/design_challenge/Final_2mar2023/USP_IO_HIP/hl_corner_io/spice_netlist/hl_corner_io.sp",
+      "verilog_synth": "/tools/C/ee290-sp23/area_io/hl_corner_io_container.v",
+      "verilog_sim": "/tools/intech22/local/UCB1222/USP/design_challenge/Final_2mar2023/USP_IO_HIP/hl_corner_io/rtl/hl_corner_io.v",
+      "corner": {
+        "nmos": "slow",
+        "pmos": "slow",
+        "temperature": "125 C"
+      },
+      "supplies": {
+        "VDD": "0.765 V",
+        "GND": "0 V"
+      }
+  }
+  # Analyzed at corner: pfff_1p050_1p320_min.PF_m40.prcf
+  - library: {
+      "gds_file": "/tools/C/ee290-sp23/area_io/hl_corner_io.gds",
+      "nldm_liberty_file": "/tools/intech22/local/UCB1222/USP/design_challenge/Final_2mar2023/USP_IO_HIP/hl_corner_io/lib/hl_corner_io.max.etm.lib.lib",
+      "lef_file": "/tools/intech22/local/UCB1222/USP/design_challenge/Final_2mar2023/USP_IO_HIP/hl_corner_io/lef/hl_corner_io.fill.lef",
+      "spice_file": "/tools/intech22/local/UCB1222/USP/design_challenge/Final_2mar2023/USP_IO_HIP/hl_corner_io/spice_netlist/hl_corner_io.sp",
+      "verilog_synth": "/tools/C/ee290-sp23/area_io/hl_corner_io_container.v",
+      "verilog_sim": "/tools/intech22/local/UCB1222/USP/design_challenge/Final_2mar2023/USP_IO_HIP/hl_corner_io/rtl/hl_corner_io.v",
+      "corner": {
+        "nmos": "fast",
+        "pmos": "fast",
+        "temperature": "-40 C"
+      },
+      "supplies": {
+        "VDD": "0.89 V",
+        "GND": "0 V"
+      }
+  }
+  # Analyzed at corner: pfff_0p890_min.PF_m40.prcf
+  - library: {
+      "gds_file": "/tools/intech22/LIB/ip224_1.5/ip224_ringpll/gds/ringpll.gds",
+      "nldm_liberty_file": "/tools/intech22/LIB/ip224_1.5/ip224_ringpll/lib/ringpll_pfff_0p890_min.PF_m40.prcf.lib",
+      "lef_file": "/tools/intech22/LIB/ip224_1.5/ip224_ringpll/lef/ringpll.lef",
+      "spice_file": "/tools/intech22/LIB/ip224_1.5/ip224_ringpll/spice/ringpll.sp",
+      "verilog_synth": "/tools/C/ee290-sp23/ringpll_synth.sv",
+      "verilog_sim": "/tools/intech22/LIB/ip224_1.5/ip224_ringpll/rtl/src/rtl/ringpll.sv",
+      "corner": {
+        "nmos": "fast",
+        "pmos": "fast",
+        "temperature": "-40 C"
+      },
+      "supplies": {
+        "VDD": "0.89 V",
+        "GND": "0 V"
+      }
+  }
+
+  - library: {
+      "gds_file": "/tools/intech22/LIB/ip224_1.5/ip224_ringpll/gds/ringpll.gds",
+      "nldm_liberty_file": "/tools/intech22/LIB/ip224_1.5/ip224_ringpll/lib/ringpll_psss_0p765_max.PS_125.prcs.lib",
+      "lef_file": "/tools/intech22/LIB/ip224_1.5/ip224_ringpll/lef/ringpll.lef",
+      "spice_file": "/tools/intech22/LIB/ip224_1.5/ip224_ringpll/spice/ringpll.sp",
+      "verilog_synth": "/tools/C/ee290-sp23/ringpll_synth.sv",
+      "verilog_sim": "/tools/intech22/LIB/ip224_1.5/ip224_ringpll/rtl/src/rtl/ringpll.sv",
+      "corner": {
+        "nmos": "slow",
+        "pmos": "slow",
+        "temperature": "125 C"
+      },
+      "supplies": {
+        "VDD": "0.765 V",
+        "GND": "0 V"
+      }
+  }
