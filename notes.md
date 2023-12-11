@@ -17,3 +17,12 @@ Jerry's suggestion for how to do this:
             If FPGA available No core arrty-100t -- just use the FPGA to test the TSI protocol -- send and receive data
     
     For FPGA -- set up the system so that you have a uart terminal that can be exposed to the host -- 
+
+
+Bringup 11/18/23:
+FPGA tap out SPI
+SPI self boot pin test
+SPI Baremetal IDE code test
+
+
+Use the BWRC repo ans search through verilog to breakout signals

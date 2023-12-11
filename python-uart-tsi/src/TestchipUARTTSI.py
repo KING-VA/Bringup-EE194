@@ -9,7 +9,7 @@ class TestchipUARTTSI(TestchipTSI):
     BAUDRATES = [1200, 1800, 2400, 4800, 9600, 19200, 38400, 57600, 115200, 
                  230400, 460800, 500000, 576000, 921600, 1000000, 1152000,
                    1500000, 2000000, 2500000, 3000000, 4000000]
-    DEFAULT_BAUDRATE = 115200
+    DEFAULT_BAUDRATE = 921600
 
     def __init__(self, ttyfile, baud_rate, verbose=False, do_self_check=False):
         """
@@ -100,7 +100,7 @@ class TestchipUARTTSI(TestchipTSI):
             exit(1)
         return True
     
-    # TODO:  replace the testchip_tsi, chunk_max_size, read_chunk, and loaded_program attributes
+    # TODO: replace the testchip_tsi, chunk_max_size, read_chunk, and loaded_program attributes
     # The testchip_tsi attribute should be an instance of a class that has a load_program method. 
     # The chunk_max_size method should return the maximum size of a chunk. 
     # The read_chunk method should read a chunk of data from a specified address into a buffer. 
